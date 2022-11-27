@@ -18,7 +18,6 @@ export default defineUserConfig({
     '/zh/': {
       lang: 'zh-CN',
       title: "Lazy_V 的博客"
-      
     }
   },
 

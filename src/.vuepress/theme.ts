@@ -22,6 +22,8 @@ export default hopeTheme({
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
+  sidebarSorter: ["filename"],
+
   blog: {
     medias: {
       // Baidu: "https://example.com",
