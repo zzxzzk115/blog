@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/blog/',
   description: 'TALK IS CHEAP, SHOW ME THE CODE.',
   locales: {
     // 键名是该语言所属的子路径
