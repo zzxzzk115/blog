@@ -1,0 +1,16 @@
+{
+  "name": "zzxzzk115.blog",
+  "version": "0.0.1",
+  "description": "Lazy_V's Blog",
+  "main": "index.js",
+  "repository": "git@github.com:zzxzzk115/blog.git",
+  "author": "Lazy_V <954294627@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
