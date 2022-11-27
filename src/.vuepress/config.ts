@@ -1,4 +1,6 @@
 import { defineUserConfig } from "vuepress";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -19,6 +21,15 @@ export default defineUserConfig({
       
     }
   },
+
+  plugins: [
+    searchProPlugin({
+      indexContent: true
+    }),
+    mdEnhancePlugin({
+      // 你的选项
+    }),
+  ],
 
   theme,
 
