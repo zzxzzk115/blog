@@ -37,6 +37,10 @@ jobs:
       - name: Build VuePress site
         run: yarn docs:build
 
+      # 修复 GitHub Pages 不识别下划线开头文件的问题
+      - name: Post Fix GitHub Pages
+        run: touch src/.vuepress/dist/.nojekyll
+
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
