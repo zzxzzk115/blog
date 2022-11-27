@@ -16,8 +16,6 @@ export default hopeTheme({
 
   repo: "zzxzzk115/blog",
 
-  docsDir: "docs",
-
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
@@ -110,8 +108,8 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      // "/demo/encrypt.html": ["1234"],
+      // "/zh/demo/encrypt.html": ["1234"],
     },
   },
 
