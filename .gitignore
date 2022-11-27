@@ -13,9 +13,9 @@ pnpm-lock.yaml
 .vscode
 
 # vuepress
-docs/src/.vuepress/.cache/
-docs/src/.vuepress/.temp/
-docs/src/.vuepress/dist/
+src/.vuepress/.cache/
+src/.vuepress/.temp/
+src/.vuepress/dist/
 
 # mac
 .DS_Store
