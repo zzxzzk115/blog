@@ -16,6 +16,10 @@ export default hopeTheme({
 
   repo: "zzxzzk115/blog",
 
+  docsDir: "src",
+
+  docsBranch: "master",
+
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
