@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://zzxzzk115.github.io",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "fontawesome",
 
   logo: "/logo.png",
 
@@ -22,7 +22,7 @@ export default hopeTheme({
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
-  sidebarSorter: ["filename"],
+  sidebarSorter: ["readme", "date-desc", "filename", "order"],
 
   blog: {
     medias: {

@@ -12,7 +12,7 @@ export const enSidebar = sidebar({
     // },
     {
       text: "Articles",
-      icon: "note",
+      icon: "feather",
       prefix: "posts/",
       children: "structure",
     },

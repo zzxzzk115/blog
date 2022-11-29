@@ -12,7 +12,7 @@ export const zhSidebar = sidebar({
     // },
     {
       text: "文章",
-      icon: "note",
+      icon: "feather",
       prefix: "posts/",
       children: "structure",
     },
