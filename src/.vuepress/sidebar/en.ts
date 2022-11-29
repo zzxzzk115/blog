@@ -16,6 +16,7 @@ export const enSidebar = sidebar({
       prefix: "posts/",
       children: "structure",
     },
+    "games-gallery",
     "intro",
     // "slides",
   ],
