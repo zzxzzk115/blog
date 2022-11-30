@@ -1,24 +1,24 @@
 ---
-lang: zh-CN
-title: 深入探究 C# 11 的静态抽象接口方法
-description: 静态抽象接口方法是 C# 11 (对应 .NET 7.0) 引入的新特性。本篇我们来探究一下为什么要有它、它是什么，以及怎么使用它。
+lang: en-US
+title: Deeply dive into static abstract interface methods in C# 11
+description: Static abstract interface method is a new feature in C# 11 (corresponding .NET 7.0). In this article, we are going to deeply dive into it, talk about why we need it, what it is and how to use it.
 author: Lazy_V
 date: 2022-11-30
 category:
-  - 编程语言
+  - Programming Languages
 tag:
-  - 编程语言
+  - Programming Languages
   - C#
   - .NET
-  - 接口
+  - Interfaces
 star: true
 ---
 
-## 为什么要有静态抽象接口方法
+## Why we need it
 
-回顾我们曾经的需求：
+Let's recall our previous demands: 
 
-1. 我们希望在泛型中进行数学运算，但是编译器无法得知 `T` 的运行时类型，从而无法得知 `T` 是否支持诸如加减乘除的数学运算，故无法实现类似下面这样的代码：
+1. We hope to perform mathematical operations in generics, but the compiler can't know the runtime type of `T`, so it can't know whether `T` supports mathematical operations such as addition, subtraction, multiplication and division, so it can't implement code like the following:
 
    ```csharp
    public T Add<T>(T a, T b)
@@ -27,7 +27,7 @@ star: true
    }
    ```
 
-2. 我们希望某些情况下，`T` 作为编译期能够确定的类型，能够调用 `T` 的公有静态方法。然而，接口中无法声明静态接口方法，来允许我们进行 `T.XXX()`; 的操作。要是能够让接口中声明静态接口方法就好了。我们曾经的幻想：
+2. We hope that in some cases, `T`, as a type that can be determined at compile time, can call the public static method of `T`. However, the static interface method cannot be declared in the interface to allow us to operate `T.XXX()`; If only the static interface method could be declared in the interface. We used to dream about implementing code like the following：
 
    ```csharp
    public interface ISomeInterface<T> where T : ISomeInterface<T>
@@ -41,19 +41,17 @@ star: true
    }
    ```
 
-为了满足这些需求，微软携手社区开发者们，共同推出了静态抽象接口方法，大家以前的幻想现在已经得以实现。
+In order to meet these needs, Microsoft and community developers jointly launched the static abstract interface method, and everyone's previous fantasy has now been realized.
 
-## 什么是静态抽象接口方法
+## What is it
 
-静态抽象接口方法是 C# 11 (对应 .NET 7.0) 引入的新特性。使用最新的 Visual Studio 2022 版本，安装过 .NET 7.0 运行时，即可尝鲜。
+Static abstract interface method is a new feature in C# 11 (corresponding .NET 7.0). Using the latest version of Visual Studio 2022 and then when NET 7.0 runs, you can taste it fresh.
 
-它支持在接口中声明 static abstract 方法 (官方说支持在接口中声明 static virtual 方法，但我开启了 preview 后依旧报错，暂时不知道 static virtual 如何使用)。
+It supports declaring the static abstract method in the interface (officially, it supports declaring the static virtual method in the interface, but I still report an error after opening the language preview, and I don't know how to use static virtual for the time being).
 
-## 怎么样使用静态抽象接口方法
+## How to use it
 
-举个例子：
-
-我们可以利用上述新特性，定义如下接口：
+For an instance, we can use the feature mentioned above to declare the following interface: 
 
 ```csharp
 public interface IGetNext<T> where T : IGetNext<T>
@@ -62,9 +60,9 @@ public interface IGetNext<T> where T : IGetNext<T>
 }
 ```
 
->  许多运算符都强制要求其参数必须与类型匹配，或者是按照约束要实现包含类型的类型参数，所以这里，我们约束 `T` 必须实现 `IGetNext<T>`。
+>  Many operators force their parameters to match the type, or implement the type parameters containing the type according to the constraints. So, in this case we constrain `T` implement `IGetNext<T>`.
 
-然后，定义一个 `RepeatSequence` 结构去实现上面的接口，该结构创建由 `‘A'` 组成的字符串，每个 `++` 操作都使得向字符串中添加一个 `'A'`。
+Then, define a structure named `RepeatSequence` to implement the above interface, which creates a string composed of `'A'`, and each `++` operation allows an `'A'` to be added to the string.
 
 ```csharp
 public struct RepeatSequence : IGetNext<RepeatSequence>
@@ -81,7 +79,7 @@ public struct RepeatSequence : IGetNext<RepeatSequence>
 }
 ```
 
-然后我们可以编写测试代码，打印看看结果：
+Then we can write some testing codes, let them print to screen and we look at the output.
 
 ```csharp
 var str = new RepeatSequence();
@@ -90,7 +88,7 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(str++);
 ```
 
-得到输出：
+Output:
 
 ```
 A
@@ -105,11 +103,11 @@ AAAAAAAAA
 AAAAAAAAAA
 ```
 
-## 从代码角度分析
+## Analysing from code aspect
 
-### 看看 IL
+### Let's look at IL codes
 
-如下接口：
+Suppose that we have declared the following interface:
 
 ```csharp
 public interface IDeepInSourceCode<T> where T : IDeepInSourceCode<T>
@@ -119,7 +117,7 @@ public interface IDeepInSourceCode<T> where T : IDeepInSourceCode<T>
 }
 ```
 
-它的 IL：
+The IL codes of it:
 
 ```csharp
 // Type: StaticAbstractInterfaceMethods.IDeepInSourceCode`1 
@@ -150,13 +148,13 @@ public interface IDeepInSourceCode<T> where T : IDeepInSourceCode<T>
 } // end of class StaticAbstractInterfaceMethods.IDeepInSourceCode`1
 ```
 
-对比发现，实际上，static abstract 方法和普通接口方法的区别在于，`newslot` 和 `instance` 关键字变成了 `static`。
+It is found that in fact, the difference between the static abstract method and the ordinary interface method is that the `newslot` and `instance` keywords become `static`.
 
-这意味着，实现 static abstract 接口方法的具体实现方法，必须是一个以 `public static 开头的方法。
+It means that the specific implementation method of implementing the static abstract interface method must be a method starting with `public static`.
 
-### 试一试继承关系
+### Let's try the inheritance relationship
 
-接着上面的接口，我们定义两个类型：
+We define two types implementing the interface above:
 
 ```csharp
 public class DeepInSourceCodeBase : IDeepInSourceCode<DeepInSourceCodeBase>
@@ -186,11 +184,11 @@ public class DeepInSourceCodeDerived : DeepInSourceCodeBase, IDeepInSourceCode<D
 }
 ```
 
-`DeepInSourceCodeBase` 实现了 `IDeepInSourceCode<DeepInSourceCodeBase>` 接口。
+`DeepInSourceCodeBase` implementes `IDeepInSourceCode<DeepInSourceCodeBase>`.
 
-`DeepInSourceCodeDerived` 派生自 `DeepInSourceCodeBase`，重写了 `SomeMethod` 方法，覆盖了 `SomeStaticAbstractMethod` 方法。
+`DeepInSourceCodeDerived` derives from `DeepInSourceCodeBase`, overrides `SomeMethod` method, and covers `SomeStaticAbstractMethod` method.
 
-写一个测试代码：
+Let's write some testing code:
 
 ```csharp
 public class DeepInSourceCodeTester
@@ -209,7 +207,7 @@ public class DeepInSourceCodeTester
 }
 ```
 
-在 `Main` 方法中加入测试代码：
+Add testing codes to `Main`:
 
 ```csharp
 internal class Program
@@ -221,7 +219,7 @@ internal class Program
 }
 ```
 
-先猜猜结果是什么？
+Guess what the result is first?
 
 ```
 SomeMethodBase is invoked.
@@ -230,11 +228,9 @@ SomeStaticAbstractMethodBase is invoked.
 SomeStaticAbstractMethodDerived is invoked.
 ```
 
-你会猜测是这样的结果吗？
+Would you guess the result like this?
 
-其实不是。
-
-这里结果是：
+Actually, the result is not like this, it's:
 
 ```
 SomeMethodBase is invoked.
@@ -243,15 +239,15 @@ SomeStaticAbstractMethodBase is invoked.
 SomeStaticAbstractMethodBase is invoked.
 ```
 
-官方有专门的说明：https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface#static-abstract-and-virtual-members
+Here is the official explanation: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface#static-abstract-and-virtual-members
 
-当我们把 `where T2 : T1, new()` 改为 `where T2 : IDeepInSourceCode<T2>, new()` 结果就是我们猜测的那样了。
+When we change `where T2 : T1, new()` to `where T2 : IDeepInSourceCode<T2>, new()`, the result is what we expect.
 
-## .NET 如何支持泛型数学
+## How does .NET support [Generic Math](https://learn.microsoft.com/en-us/dotnet/standard/generics/math)? 
 
-为了支持泛型数学，**.NET 7.0 将所有的基元类型进行了重新实现**。
+In order to support generic math, **. NET 7.0 has reimplemented all the base element types**.
 
-以 `Int32` 为例，它现在要实现更多的接口，这些接口就是为了进行一些泛型数学运算。
+Take `Int32` as an example, it now wants to implement more interfaces to perform some generic mathematical operations:
 
 ```csharp
 public readonly struct Int32
@@ -265,7 +261,7 @@ public readonly struct Int32
           ISignedNumber<int>
 ```
 
-`Int32` 除了之前实现的一些接口，目前还实现了以下新的接口：
+In addition to some previously implemented interfaces, the following new interfaces have been implemented by `Int32`:
 
 - IBinaryInterger\<int\>
 
@@ -287,7 +283,7 @@ public readonly struct Int32
 
     - IBitwiseOperators\<int, int, int\>
 
-      声明了重载 `&`、`|`、`~`、`!`  四个运算符的 static abstract 方法
+      Declared the static abstract methods for overloading four operators: `&`, `|`, `~` and `!`.
 
     - INumber\<int\>
 
@@ -303,11 +299,11 @@ public readonly struct Int32
 
       - IComparisonOperators\<int, int, int\>
 
-        声明了重载 `>`、`<`、`>=`、`<=` 四个运算符的 static abstract 方法
+        Declared the static abstract methods for overloading four operators: `>`, `<`, `>=` and `<=`.
 
       - IModulusOperators\<int, int, int>
 
-        声明了重载 `%` 运算符的  static abstract 方法
+        Declared the static abstract method for overloading the operator: `%`.
 
       - INumberBase\<int\>
 
@@ -330,25 +326,25 @@ public readonly struct Int32
                 where TSelf : INumberBase<TSelf>?
         ```
 
-        简述：主要声明了四则运算相关运算符的重载 static abstract 方法。
+        Mainly declared the static abstract methods for overloading four operators: `+`, `-`, `*`, `/`.
 
   - IShiftOperators\<int, int, int\>
 
-    声明了重载 `<<`、`>>`、`>>>` 三个移位运算符的 static abstract 方法
+    Declared the static abstract methods for overloading three operators: `<<`, `>>`, and `>>>`.
 
 - IMinMaxValue\<int\>
 
-  声明了 `MinValue`、`MaxValue` 两个 static abstract 属性，表示具有最大最小值属性。
+  Declared two static abstract properties: `MinValue` and `MaxValue`.
 
 - ISignedNumber\<int\>
 
-  声明了 `NegativeOne` static abstract 属性，表示具有 -1 属性。
+  Declared a static abstract property: `NegativeOne`.
 
-如此一来，`Int32` 可以作为泛型数学的泛型参数。
+In this way, `Int32` can be used as a generic parameter for generic math.
 
-除了 `Int32`，其他诸如 `Single`、`Double`、`Byte` 这些基元类型也都实现了很多这种用于泛型数学运算的接口。
+In addition to `Int32`, other element types such as `Single`, `Double` and `Byte` also implement many of these interfaces for generic mathematical operations.
 
-举一个简单的例子：
+Take a simple example:
 
 ```csharp
 public static void MultiplyAndSub<T>(T t1, T t2, T t3)
@@ -358,9 +354,9 @@ public static void MultiplyAndSub<T>(T t1, T t2, T t3)
 }
 ```
 
-上述方法约束 `T` 类型支持乘法和减法运算。
+The above method constraints `T` support multiplication and subtraction operations.
 
-可以这样调用上述方法：
+The above method can be called like this:
 
 ```csharp
 MultiplyAndSub(1, 2, 3);
@@ -368,7 +364,7 @@ MultiplyAndSub(0.1f, 0.2f, 0.3f);
 MultiplyAndSub(0.1d, 0.2d, 0.3d);
 ```
 
-当然，我们也可以自己定义一个类型，然后实现 乘法、减法 相关的接口：
+Of course, we can also define a type by ourselves, and then implement the interface related to multiplication and subtraction:
 
 ```csharp
 public struct MultiplyAndSubCustomStruct : 
@@ -399,10 +395,10 @@ public struct MultiplyAndSubCustomStruct :
 }
 ```
 
-然后也可以调用 `MultiplyAndSub`：
+You can then call `MultiplyAndSub`:
 
 ```csharp
 MultiplyAndSub(new MultiplyAndSubCustomStruct(1), new MultiplyAndSubCustomStruct(2), new MultiplyAndSubCustomStruct(3));
 ```
 
-结果是 `-1`，符合预期。
+The result is `-1`, which meets expectations.
