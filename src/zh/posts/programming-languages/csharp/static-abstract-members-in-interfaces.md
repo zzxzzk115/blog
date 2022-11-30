@@ -247,7 +247,7 @@ SomeStaticAbstractMethodBase is invoked.
 
 当我们把 `where T2 : T1, new()` 改为 `where T2 : IDeepInSourceCode<T2>, new()` 结果就是我们猜测的那样了。
 
-## .NET 如何支持泛型数学
+## .NET 如何支持[泛型数学](https://learn.microsoft.com/zh-cn/dotnet/standard/generics/math)
 
 为了支持泛型数学，**.NET 7.0 将所有的基元类型进行了重新实现**。
 
