@@ -105,6 +105,10 @@ AAAAAAAAA
 AAAAAAAAAA
 ```
 
+### Playground
+
+<iframe style="width: 100%; height: 400px;" src="https://sharplab.io/#v2:EYLgtghglgdgNAFxAJwK7wCYgNQB8ACATAIwCwAUBfgMwAEsCApsgGYQDGjtAkgOKMIAcowAeCADwAVAHy0A7gAtmXSbRA9+Q0RJkUA3hVpHa+YgDZaEYAGcEyDglqqA9gAdmEBM+S1s2ABQuCErIAJQA3BQAvhRUdLZo7I4ASozungDKjACOqIwwnGoaAsJi4qnpCFm5+ZzS+obGrshQAG6eXOzOMLa07AoQPgDCCrQAvLQA5ACCk5HkxiZ0pgAMTtrjtDCMcibEK/4jcLTEEY1G50u0FYyZOXkFjP6htHoxlAvGNHsWN3c1j1obg8Xh8fn8fyq91qXGcwWYoUuizGsjhIXkUGCr3WYk2aOYADpJBtsLQRrQovNLt9nK1mC0MFxVk5nBk7LAAObPcayYliebvCgMZgwCAAGxMhD2AHYGp8jKYLPgACy0ACy0Bg/lWAG0ALqWZAc6yI+WvJHGdo+BKbba7SHVB6cZ5Us2LFjeWj+Bj0TYrcK+8Qnf30PymxYRr7EACc/gSYfmi3eUSAA"></iframe>
+
 ## 从代码角度分析
 
 ### 看看 IL
@@ -246,6 +250,10 @@ SomeStaticAbstractMethodBase is invoked.
 官方有专门的说明：https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface#static-abstract-and-virtual-members
 
 当我们把 `where T2 : T1, new()` 改为 `where T2 : IDeepInSourceCode<T2>, new()` 结果就是我们猜测的那样了。
+
+### Playground
+
+<iframe style="width: 100%; height: 400px;" src="https://sharplab.io/#v2:EYLgtghglgdgNAFxAJwK7wCYgNQB8ACATAIwCwAUBfgMwAEsCApsgGYQDGjtAkgCKOMADtxgBlAPapknAMLiMjADwAVAHy0A7gAtmXZbRA9+QkRKmz5StRQDeFWg9r4ALLQlhGAWUYIt8gBQAlADc9o74xABstBDAAM4IyBwITq7ujKIIEAhQ7ACC8YnJ3r4BIRQAvhRUdES0xsJiktKMcgoAQhBxXIZ8Ao1mLW1KDabNFh1djKq2YQ40tABuUMgIqBAANqlu4h4lfhhBc7R25I7nTsQAnP4AROn78p3d9HH0MIviANaMGAB0t3KZ0cVUowPmtSi23SmWyuQKCSS7AQj0OgWOpwu4WudxhWRy+UKSJRPgOzy4UDesE+P3+gNC4NooNBNSchHq/TG5laln4yCgi1+Bg5Jia3OG5LgRk5YqGlkUo1lE0YfIFvxm5Ex4To4kFyH5Cmhuy8pLKGOO5wiN3uxtRqsFGFe7xpvwBQPOLMZCxgjA0l2iLh2HlhBIRRWRqKOjK1WKtuONIfhROKpow9qFlOd31d9OOzOq5AWdUVg2VykYCWYsy9kIDrnLCRUxClykIqiCtAtjm0uloymIwr6otLPIUTdUUp9GijWIcPeQenZhn7k99M8cMYu/doCAHAF5aFO+8QggzZ332Qh2Qej63T12HLu/g9U/fGecr8/ba/3bP+1/g3xJNERTUo0TPP9CAAjIgMJECIx/CCHHzMEGGYGBNjZS4AHZq0tKFA08aAYH8CIAAYAG0AF0YmQABzOJ0WjB8RQGcZR0YBsmGQP4uIVGURwlKYpRLdjhnTDB21/ZDKgoIA="></iframe>
 
 ## .NET 如何支持[泛型数学](https://learn.microsoft.com/zh-cn/dotnet/standard/generics/math)
 
