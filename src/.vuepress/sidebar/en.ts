@@ -15,6 +15,7 @@ export const enSidebar = sidebar({
       icon: "feather",
       prefix: "posts/",
       children: "structure",
+      collapsible: true,
     },
     "games-gallery",
     "intro",
