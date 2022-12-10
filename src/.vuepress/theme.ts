@@ -198,6 +198,14 @@ export default hopeTheme({
       vuePlayground: true,
     },
 
+    components: [
+      "CodePen",
+      "Badge",
+      "YouTube",
+      "PDF",
+      "VideoPlayer"
+    ],
+
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
