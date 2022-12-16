@@ -9,9 +9,9 @@ article: false
 
 ### purchase
 
-[ˈpɜrtʃəs]
+<WordReader word="purchase"/>
 
-<AudioPlayer src="http://dict.youdao.com/dictvoice?type=0&audio=purchase" />
+[ˈpɜrtʃəs]
 
 vt. 购买，采购
 
