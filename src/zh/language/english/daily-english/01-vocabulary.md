@@ -9,10 +9,12 @@ article: false
 
 ### purchase
 
-<WordReader word="purchase"/>
+<WordReader word="purchase" type="US" />
+<WordReader word="purchase" type="UK" />
 
 [ˈpɜrtʃəs]
 
 vt. 购买，采购
 
 n. 购买行为 所购之物 握紧
+
