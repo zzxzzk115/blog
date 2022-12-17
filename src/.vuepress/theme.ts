@@ -159,6 +159,7 @@ export default hopeTheme({
         "CodePen",
         "Badge",
         "YouTube",
+        "BiliBili",
         "PDF",
         "VideoPlayer"
       ],
