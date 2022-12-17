@@ -7,6 +7,12 @@ article: false
 
 ::: warning
 部分听力素材来源于外网，如果无法正常显示，请尝试使用魔法（懂的都懂）。
+
+可以参考的免费听力素材网站：
+- [storycorps](https://storycorps.org)
+- [BBC Learning English](https://english-pod.com)
+- [CNN10](https://edition.cnn.com/cnn10)
+- [TED Radio Hour](https://www.npr.org/programs/ted-radio-hour)
 :::
 
 ::: tip
