@@ -16,6 +16,10 @@
   box-shadow: 0 9px var(--light-grey);
 }
 
+.button:hover {
+    color: var(--text-color-bright);
+}
+
 .button:active {
   box-shadow: 0 5px var(--grey3);
   transform: translateY(4px);

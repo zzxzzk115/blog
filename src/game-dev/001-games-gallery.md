@@ -1,8 +1,6 @@
 ---
-lang: en-US
+icon: images
 title: Games Gallery
-icon: gamepad
-date: 2022-11-30
 article: false
 ---
 

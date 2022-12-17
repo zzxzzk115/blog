@@ -1,5 +1,4 @@
 ---
-lang: en-US
 title: The algorithm framework for solving DP problems
 author: Lazy_V
 date: 2022-12-09
@@ -8,6 +7,7 @@ category:
 tag:
   - Algorithms
   - Dynamic Programming
+isOriginal: true
 ---
 
 Dynamic Programming problems are the most complicated problems in algorithms. However, it is actually simple to solve if you understand the key concepts and the main algorithm framework of DP.

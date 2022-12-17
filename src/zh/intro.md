@@ -1,8 +1,6 @@
 ---
-lang: zh-CN
-title: 关于我
 icon: circle-info
-date: 2022-11-29
+title: 关于我
 article: false
 ---
 

@@ -1,8 +1,6 @@
 ---
-lang: zh-CN
+icon: images
 title: 游戏画廊
-icon: gamepad
-date: 2022-11-30
 article: false
 ---
 

@@ -1,8 +1,6 @@
 ---
-lang: en-US
-title: About me
 icon: circle-info
-date: 2022-11-29
+title: About me
 article: false
 ---
 

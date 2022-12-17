@@ -1,5 +1,4 @@
 ---
-lang: zh-CN
 title: 解决 DP 问题的算法框架
 author: Lazy_V
 date: 2022-12-09
@@ -8,6 +7,7 @@ category:
 tag:
   - 算法
   - 动态规划
+isOriginal: true
 ---
 
 动态规划问题在算法中属于复杂的问题. 然而，当你理解它的关键概念和算法框架后，解决它实际上是很简单的。

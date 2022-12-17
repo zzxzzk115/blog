@@ -1,5 +1,5 @@
 ---
-icon: circle-info
+icon: message
 title: 每日英语
 index: true
 article: false

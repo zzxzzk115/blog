@@ -1,5 +1,4 @@
 ---
-lang: zh-CN
 title: 在 MongoDB 中实现自增 ID
 author: Lazy_V
 date: 2022-11-27
@@ -8,6 +7,7 @@ category:
 tag:
   - MongoDB
   - 数据库
+isOriginal: true
 ---
 
 在 MongoDB 中，每个文档都有一个 object id (Bson ID)。但有时我们创建新模型的时候，需要能够自增的 ID，并且 ID 应该是从 1 开始的整数。怎么解决这个问题呢？

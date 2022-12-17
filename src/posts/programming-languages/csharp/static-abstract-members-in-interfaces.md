@@ -1,7 +1,5 @@
 ---
-lang: en-US
 title: Deeply dive into static abstract interface methods in C# 11
-description: Static abstract interface method is a new feature in C# 11 (corresponding .NET 7.0). In this article, we are going to deeply dive into it, talk about why we need it, what it is and how to use it.
 author: Lazy_V
 date: 2022-11-30
 category:
@@ -12,7 +10,12 @@ tag:
   - .NET
   - Interfaces
 star: true
+isOriginal: true
 ---
+
+Static abstract interface method is a new feature in C# 11 (corresponding .NET 7.0). In this article, we are going to deeply dive into it, talk about why we need it, what it is and how to use it.
+
+<!-- more -->
 
 ## Why we need it
 

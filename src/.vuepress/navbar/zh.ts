@@ -14,7 +14,14 @@ export const zhNavbar = navbar([
       { text: "口语", icon: "comment-dots", link: "05-speaking"}
     ]
   },
-  { text: "游戏画廊", icon: "gamepad", link: "/zh/games-gallery"},
+  { 
+    text: "游戏开发",
+    icon: "gamepad",
+    prefix: "/zh/game-dev/",
+    children: [
+      { text: "游戏画廊", icon: "images", link: "001-games-gallery"},
+    ]
+  },
   { text: "关于", icon: "circle-info", link: "/zh/intro"},
   // { text: "演示", icon: "discover", link: "/zh/demo/" },
   // {
