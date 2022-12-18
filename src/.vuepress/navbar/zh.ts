@@ -20,6 +20,12 @@ export const zhNavbar = navbar([
     prefix: "/zh/game-dev/",
     children: [
       { text: "游戏画廊", icon: "images", link: "001-games-gallery"},
+      { 
+        text: "复古游戏开发",
+        icon: "video-game-gamasutra",
+        prefix: "retro/",
+        children: [ { text: "GB/GBC 游戏开发", icon: "gameboy", link: "gameboy/intro"} ]
+      }
     ]
   },
   { text: "关于", icon: "md-information-circle", link: "/zh/intro"},

@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://zzxzzk115.github.io",
   },
 
-  iconAssets: "//at.alicdn.com/t/c/font_3801690_mk0otqoxmq.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3801690_wjofljg7ug.css",
 
   logo: "/logo.png",
 
