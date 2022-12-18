@@ -1,5 +1,5 @@
 ---
-icon: circle-info
+icon: md-information-circle
 title: 关于我
 article: false
 ---

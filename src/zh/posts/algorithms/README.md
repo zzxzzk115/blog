@@ -1,5 +1,5 @@
 ---
-icon: rocket
+icon: ideas
 title: 算法
 index: false
 article: false

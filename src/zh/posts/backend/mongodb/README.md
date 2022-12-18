@@ -1,5 +1,5 @@
 ---
-icon: database
+icon: mongodb
 title: MongoDB
 index: false
 article: false

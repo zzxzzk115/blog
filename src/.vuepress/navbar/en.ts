@@ -10,7 +10,7 @@ export const enNavbar = navbar([
       { text: "Games Gallery", icon: "images", link: "001-games-gallery"},
     ]
   },
-  { text: "About", icon: "circle-info", link: "/intro"},
+  { text: "About", icon: "md-information-circle", link: "/intro"},
   // { text: "Demo", icon: "discover", link: "/demo/" },
   // {
   //   text: "Posts",

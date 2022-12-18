@@ -4,7 +4,7 @@ title: Games Gallery
 article: false
 ---
 
-> Following games are all made by myself. Welcome to play! Or we can discuss anything about game development.
+> The following games are all made by myself. Welcome to play! Or we can discuss anything about game development.
 
 ## CatMario-GB
 

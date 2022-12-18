@@ -1,5 +1,5 @@
 ---
-icon: message
+icon: language-english
 title: 每日英语
 index: true
 article: false

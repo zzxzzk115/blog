@@ -1,5 +1,5 @@
 ---
-icon: circle-info
+icon: md-information-circle
 title: About me
 article: false
 ---
