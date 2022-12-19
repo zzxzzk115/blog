@@ -78,3 +78,32 @@ Listen to Joey and Jerry’s original StoryCorps interview.
 
 > 目前人们对于开普勒-452b的看法存在争议，图一乐吧，移民外太空轮不到我们这一辈人。（悲
 :::
+
+## 2022-12-19
+
+### Eyes on the Stars
+
+<YouTube id="okF5UGpivR8" />
+
+On January 28, 1986, NASA Challenger mission STS-51-L ended in tragedy when the shuttle exploded 73 seconds after takeoff. On board was physicist Ronald E. McNair, who was the second African American person to enter space. But first, he was a kid with big dreams in Lake City, South Carolina.
+
+素材来源：[storycorps.org](https://storycorps.org/animation/eyes-on-the-stars/)
+
+::: details 解析
+- stare at
+  - 凝视
+- negro
+  - n. 黑人
+
+  属于带有贬低黑色人种的词汇。
+- coloreds
+  - abbr. 有色人种
+- reluctantly
+  - adv. 不情愿地，勉强地
+- youngster
+  - n. 年轻人，少年
+- Star Trek
+  - 星际迷航，电影系列
+- norm
+  - n. 标准; 规范; 准则; （劳动）定额
+:::

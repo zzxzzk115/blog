@@ -62,3 +62,50 @@ article: false
 > During the Chinese New Year, Chinatown is decorated with beautiful **ornaments**.
 >
 > 在农历新年期间，唐人街装有美丽的饰品。
+
+## 2022-12-19
+
+### respondent
+
+<WordReader word="respondent" type="US" phoneticSymbol="[rɪˈspɑndənt]"/>
+<WordReader word="respondent" type="UK" phoneticSymbol="[rɪˈspɒndənt]"/>
+
+- n. 调查对象；被告
+
+> And finally, there were 600 **respondents** in that poll.
+>
+> 最后，有 600 人参与了这份调查。
+
+### lavatory
+
+<WordReader word="lavatory" type="US" phoneticSymbol="[ˈlævətɔri]"/>
+<WordReader word="lavatory" type="UK" phoneticSymbol="[ˈlævətri]"/>
+
+- n. 厕所，卫生间
+
+> I need to use the **lavatory**.
+>
+> 我得去一趟卫生间。
+
+### muddle
+
+<WordReader word="muddle" type="US" phoneticSymbol="[ˈmʌdl]"/>
+<WordReader word="muddle" type="UK" phoneticSymbol="[ˈmʌdl]"/>
+
+- n. 糊涂，困惑；一团糟
+- vt. 弄乱，搅混；使困惑；混淆
+
+> A shark! Quick, Kyle, think! Kyle is **in a muddle**.
+>
+> 一条鲨鱼！快，凯尔，想办法！凯尔不知所措了。
+
+### cosset
+
+<WordReader word="cosset" type="US" phoneticSymbol="[ˈkɑsɪt]"/>
+<WordReader word="cosset" type="UK" phoneticSymbol="[ˈkɒsɪt]"/>
+
+- vt. 宠爱，娇养
+
+> As a child, she had been spoiled and **cosseted**.
+>
+> 小时候，她就被宠坏了。

@@ -132,3 +132,77 @@ If you’re wanting to find a solution to recycling the tree, there are tree far
 
 真实的圣诞树比人造的圣诞树更环保，降解时间更短，二氧化碳排放量更少，栽培简单，回收方便，也更健康。如果选择购买人造圣诞树，最好多留一段时间，而不是买来过完节就扔了，因为它实在是太难降解了，且排放的有毒气体会污染空气，不利于身心健康。
 :::
+
+## 2022-12-18
+
+### 10 Ways to remember a loved one at Christmas
+
+> Grief is always difficult, but Christmas in particular can bring up some tough emotions. Here are some tips for dealing with grief at Christmas
+
+Grief is the price we pay for love, and no-one knows the depth and width of our relationship with someone we have lost. Each of us is coping with our own feelings and sadness. 
+
+It can feel easier to slip beneath Christmas and “just let it happen”. However, if your sadness prevents you from being able to share all of the joy your loved one brought to your life, the legacy of love becomes lost, not only to others, but to you too. 
+
+We have a duty to those we love and to those still in our lives, to carry on, especially if we have children. But equally we have to communicate when we are struggling so we can have our “grief” time. We all need this.
+
+#### Have a plan
+
+Get together and talk with your family about how each of you may feel in the run up to Christmas and also on the day so you can each accept whatever feelings come up and make allowances for them. There may be something special you want to do to remember individually or collectively as a family. This can help to give you a focus on the run up to Christmas day. 
+
+#### New traditions
+
+Try creating some new traditions. Buy a lovely Christmas card to your loved one, write in it a special message and hang it on the tree. By doing things differently, we can make ourselves feel different. Old rituals and routines can be hard to let go and maybe we can feel that this will take us further away from our loved one, but we have to find ways to move forward and yet still keep them close. 
+
+The truth is, you can never, ever forget someone you love and our emotional relationship with that person will continue for as long as we live. Finding new traditions can give us a chance to discover the things we that we need to get through. Sometimes if we keep doing Christmas the same, it can make their absence harder to bear. 
+
+#### Memory hour
+
+Schedule a special time where you each allow one another the opportunity to tell your own story about your relationship with the person who has died. You have a lifetime of memories bubbling up and one of the best things you can do is to share those memories. 
+
+Take turns and don’t interrupt when someone is speaking as this can stop the emotion. Allow tears, allow laughter. Yes, there may be tears and longing, but we have to embrace the life of memories made together. Taking the time to honour their memory almost gives us permission to find joy in the day. Everything in nature has to have a balance.
+
+Also, it can be quite lovely to hear how unique each of our relationships are. Helping us to identify and share those special things that are ours alone with that one person can create its own balm of healing. So many different versions of them, but all fundamentally based on the same values and character. Sharing our memories is a powerful act. 
+
+#### Accept it may be a challenge for you
+
+Make it ok not to be ok and if you feel yourself folding, take some time on your own. However, if you feel that you are withdrawing more and more, then you may need to reach out for help. 
+
+Our grief and sadness need our attention and the hurting heart needs expression. Allowing ourselves to feel our feelings in the moment can relieve some of the pressure within. Be wary of quick fix relievers such as alcohol and overeating—they only really serve to distract us, for a short time, from the feelings we really need to feel to make progress in our journey of grief. 
+
+#### Tears and laughter
+
+Don’t berate yourself when you have your happy moments and lose yourself in the here and now (which you will). It means you have slipped into the present moment without thought of past or future. This gives our hearts and minds respite from the pain, and we are coming up for air. 
+
+We then remember and go back to grieving; this is perfectly healthy and normal. Grief is not a straight line, and we must rise and fall with it, to trust our instincts and not let ourselves be influenced by others or what we think they expect of us. If you need to cry, let your tears come and, equally if you need to laugh, know that that’s ok. Both emotions need equal expression.
+
+#### Reach out
+
+Don’t  be afraid to pick up the phone and contact those who were special in the life of the person you have lost. This creates a community centred around your special person and a support network for each of you.
+
+#### We need laughter
+
+Choose a super Christmas movie. Some of the old classics are fabulous and funny! Watch a good comedy and laugh along. Laughter releases endorphins into our bodies which can dissipate some of the chemical residue of grief. 
+
+#### Remembering
+
+Light a candle for your loved one, perhaps next to their photo. Pour their favourite drink and take turns to say what you miss most about them and the one thing you would like to tell them (even though they may have heard it before). Have a morning walk. Add comments, pictures and keepsakes from the day to your memory box, if you have one. 
+
+Journalling is magical and the power of the pen can better than medicine. Find a lovely book that is yours alone and write your heart’s words—happy, sad, good, bad. No-one needs to read it unless you want them to. Putting our feelings down on paper can identify areas where we are stuck or areas we need help with.
+
+#### You matter too
+
+Self-care is paramount. Climb into a nice hot bath and relax. Light candles and play soft music. A hot bath is really nurturing especially with some aromatherapy bubbles or magnesium flakes which have great cleansing and calming properties. 
+
+#### Have a plan moving forward
+
+As we approach the end of any year, we turn our thoughts to changes we would like to make and even though we may be wishing for our loved one back, we have no choice. If we don’t change anything, nothing will change. 
+
+Make a resolution to tend to yourself emotionally. Never be afraid to share a favourite memory or mention the name of your special person. By doing so, you will make others a part of your journey and memory is how we hold on to the things we love. 
+
+We don’t have relationships because they last forever, we have them because of the wonderful experience, the giving and receiving of love. By sharing your experiences with those significant in the life of your loved one, it builds bridges to them and, more importantly, connects us to the energy of the one we love.
+
+素材来源：[www.readersdigest.co.uk](https://www.readersdigest.co.uk/lifestyle/christmas/10-ways-to-remember-a-loved-one-at-christmas)
+
+::: details 解析
+有些疲惫，来日再补，此篇不难，适合单身狗阅读。
+:::

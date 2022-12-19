@@ -30,3 +30,27 @@ article: false
 - youth
   - n. 年轻人，青年，青少年们
 :::
+
+## 2022-12-19
+
+<BiliBili bvid="BV1ga41137GD" page="1" time="173"/>
+
+今日主题：
+
+- Topic 3: Books
+- Topic 4: Travel
+
+时间段：02:54 - 05:56
+
+::: details 积累
+- broaden one's horizon
+  - 开阔一个人的眼界
+- kill time
+  - 打发时间
+- tourist attraction
+  - 游览胜地
+- mingle with the local people
+  - 与当地人交往
+- sample the local cuisine
+  - 品尝当地美食
+:::

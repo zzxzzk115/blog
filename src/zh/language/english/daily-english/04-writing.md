@@ -29,3 +29,19 @@ article: false
 - the quality of teaching: 教学质量
 - academic performance: 学术表现，也就是成绩
 :::
+
+## 2022-12-19
+
+### 3. 家长和老师应该努力去减少小孩看电视的时间
+
+Parents and teachers should make an effort to limit children's ==screen time==.
+
+### 4. 经济的下滑导致失业率的上升
+
+==The economic slowdown== has led to a climbing ==unemployment rate==.
+
+::: details 词伙积累
+- screen time: 看电视/玩电脑 一类盯着屏幕的时间
+- the economic slowdown: 经济的下滑
+- unemployment rate: 失业率
+:::
