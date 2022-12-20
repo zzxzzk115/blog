@@ -22,7 +22,7 @@ export default hopeTheme({
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
-  sidebarSorter: ["readme", "date-desc", "filename", "order"],
+  sidebarSorter: ["order", "readme", "date", "filename", "title"],
 
   blog: {
     medias: {

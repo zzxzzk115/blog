@@ -1,7 +1,7 @@
 ---
 title: GBDK 环境搭建
 author: Lazy_V
-date: 2022-12-18
+date: 2022-12-18 19:10:00
 category:
   - 游戏开发
 tag:
@@ -78,6 +78,44 @@ echo "export GBDKDIR=/opt/gbdk/" | sudo tee -a ~/.zshrc
 
 ::: info
 GBDKDIR 系统环境变量是必须设置的内容，除此之外，你可以选择将 bin 目录设置到 PATH 变量中，这样我们可以更方便的使用一些预编译的可执行程序。
+:::
+
+## 准备好为 GBDK 而修正的 GBTD 与 GBMB
+
+GBTD (GameBoy Tile Designer) 和 GBMB (GameBoy Map Builder) 分别用于瓦块设计与地图编辑。前者可以绘制精灵和瓦块，后者使用前者已绘制好的瓦块进行地图的编辑。
+
+我们后续会用到这两个工具，这里我们先下载准备好。[点击下载](https://github.com/gbdk-2020/GBTD_GBMB/releases/download/2.4.5/GBTD_GBMB_release.zip)
+
+最新版本在[这个页面](https://github.com/gbdk-2020/GBTD_GBMB/releases)。
+
+::: tip
+MacOS 和 Linux 需要准备 Wine 环境：
+
+> Wine (Wine is not an emulator, 递归式命名)，可以在 MacOS 和 Linux 上，通过本地库，链接 DLL 的形式，运行 Windows 应用。
+
+::: tabs
+
+@tab MacOS
+
+如果没有安装 Homebrew 的话，需要先安装：
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+然后使用 brew 命令，安装 Wine-CrossOver：
+
+```bash
+brew install --formula gcenx/wine/winetricks
+brew install --cask --no-quarantine gcenx/wine/wine-crossover
+```
+
+此时 Wine-CrossOver 准备就绪，后面会用到它。
+
+@tab Linux
+
+待补充。欢迎发 PR。
+
 :::
 
 ## 准备好模拟器 - SameBoy
