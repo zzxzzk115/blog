@@ -88,6 +88,29 @@ GBTD (GameBoy Tile Designer) 和 GBMB (GameBoy Map Builder) 分别用于瓦块�
 
 最新版本在[这个页面](https://github.com/gbdk-2020/GBTD_GBMB/releases)。
 
+下载好并解压后，我们会得到 `GBTD_GBMB_release` 文件夹，里面包括 `GBTD` 文件夹和 `GBMB` 文件夹。
+
+我们在 `gbdk` 文件夹下新建 `tools` 目录，然后将解压后得到的 `GBTD` 目录和 `GBMB` 目录拷贝到 `tools` 目录。
+
+MacOS 和 Linux 用户可以使用 shell 来快速操作：
+
+```bash
+sudo mkdir -p $GBDKDIR/tools
+cd GBTD_GBMB_release
+sudo cp -r GBTD $GBDKDIR/tools/
+sudo cp -r GBMB $GBDKDIR/tools/
+```
+
+::: warning 重点注意
+
+此时可能部分 ini 配置文件不具备相应的权限，我们直接设置这些文件的权限掩码为 777：
+
+```bash
+sudo chmod 777 $GBDKDIR/tools/**/*.ini
+```
+
+:::
+
 ::: tip
 MacOS 和 Linux 需要准备 Wine 环境：
 
@@ -118,6 +141,33 @@ brew install --cask --no-quarantine gcenx/wine/wine-crossover
 
 :::
 
+::: tip MacOS 和 Linux 使用 Wine 运行 GBTD 和 GBMB 的后续流程
+
+上面这些都配置好后，我们就可以这样运行 GBTD 和 GBMB：
+
+```bash
+wine $GBDKDIR/tools/GBTD/gbtd.exe
+wine $GBDKDIR/tools/GBMB/gbmb.exe
+```
+
+觉得麻烦，建议使用 alias 命令创建别名，建议写入到 /etc/profile，当然也可以跟上面配置环境变量一样，写入到 shell 的配置文件中：
+
+```bash
+# 添加到 /etc/profile
+echo "alias gbtd='wine $GBDKDIR/tools/GBTD/gbtd.exe'" | sudo tee -a /etc/profile
+echo "alias gbmb='wine $GBDKDIR/tools/GBMB/gbmb.exe'" | sudo tee -a /etc/profile
+
+# 添加到 ~/.zshrc
+echo "alias gbtd='wine $GBDKDIR/tools/GBTD/gbtd.exe'" | sudo tee -a ~/.zshrc
+echo "alias gbmb='wine $GBDKDIR/tools/GBMB/gbmb.exe'" | sudo tee -a ~/.zshrc
+
+# 添加到 ~/.bashrc
+echo "alias gbtd='wine $GBDKDIR/tools/GBTD/gbtd.exe'" | sudo tee -a ~/.bashrc
+echo "alias gbmb='wine $GBDKDIR/tools/GBMB/gbmb.exe'" | sudo tee -a ~/.bashrc
+```
+
+:::
+
 ## 准备好模拟器 - SameBoy
 
 由于我使用 MacOS，我考虑使用开源、跨平台的模拟器：[SameBoy](https://github.com/LIJI32/SameBoy)，它功能丰富，支持调试，方便我们开发。
@@ -142,7 +192,7 @@ brew install --cask --no-quarantine gcenx/wine/wine-crossover
 
 void main()
 {
-  printf("HELLO, WORLD!");
+    printf("HELLO, WORLD!");
 }
 ```
 
@@ -161,7 +211,27 @@ $GBDKDIR/bin/lcc -Wa-l -Wl-m -Wl-j -o helloworld.gb helloworld.c
 ![Hello, world!](./images/helloworld_samboy.png)
 
 ::: tip
-可以将 SameBoy 也加入 PATH，方法后面补充。
+可以将 SameBoy 也使用 alias 取个别名：
+
+```bash
+# 添加到 /etc/profile
+echo "alias sameboy=/Applications/SameBoy.app/Contents/MacOS/SameBoy" | sudo tee -a /etc/profile
+
+# 添加到 ~/.zshrc
+echo "alias sameboy=/Applications/SameBoy.app/Contents/MacOS/SameBoy" | sudo tee -a ~/.zshrc
+
+# 添加到 ~/.bashrc
+echo "alias sameboy=/Applications/SameBoy.app/Contents/MacOS/SameBoy" | sudo tee -a ~/.bashrc
+```
+
+然后我们就可以使用 
+
+```bash
+sameboy helloworld.gb
+```
+
+这种形式直接运行游戏了。
+
 :::
 
 恭喜，到这里，你已经入门了！🎉🎉🎉
