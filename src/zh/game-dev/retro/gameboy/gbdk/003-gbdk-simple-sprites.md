@@ -122,7 +122,45 @@ Format - 颜色格式，这里我们选择 `Gameboy 4 color`
 
 下面，我们就可以利用 C 数组，开始编写程序，绘制精灵了。
 
-## 编写主程序
+## 开始编程吧！
+
+### 使用 Visual Studio Code + Makefile 进行项目搭建
+
+::: info 
+之前的 helloworld 程序由于是单文件，过于简单，所以没有提到 Visual Studio Code 的配置以及使用 Makefile。
+
+后面的项目中，我们都会使用 Visual Studio Code + Makefile 的模式来进行开发。
+:::
+
+我们创建一个 `gb-dev` 目录，并在它下面创建一个 `first-sprite` 目录。
+
+然后使用 Visual Studio Code 打开 `gb-dev` 目录。
+
+首先配置 `includePath`，让我们可以拥有智能提示。在 `gb-dev` 目录下创建一个 `.vscode` 文件夹，在该文件夹下创建一个名为 `c_cpp_properties.json` 的配置文件：
+
+```json
+{
+    "configurations": [
+        {
+            "name": "GBDK_VSC",
+            "includePath": [
+                "${GBDKDIR}/include/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "${GBDKDIR}/bin/lcc",
+            "cStandard": "gnu99"
+        }
+    ],
+    "version": 4
+}
+```
+
+这样，我们以后的代码就拥有智能提示了。
+
+然后我们将之前导出的 `Smile.h` 和 `Smile.c` 拷贝到 `first-sprite` 目录下。
+
+接着我们就可以在 `first-sprite` 目录下，开始编写主程序 `FirstSprite.c` 了：
 
 ```c
 #include <gb/gb.h>
@@ -131,11 +169,63 @@ Format - 颜色格式，这里我们选择 `Gameboy 4 color`
 
 void main()
 {
+    // 设置精灵数据
+    // 从第 0 号位的 Tile 开始，设置 No.0 的瓦块的数据
+    // 数据来源于 Smile 数组
     set_sprite_data(0, 0, Smile);
+    
+    // 设置精灵使用哪个瓦块的数据
+    // 这里是 No.0 精灵使用 No.0 瓦块数据
     set_sprite_tile(0, 0);
 
+    // 一个宏，内部设置 LCDC 寄存器的第 1 位为 1，
+    // 目的是开启精灵层，代表显示所有精灵
     SHOW_SPRITES;
 
-    move_sprite(0, 72, 68);
+    // 将精灵 No.0 移动到 (84, 78) 的位置，即屏幕中央附近
+    move_sprite(0, 84, 78);
 }
 ```
+
+随后，我们编写一个叫做 `Makefile` 的文件。实际上，Makefile 是 make 的配置文件，make 可以方便我们设定编译参数以及具体每个模块的编译流程。这些模块的编译流程大多是重复的，所以使用 make 这套规则去编译，节约了我们的时间，也让编译流程更加清晰。
+
+我们的 `Makefile` 如下：
+
+```makefile
+# 设置 LCC 编译器执行路径
+CC  = $(GBDKDIR)/bin/lcc
+
+# 设置 SameBoy 执行路径
+EMU = /Applications/SameBoy.app/Contents/MacOS/SameBoy
+
+# 默认行为，编译各个编译单元，最后链接得到 FirstSprite.gb
+all:
+	$(CC) -Wa-l -Wl-m -Wl-j -o FirstSprite.gb Smile.c FirstSprite.c
+
+# 编译得到 FirstSprite.gb 后，使用 SameBoy 启动
+run: all
+	$(EMU) FirstSprite.gb
+
+# 清理，删除中间文件和目标文件
+clean:
+	rm -f *.o *.lst *.map *.gb *.ihx *.sym *.cdb *.adb *.asm *.noi
+```
+
+现在，make 支持几种不同的命令参数：
+
+- 无，即默认行为，默认为 Makefile 中第一个出现的目标，在我们的设置中，为 all
+- all，编译链接最终得到 `FirstSprite.gb` ，即 ROM 文件
+- run，编译得到 ROM 后，使用 SameBoy 模拟器运行该 ROM 文件
+- clean，清理，删除中间文件和目标文件
+
+我们可以直接使用 `make run` 来编译、链接并运行。
+
+最后的效果如下：
+
+![成功在屏幕中显示第一个精灵](./images/successfully_showed_first_sprite.png)
+
+最后还可以使用 `make clean` 来删除中间文件和目标文件，回到只有源码和 Makefile 等文件的状态。
+
+::: tip
+`gb-dev` 源码[看这里](https://github.com/zzxzzk115/blog/tree/master/src/.vuepress/public/src/gb-dev/)
+:::
