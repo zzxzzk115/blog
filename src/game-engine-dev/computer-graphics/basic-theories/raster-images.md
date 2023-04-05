@@ -19,7 +19,7 @@ There are two popular types of images:
 - Raster images
 - Vector images
 
-Raster images store a 2D rectangular array of pixels, while vector images store some points and their paths.
+A raster image stores a 2D rectangular array of pixels, while a vector image stores some points and their paths.
 
 For example, a JPEG format image file is a raster image, a SVG format image file is a vector image.
 
