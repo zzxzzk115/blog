@@ -18,9 +18,16 @@ export const enSidebar = sidebar({
       collapsible: true,
     },
     {
-      text: "GameDev",
+      text: "Game-Dev",
       icon: "gamepad",
       prefix: "game-dev/",
+      children: "structure",
+      collapsible: true,
+    },
+    {
+      text: "GameEngine-Dev",
+      icon: "unity",
+      prefix: "game-engine-dev/",
       children: "structure",
       collapsible: true,
     },

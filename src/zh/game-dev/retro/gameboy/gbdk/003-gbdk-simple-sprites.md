@@ -38,7 +38,7 @@ GBTD, GameBoy Tile Designer，主要用于设计瓦块 (Tile)，并最终导出�
 
 它的界面是这样的：
 
-![GBTD 的界面](./images/gbtd_interface_01.png)
+![GBTD 的界面](/images/game-dev/retro/gameboy/gbdk/gbtd_interface_01.png)
 
 ::: tip 关于 MacOS/Linux 运行 GBTD 和 GBMB
 如果没有搭建好环境，请参考上一篇文章，先搭建好环境。
@@ -74,11 +74,11 @@ GBTD 的最下方有一个颜色选择器。
 
 右侧的四个色块代表 0 到 3 四个索引色，每个索引对应的颜色是我们自己通过调色板进行配置的，默认调色板是从白到黑的渐变的四个颜色。
 
-![GBTD 颜色选择器](./images/gbtd_color_picker.png)
+![GBTD 颜色选择器](/images/game-dev/retro/gameboy/gbdk/gbtd_color_picker.png)
 
 GBTD 的左侧工具栏，默认选择了画笔工具，画笔底下是油漆桶工具。往下四个是移动工具，可以自行试试效果。再往下是垂直翻转、水平翻转、旋转以及自动更新。
 
-![GBTD 左侧工具栏](./images/gbtd_left_toolbar.png)
+![GBTD 左侧工具栏](/images/game-dev/retro/gameboy/gbdk/gbtd_left_toolbar.png)
 
 ::: info GBTD 不存在橡皮擦工具
 GBTD 不存在橡皮擦工具，这是因为 GameBoy 的颜色模式是索引色模式，而非 RGBA 模式。
@@ -94,7 +94,7 @@ GBTD 不存在橡皮擦工具，这是因为 GameBoy 的颜色模式是索引色
 
 画好后大致长这样（没认真画，教程嘛，意思意思）：
 
-![第一个精灵：笑脸](./images/first_sprite_smile_face.png)
+![第一个精灵：笑脸](/images/game-dev/retro/gameboy/gbdk/first_sprite_smile_face.png)
 
 绘制好了，我们就可以开始导出成 GBDK 兼容的 C 数组了。
 
@@ -104,7 +104,7 @@ GBTD 不存在橡皮擦工具，这是因为 GameBoy 的颜色模式是索引色
 
 最上面主菜单点击 `Files/ExportTo`，然后配置如下：
 
-![导出笑脸为 GBDK 支持的 C 数组](./images/export_smile_face_as_gbdk_c_array.png)
+![导出笑脸为 GBDK 支持的 C 数组](/images/game-dev/retro/gameboy/gbdk/export_smile_face_as_gbdk_c_array.png)
 
 ::: info 关键参数介绍
 Filename - 导出文件的名称，这里我们填入 `Smile.c`
@@ -222,7 +222,7 @@ clean:
 
 最后的效果如下：
 
-![成功在屏幕中显示第一个精灵](./images/successfully_showed_first_sprite.png)
+![成功在屏幕中显示第一个精灵](/images/game-dev/retro/gameboy/gbdk/successfully_showed_first_sprite.png)
 
 最后还可以使用 `make clean` 来删除中间文件和目标文件，回到只有源码和 Makefile 等文件的状态。
 

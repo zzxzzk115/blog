@@ -3,11 +3,24 @@ import { navbar } from "vuepress-theme-hope";
 export const enNavbar = navbar([
   "/",
   { 
-    text: "GameDev",
+    text: "Game-Dev",
     icon: "gamepad",
     prefix: "/game-dev/",
     children: [
       { text: "Games Gallery", icon: "images", link: "001-games-gallery"},
+    ]
+  },
+  { 
+    text: "GameEngine-Dev",
+    icon: "unity",
+    prefix: "/game-engine-dev/",
+    children: [
+      { 
+        text: "Computer Graphics",
+        icon: "triangle",
+        prefix: "computer-graphics/",
+        children: [ { text: "Basic Theories", link: "basic-theories/intro"} ]
+      },
     ]
   },
   { text: "About", icon: "md-information-circle", link: "/intro"},

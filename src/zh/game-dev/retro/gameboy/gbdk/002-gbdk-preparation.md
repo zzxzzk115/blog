@@ -208,7 +208,7 @@ $GBDKDIR/bin/lcc -Wa-l -Wl-m -Wl-j -o helloworld.gb helloworld.c
 
 ### 用 SameBoy 打开，看看效果吧
 
-![Hello, world!](./images/helloworld_samboy.png)
+![Hello, world!](/images/game-dev/retro/gameboy/gbdk/helloworld_samboy.png)
 
 ::: tip
 可以将 SameBoy 也使用 alias 取个别名：

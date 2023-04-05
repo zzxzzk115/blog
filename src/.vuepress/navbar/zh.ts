@@ -3,18 +3,6 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   "/zh/",
   { 
-    text: "每日英语",
-    icon: "language-english",
-    prefix: "/zh/language/english/daily-english/",
-    children: [
-      { text: "词汇", icon: "spell-check", link: "01-vocabulary"},
-      { text: "听力", icon: "headphones", link: "02-listening"},
-      { text: "阅读", icon: "book-open", link: "03-reading"},
-      { text: "写作", icon: "pen", link: "04-writing"},
-      { text: "口语", icon: "comment-dots", link: "05-speaking"}
-    ]
-  },
-  { 
     text: "游戏开发",
     icon: "gamepad",
     prefix: "/zh/game-dev/",
@@ -26,6 +14,19 @@ export const zhNavbar = navbar([
         prefix: "retro/",
         children: [ { text: "GB/GBC 游戏开发", icon: "gameboy", link: "gameboy/intro"} ]
       }
+    ]
+  },
+  { 
+    text: "游戏引擎开发",
+    icon: "unity",
+    prefix: "/zh/game-engine-dev/",
+    children: [
+      { 
+        text: "计算机图形学",
+        icon: "triangle",
+        prefix: "computer-graphics/",
+        children: [ { text: "基础理论", link: "basic-theories/intro"} ]
+      },
     ]
   },
   { text: "关于", icon: "md-information-circle", link: "/zh/intro"},
