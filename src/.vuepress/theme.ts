@@ -152,7 +152,7 @@ export default hopeTheme({
       // provider: "Waline",
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
-    
+
     components: {
       components: [
         "AudioPlayer",
@@ -165,30 +165,55 @@ export default hopeTheme({
       ],
     },
 
-    // Disable features you don’t want here
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+
+      // install chart.js before enabling it
+      // chart: true,
+
       codetabs: true,
-      container: true,
+
+      // insert component easily
+      // component: true,
+
       demo: true,
-      echarts: true,
+
+      // install echarts before enabling it
+      // echarts: true,
+
       figure: true,
-      flowchart: true,
-      gfm: true,
-      imageLazyload: true,
-      imageSize: true,
+
+      // install flowchart.ts before enabling it
+      // flowchart: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      imgLazyload: true,
+      imgSize: true,
       include: true,
-      katex: true,
+
+      // install katex before enabling it
+      // katex: true,
+
+      // install mathjax-full before enabling it
+      // mathjax: true,
+
       mark: true,
-      mermaid: true,
+
+      // install mermaid before enabling it
+      // mermaid: true,
+
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+
+      // install reveal.js before enabling it
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
       stylize: [
         {
           matcher: "Recommended",
@@ -206,7 +231,9 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
+
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
     },
 
     // uncomment these if you want a PWA

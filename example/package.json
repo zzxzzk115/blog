@@ -1,7 +1,7 @@
 {
-  "name": "zzxzzk115.blog",
-  "version": "0.1.1",
-  "description": "Lazy_V's Blog",
+  "name": "vuepress-hope-example-project",
+  "version": "2.0.0",
+  "description": "A project of vuepress-theme-hope",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -12,11 +12,8 @@
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-rc.0",
-    "howler": "^2.2.4",
-    "plyr": "^3.7.8",
     "vue": "^3.3.11",
     "vuepress": "2.0.0-rc.0",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.4",
     "vuepress-theme-hope": "2.0.0-rc.4"
   }
 }
