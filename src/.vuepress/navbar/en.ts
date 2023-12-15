@@ -11,18 +11,41 @@ export const enNavbar = navbar([
     ]
   },
   {
-    text: "GameEngine-Dev",
-    icon: "unity",
-    prefix: "/game-engine-dev/",
+    text: "HPG-Notes",
+    icon: "note",
+    prefix: "/hpg-notes/",
     children: [
       {
-        text: "Computer Graphics",
-        icon: "triangle",
-        prefix: "computer-graphics/",
-        children: [{ text: "Basic Theories", link: "basic-theories/intro" }]
+        text: "COMP5812M - Foundations of Modelling and Rendering",
+        link: "#",
+      },
+      {
+        text: "COMP5821M - Geometric Processing",
+        link: "#",
+      },
+      {
+        text: "COMP5823M - Animation and Simulation",
+        link: "#",
+      },
+      {
+        text: "COMP5930M - Scientific Computation",
+        link: "#",
       },
     ]
   },
+  // {
+  //   text: "GameEngine-Dev",
+  //   icon: "unity",
+  //   prefix: "/game-engine-dev/",
+  //   children: [
+  //     {
+  //       text: "Computer Graphics",
+  //       icon: "triangle",
+  //       prefix: "computer-graphics/",
+  //       children: [{ text: "Basic Theories", link: "basic-theories/intro" }]
+  //     },
+  //   ]
+  // },
   { text: "About", icon: "md-information-circle", link: "/intro" },
   {
     text: "Portfolio",
