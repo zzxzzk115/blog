@@ -17,19 +17,19 @@ export const enNavbar = navbar([
     children: [
       {
         text: "COMP5812M - Foundations of Modelling and Rendering",
-        link: "#",
+        link: "comp5812m/001-rendering-and-transformations",
       },
       {
         text: "COMP5821M - Geometric Processing",
-        link: "#",
+        link: "comp5821m",
       },
       {
         text: "COMP5823M - Animation and Simulation",
-        link: "#",
+        link: "comp5823m",
       },
       {
         text: "COMP5930M - Scientific Computation",
-        link: "#",
+        link: "comp5930m",
       },
     ]
   },

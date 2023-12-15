@@ -23,19 +23,19 @@ export const zhNavbar = navbar([
     children: [
       {
         text: "COMP5812M - 模型与渲染基础",
-        link: "#",
+        link: "comp5812m/001-rendering-and-transformations",
       },
       {
         text: "COMP5821M - 几何处理",
-        link: "#",
+        link: "comp5821m",
       },
       {
         text: "COMP5823M - 动画与模拟",
-        link: "#",
+        link: "comp5823m",
       },
       {
         text: "COMP5930M - 科学计算",
-        link: "#",
+        link: "comp5930m",
       },
     ]
   },
