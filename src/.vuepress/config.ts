@@ -2,8 +2,10 @@ import { defineUserConfig } from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
+const isDev = process.env.NODE_ENV === 'development';
+
 export default defineUserConfig({
-  base: "/blog/",
+  base: isDev ? '/' : '/blog/', // 本地调试时，不用前缀
 
   description: 'TALK IS CHEAP, SHOW ME THE CODE.',
   

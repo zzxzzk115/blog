@@ -30,6 +30,11 @@ export const zhNavbar = navbar([
     ]
   },
   { text: "关于", icon: "md-information-circle", link: "/zh/intro"},
+  {
+    text: "个人网站",
+    icon: "md-at",
+    link: "https://zzxzzk115.github.io",
+  },
   // { text: "演示", icon: "discover", link: "/zh/demo/" },
   // {
   //   text: "博文",
