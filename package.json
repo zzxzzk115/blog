@@ -1,20 +1,21 @@
 {
   "name": "zzxzzk115.blog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lazy_V's Blog",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src"
+    "docs:dev": "vuepress dev src",
+    "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
-    "howler": "^2.2.3",
-    "vue": "^3.2.45",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-plugin-search-pro": "2.0.0-beta.201",
-    "vuepress-theme-hope": "^2.0.0-beta.201"
+    "@vuepress/client": "2.0.0-rc.0",
+    "howler": "^2.2.4",
+    "vue": "^3.3.11",
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.4",
+    "vuepress-theme-hope": "2.0.0-rc.4"
   }
 }
