@@ -21,7 +21,7 @@ export const enNavbar = navbar([
       },
       {
         text: "COMP5821M - Geometric Processing",
-        link: "comp5821m",
+        link: "comp5821m/001-basic-concepts",
       },
       {
         text: "COMP5823M - Animation and Simulation",

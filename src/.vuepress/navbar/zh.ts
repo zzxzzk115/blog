@@ -27,7 +27,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "COMP5821M - 几何处理",
-        link: "comp5821m",
+        link: "comp5821m/001-basic-concepts",
       },
       {
         text: "COMP5823M - 动画与模拟",
