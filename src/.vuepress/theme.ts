@@ -198,7 +198,7 @@ export default hopeTheme({
       // katex: true,
 
       // install mathjax-full before enabling it
-      // mathjax: true,
+      mathjax: true,
 
       mark: true,
 
