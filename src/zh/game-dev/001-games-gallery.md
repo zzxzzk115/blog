@@ -10,6 +10,6 @@ article: false
 
 <iframe frameborder="0" src="https://itch.io/embed/1490065" width="552" height="167"><a href="https://lazy-v.itch.io/catmario-gb">CatMario-GB by Lazy_V</a></iframe>
 
-## GoldMiner-GameShell
+## GoldMiner-Rebirth
 
-<iframe frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-gameshell">GoldMiner-GameShell by Lazy_V</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
