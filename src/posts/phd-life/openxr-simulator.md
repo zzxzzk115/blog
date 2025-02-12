@@ -14,6 +14,8 @@ isOriginal: true
 
 If you don't have an XR headset but you want to develop OpenXR apps, you can use Meta XR Simulator! It's great.
 
+<!-- more -->
+
 ## Download Meta XR Simulator
 
 ![Download Meta XR Simulator](/images/posts/phd-life/openxr-simulator/download_meta_xr_simulator.png)

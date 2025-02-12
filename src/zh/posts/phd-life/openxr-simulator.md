@@ -14,6 +14,8 @@ isOriginal: true
 
 如果你没有 XR 头显，但你想开发 OpenXR 应用，你可以使用 Meta XR 仿真器，它还不错。
 
+<!-- more -->
+
 ## 下载 Meta XR Simulator
 
 ![下载 Meta XR Simulator](/images/posts/phd-life/openxr-simulator/download_meta_xr_simulator.png)
