@@ -7,8 +7,8 @@ category:
   - Jottings
 tag:
   - Jottings
-sticky: true
-star: true
+sticky: false
+star: false
 isOriginal: true
 ---
 

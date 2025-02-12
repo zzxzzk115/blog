@@ -7,8 +7,8 @@ category:
   - 随笔
 tag:
   - 随笔
-sticky: true
-star: true
+sticky: false
+star: false
 isOriginal: true
 ---
 
