@@ -16,29 +16,29 @@ export const zhNavbar = navbar([
       }
     ]
   },
-  {
-    text: "HPG笔记",
-    icon: "note",
-    prefix: "/zh/hpg-notes/",
-    children: [
-      {
-        text: "COMP5812M - 模型与渲染基础",
-        link: "comp5812m/001-rendering-and-transformations",
-      },
-      {
-        text: "COMP5821M - 几何处理",
-        link: "comp5821m/001-basic-concepts",
-      },
-      {
-        text: "COMP5823M - 动画与模拟",
-        link: "comp5823m",
-      },
-      {
-        text: "COMP5930M - 科学计算",
-        link: "comp5930m",
-      },
-    ]
-  },
+  // {
+  //   text: "HPG笔记",
+  //   icon: "note",
+  //   prefix: "/zh/hpg-notes/",
+  //   children: [
+  //     {
+  //       text: "COMP5812M - 模型与渲染基础",
+  //       link: "comp5812m/001-rendering-and-transformations",
+  //     },
+  //     {
+  //       text: "COMP5821M - 几何处理",
+  //       link: "comp5821m/001-basic-concepts",
+  //     },
+  //     {
+  //       text: "COMP5823M - 动画与模拟",
+  //       link: "comp5823m",
+  //     },
+  //     {
+  //       text: "COMP5930M - 科学计算",
+  //       link: "comp5930m",
+  //     },
+  //   ]
+  // },
   // { 
   //   text: "游戏引擎开发",
   //   icon: "unity",

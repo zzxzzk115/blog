@@ -24,13 +24,13 @@ export const enSidebar = sidebar({
       children: "structure",
       collapsible: true,
     },
-    {
-      text: "HPG-Notes",
-      icon: "note",
-      prefix: "hpg-notes/",
-      children: "structure",
-      collapsible: true,
-    },
+    // {
+    //   text: "HPG-Notes",
+    //   icon: "note",
+    //   prefix: "hpg-notes/",
+    //   children: "structure",
+    //   collapsible: true,
+    // },
     // {
     //   text: "GameEngine-Dev",
     //   icon: "unity",

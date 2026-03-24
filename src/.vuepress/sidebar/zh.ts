@@ -24,13 +24,13 @@ export const zhSidebar = sidebar({
       children: "structure",
       collapsible: true,
     },
-    {
-      text: "HPG-笔记",
-      icon: "note",
-      prefix: "hpg-notes/",
-      children: "structure",
-      collapsible: true,
-    },
+    // {
+    //   text: "HPG-笔记",
+    //   icon: "note",
+    //   prefix: "hpg-notes/",
+    //   children: "structure",
+    //   collapsible: true,
+    // },
     // {
     //   text: "游戏引擎开发",
     //   icon: "unity",

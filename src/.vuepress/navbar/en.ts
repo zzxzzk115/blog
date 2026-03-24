@@ -10,29 +10,29 @@ export const enNavbar = navbar([
       { text: "Games Gallery", icon: "images", link: "001-games-gallery" },
     ]
   },
-  {
-    text: "HPG-Notes",
-    icon: "note",
-    prefix: "/hpg-notes/",
-    children: [
-      {
-        text: "COMP5812M - Foundations of Modelling and Rendering",
-        link: "comp5812m/001-rendering-and-transformations",
-      },
-      {
-        text: "COMP5821M - Geometric Processing",
-        link: "comp5821m/001-basic-concepts",
-      },
-      {
-        text: "COMP5823M - Animation and Simulation",
-        link: "comp5823m",
-      },
-      {
-        text: "COMP5930M - Scientific Computation",
-        link: "comp5930m",
-      },
-    ]
-  },
+  // {
+  //   text: "HPG-Notes",
+  //   icon: "note",
+  //   prefix: "/hpg-notes/",
+  //   children: [
+  //     {
+  //       text: "COMP5812M - Foundations of Modelling and Rendering",
+  //       link: "comp5812m/001-rendering-and-transformations",
+  //     },
+  //     {
+  //       text: "COMP5821M - Geometric Processing",
+  //       link: "comp5821m/001-basic-concepts",
+  //     },
+  //     {
+  //       text: "COMP5823M - Animation and Simulation",
+  //       link: "comp5823m",
+  //     },
+  //     {
+  //       text: "COMP5930M - Scientific Computation",
+  //       link: "comp5930m",
+  //     },
+  //   ]
+  // },
   // {
   //   text: "GameEngine-Dev",
   //   icon: "unity",
