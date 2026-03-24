@@ -58,6 +58,7 @@ export const zhNavbar = navbar([
     icon: "md-at",
     link: "https://zzxzzk115.github.io",
   },
+  { text: "友情链接", icon: "md-people", link: "/zh/friends"},
   // { text: "演示", icon: "discover", link: "/zh/demo/" },
   // {
   //   text: "博文",

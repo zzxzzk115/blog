@@ -39,6 +39,7 @@ export const enSidebar = sidebar({
     //   collapsible: true,
     // },
     "intro",
+    "friends",
     // "slides",
   ],
 });

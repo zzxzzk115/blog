@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { viteBundler } from "@vuepress/bundler-vite";
+
 import theme from "./theme.js";
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -22,13 +23,11 @@ export default defineUserConfig({
     }
   },
 
-  plugins: [
-    searchProPlugin({
-      indexContent: true
-    })
-  ],
+  plugins: [],
 
   theme,
 
   shouldPrefetch: false,
+
+  bundler: viteBundler(),
 });

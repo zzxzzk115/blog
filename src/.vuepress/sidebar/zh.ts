@@ -39,6 +39,7 @@ export const zhSidebar = sidebar({
     //   collapsible: true,
     // },
     "intro",
+    "friends",
     // "slides",
   ],
 });

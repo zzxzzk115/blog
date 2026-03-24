@@ -4,12 +4,16 @@ title: About me
 article: false
 ---
 
-A game developer who has a passion for electronic products and enjoys singing and composing music.
+Hi there, I'm Kexuan Zhang from China. I'm a developer with a strong passion for computer graphics, interactive systems, and electronic technologies, who also enjoys singing and composing music.
 
-Previously employed at BlackJack Studio, a game studio under Zilong Games, specializing in server-side development. Currently undertaking a research program in graphics and game engine-related topics at the University of Leeds.
+I previously worked at BlackJack Studio (Zilong Games) as a server-side engineer, focusing on high-performance backend systems. I have since completed my Master's degree at the University of Leeds and am currently pursuing a PhD in VR and high-performance graphics.
 
-Proficient in languages such as C#, C/C++, Java, Python, and Lua. Capable of writing basic programs in other languages. Well-versed in the dotnet technology stack with two years of experience in multi-threading and high-performance server development. Aspiring to transition into a role as a game engine development engineer or graphics programmer to provide robust technical support for games.
+While my doctoral research is not directly focused on game engines, I actively develop a personal rendering framework, [libvultra](https://github.com/zzxzzk115/libvultra), as a long-term project to explore modern engine architecture and GPU-driven rendering techniques.
 
-Familiar with Unity as a primary game engine and actively exploring Unreal, Godot, and other open-source engines. Also has some knowledge of smaller frameworks like love2d, pygame, and SDL2.
+I am proficient in C#, C/C++, Java, Python, and Lua, with solid experience in the .NET ecosystem, multithreading, and performance-critical systems. My current work spans both research and engineering, with a growing focus on real-time rendering, GPU pipelines, and engine-level design.
 
-Hoping to connect with like-minded programmers and game developers for mutual exchange of technical knowledge.
+I have hands-on experience with Unity and am actively exploring Unreal Engine, Godot, and other open-source engines. I also enjoy experimenting with lightweight frameworks such as LÖVE2D, Pygame, and SDL2.
+
+I am particularly interested in game engine development and graphics programming, and I enjoy building systems that bridge research and real-world applications.
+
+Always happy to connect with developers and researchers to exchange ideas and explore new technologies together.

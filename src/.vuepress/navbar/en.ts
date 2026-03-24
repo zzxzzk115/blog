@@ -52,6 +52,7 @@ export const enNavbar = navbar([
     icon: "md-at",
     link: "https://zzxzzk115.github.io",
   },
+  { text: "Friend Links", icon: "md-people", link: "/friends" },
   // { text: "Demo", icon: "discover", link: "/demo/" },
   // {
   //   text: "Posts",
