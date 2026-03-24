@@ -50,9 +50,9 @@ export default hopeTheme({
     imgSize: true,
     include: true,
 
-    // install katex before enabling it
-    // katex: true,
-    math: true,
+    math: {
+      type: "katex", // 'katex' or 'mathjax'
+    },
 
     mark: true,
 
