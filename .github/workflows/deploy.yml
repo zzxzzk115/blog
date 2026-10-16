@@ -1,43 +1,48 @@
 name: Build and Deploy
-on: [push]
-
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: blog-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   docs:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          # 选择要使用的 node 版本
-          node-version: '25'
-
-      # 安装依赖
+          node-version: 24
       - name: Install dependencies
         run: npm install
-
-      # 运行构建脚本
       - name: Build VuePress site
-        run: NODE_OPTIONS=--max_old_space_size=8192 npm run docs:build
-
-      # 修复 GitHub Pages 不识别下划线开头文件的问题
-      - name: Post Fix GitHub Pages
-        run: touch src/.vuepress/dist/.nojekyll
-
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          # 部署到 pages 分支
-          target_branch: pages
-          # 部署目录为 VuePress 的默认输出目录
-          build_dir: src/.vuepress/dist
+        run: npm run docs:build
         env:
-          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          NODE_OPTIONS: --max_old_space_size=8192
+      - name: Verify structured feeds
+        run: node -e "for(const f of ['src/.vuepress/dist/feed.json','src/.vuepress/dist/zh/feed.json']){const feed=JSON.parse(require('fs').readFileSync(f,'utf8'));if(!feed.items.length)throw Error('Empty feed '+f);console.log(f,feed.items.length); }"
+      - run: touch src/.vuepress/dist/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: src/.vuepress/dist
+  deploy:
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    needs: docs
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish blog
+        id: deployment
+        uses: actions/deploy-pages@v4
