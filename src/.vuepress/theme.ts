@@ -190,6 +190,16 @@ export default hopeTheme({
   },
 
   plugins: {
+    // Publish an English JSON Feed for the independently maintained homepage.
+    // Locale-specific feeds preserve the existing Chinese blog as well.
+    feed: {
+      json: true,
+      rss: true,
+      filter: ({ frontmatter, filePathRelative }) => Boolean(
+        filePathRelative && /^(zh\/)?posts\//.test(filePathRelative)
+        && frontmatter.article !== false && !frontmatter.draft && frontmatter.date,
+      ),
+    },
     blog: true,
 
     // If you don’t need comment feature, you can remove following option
