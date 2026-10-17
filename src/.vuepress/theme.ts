@@ -98,7 +98,7 @@ export default hopeTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      Email: "mailto://zzxzzk115@gmail.com",
+      Email: "mailto:zzxzzk115@gmail.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
@@ -109,7 +109,6 @@ export default hopeTheme({
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
       // Lines: "https://example.com",
-      Linkedin: "https://uk.linkedin.com/in/kexuan-zhang-leeds",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
       QQ: "tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=954294627&website=www.oicqzone.com",
@@ -147,7 +146,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "Game Developer, C# .NET Programmer.",
+        description: "PhD researcher in perceptual graphics at Leeds. Graphics, games, and retro handhelds.",
         intro: "/intro.html",
       },
 
@@ -171,7 +170,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "游戏开发者、C# .NET 程序员",
+        description: "利兹大学感知图形学博士生。图形、游戏与复古掌机。",
         intro: "/zh/intro.html",
       },
 

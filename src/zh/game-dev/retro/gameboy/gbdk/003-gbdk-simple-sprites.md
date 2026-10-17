@@ -172,7 +172,7 @@ void main()
     // 设置精灵数据
     // 从第 0 号位的 Tile 开始，设置 No.0 的瓦块的数据
     // 数据来源于 Smile 数组
-    set_sprite_data(0, 0, Smile);
+    set_sprite_data(0, 1, Smile);
     
     // 设置精灵使用哪个瓦块的数据
     // 这里是 No.0 精灵使用 No.0 瓦块数据
@@ -186,6 +186,8 @@ void main()
     move_sprite(0, 84, 78);
 }
 ```
+
+`set_sprite_data` 的第二个参数是瓦块数量，这里只有一个瓦块，因此应传入 `1`。参数说明见 [GBDK API 文档](https://gbdk.org/docs/api/gb_8h.html)。
 
 随后，我们编写一个叫做 `Makefile` 的文件。实际上，Makefile 是 make 的配置文件，make 可以方便我们设定编译参数以及具体每个模块的编译流程。这些模块的编译流程大多是重复的，所以使用 make 这套规则去编译，节约了我们的时间，也让编译流程更加清晰。
 

@@ -18,7 +18,7 @@ export const enSidebar = sidebar({
       collapsible: true,
     },
     {
-      text: "Game-Dev",
+      text: "Game Development",
       icon: "gamepad",
       prefix: "game-dev/",
       children: "structure",
