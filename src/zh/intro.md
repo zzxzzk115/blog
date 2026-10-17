@@ -25,3 +25,7 @@ article: false
 - [GitHub](https://github.com/zzxzzk115)
 - [itch.io](https://lazy-v.itch.io/)
 - 邮箱：[zzxzzk115@gmail.com](mailto:zzxzzk115@gmail.com)
+
+### 微信 {#wechat}
+
+微信号：`zkx954294627`。点击博客首页的微信图标即可复制。

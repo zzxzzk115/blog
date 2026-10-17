@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { wechatFallback } from "./socialContacts.js";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
@@ -117,7 +118,7 @@ export default hopeTheme({
       // Rss: "https://example.com",
       // Steam: "https://example.com",
       // Twitter: "https://example.com",
-      // Wechat: "https://example.com",
+      Wechat: wechatFallback,
       // Weibo: "https://example.com",
       // Whatsapp: "https://example.com",
       // Youtube: "https://example.com",

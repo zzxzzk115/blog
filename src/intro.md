@@ -25,3 +25,7 @@ I collect retro handhelds and enjoy getting games and software running on GameSh
 - [GitHub](https://github.com/zzxzzk115)
 - [itch.io](https://lazy-v.itch.io/)
 - Email: [zzxzzk115@gmail.com](mailto:zzxzzk115@gmail.com)
+
+### WeChat {#wechat}
+
+WeChat ID: `zkx954294627`. Use the WeChat icon on the blog homepage to copy it.
