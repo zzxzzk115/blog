@@ -6,7 +6,11 @@ article: false
 
 Hi, I'm Kexuan Zhang, also known as **Lazy_V**. I'm a PhD student in **Perceptual Graphics at the University of Leeds**. My research interests are virtual reality and high-performance graphics, particularly foveated rendering, stereo reprojection, and image inpainting for disocclusion holes.
 
-I am supervised by Dr. [Rafael Kuffner dos Anjos](https://rafaelkuffner.github.io/), Dr. Markus Billeter, and Prof. Gordon D. Love. I previously completed an MSc in **High-Performance Graphics and Games Engineering** at Leeds. Before my PhD, I worked as a game server developer in Shanghai, mainly with C#, multithreading, networking, and performance optimisation.
+I am supervised by Dr. [Rafael Kuffner dos Anjos](https://rafaelkuffner.github.io/), Dr. Markus Billeter, and Prof. Gordon D. Love.
+
+Before starting my PhD, I completed an MSc in **High-Performance Graphics and Games Engineering** at the University of Leeds with Distinction. My MSc covered modelling and rendering, animation and simulation, geometry processing, high-performance graphics, and scientific computation.
+
+I also have professional experience developing game servers in Shanghai, mainly with C#, multithreading, networking, and performance optimisation.
 
 ## What I'm working on
 
