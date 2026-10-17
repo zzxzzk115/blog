@@ -1,5 +1,10 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
 
 jobs:
   docs:
@@ -32,6 +37,7 @@ jobs:
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
         uses: crazy-max/ghaction-github-pages@v2
         with:
           # 部署到 pages 分支

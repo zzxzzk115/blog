@@ -7,7 +7,7 @@ bgImage: /bg.png
 heroImage: /logo.png
 heroText: Lazy_V 的博客
 heroFullScreen: true
-tagline: 废话少说。在，看看代码？
+tagline: 图形、游戏，以及我捣鼓的小东西。
 projects:
   # - icon: project
   #   name: 项目名称

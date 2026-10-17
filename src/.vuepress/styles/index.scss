@@ -1,1 +1,9 @@
 // place your custom styles here
+
+.vp-social-media[aria-label="ItchIO"] {
+  color: #fa5c5c;
+
+  svg {
+    fill: currentColor;
+  }
+}

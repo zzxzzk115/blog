@@ -9,7 +9,7 @@ article: false
     name: 'MickeyMiao',
     link: 'https://blog.mickeymiao.cn/',
     desc: 'code is cheap, show me your promt',
-    avatar: 'https://cdn.mickeymiao.cn/assets/img/avatar/avatar.png'
+    avatar: 'https://blog.mickeymiao.cn/assets/img/avatar/avatar.png'
   },
   {
 	name: 'B3n1gn X @W-Mai',

@@ -3,7 +3,7 @@
     <div v-for="friend in friends" :key="friend.link" class="friend-link">
       <a :href="friend.link" target="_blank" rel="noopener noreferrer" class="friend-link-inner">
         <div class="friend-avatar-wrap">
-          <img v-if="friend.avatar" :src="friend.avatar" class="friend-avatar" />
+          <FriendAvatar :src="friend.avatar" :name="friend.name" />
         </div>
         <div class="friend-info">
           <div class="friend-name">{{ friend.name }}</div>
@@ -15,6 +15,8 @@
 </template>
 
 <script setup lang="ts">
+import FriendAvatar from './FriendAvatar.vue';
+
 defineProps<{
   friends: Array<{
     name: string;
@@ -53,13 +55,6 @@ defineProps<{
     align-items: center;
     justify-content: center;
     height: 64px;
-  }
-  .friend-avatar {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   }
   .friend-info {
     flex: 1 1 70%;
