@@ -6,7 +6,11 @@ article: false
 
 大家好，我叫张可宣，也使用 **Lazy_V** 这个名字。目前我在**利兹大学攻读感知图形学方向的博士学位**，研究兴趣是虚拟现实与高性能图形学，尤其是注视点渲染、立体重投影，以及用于填补去遮挡空洞的图像修复。
 
-我的导师是 [Rafael Kuffner dos Anjos 博士](https://rafaelkuffner.github.io/)、Markus Billeter 博士和 Gordon D. Love 教授。此前，我在利兹大学取得了**高性能图形学与游戏工程**硕士学位。读博前，我曾在上海从事游戏服务端开发，主要接触 C#、多线程、网络通信和性能优化。
+我的导师是 [Rafael Kuffner dos Anjos 博士](https://rafaelkuffner.github.io/)、Markus Billeter 博士和 Gordon D. Love 教授。
+
+开始攻读博士之前，我在利兹大学完成了**高性能图形与游戏工程硕士（MSc in High-Performance Graphics and Games Engineering）**，并获得 Distinction。硕士课程涵盖建模与渲染、动画与仿真、几何处理、高性能图形和科学计算。
+
+我也有在上海从事游戏服务端开发的工作经历，主要接触 C#、多线程、网络通信和性能优化。
 
 ## 最近在做什么
 
