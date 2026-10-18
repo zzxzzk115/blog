@@ -59,6 +59,7 @@ export const enNavbar = navbar([
     link: "https://zzxzzk115.github.io",
   },
   { text: "Friend Links", icon: "md-people", link: "/friends" },
+  { text: "RSS", icon: "rss", link: "https://zzxzzk115.github.io/blog/rss.xml" },
   // { text: "Demo", icon: "discover", link: "/demo/" },
   // {
   //   text: "Posts",

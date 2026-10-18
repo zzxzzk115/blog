@@ -1,7 +1,31 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import type { FeedPage } from "@vuepress/plugin-feed";
+import { getPageExcerpt } from "@vuepress/helper";
+import type { App } from "vuepress/core";
 import { wechatFallback } from "./socialContacts.js";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
+
+// Translations retain the original article date rather than their git import date.
+const publicationDate = ({ frontmatter, data }: FeedPage): Date | null => {
+  const date = frontmatter.date;
+  return date
+    ? date instanceof Date ? date : new Date(String(date))
+    : data.git?.createdTime ? new Date(data.git.createdTime) : null;
+};
+
+// Feed readers need absolute URLs, including the project site's /blog/ base.
+const feedHtml = (page: FeedPage, app: App, full = false): string => {
+  const html = getPageExcerpt(app, page, full ? { separator: "", length: Infinity } : {});
+  const origin = "https://zzxzzk115.github.io";
+  const base = app.siteData.base;
+  return html.replace(/\b(href|src)="([^"]+)"/g, (_, attr, value: string) => {
+    if (value.startsWith("/") && !value.startsWith("//") && !value.startsWith(base)) {
+      value = base + value.slice(1);
+    }
+    return `${attr}="${new URL(value, origin + base + page.path.slice(1)).href}"`;
+  });
+};
 
 export default hopeTheme({
   hostname: "https://zzxzzk115.github.io",
@@ -191,6 +215,22 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
+    feed: {
+      rss: true,
+      atom: true,
+      json: true,
+      filter: ({ filePathRelative, frontmatter }) => Boolean(
+        filePathRelative && !frontmatter.home &&
+        frontmatter.article !== false && frontmatter.feed !== false
+      ),
+      sorter: (a, b) =>
+        (publicationDate(b)?.getTime() ?? 0) - (publicationDate(a)?.getTime() ?? 0),
+      getter: {
+        publishDate: publicationDate,
+        content: (page, app) => feedHtml(page, app, true),
+        excerpt: (page, app) => feedHtml(page, app),
+      },
+    },
 
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
