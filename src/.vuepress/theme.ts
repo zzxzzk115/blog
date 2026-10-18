@@ -1,6 +1,31 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import type { FeedPage } from "@vuepress/plugin-feed";
+import { getPageExcerpt } from "@vuepress/helper";
+import type { App } from "vuepress/core";
+import { wechatFallback } from "./socialContacts.js";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
+
+// Translations retain the original article date rather than their git import date.
+const publicationDate = ({ frontmatter, data }: FeedPage): Date | null => {
+  const date = frontmatter.date;
+  return date
+    ? date instanceof Date ? date : new Date(String(date))
+    : data.git?.createdTime ? new Date(data.git.createdTime) : null;
+};
+
+// Feed readers need absolute URLs, including the project site's /blog/ base.
+const feedHtml = (page: FeedPage, app: App, full = false): string => {
+  const html = getPageExcerpt(app, page, full ? { separator: "", length: Infinity } : {});
+  const origin = "https://zzxzzk115.github.io";
+  const base = app.siteData.base;
+  return html.replace(/\b(href|src)="([^"]+)"/g, (_, attr, value: string) => {
+    if (value.startsWith("/") && !value.startsWith("//") && !value.startsWith(base)) {
+      value = base + value.slice(1);
+    }
+    return `${attr}="${new URL(value, origin + base + page.path.slice(1)).href}"`;
+  });
+};
 
 export default hopeTheme({
   hostname: "https://zzxzzk115.github.io",
@@ -98,7 +123,7 @@ export default hopeTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      Email: "mailto://zzxzzk115@gmail.com",
+      Email: "mailto:zzxzzk115@gmail.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
@@ -109,7 +134,6 @@ export default hopeTheme({
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
       // Lines: "https://example.com",
-      Linkedin: "https://uk.linkedin.com/in/kexuan-zhang-leeds",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
       QQ: "tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=954294627&website=www.oicqzone.com",
@@ -118,7 +142,7 @@ export default hopeTheme({
       // Rss: "https://example.com",
       // Steam: "https://example.com",
       // Twitter: "https://example.com",
-      // Wechat: "https://example.com",
+      Wechat: wechatFallback,
       // Weibo: "https://example.com",
       // Whatsapp: "https://example.com",
       // Youtube: "https://example.com",
@@ -147,7 +171,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "Game Developer, C# .NET Programmer.",
+        description: "PhD researcher in perceptual graphics at Leeds. Graphics, games, and retro handhelds.",
         intro: "/intro.html",
       },
 
@@ -171,7 +195,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "游戏开发者、C# .NET 程序员",
+        description: "利兹大学感知图形学博士生。图形、游戏与复古掌机。",
         intro: "/zh/intro.html",
       },
 
@@ -190,17 +214,23 @@ export default hopeTheme({
   },
 
   plugins: {
-    // Publish an English JSON Feed for the independently maintained homepage.
-    // Locale-specific feeds preserve the existing Chinese blog as well.
-    feed: {
-      json: true,
-      rss: true,
-      filter: ({ frontmatter, filePathRelative }) => Boolean(
-        filePathRelative && /^(zh\/)?posts\//.test(filePathRelative)
-        && frontmatter.article !== false && !frontmatter.draft && frontmatter.date,
-      ),
-    },
     blog: true,
+    feed: {
+      rss: true,
+      atom: true,
+      json: true,
+      filter: ({ filePathRelative, frontmatter }) => Boolean(
+        filePathRelative && !frontmatter.home && !frontmatter.draft &&
+        frontmatter.article !== false && frontmatter.feed !== false
+      ),
+      sorter: (a, b) =>
+        (publicationDate(b)?.getTime() ?? 0) - (publicationDate(a)?.getTime() ?? 0),
+      getter: {
+        publishDate: publicationDate,
+        content: (page, app) => feedHtml(page, app, true),
+        excerpt: (page, app) => feedHtml(page, app),
+      },
+    },
 
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.

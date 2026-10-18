@@ -18,6 +18,10 @@ GBDK 是开源工具，我们可以在 GitHub 上直接下载最新的 Release �
 
 <!-- more -->
 
+::: info 本文使用的版本
+本文记录的是 2022 年 12 月的环境，保留了当时的版本与下载链接。新环境请根据上游发布页选择对应版本。
+:::
+
 ## 下载 GBDK
 
 撰写本文时，GBDK 的稳定版本为 v4.1.1，[点击直接下载](https://github.com/gbdk-2020/gbdk-2020/releases/download/4.1.1/gbdk-macos.tar.gz)。
@@ -103,11 +107,7 @@ sudo cp -r GBMB $GBDKDIR/tools/
 
 ::: warning 重点注意
 
-此时可能部分 ini 配置文件不具备相应的权限，我们直接设置这些文件的权限掩码为 777：
-
-```bash
-sudo chmod 777 $GBDKDIR/tools/**/*.ini
-```
+如果工具无法保存 `.ini` 配置，请检查文件所有者，并仅为自己的账户授予所需的写入权限。原始步骤直接使用 `chmod 777`，没有必要开放给所有用户写入。若不需要系统级安装，也可以把工具放在用户自己的目录下。
 
 :::
 

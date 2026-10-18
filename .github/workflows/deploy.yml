@@ -1,25 +1,30 @@
 name: Build and Deploy
+
 on:
   push:
     branches: [master]
   pull_request:
     branches: [master]
   workflow_dispatch:
+
 permissions:
   contents: read
+
 concurrency:
   group: blog-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
-  docs:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          # Preserve article creation and update metadata.
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: '24'
           cache: npm
       - name: Install dependencies
         run: npm ci
@@ -27,15 +32,16 @@ jobs:
         run: npm run docs:build
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-      - name: Verify structured feeds
-        run: node -e "for(const f of ['src/.vuepress/dist/feed.json','src/.vuepress/dist/zh/feed.json']){const feed=JSON.parse(require('fs').readFileSync(f,'utf8'));if(!feed.items.length)throw Error('Empty feed '+f);console.log(f,feed.items.length); }"
-      - run: touch src/.vuepress/dist/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
+      - name: Verify feeds and article links
+        run: python3 scripts/verify-feeds.py
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: src/.vuepress/dist
+
   deploy:
     if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
-    needs: docs
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -44,6 +50,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Publish blog
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

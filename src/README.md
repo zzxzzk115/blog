@@ -6,7 +6,7 @@ title: Home
 bgImage: /bg.png
 heroImage: /logo.png
 heroText: Lazy_V's Blog
-tagline: Talk is cheap, show me the code.
+tagline: Graphics, games, and things I build.
 heroFullScreen: true
 projects:
   # - icon: project

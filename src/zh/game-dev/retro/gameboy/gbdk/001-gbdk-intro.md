@@ -16,6 +16,6 @@ isOriginal: true
 
 现代的 GB/GBC 开发，至少需要使用高级编程语言，例如 C 语言。我们可以利用 GBDK 和 C 语言，进行 GB/GBC 开发。
 
-[GBDK](https://github.com/gbdk-2020/gbdk-2020) (GameBoy Development Kit) 即 GameBoy 开发工具包，主要包含一个 C 语言编译器： SDCC。它包括编译器、汇编器和链接器。GBDK 还包含一系列 Z80 处理器相关的库。GameBoy 的 CPU 和 Z80 比较像，可以说是基于 Z80，它兼容 Z80 的大部分指令集，所以那些库也可以有效利用。
+[GBDK](https://github.com/gbdk-2020/gbdk-2020) (GameBoy Development Kit) 即 GameBoy 开发工具包，主要包含一个 C 语言编译器： SDCC。它包括编译器、汇编器和链接器。GBDK 还提供面向受支持硬件的库。Game Boy 使用 Sharp SM83 CPU，其指令集与 Intel 8080、Z80 有渊源，但它并不是完整的 Z80，因此不能将 Z80 代码和库与 Game Boy 代码直接互换。
 
 GBDK 包含了我们编译相关的所有内容，接下来我们开始进行环境搭建吧！

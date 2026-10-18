@@ -7,7 +7,7 @@ void main()
     // 设置精灵数据
     // 从第 0 号位的 Tile 开始，设置 No.0 的瓦块的数据
     // 数据来源于 Smile 数组
-    set_sprite_data(0, 0, Smile);
+    set_sprite_data(0, 1, Smile);
 
     // 设置精灵使用哪个瓦块的数据
     // 这里是 No.0 精灵使用 No.0 瓦块数据

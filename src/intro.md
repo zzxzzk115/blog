@@ -4,16 +4,32 @@ title: About me
 article: false
 ---
 
-Hi there, I'm Kexuan Zhang from China. I'm a developer with a strong passion for computer graphics, interactive systems, and electronic technologies, who also enjoys singing and composing music.
+Hi, I'm Kexuan Zhang, also known as **Lazy_V**. I'm a PhD student in **Perceptual Graphics at the University of Leeds**. My research interests are virtual reality and high-performance graphics, particularly foveated rendering, stereo reprojection, and image inpainting for disocclusion holes.
 
-I previously worked at BlackJack Studio (Zilong Games) as a server-side engineer, focusing on high-performance backend systems. I have since completed my Master's degree at the University of Leeds and am currently pursuing a PhD in VR and high-performance graphics.
+I am supervised by Dr. [Rafael Kuffner dos Anjos](https://rafaelkuffner.github.io/), Dr. Markus Billeter, and Prof. Gordon D. Love.
 
-While my doctoral research is not directly focused on game engines, I actively develop a personal rendering framework, [libvultra](https://github.com/zzxzzk115/libvultra), as a long-term project to explore modern engine architecture and GPU-driven rendering techniques.
+Before starting my PhD, I completed an MSc in **High-Performance Graphics and Games Engineering** at the University of Leeds with Distinction. My MSc covered modelling and rendering, animation and simulation, geometry processing, high-performance graphics, and scientific computation.
 
-I am proficient in C#, C/C++, Java, Python, and Lua, with solid experience in the .NET ecosystem, multithreading, and performance-critical systems. My current work spans both research and engineering, with a growing focus on real-time rendering, GPU pipelines, and engine-level design.
+I also have professional experience developing game servers in Shanghai, mainly with C#, multithreading, networking, and performance optimisation.
 
-I have hands-on experience with Unity and am actively exploring Unreal Engine, Godot, and other open-source engines. I also enjoy experimenting with lightweight frameworks such as LÖVE2D, Pygame, and SDL2.
+## What I'm working on
 
-I am particularly interested in game engine development and graphics programming, and I enjoy building systems that bridge research and real-world applications.
+I build graphics libraries, engines, games, and small tools. My current graphics projects include [VRI](https://github.com/zzxzzk115/VRI), a cross-platform rendering API, and [libvultra](https://github.com/zzxzzk115/libvultra), the graphics framework I am developing on top of it. I am also studying CUDA through CIS5650 independently, with an interest in GPU-driven rendering, large scenes, and global illumination.
 
-Always happy to connect with developers and researchers to exchange ideas and explore new technologies together.
+This blog is where I keep technical notes, tutorials, and things I learn while experimenting. Posts reflect the tools and versions used when they were written. For current research, projects, and plans, see my [personal homepage](https://zzxzzk115.github.io/).
+
+## Away from research
+
+I collect retro handhelds and enjoy getting games and software running on GameShell, Game Boy, PocketCHIP, Trimui, and whatever else I can get my hands on. I also enjoy singing. [OmniLyrics](https://github.com/zzxzzk115/OmniLyrics) grew out of wanting a lyric tool that worked the way I wanted. Curiosity and the satisfaction of making something keep me coming back.
+
+## Find me
+
+- [Personal homepage](https://zzxzzk115.github.io/) — research and selected projects
+- [Casual page](https://zzxzzk115.github.io/casual/) — games, tools, and interests
+- [GitHub](https://github.com/zzxzzk115)
+- [itch.io](https://lazy-v.itch.io/)
+- Email: [zzxzzk115@gmail.com](mailto:zzxzzk115@gmail.com)
+
+### WeChat {#wechat}
+
+WeChat ID: `zkx954294627`. Use the WeChat icon on the blog homepage to copy it.
