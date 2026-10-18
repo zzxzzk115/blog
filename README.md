@@ -7,12 +7,16 @@ My personal blog, based on VuePress theme Hope.
 
 ### 1. Install dependencies
 
+CI uses Node 24 and `npm ci` with the committed `package-lock.json`. Use the
+same command for a reproducible local installation; commit lockfile updates
+when changing dependencies.
+
 ```bash
-pnpm install
+npm ci
 # or
 yarn install
 # or
-npm install
+pnpm install
 ```
 
 ### 2. Start local development
@@ -71,7 +75,7 @@ Each locale provides `rss.xml`, `atom.xml`, and `feed.json`; pages advertise
 their locale's feeds to readers. The navigation also links to RSS.
 
 Feeds include article pages, excluding home pages and pages marked
-`article: false` or `feed: false`. Articles are ordered by their frontmatter
+`article: false`, `feed: false`, or `draft: true`. Articles are ordered by their frontmatter
 `date`, falling back to git creation time. Translations keep the original
 publication date; git modification times record subsequent updates.
 Feed content uses absolute article and image URLs, including the `/blog/` base,

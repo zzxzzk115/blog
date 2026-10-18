@@ -220,7 +220,7 @@ export default hopeTheme({
       atom: true,
       json: true,
       filter: ({ filePathRelative, frontmatter }) => Boolean(
-        filePathRelative && !frontmatter.home &&
+        filePathRelative && !frontmatter.home && !frontmatter.draft &&
         frontmatter.article !== false && frontmatter.feed !== false
       ),
       sorter: (a, b) =>
