@@ -74,6 +74,8 @@ Feeds include article pages, excluding home pages and pages marked
 `article: false` or `feed: false`. Articles are ordered by their frontmatter
 `date`, falling back to git creation time. Translations keep the original
 publication date; git modification times record subsequent updates.
+Feed content uses absolute article and image URLs, including the `/blog/` base,
+so readers can load embedded images independently of the website.
 
 After a production build, run `python3 scripts/verify-feeds.py` to check both
 locales, feed formats, publication dates, discovery links, and article targets.

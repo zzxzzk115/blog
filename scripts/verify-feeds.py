@@ -25,6 +25,20 @@ class FeedLinks(HTMLParser):
             self.links[attrs.get("type")] = attrs.get("href")
 
 
+class ContentLinks(HTMLParser):
+    def __init__(self, html):
+        super().__init__()
+        self.feed(html)
+
+    def handle_starttag(self, tag, attrs):
+        for name, url in attrs:
+            if name in ("href", "src") and url:
+                parsed = urlsplit(url)
+                assert parsed.scheme, f"Relative URL in feed: {url}"
+                if parsed.netloc == urlsplit(ORIGIN).netloc and parsed.path.startswith("/blog/"):
+                    local_target(url)
+
+
 def local_target(url):
     parsed = urlsplit(url)
     assert f"{parsed.scheme}://{parsed.netloc}" == ORIGIN, url
@@ -72,6 +86,7 @@ for locale, language in (("", "en-US"), ("zh/", "zh-CN")):
 
     for item in items:
         assert item["title"] and item["content_html"], item["id"]
+        ContentLinks(item["content_html"])
         assert item["url"].startswith(base), item["url"]
         assert urlsplit(item["url"]).path.startswith("/blog/zh/") == bool(locale)
         html = local_target(item["url"]).read_text()
