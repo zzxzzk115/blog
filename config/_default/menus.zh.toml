@@ -4,18 +4,21 @@
   pageRef = "/archives"
   weight = 10
   params.icon = "fa fa-archive"
+  params.priority = 1
 [[main]]
   identifier = "categories"
   name = "分类"
   pageRef = "/categories"
   weight = 20
   params.icon = "fa fa-folder"
+  params.priority = 5
 [[main]]
   identifier = "tags"
   name = "标签"
   pageRef = "/tags"
   weight = 30
   params.icon = "fa fa-tags"
+  params.priority = 6
 
 [[main]]
   identifier = "game-dev"
@@ -23,6 +26,7 @@
   pageRef = "/game-dev"
   weight = 40
   params.icon = "fa fa-gamepad"
+  params.priority = 2
 [[main]]
   parent = "game-dev"
   name = "游戏画廊"
@@ -40,21 +44,25 @@
   pageRef = "/intro"
   weight = 60
   params.icon = "fa fa-user"
+  params.priority = 3
 [[main]]
   identifier = "portfolio"
   name = "个人主页"
   url = "https://zzxzzk115.github.io/"
   weight = 65
   params.icon = "fa fa-at"
+  params.priority = 4
 [[main]]
   identifier = "friends"
   name = "友链"
   pageRef = "/friends"
   weight = 70
   params.icon = "fa fa-users"
+  params.priority = 7
 [[main]]
   identifier = "rss"
   name = "订阅"
   url = "/zh/rss.xml"
   weight = 90
   params.icon = "fa fa-rss"
+  params.priority = 8
