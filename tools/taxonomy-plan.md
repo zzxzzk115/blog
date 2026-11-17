@@ -106,47 +106,31 @@
 | 设计模式 | Design Patterns | 1 |
 | 跨平台 | Cross-Platform | 1 |
 
-## 旧标签的去向
-
-改名或并入（内容保留，只是统一了写法）：
-
-| 旧 | 新 |
-|---|---|
-| AStar | A* |
-| CPP | C++ |
-| CSharp | C# |
-| DotNET | .NET |
-| TCP-IP | TCP/IP |
-
-删除（文章类型、或与分类重复）：
-
-异步IO
-
 ## 每篇文章（旧 → 新）
 
 | 文章 | 旧分类 | 新分类 | 旧标签 | 新标签 |
 |---|---|---|---|---|
-| 关于 CLR 的 StructLayoutAttribute 控制类型的字段布局的探究 | 编程语言 | 编程语言 | CLR, CSharp, 内存布局 | CLR, C#, 内存布局 |
-| 对<老熟人?>new 关键字的探究(已更新) | 编程语言 | 编程语言 | CSharp, CPP | C#, C++ |
+| 关于 CLR 的 StructLayoutAttribute 控制类型的字段布局的探究 | 编程语言 | 编程语言 | CLR, C#, 内存布局 | CLR, C#, 内存布局 |
+| 对<老熟人?>new 关键字的探究(已更新) | 编程语言 | 编程语言 | C#, C++ | C#, C++ |
 | C 语言字母大小写互换的简单方法 | 编程语言 | 编程语言 | C | C |
-| CLR：计算限制的异步操作 | 编程语言 | 编程语言 | CLR, CSharp, 多线程, 线程池 | CLR, C#, 多线程, 线程池 |
+| CLR：计算限制的异步操作 | 编程语言 | 编程语言 | CLR, C#, 多线程, 线程池 | CLR, C#, 多线程, 线程池 |
 | CLR 关键章节 | 编程语言 | 编程语言 | CLR | CLR |
 | 《CLR via C#》 Q&A(已更新) | 编程语言 | 编程语言 | CLR | CLR |
-| 回顾 CLR(1)：基础部分 | 编程语言 | 编程语言 | CLR, CSharp | CLR, C# |
-| 动态链接库 DLL 和.NET Framework 程序集的区别与联系 | 编程语言 | 编程语言 | DotNET, CLR, DLL | .NET, CLR, DLL |
-| C# 匿名类型的同一性与相等性 | 编程语言 | 编程语言 | CLR, CSharp, 匿名类型 | CLR, C#, 匿名类型 |
-| 对于《CLR via C#》中异常部分的整理 | 编程语言 | 编程语言 | CLR, CSharp, 异常处理 | CLR, C#, 异常处理 |
-| 程序如何监视 AppDomain 的卸载 | 编程语言 | 编程语言 | CLR, CSharp, AppDomain | CLR, C#, AppDomain |
-| 深入探究 C# 11 的静态抽象接口方法 | 编程语言 | 编程语言 | CSharp, DotNET, 接口 | C#, .NET, 接口 |
-| 分享一个.NET 相关博主的博客地址 | 编程语言 | 编程语言 | DotNET | .NET |
-| C++ STL 之 不定长数组 vector | 编程语言 | 编程语言 | CPP, STL | C++, STL |
-| 《我大意了啊》之 CLR 中值类型调用 Equals 是否装箱的问题 | 编程语言 | 编程语言 | CLR, CSharp | CLR, C# |
-| 类型对象的加载时机和类型初始化器的调用时机之间的关系 | 编程语言 | 编程语言 | CLR, CSharp | CLR, C# |
-| [教程]VC++6.0 的简单使用 | 编程语言 | 编程语言 | C, CPP | C, C++ |
+| 回顾 CLR(1)：基础部分 | 编程语言 | 编程语言 | CLR, C# | CLR, C# |
+| 动态链接库 DLL 和.NET Framework 程序集的区别与联系 | 编程语言 | 编程语言 | .NET, CLR, DLL | .NET, CLR, DLL |
+| C# 匿名类型的同一性与相等性 | 编程语言 | 编程语言 | CLR, C#, 匿名类型 | CLR, C#, 匿名类型 |
+| 对于《CLR via C#》中异常部分的整理 | 编程语言 | 编程语言 | CLR, C#, 异常处理 | CLR, C#, 异常处理 |
+| 程序如何监视 AppDomain 的卸载 | 编程语言 | 编程语言 | CLR, C#, AppDomain | CLR, C#, AppDomain |
+| 深入探究 C# 11 的静态抽象接口方法 | 编程语言 | 编程语言 | C#, .NET, 接口 | C#, .NET, 接口 |
+| 分享一个.NET 相关博主的博客地址 | 编程语言 | 编程语言 | .NET | .NET |
+| C++ STL 之 不定长数组 vector | 编程语言 | 编程语言 | C++, STL | C++, STL |
+| 《我大意了啊》之 CLR 中值类型调用 Equals 是否装箱的问题 | 编程语言 | 编程语言 | CLR, C# | CLR, C# |
+| 类型对象的加载时机和类型初始化器的调用时机之间的关系 | 编程语言 | 编程语言 | CLR, C# | CLR, C# |
+| [教程]VC++6.0 的简单使用 | 编程语言 | 编程语言 | C, C++ | C, C++ |
 | [译]Windows 的 Handles 和 Objects | 系统编程 | 系统编程 | Windows, 内核对象 | Windows, 内核对象 |
 | 《30 天自制操作系统》Day01 | 系统编程 | 系统编程 | 操作系统, 汇编 | 操作系统, 汇编 |
-| Win32 多线程 API 和 C# 多线程 API 的对应关系 | 系统编程 | 系统编程 | Win32, 多线程, CSharp | Win32, 多线程, C# |
-| Overlapped I/O：异步、非阻塞式 I/O 技术 | 系统编程 | 系统编程 | Win32, 多线程, 异步IO | Win32, 多线程, 异步 I/O |
+| Win32 多线程 API 和 C# 多线程 API 的对应关系 | 系统编程 | 系统编程 | Win32, 多线程, C# | Win32, 多线程, C# |
+| Overlapped I/O：异步、非阻塞式 I/O 技术 | 系统编程 | 系统编程 | Win32, 多线程, 异步 I/O | Win32, 多线程, 异步 I/O |
 | 《Win32 多线程程序设计》FAQ 整理 | 系统编程 | 系统编程 | Win32, 多线程 | Win32, 多线程 |
 | 《Win32 多线程程序设计》读书笔记（一） | 系统编程 | 系统编程 | Win32, 多线程 | Win32, 多线程 |
 | 《Win32 多线程程序设计》读书笔记（二） | 系统编程 | 系统编程 | Win32, 多线程 | Win32, 多线程 |
@@ -158,8 +142,8 @@
 | 在 MongoDB 中实现自增 ID | 后端与网络 | 后端与网络 | MongoDB, 数据库 | MongoDB, 数据库 |
 | 开源项目——寝室助手 | 后端与网络 | 后端与网络 | Raspberry Pi, Arduino, Python | Raspberry Pi, Arduino, Python |
 | Metasploit(1):记录一次 Win10 的渗透过程 | 后端与网络 | 后端与网络 | 安全, Metasploit, BadUSB, Windows | 安全, Metasploit, BadUSB, Windows |
-| TCP/IP 笔记整理 | 后端与网络 | 后端与网络 | TCP-IP, 网络编程 | TCP/IP, 网络编程 |
-| Unix 网络编程：套接字联网 API | 后端与网络 | 后端与网络 | TCP-IP, 网络编程, Socket, Unix | TCP/IP, 网络编程, Socket, Unix |
+| TCP/IP 笔记整理 | 后端与网络 | 后端与网络 | TCP/IP, 网络编程 | TCP/IP, 网络编程 |
+| Unix 网络编程：套接字联网 API | 后端与网络 | 后端与网络 | TCP/IP, 网络编程, Socket, Unix | TCP/IP, 网络编程, Socket, Unix |
 | 解决 DP 问题的算法框架 | 算法与数据结构 | 算法与数据结构 | 动态规划 | 动态规划 |
 | 算法——冒泡排序 | 算法与数据结构 | 算法与数据结构 | 排序 | 排序 |
 | 数据结构 - 线性表 | 算法与数据结构 | 算法与数据结构 | C | C |
@@ -173,14 +157,14 @@
 | GBDK 环境搭建 | 游戏开发 | 游戏开发 | GameBoy, GBDK | GameBoy, GBDK |
 | 使用 GBDK 绘制简单的精灵 | 游戏开发 | 游戏开发 | GameBoy, GBDK | GameBoy, GBDK |
 | GB/GBC 游戏开发：简介 | 游戏开发 | 游戏开发 | GameBoy | GameBoy |
-| A* 算法及它在 Unity 中 2D 的 Demo 实现 | 游戏开发 | 游戏开发 | Unity, 寻路, AStar | Unity, 寻路, A* |
+| A* 算法及它在 Unity 中 2D 的 Demo 实现 | 游戏开发 | 游戏开发 | Unity, 寻路, A* | Unity, 寻路, A* |
 | 命令模式与其在 Unity 中的应用 | 游戏开发 | 游戏开发 | Unity, 设计模式 | Unity, 设计模式 |
 | 无需头显，使用 Meta XR 仿真器，开发 OpenXR PC 原生应用 | 游戏开发 | 游戏开发 | OpenXR, XR | OpenXR, XR |
 | 像素艺术动画学习：001-闪光 | 游戏开发 | 游戏开发 | 像素艺术, 动画 | 像素艺术, 动画 |
 | Unity 网游实战(1)：最简单的网络程序 Echo | 游戏开发 | 游戏开发 | Unity, 网络编程 | Unity, 网络编程 |
 | Unity 网游实战(2)：状态检测 Poll 和多路复用 Select | 游戏开发 | 游戏开发 | Unity, 网络编程 | Unity, 网络编程 |
 | GodotSteam 等自编译版本在 macOS 上反复弹窗确认权限？几行命令就够了 | 游戏引擎 | 游戏引擎 | Godot | Godot |
-| Unity 为什么能做到跨平台 | 游戏引擎 | 游戏引擎 | Unity, 跨平台, Mono, CIL, DotNET, CLR | Unity, 跨平台, Mono, CIL, .NET, CLR |
+| Unity 为什么能做到跨平台 | 游戏引擎 | 游戏引擎 | Unity, 跨平台, Mono, CIL, .NET, CLR | Unity, 跨平台, Mono, CIL, .NET, CLR |
 | 从 Pilot 引擎学知识(1)-在 Windows 上跑起来 | 游戏引擎 | 游戏引擎 | Pilot, GAMES104 | Pilot, GAMES104 |
 | 从 Pilot 引擎学知识(2)-文件目录结构 | 游戏引擎 | 游戏引擎 | Pilot, GAMES104 | Pilot, GAMES104 |
 | 从 Pilot 引擎学知识(3)-CMake 在 Pilot 中的作用(上) | 游戏引擎 | 游戏引擎 | Pilot, GAMES104 | Pilot, GAMES104 |

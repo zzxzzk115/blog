@@ -210,7 +210,9 @@ def check():
 
 
 def review():
-    old = {rel: (get_list(fm, "categories"), get_list(fm, "tags"), (re.search(r"^title:\s*(.*)$", fm, re.M) or [0, ""])[1].strip("'\""))
+    name = {v: k for k, v in KEYS.items()}.get  # front matter keys back to display names
+    old = {rel: ([name(c, c) for c in get_list(fm, "categories")], [name(x, x) for x in get_list(fm, "tags")],
+                 (re.search(r"^title:\s*(.*)$", fm, re.M) or [0, ""])[1].strip("'\""))
            for rel, _, fm in articles("zh")}
     ccount = collections.Counter(c for c, _ in PLAN.values())
     tcount = collections.Counter(t for _, ts in PLAN.values() for t in ts)
@@ -230,10 +232,12 @@ def review():
     gone = sorted(set(old_tags) - set(TAGS), key=str.lower)
     renamed = {t: RENAMED[t] for t in gone if t in RENAMED}
     removed = [t for t in gone if t not in RENAMED]
-    out += ["", "## 旧标签的去向", "", "改名或并入（内容保留，只是统一了写法）：", "",
-            "| 旧 | 新 |", "|---|---|"] + [f"| {a} | {b} |" for a, b in renamed.items()]
-    out += ["", "删除（文章类型、或与分类重复）：", "", "、".join(removed), "",
-            "## 每篇文章（旧 → 新）", "", "| 文章 | 旧分类 | 新分类 | 旧标签 | 新标签 |", "|---|---|---|---|---|"]
+    if renamed:
+        out += ["", "## 旧标签的去向", "", "改名或并入（内容保留，只是统一了写法）：", "",
+                "| 旧 | 新 |", "|---|---|"] + [f"| {a} | {b} |" for a, b in renamed.items()]
+    if removed:
+        out += ["", "删除（文章类型、或与分类重复）：", "", "、".join(removed)]
+    out += ["", "## 每篇文章（旧 → 新）", "", "| 文章 | 旧分类 | 新分类 | 旧标签 | 新标签 |", "|---|---|---|---|---|"]
     order = list(CATEGORIES)
     for rel, (cat, tags) in sorted(PLAN.items(), key=lambda kv: (order.index(kv[1][0]), kv[0])):
         oc, ot, title = old.get(rel, ([], [], rel))
