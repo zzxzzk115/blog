@@ -74,13 +74,13 @@ Jack's Blog 则是我的个人博客（当时的域名 `zhangkexuan.cn` 已失�
 
 iOS APP 实现内网开门:
 
-<http://player.youku.com/embed/XMzk2NjA1ODMzNg==>
+{{< video src="/video/dorm/door-app-1.mp4" >}}
 
-<http://player.youku.com/embed/XMzk2NjA1OTc4NA==>
+{{< video src="/video/dorm/door-app-2.mp4" >}}
 
 校园卡 RFID 开门:
 
-<http://player.youku.com/embed/XMzk2NjA1ODk3Ng==>
+{{< video src="/video/dorm/door-rfid.mp4" >}}
 
 其实还有电脑端可执行程序开门、电脑端 Wox 插件开门和安卓端 APP 开门、web 端开门，这里不演示。
 

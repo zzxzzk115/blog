@@ -75,13 +75,13 @@ Close-up of the outside:
 
 Opening the door from the LAN with the iOS app:
 
-<http://player.youku.com/embed/XMzk2NjA1ODMzNg==>
+{{< video src="/video/dorm/door-app-1.mp4" >}}
 
-<http://player.youku.com/embed/XMzk2NjA1OTc4NA==>
+{{< video src="/video/dorm/door-app-2.mp4" >}}
 
 Opening the door with the campus card (RFID):
 
-<http://player.youku.com/embed/XMzk2NjA1ODk3Ng==>
+{{< video src="/video/dorm/door-rfid.mp4" >}}
 
 There's actually also a PC executable, a Wox plugin on PC, an Android app, and a web page for opening the door, but I won't demo those here.
 
