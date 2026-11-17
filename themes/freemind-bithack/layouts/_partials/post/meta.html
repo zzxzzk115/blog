@@ -1,0 +1,35 @@
+<div class="col-md-3" id="post_meta">
+  <div class="meta-widget">
+    <i class="fa fa-clock-o"></i>
+    {{ .Date.Format (site.Params.dateFormat | default "2006-01-02") }}
+  </div>
+
+  {{- with .GetTerms "categories" }}
+  <div class="meta-widget">
+    <a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+      <li>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}<span>{{ len .Pages }}</span></a> {{ end }}</li>
+    </ul>
+  </div>
+  {{- end }}
+
+  {{- with .GetTerms "tags" }}
+  <div class="meta-widget">
+    <a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
+      {{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}<span>{{ len .Pages }}</span></a></li> {{ end }}
+    </ul>
+  </div>
+  {{- end }}
+
+  {{- if and (ne .Params.toc false) (gt (len .Fragments.Headings) 0) (or .Params.toc site.Params.tocDefault) }}
+  <div class="meta-widget">
+    <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+    <div id="toc" class="toc collapse in">
+      <span class="toc-title">Contents</span>
+      <div class="toc-article">{{ .TableOfContents }}</div>
+    </div>
+  </div>
+  {{- end }}
+  <hr>
+</div>

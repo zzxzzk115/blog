@@ -1,0 +1,18 @@
+{{- /* Like hexo: show the part before <!--more--> if present, otherwise the full post. */ -}}
+<div class="entry">
+  <div class="row">
+    {{- with .Params.feature }}
+    <div class="thumbnail"><a href="{{ $.RelPermalink }}"><img src="{{ . | relURL }}" alt="{{ $.Title }}" class="nofancybox"></a></div>
+    {{- end }}
+    {{- if eq .Params.excerpt false }}
+      {{ .Content }}
+    {{- else if or (strings.Contains .RawContent "<!--more-->") .Params.summary }}
+      {{ .Summary }}
+    {{- else if site.Params.autoExcerpt }}
+      {{ .Summary }}
+    {{- else }}
+      {{ .Content }}
+    {{- end }}
+  </div>
+  <a href="{{ .RelPermalink }}" class="btn btn-default more">{{ T "read_more" }}</a>
+</div>

@@ -1,0 +1,14 @@
+{{- with site.Taxonomies.tags }}
+{{- $limit := site.Params.tagcloudLimit | default 20 }}
+<div class="widget">
+  <h4>{{ T "tagcloud" }}</h4>
+  <ul class="tag_box inline list-unstyled">
+    {{- range first $limit .ByCount }}
+    <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span>{{ .Count }}</span></a></li>
+    {{- end }}
+    {{- if gt (len .) $limit }}
+    <li><a href="{{ "tags/" | relURL }}">...<span>{{ len . }}</span></a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

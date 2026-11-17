@@ -1,0 +1,12 @@
+<div class="col-md-3">
+  <div id="sidebar">
+    {{- range site.Params.widgets }}
+      {{- $tpl := printf "widgets/%s.html" . }}
+      {{- if templates.Exists (printf "_partials/%s" $tpl) }}
+        {{ partial $tpl $ }}
+      {{- else }}
+        {{ warnf "freemind-bithack: unknown sidebar widget %q (create layouts/_partials/%s)" . $tpl }}
+      {{- end }}
+    {{- end }}
+  </div>
+</div>

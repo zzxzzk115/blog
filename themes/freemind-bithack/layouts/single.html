@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{- $isPost := in site.MainSections .Type }}
+{{ partial "post/title.html" (dict "item" . "index" false) }}
+
+<div class="row {{ if $isPost }}post{{ else }}page{{ end }}">
+  {{- if $isPost }}
+  <div id="top_meta"></div>
+  <div class="col-md-9">
+  {{- else }}
+  <div class="col-md-12">
+  {{- end }}
+    <div class="mypage">
+      {{- with .Description }}
+      <div class="alert alert-success description"><i class="fa fa-info-circle"></i> {{ . | markdownify }}</div>
+      {{- end }}
+      {{ .Content }}
+      {{- if and $isPost site.Params.copyright.enable }}{{ partial "post/copyright.html" . }}{{ end }}
+    </div>
+
+    {{- if $isPost }}
+    <div class="text-center">{{ partial "post/pagination.html" . }}</div>
+    {{- end }}
+
+    {{- if and (ne .Params.comments false) (or $isPost .Params.comments) }}
+    {{ partial "comments.html" . }}
+    {{- end }}
+  </div>
+
+  {{- if $isPost }}
+  <div id="side_meta">{{ partial "post/meta.html" . }}</div>
+  {{- end }}
+</div>
+{{ end }}

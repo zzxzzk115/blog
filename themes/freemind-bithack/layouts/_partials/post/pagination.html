@@ -1,0 +1,16 @@
+{{- /* Prev = older post, Next = newer post (same as hexo). */ -}}
+{{- $prev := .PrevInSection }}
+{{- $next := .NextInSection }}
+<div class="pagination">
+  {{- with $prev }}
+  <a href="{{ .RelPermalink }}" class="btn btn-default" title="{{ .Title }}"><i class="fa fa-arrow-circle-o-left"></i> {{ T "prev" }}</a>
+  {{- else }}
+  <a class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i> {{ T "prev" }}</a>
+  {{- end }}
+  <a href="{{ "/" | relURL }}" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+  {{- with $next }}
+  <a href="{{ .RelPermalink }}" class="btn btn-default" title="{{ .Title }}">{{ T "next" }} <i class="fa fa-arrow-circle-o-right"></i></a>
+  {{- else }}
+  <a class="btn btn-default disabled">{{ T "next" }} <i class="fa fa-arrow-circle-o-right"></i></a>
+  {{- end }}
+</div>

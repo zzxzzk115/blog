@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{- $icon := cond (eq .Data.Plural "tags") "fa fa-tags" "fa fa-folder" }}
+<div class="page-header">
+  <h1><i class="{{ $icon }}"></i> {{ T .Data.Plural | default .Title }}</h1>
+</div>
+<div class="row page">
+  <div class="{{ if site.Params.widgets }}col-md-9{{ else }}col-md-12{{ end }}">
+    <div id="top_search"></div>
+    <div class="widget">
+      <ul class="tag_box inline list-unstyled">
+        {{- range .Data.Terms.Alphabetical }}
+        <li><a href="#{{ .Page.LinkTitle | anchorize }}">{{ .Page.LinkTitle }}<span>{{ .Count }}</span></a></li>
+        {{- end }}
+      </ul>
+    </div>
+    <div class="archive">
+      {{- range .Data.Terms.Alphabetical }}
+      {{- $id := .Page.LinkTitle | anchorize }}
+      <h4 class="archive-ul show" data-toggle="collapse" id="{{ $id }}" data-target="#modal-{{ $id }}">
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> <b class="caret"></b>
+      </h4>
+      <ul id="modal-{{ $id }}" class="collapse in">
+        {{- range .Pages.ByDate.Reverse }}
+        <li class="listing-item"><a href="{{ .RelPermalink }}"{{ with .Description }} title="{{ . }}"{{ end }}>{{ .Title }}</a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+  </div>
+  {{ if site.Params.widgets }}{{ partial "sidebar.html" . }}{{ end }}
+</div>
+{{ end }}

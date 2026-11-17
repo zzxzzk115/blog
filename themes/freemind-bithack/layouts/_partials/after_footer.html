@@ -1,0 +1,28 @@
+<a id="gotop" href="#"><span>⬆︎TOP</span></a>
+
+<script src="{{ "js/jquery.imagesloaded.min.js" | relURL }}"></script>
+{{- if site.Params.fancybox }}
+<script src="{{ "js/gallery.js" | relURL }}"></script>
+{{- end }}
+<script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
+<script src="{{ "js/main.js" | relURL }}"></script>
+<script src="{{ "js/search.js" | relURL }}"></script>
+
+{{- if site.Params.fancybox }}
+<link rel="stylesheet" href="{{ "fancybox/jquery.fancybox.css" | relURL }}" media="screen">
+<script src="{{ "fancybox/jquery.fancybox.pack.js" | relURL }}"></script>
+<script>(function ($) { $('.fancybox').fancybox(); })(jQuery);</script>
+{{- end }}
+
+{{- with site.Home.OutputFormats.Get "searchxml" }}
+<script>searchFunc({{ .RelPermalink }}, 'local-search-input', 'local-search-result');</script>
+{{- end }}
+
+{{- if .Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+{{- end }}
+
+{{ partial "hooks/body-end.html" . }}

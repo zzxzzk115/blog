@@ -1,0 +1,10 @@
+{{- with site.Params.links }}
+<div class="widget">
+  <h4>{{ T "links" }}</h4>
+  <ul class="blogroll list-unstyled">
+    {{- range . }}
+    <li><i class="{{ .icon }}"></i><a href="{{ .url }}" title="{{ .intro | default .title }}" target="_blank" rel="noopener">{{ .title }}</a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

@@ -1,0 +1,10 @@
+{{- with site.Taxonomies.categories }}
+<div class="widget">
+  <h4>{{ T "categories" }}</h4>
+  <ul class="tag_box inline list-unstyled">
+    {{- range .Alphabetical }}
+    <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span>{{ .Count }}</span></a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

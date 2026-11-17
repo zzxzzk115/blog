@@ -1,0 +1,12 @@
+{{- /*
+  Bilibili video.
+  {{< bilibili BV1554y1D7a1 >}}
+  {{< bilibili bvid="BV1554y1D7a1" page="2" autoplay="false" >}}
+*/ -}}
+{{- $bvid := .Get "bvid" | default (.Get 0) }}
+{{- $page := .Get "page" | default 1 }}
+{{- $autoplay := cond (eq (.Get "autoplay") "true") 1 0 }}
+<div class="embed-video">
+  <iframe src="https://player.bilibili.com/player.html?bvid={{ $bvid }}&page={{ $page }}&autoplay={{ $autoplay }}&high_quality=1"
+    scrolling="no" frameborder="0" allowfullscreen loading="lazy"></iframe>
+</div>

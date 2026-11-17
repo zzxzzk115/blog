@@ -1,0 +1,21 @@
+<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <button id="toggleButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <img src="{{ "icon-bar.png" | relURL }}" alt="">
+    </button>
+    <a class="navbar-brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <div class="collapse navbar-collapse nav-menu">
+      <ul class="nav navbar-nav">
+        {{- range site.Menus.main }}
+        <li{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active"{{ end }}>
+          <a href="{{ .URL }}" title="{{ .Title }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>
+            {{- with .Params.icon }}<i class="{{ . }}"></i>{{ end }}{{ .Name -}}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="clearfix"></div>

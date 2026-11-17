@@ -1,0 +1,7 @@
+{{- $src := .Destination -}}
+{{- $u := urls.Parse $src -}}
+{{- if not $u.IsAbs -}}
+  {{- with or (.PageInner.Resources.Get $u.Path) (resources.Get $u.Path) }}{{ $src = .RelPermalink }}{{ end -}}
+{{- end -}}
+<img src="{{ $src }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy"{{ with .Attributes.class }} class="{{ . }}"{{ end }}{{ with .Attributes.width }} width="{{ . }}"{{ end }}>
+{{- /* chomp */ -}}

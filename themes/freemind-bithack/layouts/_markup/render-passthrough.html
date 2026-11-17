@@ -1,0 +1,14 @@
+{{- /* $...$ / $$...$$ math, rendered at build time with KaTeX (no client JS). */ -}}
+{{- if partial "func/math-enabled.html" .Page }}
+  {{- $opts := dict "output" (site.Params.mathOutput | default "mathml") "displayMode" (eq .Type "block") "throwOnError" false }}
+  {{- with try (transform.ToMath .Inner $opts) }}
+    {{- with .Err }}
+      {{- warnf "%s: math render failed: %s" $.Page.File.Path . }}<code>{{ $.Inner }}</code>
+    {{- else }}
+      {{- if eq $.Type "block" }}<div class="math-block">{{ .Value }}</div>{{ else }}{{ .Value }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- else }}
+  {{- /* Math disabled on this page: put the text back as it was. */ -}}
+  {{- $d := cond (eq .Type "block") "$$" "$" }}{{ $d }}{{ .Inner }}{{ $d }}
+{{- end }}

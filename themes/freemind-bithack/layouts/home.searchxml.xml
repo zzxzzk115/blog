@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+{{- range where site.RegularPages "Params.search" "!=" false }}
+  <entry>
+    <title><![CDATA[{{ .Title | replaceRE `\]\]>` "]]&gt;" }}]]></title>
+    <url>{{ .RelPermalink }}</url>
+    <content type="html"><![CDATA[{{ .Plain | replaceRE `\]\]>` "]]&gt;" }}]]></content>
+  </entry>
+{{- end }}
+</search>

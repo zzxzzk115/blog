@@ -1,0 +1,19 @@
+{{- $item := .item }}
+{{- with $item.Params.link }}
+  <h1 class="title"><a href="{{ . }}" target="_blank" rel="noopener">{{ $item.Title | default . }}</a></h1>
+{{- else }}
+  {{- if .index }}
+<div class="row">
+  <div class="col-md-8">
+    <h3 class="title"><a href="{{ $item.RelPermalink }}"{{ with $item.Description }} title="{{ . }}"{{ end }}>{{ $item.Title }}</a></h3>
+  </div>
+  <div class="col-md-4">
+    <div class="date">post @ {{ $item.Date.Format (site.Params.dateFormat | default "2006-01-02") }}</div>
+  </div>
+</div>
+  {{- else }}
+<div class="page-header">
+  <h1>{{ with $item.Params.icon }}<i class="{{ . }}"></i> {{ end }}{{ $item.Params.pageTitle | default $item.Title }}</h1>
+</div>
+  {{- end }}
+{{- end }}

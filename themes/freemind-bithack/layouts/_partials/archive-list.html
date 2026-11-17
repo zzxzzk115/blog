@@ -1,0 +1,23 @@
+{{- /* Params: pages, title, icon. Renders a year-grouped archive like hexo's archive.ejs. */ -}}
+<div class="page-header">
+  <h1 class="archive-title"><i class="{{ .icon | default "fa fa-archive" }}"></i> {{ .title }}</h1>
+</div>
+<div class="row page">
+  <div class="{{ if site.Params.widgets }}col-md-9{{ else }}col-md-12{{ end }}">
+    <div id="top_search"></div>
+    <div class="archive">
+      {{- range .pages.GroupByDate "2006" }}
+      <h4 class="archive-ul" data-toggle="collapse" data-target="#y{{ .Key }}">{{ .Key }}<b class="caret"></b></h4>
+      <ul id="y{{ .Key }}" class="collapse in">
+        {{- range .Pages }}
+        <li class="listing-item">
+          <span class="date_class">{{ .Date.Format "2006-01-02" }}</span> &raquo;
+          <span class="title"><a href="{{ .Params.link | default .RelPermalink }}"{{ with .Description }} title="{{ . }}"{{ end }}>{{ .Title }}</a></span>
+        </li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+  </div>
+  {{ if site.Params.widgets }}{{ partial "sidebar.html" .page }}{{ end }}
+</div>

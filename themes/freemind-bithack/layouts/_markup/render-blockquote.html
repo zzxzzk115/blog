@@ -1,0 +1,14 @@
+{{- /* GitHub-style alerts (> [!TIP]) become Bootstrap alerts; plain quotes stay quotes. */ -}}
+{{- if eq .Type "alert" }}
+  {{- $map := dict "note" "info" "tip" "success" "important" "info" "warning" "warning" "caution" "danger" }}
+  {{- $icons := dict "note" "fa-info-circle" "tip" "fa-lightbulb-o" "important" "fa-exclamation-circle" "warning" "fa-exclamation-triangle" "caution" "fa-ban" }}
+  {{- $t := lower .AlertType }}
+<div class="alert alert-{{ index $map $t | default "info" }} md-alert">
+  <p class="md-alert-title"><i class="fa {{ index $icons $t | default "fa-info-circle" }}"></i> {{ .AlertTitle | default (T (printf "alert_%s" $t)) | default (upper $t) }}</p>
+  {{ .Text }}
+</div>
+{{- else }}
+<blockquote{{ with .Attributes.class }} class="{{ . }}"{{ end }}>
+  {{ .Text }}
+</blockquote>
+{{- end }}

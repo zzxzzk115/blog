@@ -1,0 +1,3 @@
+{{ define "main" }}
+{{ partial "archive-list.html" (dict "pages" .RegularPagesRecursive.ByDate.Reverse "title" .Title "page" .) }}
+{{ end }}

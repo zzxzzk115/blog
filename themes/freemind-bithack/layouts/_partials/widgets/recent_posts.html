@@ -1,0 +1,11 @@
+{{- $posts := where site.RegularPages "Type" "in" site.MainSections }}
+{{- with $posts }}
+<div class="widget">
+  <h4>{{ T "recent_posts" }}</h4>
+  <ul class="entry list-unstyled">
+    {{- range first (site.Params.recentPostsLimit | default 5) .ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}"{{ with .Description }} title="{{ . }}"{{ end }}><i class="fa fa-file-o"></i>{{ .Title | truncate 25 }}</a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

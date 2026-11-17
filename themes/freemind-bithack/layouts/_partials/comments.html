@@ -1,0 +1,25 @@
+{{- $c := site.Params.comments }}
+{{- if eq $c.provider "giscus" }}
+<section id="comments" class="comments">
+  {{- with $c.giscus }}
+  <script src="https://giscus.app/client.js"
+    data-repo="{{ .repo }}" data-repo-id="{{ .repoId }}"
+    data-category="{{ .category }}" data-category-id="{{ .categoryId }}"
+    data-mapping="{{ .mapping | default "pathname" }}" data-strict="0"
+    data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+    data-theme="{{ .theme | default "dark" }}" data-lang="{{ .lang | default "zh-CN" }}"
+    data-loading="lazy" crossorigin="anonymous" async></script>
+  {{- end }}
+</section>
+{{- else if eq $c.provider "valine" }}
+<section id="comments" class="comments">
+  <div id="vcomment" class="comment"></div>
+  <script src="https://unpkg.com/valine@1.5.3/dist/Valine.min.js"></script>
+  <script>
+    var valineConfig = {{ $c.valine }};
+    valineConfig.el = '#vcomment';
+    valineConfig.path = {{ .RelPermalink }};
+    new Valine(valineConfig);
+  </script>
+</section>
+{{- end }}

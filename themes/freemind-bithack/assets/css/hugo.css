@@ -1,0 +1,48 @@
+/* ---- Hugo port additions (keeps the original freemind.bithack look) ---- */
+
+/* TOC: Hugo emits <nav id="TableOfContents"><ul>, hexo emitted <ol class="toc-article"> */
+.toc-article #TableOfContents > ul { list-style: circle; margin: 0; padding: 0 0 0 12px; line-height: 1em; }
+.toc-article #TableOfContents li { margin-left: 5px !important; padding: 0 !important; line-height: 1.6em; }
+.toc-article #TableOfContents ul ul { list-style: square; padding: 5px 10px; }
+.toc-article #TableOfContents ul ul ul { list-style: circle; }
+
+/* Chroma syntax highlighting, colours taken from the theme's highlight.css */
+.highlight .chroma { background: transparent; color: #ccc; }
+.highlight .lntable { margin: 0; width: auto; border: 0; }
+.highlight .lntd { border: 0; padding: 0; vertical-align: top; }
+.highlight .lntd:first-child { padding-right: 20px; user-select: none; }
+.highlight .lnt, .highlight .ln { color: #666; }
+.chroma .hl { display: block; background: #444; }
+.chroma .c, .chroma .c1, .chroma .cm, .chroma .cs, .chroma .cp, .chroma .cpf, .chroma .ch { color: #999; font-style: italic; }
+.chroma .k, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kc { color: #c9c; }
+.chroma .kt, .chroma .nc, .chroma .nn { color: #9c9; }
+.chroma .s, .chroma .s1, .chroma .s2, .chroma .sb, .chroma .sc, .chroma .sd, .chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .ss { color: #9c9; }
+.chroma .m, .chroma .mi, .chroma .mf, .chroma .mh, .chroma .mo, .chroma .il, .chroma .no, .chroma .bp, .chroma .nb { color: #f99157; }
+.chroma .nf, .chroma .fm, .chroma .nd { color: #69c; }
+.chroma .nt { color: #f2777a; }
+.chroma .na { color: #fc6; }
+.chroma .o, .chroma .ow, .chroma .p { color: #ccc; }
+.chroma .gd { color: #f2777a; }
+.chroma .gi { color: #9c9; }
+
+/* Math rendered by KaTeX at build time */
+.math-block { overflow-x: auto; margin: 1em 0; text-align: center; }
+math[display="block"] { font-size: 1.15em; }
+
+/* Markdown alerts (> [!TIP]) and {{< alert >}} */
+.md-alert { padding: 10px 15px; }
+.md-alert > :last-child { margin-bottom: 0; }
+.md-alert-title { font-weight: bold; margin-bottom: 6px; }
+
+/* {{< bilibili >}} / {{< embed >}} */
+.embed-video { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; margin: 1em 0; }
+.embed-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+/* {{< friend >}} */
+.friend-card { display: inline-flex; align-items: center; gap: 8px; margin: 6px 8px 6px 0; padding: 8px 14px; border: 1px solid #333; border-radius: 4px; background: #111; }
+.friend-card:hover { border-color: #0f0; text-decoration: none; }
+.friend-card img { width: 32px; height: 32px; border-radius: 50%; }
+.friend-desc { color: #888; font-size: 90%; }
+
+.mermaid { background: transparent; border: 0; }
+img { max-width: 100%; }

@@ -1,0 +1,4 @@
+{{ define "main" }}
+{{- $icon := cond (eq .Data.Plural "tags") "fa fa-tags" "fa fa-folder" }}
+{{ partial "archive-list.html" (dict "pages" .Pages.ByDate.Reverse "title" .Title "icon" $icon "page" .) }}
+{{ end }}

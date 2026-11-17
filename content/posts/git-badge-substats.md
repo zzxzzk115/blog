@@ -1,0 +1,218 @@
+---
+title: Git小徽章：Shields.io与Substats
+date: 2020-11-02T15:41:21
+categories: [Experience]
+tags: [tutorial, git, beautify]
+toc: true
+---
+
+使用GitHub等在线代码托管服务的时候，你是否经常见到这样的小徽章？
+
+<div class="align-left"><img src="https://img.shields.io/badge/Language-C++-blue" class="nofancybox"><img src="https://img.shields.io/badge/License-MIT-green" class="nofancybox"></div>
+
+你想拥有自己的小徽章吗？
+
+或许你也想拥有动态显示的小徽章？（粉丝数少不要紧，说不定以后就多了呢^_^）
+
+<div class="align-left"><a href="https://space.bilibili.com/33320940" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?labelColor=FE7398&label=bilibili%20fans&query=$.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&logo=bilibili&logoColor=white&color=282c34&longCache=true" class="nofancybox"></a><a href="https://music.163.com/#/user/home?id=1330462180" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?label=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%B2%89%E4%B8%9D&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D1330462180&color=282c34&labelColor=e72d2c&logo=data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTYiIGhlaWdodD0iOTYiPjxkZWZzPjxzdHlsZS8+PC9kZWZzPjxwYXRoIGQ9Ik02MjcuMDg2IDUuMTE1YzI4LjEzMi03LjY3MiA1OC44MjItNy42NzIgODYuOTUzIDAgMzMuMjQ3IDcuNjcyIDYzLjkzNyAyMy4wMTcgODkuNTEyIDQzLjQ3NyAxMC4yMyA3LjY3MyAxNy45MDIgMTUuMzQ0IDIzLjAxNyAyOC4xMzEgNy42NzIgMTcuOTAzIDUuMTE0IDM4LjM2My01LjExNSA1My43MDgtNy42NzIgMTIuNzg3LTIzLjAxNyAyMy4wMTctNDAuOTIgMjUuNTc0LTEyLjc4NyAyLjU1OC0yNS41NzQgMC0zOC4zNjItNy42NzItNS4xMTUtMi41NTgtMTAuMjMtMTAuMjMtMTcuOTAyLTEyLjc4Ny0xNy45MDItMTAuMjMtMzUuODA0LTIwLjQ2LTU2LjI2NC0xNy45MDMtMTUuMzQ1IDAtMjguMTMyIDcuNjczLTM1LjgwNCAxNy45MDMtMTAuMjMgMTAuMjMtMTIuNzg4IDIzLjAxNy0xMC4yMyAzNS44MDQgNy42NzIgMjUuNTc0IDEyLjc4NyA1My43MDYgMjAuNDYgNzkuMjgxIDUxLjE1IDIuNTU4IDk5Ljc0IDE1LjM0NSAxNDMuMjE4IDQwLjkyIDQwLjkyIDI1LjU3NSA3OS4yOCA1OC44MjEgMTA5Ljk3IDk3LjE4MyAyNS41NzUgMzMuMjQ3IDQ2LjAzNSA3MS42MSA1Ni4yNjUgMTEyLjUzIDEyLjc4NiA0My40NzYgMTcuOTAxIDg5LjUxIDEyLjc4NiAxMzIuOTg2LTIuNTU3IDM4LjM2My0xMC4yMyA3NC4xNjYtMjMuMDE2IDEwOS45NzEtMzMuMjQ3IDg0LjM5Ni05Mi4wNyAxNjEuMTItMTcxLjM1IDIwOS43MTMtNTYuMjY1IDM1LjgwMy0xMjIuNzYgNTguODIxLTE4OS4yNTMgNjYuNDkzLTQ2LjAzNCA1LjExNS05Mi4wNjkgNS4xMTUtMTM4LjEwMi0yLjU1Ny05NC42MjctMTUuMzQ1LTE4MS41OC02MS4zOC0yNTAuNjMxLTEzMC40MzEtNjYuNDk1LTY2LjQ5My0xMTIuNTMtMTUzLjQ0OC0xMzIuOTktMjQ1LjUxNi03LjY3MS02OS4wNTItNy42NzEtMTM4LjEwMyA3LjY3My0yMDcuMTU0IDE3LjkwMy04MS44NCA2MS4zOC0xNjEuMTIgMTE3LjY0NC0yMjIuNSA0OC41OTItNTEuMTUgMTA3LjQxNC04OS41MTEgMTcxLjM1LTExNy42NDMgNy42NzItMi41NTggMTIuNzg3LTUuMTE1IDIwLjQ2LTcuNjczIDE1LjM0NC0yLjU1NyAzMC42OSAwIDQzLjQ3NyAxMC4yMyAxNy45MDIgMTIuNzg4IDI1LjU3NCAzMy4yNDggMjMuMDE3IDUzLjcwNy0yLjU1NyAyMC40Ni0xNy45MDIgMzguMzYzLTM1LjgwNSA0Ni4wMzQtNjMuOTM3IDI1LjU3NS0xMjIuNzU4IDY5LjA1Mi0xNjMuNjc4IDEyMi43Ni0zOC4zNjIgNTMuNzA1LTYzLjkzNiAxMTIuNTI3LTcxLjYwOCAxNzMuOTA2LTcuNjcyIDYxLjM4IDAgMTIyLjc1OCAyMC40NiAxODEuNTggMzAuNjkgODQuMzk2IDk0LjYyNiAxNTYuMDA0IDE3My45MDcgMTk2LjkyNCA0OC41OTIgMjUuNTc1IDEwMi4yOTggMzguMzYyIDE1Ni4wMDUgMzguMzYyIDQzLjQ3NyAwIDg5LjUxMS03LjY3MiAxMzAuNDMtMjMuMDE3IDM1LjgwNS0xMi43ODcgNzEuNjEtMzMuMjQ3IDk5Ljc0MS01OC44MjIgMjguMTMzLTIzLjAxNiA1MS4xNS01My43MDYgNjYuNDk1LTg0LjM5NiA3LjY3Mi0xNS4zNDUgMTcuOTAxLTMzLjI0NyAyMC40Ni01MS4xNSAxNS4zNDQtNTEuMTQ5IDE3LjkwMS0xMDcuNDEzIDIuNTU2LTE1OC41NjEtMTIuNzg2LTQzLjQ3OC0zOC4zNjEtODEuODQtNzEuNjA5LTEwOS45NzEtMTUuMzQ0LTEyLjc4Ny0zMC42OS0yNS41NzUtNDguNTkyLTM1LjgwNS0xNS4zNDQtNy42NzItMzAuNjktMTUuMzQ1LTQ4LjU5MS0xNy45MDIgMTIuNzg4IDQ2LjAzNCAyMy4wMTggOTIuMDcgMzUuODA0IDEzNS41NDUgMi41NTggMTAuMjMgNS4xMTUgMjMuMDE4IDUuMTE1IDMzLjI0OCAyLjU1OCA0Ni4wMzMtMTUuMzQ0IDk0LjYyNS00Ni4wMzQgMTMwLjQzLTI4LjEzMiAzMy4yNDYtNjkuMDUyIDU4LjgyMS0xMTIuNTI4IDY2LjQ5NC00Ni4wMzQgMTAuMjMtOTcuMTg0IDAtMTM4LjEwMy0yNS41NzUtMzguMzYyLTI1LjU3NC02Ni40OTQtNjMuOTM2LTgxLjg0LTEwNC44NTYtNy42NzItMjMuMDE3LTEyLjc4Ny00OC41OTEtMTIuNzg3LTc0LjE2Ni0yLjU1Ni01Ni4yNjQgMTIuNzg4LTEwOS45NzEgNDMuNDc4LTE1Ni4wMDUgMzUuODA0LTUzLjcwNyA5NC42MjUtOTIuMDcgMTU4LjU2Mi0xMDkuOTcxLTUuMTE1LTE3LjkwMi0xMC4yMy0zNS44MDUtMTIuNzg3LTUzLjcwNy0xMi43ODctMzguMzYxLTEwLjIzLTgxLjgzOSA3LjY3Mi0xMTUuMDg2IDEwLjIzLTIwLjQ2IDIzLjAxOC0zOC4zNjEgNDAuOTItNTEuMTUgMjMuMDE2LTIwLjQ2IDQzLjQ3Ni0zMy4yNDYgNjYuNDk0LTQwLjkxOE00NzguNzUzIDQxOS40MjRjLTE3LjkwMyAxNy45MDItMjguMTMzIDQwLjkyLTMzLjI0NyA2My45MzYtNS4xMTQgMjAuNDYtNS4xMTQgNDMuNDc3IDAgNjYuNDk1IDUuMTE0IDIzLjAxNiAxNy45MDIgNDYuMDMzIDM4LjM2MiA2MS4zOCAxNS4zNDUgMTAuMjI4IDM1LjgwNCAxNS4zNDMgNTYuMjY0IDEwLjIyOCAzNS44MDQtNS4xMTUgNjMuOTM2LTM4LjM2MiA2My45MzYtNzQuMTY2LTIuNTU3LTcuNjcyLTIuNTU3LTE3LjkwMi01LjExNS0yNS41NzUtMTIuNzg3LTQ4LjU5Mi0yNS41NzMtOTkuNzQxLTM4LjM2MS0xNDguMzMzLTMwLjY5IDcuNjczLTU4LjgyMiAyMy4wMTgtODEuODQgNDYuMDM1eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==&longCache=true" class="nofancybox"></a></div>
+
+本篇文章教你如何制作这样的小徽章并显示在网页里！
+
+<!--more-->
+
+# Shields.io
+
+[Shield.io](https://shields.io/)提供了制作小徽章的服务，分为静态徽章和动态徽章两种。静态徽章，即固定文字值，徽章的标签和文本都不会变化。动态徽章，是Shields.io通过你提供的请求URL和对应的query字段，帮你请求URL得到JSON数据后，把你需要展示的数据展示在文本中的服务。
+
+## 静态徽章
+
+一般徽章的格式为:`https://img.shields.io/badge/{左标签文本}-{右消息文本}-{右消息背景颜色}`。
+
+消息的背景颜色，Shields.io默认提供了一些英文单词构成的备选项，你也可以用颜色的HEX值：
+
+<div class="align-left">
+    <p><span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="brightgreen" src="https://img.shields.io/badge/-brightgreen-brightgreen" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="green" src="https://img.shields.io/badge/-green-green" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="yellowgreen" src="https://img.shields.io/badge/-yellowgreen-yellowgreen" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="yellow" src="https://img.shields.io/badge/-yellow-yellow" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="orange" src="https://img.shields.io/badge/-orange-orange" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="red" src="https://img.shields.io/badge/-red-red" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="blue" src="https://img.shields.io/badge/-blue-blue" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="lightgrey" src="https://img.shields.io/badge/-lightgrey-lightgrey" class="nofancybox"></span></span><br><span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="success" src="https://img.shields.io/badge/-success-success" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="important" src="https://img.shields.io/badge/-important-important" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="critical" src="https://img.shields.io/badge/-critical-critical" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="informational" src="https://img.shields.io/badge/-informational-informational" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="inactive" src="https://img.shields.io/badge/-inactive-inactive" class="nofancybox"></span></span><br><span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="blueviolet" src="https://img.shields.io/badge/-blueviolet-blueviolet" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="ff69b4" src="https://img.shields.io/badge/-ff69b4-ff69b4" class="nofancybox"></span><span display="inline" height="20px" class="common__BadgeWrapper-v13icv-3 dBqSYE"><img alt="9cf" src="https://img.shields.io/badge/-9cf-9cf" class="nofancybox"></span></span></p>
+</div>
+
+
+例如我要显示左标签文本为`Language`，右消息文本为`C++`，右消息背景颜色为`blue`：
+
+`https://img.shields.io/badge/Language-C++-blue`
+
+<img src="https://img.shields.io/badge/Language-C++-blue" class="nofancybox"></img>
+
+中文也是可以的，看起来非常专业（迫真）：
+
+`https://img.shields.io/badge/语言-C加加-blue`
+
+<img src="https://img.shields.io/badge/语言-C加加-blue" class="nofancybox"></img>
+
+## 动态徽章
+
+动态徽章的原理就是：首先你得有个API服务，填入相关参数，请求该服务以后，返回JSON数据，里面包含你需要的动态数据。说实话，我可以自己造轮子，写API服务。因为这个轮子非常好造。但是既然非常好造，又有人做好了，那轮子可以放着以后造嘛哈哈哈，先用别人的呗。（说实话Substats有点慢，我真的有打算造轮子）
+
+### Substats
+
+[Substats](https://substats.spencerwoo.com)就是这样一款服务，它主要的请求是各个社交平台，返回的是粉丝数或者订阅数。实际上原理也不难，通过请求社交平台的主页URL，获取HTML对应标签的值，返回的时候用JSON封装一下就行了。感兴趣的可以参考我之前的那篇[关于服务器通过Python搭建API服务](http://blog.zhangkexuan.cn/2020/11/01/about-python-api/)来动手试试。
+
+那么Substats怎么用呢，看个例子：
+
+`https://api.spencerwoo.com/substats/?source=bilibili&queryKey=33320940`
+
+`source`的值填对应社交网站的名字，具体支持的名字值，需要参考[Substats API](https://substats.spencerwoo.com/api.html#api-endpoint)。
+
+`queryKey`对应id之类体现唯一性标志的值，在这里是bilibili主页url里的uid。
+
+`https://space.bilibili.com/33320940`
+
+`queryKey`在这里就是`33320930`。
+
+先直接访问，看看返回的JSON：
+
+```json
+{"status":200,"data":{"totalSubs":467,"subsInEachSource":{"bilibili":467},"failedSources":{}}}
+```
+
+`status`是Substats设计的状态码，`200`代表请求成功。
+
+`data`是Substats设计的json对象，我们需要的是`totalSubs`键对应的值。这里是467。
+
+现在，就可以通过固定的API服务URL和固定的JSON对象需要得到值所对应的键，告诉Shields.io让它替你完成任务了。
+
+### Shields的动态徽章API
+
+格式为：
+
+`https://img.shields.io/badge/dynamic/json?url=<API请求网址>&label=<左标签文本>&query=<JSON的键>&color=<右消息背景颜色>&prefix=<前缀>&suffix=<后缀>`
+
+前缀和后缀一般用不上。
+
+这里还是以显示我的bilibili粉丝数为例子：
+
+`https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=%24.data.totalSubs&color=282c34`
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34" class="nofancybox">
+
+上面的URL是经过转义了的，实际上就是`API请求网址`填`https://api.spencerwoo.com/substats/?source=bilibili&queryKey=33320940`，`左标签文本`填`bilibili fans`，`JSON的键`填`$.data.totalSubs`，`右消息背景颜色`填`282c34`，前缀后缀直接不管，不加`&prefix=<..>&suffix=<..>`。
+
+你也可以访问Shields.io填入相应字段，点击`Make Badge`：
+
+![shields-dynamic-badge](http://img.zhangkexuan.cn/markdown_20201102171657.png)
+
+到这里，静态徽章和动态徽章就讲解完了，你可能发现，不对啊，前面的例子还有粉色标签和bilibili小电视的logo呢！没错，接下来还剩大家都非常关注的“美化”功能。
+
+## 美化
+
+### 图标的显示
+
+可以在以上URL中加入`&logo=bilibili`，效果如下：
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili" class="nofancybox">
+
+图标需要去[simpleicons](https://simpleicons.org/)去按名称搜索，如果有，就可以直接用图标的名字。
+
+例如我可以改成`&logo=baidu`
+
+效果则变成这样：
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=baidu" class="nofancybox">
+
+如果simpleicons没有你想要的图标，你可以用自定义图标
+
+自定义图标需要传入图标的base64编码，例如simpleicons没有网易云音乐的图标，我就必须自己找一张网易云的svg图标，转成base64格式，可以在这个网上进行转换：https://www.css-js.com/tools/base64.html
+
+图标可以在easyicon.net找：https://www.easyicon.net
+
+也有其他很多的SVG图标搜索网都可以看看。
+
+这里我[在easyicon搜索网易云音乐](https://www.easyicon.net/language.en/iconsearch/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/)
+
+拖入网易云音乐logo的svg格式图片文件到上面说的转换网址，取消勾选“使用在css中”，点击"Copy code"，得到base64编码到剪切板：
+
+![tobase64](http://img.zhangkexuan.cn/markdown_20201102180827.png)
+
+```
+data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjMxLjAzMSIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMxLjAzMSAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzAwMDsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGQ9Ik0yMS4yNzksLTAuMDE1IEMyMS42MzAsMC4wNDEgMjEuOTg1LDAuMDgxIDIyLjMzMywwLjE1NiBDMjMuNTUzLDAuNDE5IDI0LjY0NiwwLjk0OCAyNS42MTEsMS43MjMgQzI2LjI0NCwyLjIzMSAyNi41MDIsMi44OTQgMjYuMzE5LDMuNjc5IEMyNi4xNTQsNC4zODUgMjUuNjkzLDQuODYxIDI0Ljk4MSw1LjA2NCBDMjQuMzA3LDUuMjU2IDIzLjY5OSw1LjExMCAyMy4xNDYsNC42NzcgQzIyLjQ0NSw0LjEyNyAyMS42NjcsMy43NDcgMjAuNzM1LDMuODI4IEMxOS45NDUsMy44OTcgMTkuMTkwLDQuNzEwIDE5LjI1OCw1LjQzNiBDMTkuMjg4LDUuNzYxIDE5LjQwNyw2LjA3OCAxOS40OTEsNi4zOTggQzE5LjY0MCw2Ljk2MiAxOS43OTQsNy41MjUgMTkuOTQ1LDguMDg5IEMxOS45NzEsOC4xODYgMTkuOTk2LDguMjYzIDIwLjEzNSw4LjI3MSBDMjIuMjU4LDguMzg0IDI0LjE3MSw5LjA2MCAyNS44NzYsMTAuMzEzIEMyNy41NTIsMTEuNTQ1IDI4LjkyNCwxMy4wMjQgMjkuODQ0LDE0Ljg4MiBDMzAuNTE5LDE2LjI0NiAzMC44OTcsMTcuNjg2IDMwLjk5NywxOS4xOTcgQzMxLjEzMCwyMS4yMDYgMzAuODg5LDIzLjE3MSAzMC4wOTAsMjUuMDI2IEMyOC4yMzIsMjkuMzM4IDI0Ljk2NSwzMi4xMTkgMjAuMzcxLDMzLjM5NyBDMTguNjIzLDMzLjg4NCAxNi44MzIsMzQuMDc0IDE1LjAxOSwzMy45NzMgQzExLjI1MCwzMy43NjMgNy45ODUsMzIuMzcwIDUuMjM1LDI5Ljg1MSBDMi41MjEsMjcuMzY3IDAuODI5LDI0LjMxMiAwLjI0MSwyMC43MjYgQy0wLjU2MCwxNS44NDggMC42NjgsMTEuNDc1IDMuOTE3LDcuNjgyIEM1LjcwMSw1LjU5OCA3LjkyOCw0LjA5NyAxMC41MjUsMy4xMjggQzExLjQyMCwyLjc5MyAxMi4zOTksMy4xMDUgMTIuODkwLDMuODY5IEMxMy4zOTIsNC42NTAgMTMuMjc0LDUuNjU1IDEyLjU3OSw2LjI3NiBDMTIuMzgzLDYuNDUyIDEyLjEzNSw2LjU5MSAxMS44ODcsNi42OTAgQzcuOTI4LDguMjcxIDUuMzEzLDExLjA1NiA0LjI3NCwxNS4xMTggQzMuMjY2LDE5LjA1OCA0LjE1NywyMi42NjUgNi43MzAsMjUuODQzIEM4LjM0MywyNy44MzUgMTAuNDI3LDI5LjE3MyAxMi45NDksMjkuODMwIEMxNC41NzksMzAuMjU1IDE2LjIyNiwzMC4yODIgMTcuODg2LDMwLjAzMSBDMTkuNTk5LDI5Ljc3MiAyMS4xOTksMjkuMjIxIDIyLjYzNCwyOC4yNjAgQzI0LjYwOCwyNi45MzcgMjYuMDE1LDI1LjE3NCAyNi43MTgsMjIuOTMwIEMyNy4zMjUsMjAuOTkzIDI3LjM0NiwxOS4wMzcgMjYuNTk2LDE3LjExNSBDMjUuOTkyLDE1LjU2OCAyNC45MjQsMTQuMzc4IDIzLjU4NSwxMy4zOTYgQzIyLjg3MCwxMi44NzEgMjIuMTAyLDEyLjQ2MiAyMS4yMjYsMTIuMjYxIEMyMS4xODYsMTIuMjUyIDIxLjE0NSwxMi4yNDcgMjEuMDczLDEyLjIzNiBDMjEuMTkzLDEyLjY4NCAyMS4zMDQsMTMuMTEwIDIxLjQxOSwxMy41MzUgQzIxLjY5NywxNC41NTkgMjEuOTgxLDE1LjU4MiAyMi4yNTQsMTYuNjA4IEMyMi44NDcsMTguODM4IDIyLjI3MywyMC43OTEgMjAuNzA0LDIyLjQ1NSBDMTkuMjUyLDIzLjk5NSAxNy40MDQsMjQuNjY1IDE1LjI4NSwyNC40NjQgQzEyLjkyNSwyNC4yNDAgMTEuMjQwLDIyLjk4NyAxMC4xNDEsMjAuOTU4IEM5LjU2NSwxOS44OTYgOS4zMTcsMTguNzUxIDkuMjcxLDE3LjU1MyBDOS4xOTgsMTUuNjQ1IDkuNjUzLDEzLjg4NCAxMC43NzAsMTIuMzA5IEMxMS45NzAsMTAuNjE4IDEzLjYzMSw5LjUzMyAxNS41OTUsOC44NTkgQzE1Ljc0OSw4LjgwNiAxNS45MDYsOC43NTggMTYuMDg3LDguNjk5IEMxNS45ODEsOC4zMDYgMTUuODcxLDcuOTIzIDE1Ljc3Niw3LjUzNyBDMTUuNjQ1LDcuMDA1IDE1LjQ3Nyw2LjQ3NiAxNS40MTEsNS45MzYgQzE1LjIxNyw0LjMzOCAxNS43MTgsMi45NDkgMTYuODQ2LDEuNzg1IEMxNy43NzAsMC44MzMgMTguODkwLDAuMjI5IDIwLjIzMiwwLjA0OCBDMjAuMzgwLDAuMDI4IDIwLjUyNywwLjAwNiAyMC42NzUsLTAuMDE1IEMyMC44NzYsLTAuMDE1IDIxLjA3NywtMC4wMTUgMjEuMjc5LC0wLjAxNSBaTTE3LjA4OCwxMi4zODcgQzE1LjkyNSwxMi43NDkgMTQuOTIxLDEzLjMwMSAxNC4xNjgsMTQuMjE5IEMxMy4xNjEsMTUuNDQ5IDEyLjk2MCwxNi44NjIgMTMuMjgxLDE4LjM2MyBDMTMuNDQ4LDE5LjE0MyAxMy44MzgsMTkuODEwIDE0LjUyMiwyMC4yNzYgQzE1LjM3NywyMC44NTggMTYuNTQyLDIwLjgzMyAxNy40MzYsMjAuMjI4IEMxOC4zNTAsMTkuNjA4IDE4Ljc1NywxOC42MDkgMTguNDkwLDE3LjU4NSBDMTguMTk4LDE2LjQ2MyAxNy44ODcsMTUuMzQ1IDE3LjU4NCwxNC4yMjUgQzE3LjQyMSwxMy42MjMgMTcuMjU4LDEzLjAxOSAxNy4wODgsMTIuMzg3IFoiIGNsYXNzPSJjbHMtMSIvPgo8L3N2Zz4K
+```
+
+然后就可以传入
+
+```
+&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjMxLjAzMSIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMxLjAzMSAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzAwMDsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGQ9Ik0yMS4yNzksLTAuMDE1IEMyMS42MzAsMC4wNDEgMjEuOTg1LDAuMDgxIDIyLjMzMywwLjE1NiBDMjMuNTUzLDAuNDE5IDI0LjY0NiwwLjk0OCAyNS42MTEsMS43MjMgQzI2LjI0NCwyLjIzMSAyNi41MDIsMi44OTQgMjYuMzE5LDMuNjc5IEMyNi4xNTQsNC4zODUgMjUuNjkzLDQuODYxIDI0Ljk4MSw1LjA2NCBDMjQuMzA3LDUuMjU2IDIzLjY5OSw1LjExMCAyMy4xNDYsNC42NzcgQzIyLjQ0NSw0LjEyNyAyMS42NjcsMy43NDcgMjAuNzM1LDMuODI4IEMxOS45NDUsMy44OTcgMTkuMTkwLDQuNzEwIDE5LjI1OCw1LjQzNiBDMTkuMjg4LDUuNzYxIDE5LjQwNyw2LjA3OCAxOS40OTEsNi4zOTggQzE5LjY0MCw2Ljk2MiAxOS43OTQsNy41MjUgMTkuOTQ1LDguMDg5IEMxOS45NzEsOC4xODYgMTkuOTk2LDguMjYzIDIwLjEzNSw4LjI3MSBDMjIuMjU4LDguMzg0IDI0LjE3MSw5LjA2MCAyNS44NzYsMTAuMzEzIEMyNy41NTIsMTEuNTQ1IDI4LjkyNCwxMy4wMjQgMjkuODQ0LDE0Ljg4MiBDMzAuNTE5LDE2LjI0NiAzMC44OTcsMTcuNjg2IDMwLjk5NywxOS4xOTcgQzMxLjEzMCwyMS4yMDYgMzAuODg5LDIzLjE3MSAzMC4wOTAsMjUuMDI2IEMyOC4yMzIsMjkuMzM4IDI0Ljk2NSwzMi4xMTkgMjAuMzcxLDMzLjM5NyBDMTguNjIzLDMzLjg4NCAxNi44MzIsMzQuMDc0IDE1LjAxOSwzMy45NzMgQzExLjI1MCwzMy43NjMgNy45ODUsMzIuMzcwIDUuMjM1LDI5Ljg1MSBDMi41MjEsMjcuMzY3IDAuODI5LDI0LjMxMiAwLjI0MSwyMC43MjYgQy0wLjU2MCwxNS44NDggMC42NjgsMTEuNDc1IDMuOTE3LDcuNjgyIEM1LjcwMSw1LjU5OCA3LjkyOCw0LjA5NyAxMC41MjUsMy4xMjggQzExLjQyMCwyLjc5MyAxMi4zOTksMy4xMDUgMTIuODkwLDMuODY5IEMxMy4zOTIsNC42NTAgMTMuMjc0LDUuNjU1IDEyLjU3OSw2LjI3NiBDMTIuMzgzLDYuNDUyIDEyLjEzNSw2LjU5MSAxMS44ODcsNi42OTAgQzcuOTI4LDguMjcxIDUuMzEzLDExLjA1NiA0LjI3NCwxNS4xMTggQzMuMjY2LDE5LjA1OCA0LjE1NywyMi42NjUgNi43MzAsMjUuODQzIEM4LjM0MywyNy44MzUgMTAuNDI3LDI5LjE3MyAxMi45NDksMjkuODMwIEMxNC41NzksMzAuMjU1IDE2LjIyNiwzMC4yODIgMTcuODg2LDMwLjAzMSBDMTkuNTk5LDI5Ljc3MiAyMS4xOTksMjkuMjIxIDIyLjYzNCwyOC4yNjAgQzI0LjYwOCwyNi45MzcgMjYuMDE1LDI1LjE3NCAyNi43MTgsMjIuOTMwIEMyNy4zMjUsMjAuOTkzIDI3LjM0NiwxOS4wMzcgMjYuNTk2LDE3LjExNSBDMjUuOTkyLDE1LjU2OCAyNC45MjQsMTQuMzc4IDIzLjU4NSwxMy4zOTYgQzIyLjg3MCwxMi44NzEgMjIuMTAyLDEyLjQ2MiAyMS4yMjYsMTIuMjYxIEMyMS4xODYsMTIuMjUyIDIxLjE0NSwxMi4yNDcgMjEuMDczLDEyLjIzNiBDMjEuMTkzLDEyLjY4NCAyMS4zMDQsMTMuMTEwIDIxLjQxOSwxMy41MzUgQzIxLjY5NywxNC41NTkgMjEuOTgxLDE1LjU4MiAyMi4yNTQsMTYuNjA4IEMyMi44NDcsMTguODM4IDIyLjI3MywyMC43OTEgMjAuNzA0LDIyLjQ1NSBDMTkuMjUyLDIzLjk5NSAxNy40MDQsMjQuNjY1IDE1LjI4NSwyNC40NjQgQzEyLjkyNSwyNC4yNDAgMTEuMjQwLDIyLjk4NyAxMC4xNDEsMjAuOTU4IEM5LjU2NSwxOS44OTYgOS4zMTcsMTguNzUxIDkuMjcxLDE3LjU1MyBDOS4xOTgsMTUuNjQ1IDkuNjUzLDEzLjg4NCAxMC43NzAsMTIuMzA5IEMxMS45NzAsMTAuNjE4IDEzLjYzMSw5LjUzMyAxNS41OTUsOC44NTkgQzE1Ljc0OSw4LjgwNiAxNS45MDYsOC43NTggMTYuMDg3LDguNjk5IEMxNS45ODEsOC4zMDYgMTUuODcxLDcuOTIzIDE1Ljc3Niw3LjUzNyBDMTUuNjQ1LDcuMDA1IDE1LjQ3Nyw2LjQ3NiAxNS40MTEsNS45MzYgQzE1LjIxNyw0LjMzOCAxNS43MTgsMi45NDkgMTYuODQ2LDEuNzg1IEMxNy43NzAsMC44MzMgMTguODkwLDAuMjI5IDIwLjIzMiwwLjA0OCBDMjAuMzgwLDAuMDI4IDIwLjUyNywwLjAwNiAyMC42NzUsLTAuMDE1IEMyMC44NzYsLTAuMDE1IDIxLjA3NywtMC4wMTUgMjEuMjc5LC0wLjAxNSBaTTE3LjA4OCwxMi4zODcgQzE1LjkyNSwxMi43NDkgMTQuOTIxLDEzLjMwMSAxNC4xNjgsMTQuMjE5IEMxMy4xNjEsMTUuNDQ5IDEyLjk2MCwxNi44NjIgMTMuMjgxLDE4LjM2MyBDMTMuNDQ4LDE5LjE0MyAxMy44MzgsMTkuODEwIDE0LjUyMiwyMC4yNzYgQzE1LjM3NywyMC44NTggMTYuNTQyLDIwLjgzMyAxNy40MzYsMjAuMjI4IEMxOC4zNTAsMTkuNjA4IDE4Ljc1NywxOC42MDkgMTguNDkwLDE3LjU4NSBDMTguMTk4LDE2LjQ2MyAxNy44ODcsMTUuMzQ1IDE3LjU4NCwxNC4yMjUgQzE3LjQyMSwxMy42MjMgMTcuMjU4LDEzLjAxOSAxNy4wODgsMTIuMzg3IFoiIGNsYXNzPSJjbHMtMSIvPgo8L3N2Zz4K
+```
+
+效果：
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjMxLjAzMSIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMxLjAzMSAzNCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzAwMDsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGQ9Ik0yMS4yNzksLTAuMDE1IEMyMS42MzAsMC4wNDEgMjEuOTg1LDAuMDgxIDIyLjMzMywwLjE1NiBDMjMuNTUzLDAuNDE5IDI0LjY0NiwwLjk0OCAyNS42MTEsMS43MjMgQzI2LjI0NCwyLjIzMSAyNi41MDIsMi44OTQgMjYuMzE5LDMuNjc5IEMyNi4xNTQsNC4zODUgMjUuNjkzLDQuODYxIDI0Ljk4MSw1LjA2NCBDMjQuMzA3LDUuMjU2IDIzLjY5OSw1LjExMCAyMy4xNDYsNC42NzcgQzIyLjQ0NSw0LjEyNyAyMS42NjcsMy43NDcgMjAuNzM1LDMuODI4IEMxOS45NDUsMy44OTcgMTkuMTkwLDQuNzEwIDE5LjI1OCw1LjQzNiBDMTkuMjg4LDUuNzYxIDE5LjQwNyw2LjA3OCAxOS40OTEsNi4zOTggQzE5LjY0MCw2Ljk2MiAxOS43OTQsNy41MjUgMTkuOTQ1LDguMDg5IEMxOS45NzEsOC4xODYgMTkuOTk2LDguMjYzIDIwLjEzNSw4LjI3MSBDMjIuMjU4LDguMzg0IDI0LjE3MSw5LjA2MCAyNS44NzYsMTAuMzEzIEMyNy41NTIsMTEuNTQ1IDI4LjkyNCwxMy4wMjQgMjkuODQ0LDE0Ljg4MiBDMzAuNTE5LDE2LjI0NiAzMC44OTcsMTcuNjg2IDMwLjk5NywxOS4xOTcgQzMxLjEzMCwyMS4yMDYgMzAuODg5LDIzLjE3MSAzMC4wOTAsMjUuMDI2IEMyOC4yMzIsMjkuMzM4IDI0Ljk2NSwzMi4xMTkgMjAuMzcxLDMzLjM5NyBDMTguNjIzLDMzLjg4NCAxNi44MzIsMzQuMDc0IDE1LjAxOSwzMy45NzMgQzExLjI1MCwzMy43NjMgNy45ODUsMzIuMzcwIDUuMjM1LDI5Ljg1MSBDMi41MjEsMjcuMzY3IDAuODI5LDI0LjMxMiAwLjI0MSwyMC43MjYgQy0wLjU2MCwxNS44NDggMC42NjgsMTEuNDc1IDMuOTE3LDcuNjgyIEM1LjcwMSw1LjU5OCA3LjkyOCw0LjA5NyAxMC41MjUsMy4xMjggQzExLjQyMCwyLjc5MyAxMi4zOTksMy4xMDUgMTIuODkwLDMuODY5IEMxMy4zOTIsNC42NTAgMTMuMjc0LDUuNjU1IDEyLjU3OSw2LjI3NiBDMTIuMzgzLDYuNDUyIDEyLjEzNSw2LjU5MSAxMS44ODcsNi42OTAgQzcuOTI4LDguMjcxIDUuMzEzLDExLjA1NiA0LjI3NCwxNS4xMTggQzMuMjY2LDE5LjA1OCA0LjE1NywyMi42NjUgNi43MzAsMjUuODQzIEM4LjM0MywyNy44MzUgMTAuNDI3LDI5LjE3MyAxMi45NDksMjkuODMwIEMxNC41NzksMzAuMjU1IDE2LjIyNiwzMC4yODIgMTcuODg2LDMwLjAzMSBDMTkuNTk5LDI5Ljc3MiAyMS4xOTksMjkuMjIxIDIyLjYzNCwyOC4yNjAgQzI0LjYwOCwyNi45MzcgMjYuMDE1LDI1LjE3NCAyNi43MTgsMjIuOTMwIEMyNy4zMjUsMjAuOTkzIDI3LjM0NiwxOS4wMzcgMjYuNTk2LDE3LjExNSBDMjUuOTkyLDE1LjU2OCAyNC45MjQsMTQuMzc4IDIzLjU4NSwxMy4zOTYgQzIyLjg3MCwxMi44NzEgMjIuMTAyLDEyLjQ2MiAyMS4yMjYsMTIuMjYxIEMyMS4xODYsMTIuMjUyIDIxLjE0NSwxMi4yNDcgMjEuMDczLDEyLjIzNiBDMjEuMTkzLDEyLjY4NCAyMS4zMDQsMTMuMTEwIDIxLjQxOSwxMy41MzUgQzIxLjY5NywxNC41NTkgMjEuOTgxLDE1LjU4MiAyMi4yNTQsMTYuNjA4IEMyMi44NDcsMTguODM4IDIyLjI3MywyMC43OTEgMjAuNzA0LDIyLjQ1NSBDMTkuMjUyLDIzLjk5NSAxNy40MDQsMjQuNjY1IDE1LjI4NSwyNC40NjQgQzEyLjkyNSwyNC4yNDAgMTEuMjQwLDIyLjk4NyAxMC4xNDEsMjAuOTU4IEM5LjU2NSwxOS44OTYgOS4zMTcsMTguNzUxIDkuMjcxLDE3LjU1MyBDOS4xOTgsMTUuNjQ1IDkuNjUzLDEzLjg4NCAxMC43NzAsMTIuMzA5IEMxMS45NzAsMTAuNjE4IDEzLjYzMSw5LjUzMyAxNS41OTUsOC44NTkgQzE1Ljc0OSw4LjgwNiAxNS45MDYsOC43NTggMTYuMDg3LDguNjk5IEMxNS45ODEsOC4zMDYgMTUuODcxLDcuOTIzIDE1Ljc3Niw3LjUzNyBDMTUuNjQ1LDcuMDA1IDE1LjQ3Nyw2LjQ3NiAxNS40MTEsNS45MzYgQzE1LjIxNyw0LjMzOCAxNS43MTgsMi45NDkgMTYuODQ2LDEuNzg1IEMxNy43NzAsMC44MzMgMTguODkwLDAuMjI5IDIwLjIzMiwwLjA0OCBDMjAuMzgwLDAuMDI4IDIwLjUyNywwLjAwNiAyMC42NzUsLTAuMDE1IEMyMC44NzYsLTAuMDE1IDIxLjA3NywtMC4wMTUgMjEuMjc5LC0wLjAxNSBaTTE3LjA4OCwxMi4zODcgQzE1LjkyNSwxMi43NDkgMTQuOTIxLDEzLjMwMSAxNC4xNjgsMTQuMjE5IEMxMy4xNjEsMTUuNDQ5IDEyLjk2MCwxNi44NjIgMTMuMjgxLDE4LjM2MyBDMTMuNDQ4LDE5LjE0MyAxMy44MzgsMTkuODEwIDE0LjUyMiwyMC4yNzYgQzE1LjM3NywyMC44NTggMTYuNTQyLDIwLjgzMyAxNy40MzYsMjAuMjI4IEMxOC4zNTAsMTkuNjA4IDE4Ljc1NywxOC42MDkgMTguNDkwLDE3LjU4NSBDMTguMTk4LDE2LjQ2MyAxNy44ODcsMTUuMzQ1IDE3LjU4NCwxNC4yMjUgQzE3LjQyMSwxMy42MjMgMTcuMjU4LDEzLjAxOSAxNy4wODgsMTIuMzg3IFoiIGNsYXNzPSJjbHMtMSIvPgo8L3N2Zz4K" class="nofancybox">
+
+可以看到，成功显示网易云音乐的logo。
+
+### 标签的颜色
+
+可以再加参数`&labelColor={颜色值}`
+
+例如之前的bilibili例子，我想让标签是粉色`FE7398`
+
+那么我加上一个参数`&labelColor=FE7398`
+
+效果为：
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398" class="nofancybox">
+
+当然，和之前一样，支持已有的英文备选值。填入pink估计效果不会差太远。
+
+但是现在图标的颜色是蓝色，又有点和白色的文字不太协调，和粉色的对比度也不高，我觉得白色更合适，怎么办呢
+
+### 图标的颜色
+
+加上参数`&logoColor={颜色值}`即可。
+
+我这里加上`&logoColor=white`来看看效果：
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+
+看，效果非常好！
+
+### 徽章的样式
+
+徽章有5种样式，看看官网的例子：
+
+![badge-style](http://img.zhangkexuan.cn/markdown_20201102180012.png)
+
+5种样式分别是`plastic`、`flat`、`flat-square`、`for-the-badge`以及`social`
+
+我们给之前的url再加上`&style=for-the-badge`，看看效果：
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white&style=for-the-badge" class="nofancybox">
+
+WOW！感觉还不错吼
+
+到这里，图标的url为
+
+```
+https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white&style=for-the-badge
+```
+
+最后通过\<img\>标签或者markdown的\!\[\]\(\)方法来显示徽章就行啦！
+
+比如
+
+```html
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white&style=for-the-badge">
+```
+
+或者
+
+```markdown
+![bilibili fans badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white&style=for-the-badge)
+```
+
+### 更多参数
+
+更多参数详见[Shields.io官网](https://shields.io/)，官网提供了例子。
+
+# 总结
+
+折腾了这么久，总算是吧Shields.io和Substats的使用方法过了一遍。
+
+徽章很好看，你学会怎么制作了吗？如果可以，你可以自己写个API服务试试（毕竟Substats速度一般）。

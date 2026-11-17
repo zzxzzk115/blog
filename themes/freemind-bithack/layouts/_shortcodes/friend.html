@@ -1,0 +1,9 @@
+{{- /*
+  Friend link card.
+  {{< friend name="Ringotc" url="https://ringotc.github.io/" desc="数据科学方向" avatar="" >}}
+*/ -}}
+<a class="friend-card" href="{{ .Get "url" }}" target="_blank" rel="noopener">
+  {{- with .Get "avatar" }}<img src="{{ . }}" alt="" class="nofancybox" loading="lazy">{{ else }}<i class="fa fa-user"></i>{{ end }}
+  <span class="friend-name">{{ .Get "name" }}</span>
+  {{- with .Get "desc" }}<span class="friend-desc">{{ . }}</span>{{ end }}
+</a>

@@ -1,0 +1,18 @@
+{{- /*
+  Image slideshow (uses the theme's original gallery.js).
+  {{< gallery >}}
+  /img/a.png
+  /img/b.png
+  {{< /gallery >}}
+*/ -}}
+<div class="gallery">
+  <div class="photoset">
+    {{- range split (trim .Inner "\n ") "\n" }}{{ with trim . " \r" }}
+    <img src="{{ . | relURL }}" alt="" class="nofancybox">
+    {{- end }}{{ end }}
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>

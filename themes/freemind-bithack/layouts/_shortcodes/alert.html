@@ -1,0 +1,10 @@
+{{- /*
+  Bootstrap alert box with Markdown inside.
+  {{< alert type="warning" title="注意" >}}内容 **Markdown**{{< /alert >}}
+  type: success | info | warning | danger
+*/ -}}
+{{- $type := .Get "type" | default (.Get 0) | default "info" }}
+<div class="alert alert-{{ $type }} md-alert">
+  {{- with .Get "title" }}<p class="md-alert-title">{{ . }}</p>{{ end }}
+  {{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>

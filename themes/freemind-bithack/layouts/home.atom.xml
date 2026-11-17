@@ -1,0 +1,28 @@
+{{- $posts := first 20 (where site.RegularPages "Type" "in" site.MainSections).ByDate.Reverse -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.Title }}</title>
+  {{- with site.Params.subtitle }}
+  <subtitle>{{ . }}</subtitle>{{ end }}
+  <link href="{{ .Permalink }}atom.xml" rel="self"/>
+  <link href="{{ .Permalink }}"/>
+  <updated>{{ with $posts }}{{ (index . 0).Lastmod.Format "2006-01-02T15:04:05-07:00" }}{{ else }}{{ now.Format "2006-01-02T15:04:05-07:00" }}{{ end }}</updated>
+  <id>{{ .Permalink }}</id>
+  {{- with site.Params.author }}
+  <author><name>{{ . }}</name></author>{{ end }}
+  <generator uri="https://gohugo.io/">Hugo</generator>
+  {{- range $posts }}
+  <entry>
+    <title>{{ .Title }}</title>
+    <link href="{{ .Permalink }}"/>
+    <id>{{ .Permalink }}</id>
+    <published>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</published>
+    <updated>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</updated>
+    <summary type="html">{{ .Summary | plainify | htmlUnescape | truncate 140 }}</summary>
+    {{- range .GetTerms "categories" }}
+    <category term="{{ .LinkTitle }}" scheme="{{ .Permalink }}"/>{{ end }}
+    {{- range .GetTerms "tags" }}
+    <category term="{{ .LinkTitle }}" scheme="{{ .Permalink }}"/>{{ end }}
+  </entry>
+  {{- end }}
+</feed>

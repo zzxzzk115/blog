@@ -1,0 +1,5 @@
+{{- /* Used by a content page with `layout: archives` (e.g. content/archives.md). */ -}}
+{{ define "main" }}
+{{- $pages := (where site.RegularPages "Type" "in" site.MainSections).ByDate.Reverse }}
+{{ partial "archive-list.html" (dict "pages" $pages "title" (.Title | default (T "archive_a")) "page" .) }}
+{{ end }}

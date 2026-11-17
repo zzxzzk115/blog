@@ -1,0 +1,6 @@
+{{- /* Returns true when math should be rendered on the given page. */ -}}
+{{- $mode := site.Params.math | default "auto" -}}
+{{- $on := false -}}
+{{- if eq $mode "always" }}{{ $on = true }}
+{{- else if eq $mode "auto" }}{{ $on = or .Params.math .Params.mathjax .Params.katex }}{{ end -}}
+{{- return $on -}}

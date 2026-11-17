@@ -1,0 +1,9 @@
+{{- /*
+  Responsive iframe, e.g. a web game hosted under static/.
+  {{< embed src="/GameSrc/CatMarioGB/" ratio="4:3" >}}
+*/ -}}
+{{- $ratio := split (.Get "ratio" | default "16:9") ":" }}
+{{- $pad := mul (div (float (index $ratio 1)) (float (index $ratio 0))) 100 }}
+<div class="embed-video" style="padding-bottom: {{ $pad }}%">
+  <iframe src="{{ .Get "src" | relURL }}" frameborder="0" allowfullscreen loading="lazy"></iframe>
+</div>
