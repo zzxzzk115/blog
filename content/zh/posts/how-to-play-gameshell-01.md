@@ -12,7 +12,7 @@ GameShell 怎么玩？我来教你！
 
 **GameShell** 是一款开源掌机，由 **clockwork** 打造。拿到手后，你需要自己动手将它拼好，插上 SD 卡，开机。
 
-![](http://img.zhangkexuan.cn/markdown_20220512181118.png)
+![](/img/markdown_20220512181118.png)
 
 其核心板叫做 **clockworkpi**，酷似树莓派，运行 Arm Linux(**Debian**)，按钮模块采用 **Arduino** 控制器，屏幕为 320 * 240 的 **LCD**。支持蓝牙和 WiFi，开放 **Arduino** 输出引脚，开放核心板的 **GPIO**。整个 **GameShell** 的软件硬件全部公开透明，无论是操作系统，还是 3D 打印的外壳资料，电路、原理图，[GitHub](<https://github.com/search?q=gameshell>) 都能看到。真正的完全开源。
 
@@ -36,11 +36,11 @@ GameShell 怎么玩？我来教你！
 
 `Settings->Language` 中选择 `简体中文` 即可。我这里刷了 deot 的镜像。后面再说如何刷系统。
 
-![](http://img.zhangkexuan.cn/markdown_20220512181158.png)
+![](/img/markdown_20220512181158.png)
 
 
 
-![](http://img.zhangkexuan.cn/markdown_20220512181216.png)
+![](/img/markdown_20220512181216.png)
 
 
 
@@ -102,7 +102,7 @@ GameShell 支持时区设置，在 `设置->时区` 中，选择 `Asia`，也就
 
 我们打开主菜单的 `Tiny Cloud` 或者 `Connect`(老版本 DEOT)，可以看到如下内容：
 
-![](http://img.zhangkexuan.cn/markdown_20220512181246.png)
+![](/img/markdown_20220512181246.png)
 
 可以看到，我的 GameShell 的局域网 ip 为 `192.168.0.110`，当然每个人的都可能不一样。
 
@@ -118,13 +118,13 @@ Windows 上我们 Win10 应该默认开启了 SMB1.0，如果没开启，可以�
 
 
 
-![](http://img.zhangkexuan.cn/markdown_20220512181305.png)
+![](/img/markdown_20220512181305.png)
 
 用户名和密码都是 `cpi`，你可以勾选“记住我的凭据”，然后点确定。
 
 于是，就打开了 `games` 文件夹：
 
-![](http://img.zhangkexuan.cn/markdown_20220512181324.png)
+![](/img/markdown_20220512181324.png)
 
 里面的文件夹都是游戏 ROM 文件夹或者游戏文件夹，比如 GBA 游戏的 ROM 放到 `MGBA` 文件夹就行。
 

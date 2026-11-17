@@ -7,7 +7,7 @@ toc: true
 aiTranslated: true
 ---
 
-![](http://img.zhangkexuan.cn/markdown_20220405172221.png)
+![](/img/markdown_20220405172221.png)
 
 Next up, let's go through the file and directory structure of the Pilot engine, and along the way briefly cover the third-party libraries Pilot uses and what they're for.
 

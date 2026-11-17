@@ -49,7 +49,7 @@ Actually, at this point, functionally speaking, if I only cared about bilibili I
 
 ## Import Packages as Needed
 
-To spin up an API service quickly, I'm using Python on the server side with fastapi and uvicorn. You can refer to an earlier post of mine, [Building an API Service on a Server with Python](http://blog.zhangkexuan.cn/2020/11/01/about-python-api/)
+To spin up an API service quickly, I'm using Python on the server side with fastapi and uvicorn. You can refer to an earlier post of mine, [Building an API Service on a Server with Python](/posts/about-python-api)
 
 We also need Python's request and json packages, which should come with Python by default; if not, install them with pip. They handle requesting the URL to get data and parsing the data, respectively.
 

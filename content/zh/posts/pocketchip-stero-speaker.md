@@ -30,7 +30,7 @@ toc: true
 - 会电焊的人 * 1
 - PocketChip 一台 (我想看这篇的人都有吧)
 
-![](http://img.zhangkexuan.cn/markdown_20220512181827.png)
+![](/img/markdown_20220512181827.png)
 
 （上图忘记放热熔胶和热熔胶枪了）
 
@@ -38,37 +38,37 @@ toc: true
 
 焊接之前必须要把电源接口拔了，否则不安全。
 
-![](http://img.zhangkexuan.cn/markdown_20220512181852.png)
+![](/img/markdown_20220512181852.png)
 
 # 2. 固定 D 类功放板
 
 固定之前，先用耐高温胶带，将晶片粘住保护起来。
 
-![](http://img.zhangkexuan.cn/markdown_20220512181918.png)
+![](/img/markdown_20220512181918.png)
 
-![](http://img.zhangkexuan.cn/markdown_20220512181934.png)
+![](/img/markdown_20220512181934.png)
 
 
 
 再用热熔胶枪固定功放板：
 
-![](http://img.zhangkexuan.cn/markdown_20220512181952.png)
+![](/img/markdown_20220512181952.png)
 
 
 
-![](http://img.zhangkexuan.cn/markdown_20220512182007.png)
+![](/img/markdown_20220512182007.png)
 
 # 3. 开始焊接
 
 先将功放板的 `-` 焊接至 `GND` 引脚，也就是负极接地
 
-![](http://img.zhangkexuan.cn/markdown_20220512182023.png)
+![](/img/markdown_20220512182023.png)
 
 
 
 再把+5v(正极) 接 `VCC-5V`:
 
-![](http://img.zhangkexuan.cn/markdown_20220512182038.png)
+![](/img/markdown_20220512182038.png)
 
 
 
@@ -80,13 +80,13 @@ toc: true
 
 `R`->`HPR`
 
-![](http://img.zhangkexuan.cn/markdown_20220512182056.png)
+![](/img/markdown_20220512182056.png)
 
 
 
 接下来用热熔枪固定左右喇叭：
 
-![](http://img.zhangkexuan.cn/markdown_20220512182111.png)
+![](/img/markdown_20220512182111.png)
 
 
 
@@ -94,7 +94,7 @@ toc: true
 
 左喇叭同理正负对应接到 L 的正负。
 
-![](http://img.zhangkexuan.cn/markdown_20220512182133.png)
+![](/img/markdown_20220512182133.png)
 
 
 

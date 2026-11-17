@@ -6,7 +6,7 @@ categories: [复古掌机]
 toc: true
 ---
 
-[Love2d](https://love2d.org)![](http://img.zhangkexuan.cn/markdown_20220512181405.png) 是一款游戏引擎，基于 C/C++ 编写，使用 Lua 脚本进行封装，简单易用、跨平台。
+[Love2d](https://love2d.org)![](/img/markdown_20220512181405.png) 是一款游戏引擎，基于 C/C++ 编写，使用 Lua 脚本进行封装，简单易用、跨平台。
 
 Pocketchip 换源、更新以后，通过 `sudo apt-get -f install love` 安装的版本实在是太老了(0.9)。
 
@@ -124,21 +124,21 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 安装成功！现在是 2020.04.10 的 01:59，终于等到你！
 
-![](http://img.zhangkexuan.cn/markdown_20220512181430.png)
+![](/img/markdown_20220512181430.png)
 
 # 测试运行 No.909
 
 把 GameShell 里的 No.909 和对应的 Logo 拷贝到 Pocketchip，我这里安装了增强版桌面，可以添加图标，指定运行的 shell，和 GameShell 添加自定义应用类似：
 
-![](http://img.zhangkexuan.cn/markdown_20220512181445.png)
+![](/img/markdown_20220512181445.png)
 
 运行：
 
-![](http://img.zhangkexuan.cn/markdown_20220512181507.png)
+![](/img/markdown_20220512181507.png)
 
 
 
-![](http://img.zhangkexuan.cn/markdown_20220512181544.png)
+![](/img/markdown_20220512181544.png)
 
 
 
@@ -150,7 +150,7 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 用 Terminal 运行会报这个错，暂时不知道如何解决...
 
-![](http://img.zhangkexuan.cn/markdown_20220512181603.png)
+![](/img/markdown_20220512181603.png)
 
 ----
 

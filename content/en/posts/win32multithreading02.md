@@ -92,7 +92,7 @@ So the code at the very top is simply a program that starts a thread with defaul
 
 The run result:
 
-![single-thread result](http://img.zhangkexuan.cn/o_200329061400%E5%BC%80%E5%90%AF%E7%BA%BF%E7%A8%8B.png)
+![single-thread result](/img/o_200329061400%E5%BC%80%E5%90%AF%E7%BA%BF%E7%A8%8B.png)
 
 
 
@@ -149,7 +149,7 @@ As mentioned earlier, the **CreateThread** function can pass an argument to the 
 
 The result:
 
-![multithreading result](http://img.zhangkexuan.cn/o_200329114839%E5%BC%80%E5%90%AF%E5%A4%9A%E7%BA%BF%E7%A8%8B.png)
+![multithreading result](/img/o_200329114839%E5%BC%80%E5%90%AF%E5%A4%9A%E7%BA%BF%E7%A8%8B.png)
 
 1 through 5 are each printed 10 times, out of order. Although they're Thread1-5, a second run might well be Thread1 2 4 3 5 instead.
 

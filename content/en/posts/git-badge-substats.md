@@ -54,7 +54,7 @@ Here's how dynamic badges work: first you need an API service. You fill in the r
 
 ### Substats
 
-[Substats](https://substats.spencerwoo.com) is exactly that kind of service. It mainly makes requests to various social platforms and returns follower or subscriber counts. The principle isn't hard either: request the social platform's profile page URL, grab the value of the corresponding HTML tag, and wrap it in JSON when returning it. If you're interested, you can refer to my earlier post [Building an API Service on a Server with Python](http://blog.zhangkexuan.cn/2020/11/01/about-python-api/) and give it a try yourself.
+[Substats](https://substats.spencerwoo.com) is exactly that kind of service. It mainly makes requests to various social platforms and returns follower or subscriber counts. The principle isn't hard either: request the social platform's profile page URL, grab the value of the corresponding HTML tag, and wrap it in JSON when returning it. If you're interested, you can refer to my earlier post [Building an API Service on a Server with Python](/posts/about-python-api) and give it a try yourself.
 
 So how do you use Substats? Here's an example:
 

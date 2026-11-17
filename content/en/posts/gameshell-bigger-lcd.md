@@ -49,19 +49,19 @@ Once you have all the parts, follow these steps:
 
 1. First, separate the original screen from the LCD backboard:
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181634.png)
+   ![](/img/markdown_20220512181634.png)
 
 2. Get the front cover, the adapter board and the 6cm opposite-side 45-pin FPC cable ready:
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181652.png)
+   ![](/img/markdown_20220512181652.png)
 
 3. Connect the ribbon cables:
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181708.png)
+   ![](/img/markdown_20220512181708.png)
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181727.png)
+   ![](/img/markdown_20220512181727.png)
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181745.png)
+   ![](/img/markdown_20220512181745.png)
 
 4. Replace the kernel files [to be updated]:
 

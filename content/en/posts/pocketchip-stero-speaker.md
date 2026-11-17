@@ -31,7 +31,7 @@ No parts, no mod.
 - Someone who can solder * 1
 - One PocketChip (I assume everyone reading this has one)
 
-![](http://img.zhangkexuan.cn/markdown_20220512181827.png)
+![](/img/markdown_20220512181827.png)
 
 (I forgot to include the hot glue and the glue gun in the photo above.)
 
@@ -39,37 +39,37 @@ No parts, no mod.
 
 Before soldering, you must unplug the power connector, otherwise it isn't safe.
 
-![](http://img.zhangkexuan.cn/markdown_20220512181852.png)
+![](/img/markdown_20220512181852.png)
 
 # 2. Mount the Class D Amplifier Board
 
 Before mounting it, cover the chip with heat-resistant tape to protect it.
 
-![](http://img.zhangkexuan.cn/markdown_20220512181918.png)
+![](/img/markdown_20220512181918.png)
 
-![](http://img.zhangkexuan.cn/markdown_20220512181934.png)
+![](/img/markdown_20220512181934.png)
 
 
 
 Then fix the amp board in place with the hot glue gun:
 
-![](http://img.zhangkexuan.cn/markdown_20220512181952.png)
+![](/img/markdown_20220512181952.png)
 
 
 
-![](http://img.zhangkexuan.cn/markdown_20220512182007.png)
+![](/img/markdown_20220512182007.png)
 
 # 3. Start Soldering
 
 First solder the amp board's `-` to the `GND` pin, i.e. the negative goes to ground.
 
-![](http://img.zhangkexuan.cn/markdown_20220512182023.png)
+![](/img/markdown_20220512182023.png)
 
 
 
 Then connect +5V (positive) to `VCC-5V`:
 
-![](http://img.zhangkexuan.cn/markdown_20220512182038.png)
+![](/img/markdown_20220512182038.png)
 
 
 
@@ -81,13 +81,13 @@ Then solder according to the following rules:
 
 `R`->`HPR`
 
-![](http://img.zhangkexuan.cn/markdown_20220512182056.png)
+![](/img/markdown_20220512182056.png)
 
 
 
 Next, fix the left and right speakers in place with the hot glue gun:
 
-![](http://img.zhangkexuan.cn/markdown_20220512182111.png)
+![](/img/markdown_20220512182111.png)
 
 
 
@@ -95,7 +95,7 @@ Then connect the right speaker's (the one on the left as you look at it) `-` to 
 
 Do the same for the left speaker, matching its positive and negative to L's positive and negative.
 
-![](http://img.zhangkexuan.cn/markdown_20220512182133.png)
+![](/img/markdown_20220512182133.png)
 
 
 

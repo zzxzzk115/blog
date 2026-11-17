@@ -113,13 +113,13 @@ Internet 体系结构应将多种网络互联起来，并在互联网络上同�
 
 #### ISO 定义的 OSI 七层网络模型
 
-![](http://img.zhangkexuan.cn/markdown_20210624141947.png)
+![](/img/markdown_20210624141947.png)
 
 我们最关心的是网络层。
 
 #### TCP/IP 的四层网络模型与 OSI 七层网络模型的对应关系
 
-![](http://img.zhangkexuan.cn/network_protocol_model.jpg)
+![](/img/network_protocol_model.jpg)
 
 ### 分层实现中的复用、分解和封装
 
@@ -771,7 +771,7 @@ TCP 是面向连接的单播协议。发送数据之前，通信双方必须在�
 
 一个 TCP 连接通常分为 3 个阶段：启动、数据传输(连接已建立)、退出(关闭)。
 
-![](http://img.zhangkexuan.cn/markdown_20210704150458.png)
+![](/img/markdown_20210704150458.png)
 
 通过调用 connect，来进行 TCP 连接的建立，这个过程被称为三次握手。
 
@@ -785,7 +785,7 @@ TCP 是面向连接的单播协议。发送数据之前，通信双方必须在�
 
 通过调用 shutdown(而非 close)，来进行 TCP 连接的关闭，这样会进行 TCP 半关闭操作。
 
-![](http://img.zhangkexuan.cn/markdown_20210704152225.png)
+![](/img/markdown_20210704152225.png)
 
 TCP 发送 FIN 段的一方收到 ACK 段后进入半关闭状态，不会再发送数据，但可以继续接收数据，直到另一方发送 FIN 段。
 
@@ -795,11 +795,11 @@ TCP 发送 FIN 段的一方收到 ACK 段后进入半关闭状态，不会再发
 
 同时打开需要四个报文段(SYN\*2、SYN+ACK\*2)，比三次握手多了一个报文段。
 
-![](http://img.zhangkexuan.cn/markdown_20210704153644.png)
+![](/img/markdown_20210704153644.png)
 
 同时关闭需要四个报文段，和四次挥手一样，但区别在于报文段序列是交叉的还是顺序的，同时关闭是交叉的，四次挥手是顺序的。
 
-![](http://img.zhangkexuan.cn/markdown_20210704153701.png)
+![](/img/markdown_20210704153701.png)
 
 ## TCP 选项
 
@@ -869,7 +869,7 @@ TCP 认证选项(TCP Authentication Option，TCP-AO) 使用了一种加密散列
 
 ### TCP 状态转换图
 
-![](http://img.zhangkexuan.cn/markdown_20210704165206.png)
+![](/img/markdown_20210704165206.png)
 
 ### TIME_WAIT 状态
 
@@ -948,7 +948,7 @@ TIME_WAIT 期间，如果 TCP 收到当前连接的一些报文段，或者是�
 
 一个重置报文段能"破坏"TIME_WAIT 状态并强制使连接提前关闭。目前有很多方法阻止这个问题，包括可以让 TIME_WAIT 状态忽略重置报文段。
 
-![](http://img.zhangkexuan.cn/markdown_20210705143900.png)
+![](/img/markdown_20210705143900.png)
 
 如图，客户端正常关闭，进入 TIME_WAIT 状态，服务端进入 CLOSED 状态。如果此时有一个很老的包刚刚才传到客户端，此时客户端会发送最新序列号与 ACK 号的 ACK 段给服务器。但是这个连接对于服务器而言已经关闭了，它对这个 ACK 段一无所知，它没有这条连接的任何信息，它会回复一个重置报文段给客户端，客户端收到这个重置报文段后会关闭，进入 CLOSED 状态。客户端本来应该等待 2MSL 后进入 CLOSED，但是却被提前关闭。
 
@@ -1122,7 +1122,7 @@ ssh 或者网络游戏等的通信都属于交互式通信，每次传输的数�
 
 对于 ssh 而言，TCP 会把数据字节确认和字节回显同时操作。
 
-![](http://img.zhangkexuan.cn/markdown_20210706171637.png)
+![](/img/markdown_20210706171637.png)
 
 每个带数据(长度不为 0) 的包都将 PSH 置位。该标志位通常表示发送端缓存为空。也就是说 PSH 置位的数据包发送完成后，发送端没有其他数据包需要传输。
 
@@ -1136,13 +1136,13 @@ ssh 或者网络游戏等的通信都属于交互式通信，每次传输的数�
 
 它实现了自时钟(self-clocking) 控制：ACK 返回越快，数据传输也越快。
 
-![](http://img.zhangkexuan.cn/markdown_20210706200040.png)
+![](/img/markdown_20210706200040.png)
 
 ### 延时 ACK 与 Nagle 算法结合
 
 如果将延时 ACK 与 Nagle 算法直接结合使用，得到的效果可能差强人意。因为可能会出现短暂的死锁，一直持续到延时 ACK 计时器超时。
 
-![](http://img.zhangkexuan.cn/markdown_20210706200204.png)
+![](/img/markdown_20210706200204.png)
 
 ### 禁用 Nagle 算法
 

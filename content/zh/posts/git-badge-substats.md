@@ -53,7 +53,7 @@ toc: true
 
 ### Substats
 
-[Substats](https://substats.spencerwoo.com) 就是这样一款服务，它主要的请求是各个社交平台，返回的是粉丝数或者订阅数。实际上原理也不难，通过请求社交平台的主页 URL，获取 HTML 对应标签的值，返回的时候用 JSON 封装一下就行了。感兴趣的可以参考我之前的那篇 [关于服务器通过 Python 搭建 API 服务](http://blog.zhangkexuan.cn/2020/11/01/about-python-api/) 来动手试试。
+[Substats](https://substats.spencerwoo.com) 就是这样一款服务，它主要的请求是各个社交平台，返回的是粉丝数或者订阅数。实际上原理也不难，通过请求社交平台的主页 URL，获取 HTML 对应标签的值，返回的时候用 JSON 封装一下就行了。感兴趣的可以参考我之前的那篇 [关于服务器通过 Python 搭建 API 服务](/posts/about-python-api) 来动手试试。
 
 那么 Substats 怎么用呢，看个例子：
 

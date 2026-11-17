@@ -9,11 +9,11 @@ aiTranslated: true
 
 > GameShell is an open-source retro handheld that runs Arm Linux. Both its software and hardware are open source, making it a fantastic toy for geeks, game developers and figure collectors (it really does count as a figure, lol).
 >
-> ![](http://img.zhangkexuan.cn/markdown_20210920125310.png)
+> ![](/img/markdown_20210920125310.png)
 >
 > Godot is an open-source, cross-platform game engine that's growing fast. It originally only supported GDScript, later added VisualScript (a visual node-based logic editor), now supports writing libraries in C++ via GDNative, and is gradually adding C# support (in beta).
 >
-> ![](http://img.zhangkexuan.cn/markdown_20210920125347.png)
+> ![](/img/markdown_20210920125347.png)
 >
 > So, can a game made with Godot be exported and run on the Armv7-based GameShell?
 >
@@ -41,7 +41,7 @@ GameShell requirements:
 
 A guy from abroad has already installed Godot on GameShell and built Godot export templates with SCons, so we'll be lazy here and just use his ready-made templates, [repo link](https://github.com/samdze/godot-gameshell):
 
-![](http://img.zhangkexuan.cn/markdown_20210920131020.png)
+![](/img/markdown_20210920131020.png)
 
 If you're using Godot 3.2.3 or later, download the 3.2.3 export templates, [download here](https://github.com/samdze/godot-gameshell/releases/download/3.2.3-stable/godot-3.2.3-gameshell-templates.zip)
 
@@ -51,45 +51,45 @@ If you're using Godot 3.3 or later, download the 3.3 export templates, [download
 
 Here I'll use the official 2D Platformer Demo as an example.
 
-![](http://img.zhangkexuan.cn/markdown_20210920132154.png)
+![](/img/markdown_20210920132154.png)
 
 After importing the official demo, the main window looks like this:
 
-![](http://img.zhangkexuan.cn/markdown_20210920132416.png)
+![](/img/markdown_20210920132416.png)
 
 ## Add the GameShell Export Template
 
 Click Project -> Export:
 
-![](http://img.zhangkexuan.cn/markdown_20210920132825.png)
+![](/img/markdown_20210920132825.png)
 
 Click Add:
 
-![](http://img.zhangkexuan.cn/markdown_20210920132857.png)
+![](/img/markdown_20210920132857.png)
 
 Click Linux/X11:
 
-![](http://img.zhangkexuan.cn/markdown_20210920132921.png)
+![](/img/markdown_20210920132921.png)
 
 Configure it as follows. Make sure you untick 64 Bits:
 
-![](http://img.zhangkexuan.cn/markdown_20210920133149.png)
+![](/img/markdown_20210920133149.png)
 
 For Custom Template->Debug, choose the godot.x11.debug.32 file you downloaded earlier:
 
-![](http://img.zhangkexuan.cn/markdown_20210920133252.png)
+![](/img/markdown_20210920133252.png)
 
 Likewise, for Custom Template->Release, choose the godot.x11.opt.32 file.
 
 Click Features and enter GameShell under Custom. This way our code logic can check whether it's running on the GameShell platform, which makes it easy to handle GameShell-specific logic:
 
-![](http://img.zhangkexuan.cn/markdown_20210920133421.png)
+![](/img/markdown_20210920133421.png)
 
 ## Configure the Godot Game Settings
 
 To export a project that runs well on GameShell, first open Project Settings:
 
-![](http://img.zhangkexuan.cn/markdown_20210920132434.png)
+![](/img/markdown_20210920132434.png)
 
 ### Display Settings
 
@@ -99,15 +99,15 @@ So we need to change Godot's display settings, and when developing games for Gam
 
 Click Display->Window:
 
-![](http://img.zhangkexuan.cn/markdown_20210920132658.png)
+![](/img/markdown_20210920132658.png)
 
 Select Width, click Override For, and choose GameShell:
 
-![](http://img.zhangkexuan.cn/markdown_20210920133718.png)
+![](/img/markdown_20210920133718.png)
 
 A new settings entry specifically for GameShell will then appear:
 
-![](http://img.zhangkexuan.cn/markdown_20210920133826.png)
+![](/img/markdown_20210920133826.png)
 
 Change Width.GameShell from 800 to 320.
 
@@ -115,33 +115,33 @@ Do the same override for Height, changing it to 240.
 
 After the changes it looks like this:
 
-![](http://img.zhangkexuan.cn/markdown_20210920134021.png)
+![](/img/markdown_20210920134021.png)
 
 If you want to test inside the Godot editor, you also need to set Test Width and Test Height to 320 and 240 (set them directly, not as overrides):
 
-![](http://img.zhangkexuan.cn/markdown_20210920145620.png)
+![](/img/markdown_20210920145620.png)
 
 If you click the play button now, you'll notice the display looks a bit off, with black bars:
 
-![](http://img.zhangkexuan.cn/markdown_20210920145712.png)
+![](/img/markdown_20210920145712.png)
 
 That's because the default stretch aspect mode is keep_height:
 
-![](http://img.zhangkexuan.cn/markdown_20210920145917.png)
+![](/img/markdown_20210920145917.png)
 
 We need to override Aspect to keep_width for GameShell. Also, since the template that guy provides disables 3D, his template only supports 2D games, so we override Mode to 2d:
 
-![](http://img.zhangkexuan.cn/markdown_20210920151154.png)
+![](/img/markdown_20210920151154.png)
 
 Running it:
 
-![](http://img.zhangkexuan.cn/markdown_20210920150028.png)
+![](/img/markdown_20210920150028.png)
 
 As you can see, it looks great!
 
 Finally, to keep the window always on top, override and tick the Always On Top option:
 
-![](http://img.zhangkexuan.cn/markdown_20210920150613.png)
+![](/img/markdown_20210920150613.png)
 
 ### Rendering Settings 
 
@@ -149,7 +149,7 @@ GameShell only supports GLES2, so we need to change the game's rendering setting
 
 Click Rendering->Quality and override the following:
 
-![](http://img.zhangkexuan.cn/markdown_20210921142035.png)
+![](/img/markdown_20210921142035.png)
 
 Generally you won't need sampling, so override Framebuffer Allocation to 2D Without Sampling.
 
@@ -167,33 +167,33 @@ The 2D Platformer Demo shows the main menu on ESC by default, and the main menu 
 
 Click Project -> Export:
 
-![](http://img.zhangkexuan.cn/markdown_20210921152501.png)
+![](/img/markdown_20210921152501.png)
 
 Choose the export path:
 
-![](http://img.zhangkexuan.cn/markdown_20210921152551.png)
+![](/img/markdown_20210921152551.png)
 
 Create a folder called GameShellExport:
 
-![](http://img.zhangkexuan.cn/markdown_20210921152622.png)
+![](/img/markdown_20210921152622.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210921152802.png)
+![](/img/markdown_20210921152802.png)
 
 Then let's name the file gameshell_demo and click Save:
 
-![](http://img.zhangkexuan.cn/markdown_20210921152843.png)
+![](/img/markdown_20210921152843.png)
 
 Click Export All:
 
-![](http://img.zhangkexuan.cn/markdown_20210921152901.png)
+![](/img/markdown_20210921152901.png)
 
 I recommend choosing Release, unless you need to debug, in which case choose Debug:
 
-![](http://img.zhangkexuan.cn/markdown_20210921153008.png)
+![](/img/markdown_20210921153008.png)
 
 The exported files end up in the GameShellExport folder: one executable plus one PCK resource file:
 
-![](http://img.zhangkexuan.cn/markdown_20210921153104.png)
+![](/img/markdown_20210921153104.png)
 
 ## Upload to GameShell
 
@@ -203,27 +203,27 @@ Here I use MobaXterm to set up SSH and SFTP connections. If you know how, you kn
 
 First, set up the connection:
 
-![](http://img.zhangkexuan.cn/markdown_20210921153818.png)
+![](/img/markdown_20210921153818.png)
 
 ### Create Folders
 
 Then, in the file browser on the left, go into the games folder and create a new Godot folder:
 
-![](http://img.zhangkexuan.cn/markdown_20210921154002.png)
+![](/img/markdown_20210921154002.png)
 
 Inside the new Godot folder, create a 2d_platformer_demo folder and go into it:
 
-![](http://img.zhangkexuan.cn/markdown_20210921154243.png)
+![](/img/markdown_20210921154243.png)
 
 ### Copy the Game Files and Make Them Executable
 
 Drag in the two files we exported:
 
-![](http://img.zhangkexuan.cn/markdown_20210921154316.png)
+![](/img/markdown_20210921154316.png)
 
 In the shell on the right, cd into the folder and give both files execute permission:
 
-![](http://img.zhangkexuan.cn/markdown_20210921154611.png)
+![](/img/markdown_20210921154611.png)
 
 ```bash
 cd games/Godot/2d_platformer_demo/
@@ -237,15 +237,15 @@ Dammit — right as I got to this point in the tutorial, I discovered my GameShe
 
 Here are some photos I took with the last bit of juice it had while booting, to prove it works:
 
-<img src="http://img.zhangkexuan.cn/markdown_20210921161258.png" style="zoom:50%;" />
+![](/img/markdown_20210921161258.png)
 
-<img src="http://img.zhangkexuan.cn/markdown_20210921161408.png" style="zoom:50%;" />
+![](/img/markdown_20210921161408.png)
 
-<img src="http://img.zhangkexuan.cn/markdown_20210921161509.png" style="zoom:50%;" />
+![](/img/markdown_20210921161509.png)
 
-<img src="http://img.zhangkexuan.cn/markdown_20210921161539.png" style="zoom:50%;" />
+![](/img/markdown_20210921161539.png)
 
-<img src="http://img.zhangkexuan.cn/markdown_20210921161603.png" style="zoom: 50%;" />
+![](/img/markdown_20210921161603.png)
 
 ### Creating a Menu Launcher Entry
 

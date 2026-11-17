@@ -77,7 +77,7 @@ sudo rm ~/.config/retroarch/assets/xmb/monochrome/font.ttf
 
 当然，想要运行够顺畅，你得先看看这篇:
 
-[Pocketchip 开启 OpenGL 硬件加速](http://blog.zhangkexuan.cn/2022/05/12/pocketchip-opengl-hardware-speedup/)
+[Pocketchip 开启 OpenGL 硬件加速](/posts/pocketchip-opengl-hardware-speedup)
 
 ----
 

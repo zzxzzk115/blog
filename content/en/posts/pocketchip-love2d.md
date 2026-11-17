@@ -7,7 +7,7 @@ toc: true
 aiTranslated: true
 ---
 
-[Love2d](https://love2d.org)![](http://img.zhangkexuan.cn/markdown_20220512181405.png) is a game engine written in C/C++ and wrapped with Lua scripting. It's simple, easy to use and cross-platform.
+[Love2d](https://love2d.org)![](/img/markdown_20220512181405.png) is a game engine written in C/C++ and wrapped with Lua scripting. It's simple, easy to use and cross-platform.
 
 After switching the PocketChip's package sources and updating, the version you get via `sudo apt-get -f install love` is just way too old (0.9).
 
@@ -125,21 +125,21 @@ This install is even slower. You could go to sleep and check the next day whethe
 
 Installed successfully! It's now 01:59 on 2020.04.10, and I finally got there!
 
-![](http://img.zhangkexuan.cn/markdown_20220512181430.png)
+![](/img/markdown_20220512181430.png)
 
 # Test-running No.909
 
 Copy No.909 and its logo from the GameShell over to the PocketChip. I've installed an enhanced desktop here that lets you add icons and specify the shell to run, similar to adding custom apps on the GameShell:
 
-![](http://img.zhangkexuan.cn/markdown_20220512181445.png)
+![](/img/markdown_20220512181445.png)
 
 Run it:
 
-![](http://img.zhangkexuan.cn/markdown_20220512181507.png)
+![](/img/markdown_20220512181507.png)
 
 
 
-![](http://img.zhangkexuan.cn/markdown_20220512181544.png)
+![](/img/markdown_20220512181544.png)
 
 
 
@@ -151,7 +151,7 @@ But in actual testing it needs optimization; the frame rate is painful..., proba
 
 Running it from the Terminal gives this error, and I don't know how to fix it yet...
 
-![](http://img.zhangkexuan.cn/markdown_20220512181603.png)
+![](/img/markdown_20220512181603.png)
 
 ----
 

@@ -78,7 +78,7 @@ And that's basically it for configuration.
 
 Of course, if you want things to run smoothly, you should read this first:
 
-[Enabling OpenGL hardware acceleration on the PocketChip](http://blog.zhangkexuan.cn/2022/05/12/pocketchip-opengl-hardware-speedup/)
+[Enabling OpenGL hardware acceleration on the PocketChip](/posts/pocketchip-opengl-hardware-speedup)
 
 ----
 

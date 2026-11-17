@@ -91,7 +91,7 @@ HANDLE CreateThread(
 
 运行结果：
 
-![单线程结果](http://img.zhangkexuan.cn/o_200329061400%E5%BC%80%E5%90%AF%E7%BA%BF%E7%A8%8B.png)
+![单线程结果](/img/o_200329061400%E5%BC%80%E5%90%AF%E7%BA%BF%E7%A8%8B.png)
 
 
 
@@ -148,7 +148,7 @@ DWORD WINAPI MyThreadFunction(LPVOID p)
 
 结果为:
 
-![多线程结果](http://img.zhangkexuan.cn/o_200329114839%E5%BC%80%E5%90%AF%E5%A4%9A%E7%BA%BF%E7%A8%8B.png)
+![多线程结果](/img/o_200329114839%E5%BC%80%E5%90%AF%E5%A4%9A%E7%BA%BF%E7%A8%8B.png)
 
 1 到 5 都无序地被打印了 10 次。虽然是 Thread1-5，但实际上第二次运行可能是 Thread1 2 4 3 5 也说不准。
 

@@ -7,7 +7,7 @@ toc: true
 aiTranslated: true
 ---
 
-![](http://img.zhangkexuan.cn/markdown_20220512101936.png)
+![](/img/markdown_20220512101936.png)
 
 Next, let's analyze the role CMake plays in the Pilot engine.
 
@@ -25,13 +25,13 @@ You've probably heard of make and Makefiles to some extent. A Makefile can descr
 
 CMake, on the other hand, generates project files based on what's described in CMakeLists.txt, including but not limited to Visual Studio project files, Ninja project files, Unix Makefiles project files, MinGW Makefiles project files, and so on. Which kind of project file it generates can be specified with a command-line argument (-G), i.e. specifying the Generator CMake uses:
 
-![](http://img.zhangkexuan.cn/markdown_20220512104932.png)
+![](/img/markdown_20220512104932.png)
 
 In other words, CMake is really a <project file generation tool>, and CMakeLists.txt is a file describing the project generation rules (a config file). CMake generates project files from the description in CMakeLists.txt.
 
 ## Line-by-Line Analysis of Pilot's Root CMakeLists.txt
 
-![](http://img.zhangkexuan.cn/markdown_20220512101936.png)
+![](/img/markdown_20220512101936.png)
 
 The parts highlighted in blue are called CMake commands, and what's inside the parentheses are the command arguments. Let's go through the meaning of each command and its arguments one by one.
 
@@ -111,7 +111,7 @@ This line means: add a subdirectory named engine. Note that cmake will go into t
 
 ## Line-by-Line Analysis of the engine Directory's CMakeLists.txt
 
-![](http://img.zhangkexuan.cn/markdown_20220512144653.png)
+![](/img/markdown_20220512144653.png)
 
 ```cmake
 set(ENGINE_ROOT_DIR "${PILOT_ROOT_DIR}/engine")

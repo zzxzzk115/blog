@@ -23,17 +23,17 @@ A long-running program is called a daemon. Generally speaking, a web server prog
 
 Most network applications are organized as a client and a server, i.e. the C/S model. The client and server communicate via an application protocol.
 
-![](http://img.zhangkexuan.cn/markdown_20210708173859.png)
+![](/img/markdown_20210708173859.png)
 
 ### How a web application communicates
 
-When a web client application (a browser) makes a request to a web server, it typically communicates using HTTP/HTTPS at the application layer, which in turn uses TCP at the transport layer, IP at the network layer, and Ethernet at the link layer, and finally the bit stream is transmitted over the physical medium at the physical layer. Then the data goes back up layer by layer, from the physical layer to the application layer, and finally the server receives it. ![](http://img.zhangkexuan.cn/markdown_20210708173952.png)
+When a web client application (a browser) makes a request to a web server, it typically communicates using HTTP/HTTPS at the application layer, which in turn uses TCP at the transport layer, IP at the network layer, and Ethernet at the link layer, and finally the bit stream is transmitted over the physical medium at the physical layer. Then the data goes back up layer by layer, from the physical layer to the application layer, and finally the server receives it. ![](/img/markdown_20210708173952.png)
 
 ### The OSI model
 
 A common way to describe the protocol layers in a network is the Open Systems Interconnection (OSI) model for computer communications, developed by the International Organization for Standardization (ISO). The OSI model is a seven-layer network model.
 
-![](http://img.zhangkexuan.cn/markdown_20210708174451.png)
+![](/img/markdown_20210708174451.png)
 
 In the figure above, the thick black line separates the top layers of the OSI model from the bottom four layers. There are two reasons for this:
 
@@ -58,7 +58,7 @@ UDP is a simple, unreliable datagram protocol; TCP is a complex, reliable byte-s
 
 Here's the overall picture of the TCP/IP protocol suite:
 
-![](http://img.zhangkexuan.cn/markdown_20210708192122.png)
+![](/img/markdown_20210708192122.png)
 
 ## User Datagram Protocol (UDP)
 
@@ -90,7 +90,7 @@ SCTP is mostly the same as TCP. The difference is that it's message-oriented, an
 
 ### The three-way handshake
 
-![](http://img.zhangkexuan.cn/markdown_20210708200352.png)
+![](/img/markdown_20210708200352.png)
 
 ### Common TCP options
 
@@ -100,11 +100,11 @@ SCTP is mostly the same as TCP. The difference is that it's message-oriented, an
 
 ### The four-way handshake (connection termination)
 
-![](http://img.zhangkexuan.cn/markdown_20210708200846.png)
+![](/img/markdown_20210708200846.png)
 
 ### The TCP state transition diagram
 
-![](http://img.zhangkexuan.cn/markdown_20210708200954.png)
+![](/img/markdown_20210708200954.png)
 
 ### The TIME_WAIT state
 
@@ -120,7 +120,7 @@ Clients usually use ephemeral ports, which the client doesn't need to care about
 - Registered ports: 1024~49151
 - Dynamic ports: 49152~65535
 
-![](http://img.zhangkexuan.cn/markdown_20210708201913.png)
+![](/img/markdown_20210708201913.png)
 
 ## Socket pairs
 
@@ -132,11 +132,11 @@ A socket pair defines the four-tuple of a connection (local IP address, local TC
 
 Concurrent servers on Linux are implemented by calling fork to create child processes.
 
-![](http://img.zhangkexuan.cn/markdown_20210708204317.png)
+![](/img/markdown_20210708204317.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210708204331.png)
+![](/img/markdown_20210708204331.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210708204346.png)
+![](/img/markdown_20210708204346.png)
 
 # Introduction to socket programming
 

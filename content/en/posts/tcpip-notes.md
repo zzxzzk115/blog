@@ -114,13 +114,13 @@ The concept of layering is based on a model called the Open Systems Interconnect
 
 #### The OSI Seven-Layer Network Model Defined by ISO
 
-![](http://img.zhangkexuan.cn/markdown_20210624141947.png)
+![](/img/markdown_20210624141947.png)
 
 What we care about most is the network layer.
 
 #### The Correspondence Between TCP/IP's Four-Layer Network Model and the OSI Seven-Layer Network Model
 
-![](http://img.zhangkexuan.cn/network_protocol_model.jpg)
+![](/img/network_protocol_model.jpg)
 
 ### Multiplexing, Demultiplexing, and Encapsulation in a Layered Implementation
 
@@ -772,7 +772,7 @@ A TCP connection is uniquely identified by a pair of sockets (a four-tuple consi
 
 A TCP connection is usually divided into 3 phases: startup, data transfer (the connection is established), and exit (closing).
 
-![](http://img.zhangkexuan.cn/markdown_20210704150458.png)
+![](/img/markdown_20210704150458.png)
 
 A TCP connection is established by calling connect; this process is called the three-way handshake.
 
@@ -786,7 +786,7 @@ A TCP connection is closed by calling close; this process is called the four-way
 
 Closing a TCP connection by calling shutdown (rather than close) performs a TCP half-close operation.
 
-![](http://img.zhangkexuan.cn/markdown_20210704152225.png)
+![](/img/markdown_20210704152225.png)
 
 The side of a TCP connection that sends the FIN segment enters the half-close state after receiving the ACK segment; it will no longer send data but can continue to receive data until the other side sends a FIN segment.
 
@@ -796,11 +796,11 @@ Only when both sides have performed the half-close operation by calling shutdown
 
 A simultaneous open requires four segments (SYN\*2, SYN+ACK\*2), one more segment than the three-way handshake.
 
-![](http://img.zhangkexuan.cn/markdown_20210704153644.png)
+![](/img/markdown_20210704153644.png)
 
 A simultaneous close requires four segments, the same as the four-way handshake, but the difference lies in whether the segment sequence is crossed or sequential: a simultaneous close is crossed, while the four-way handshake is sequential.
 
-![](http://img.zhangkexuan.cn/markdown_20210704153701.png)
+![](/img/markdown_20210704153701.png)
 
 ## TCP Options
 
@@ -870,7 +870,7 @@ You can use the IPv6 term "Packet Too Big" (PTB) to represent an ICMPv4 address-
 
 ### TCP State Transition Diagram
 
-![](http://img.zhangkexuan.cn/markdown_20210704165206.png)
+![](/img/markdown_20210704165206.png)
 
 ### TIME_WAIT State
 
@@ -949,7 +949,7 @@ During TIME_WAIT, if TCP receives some segments from the current connection, or 
 
 A reset segment can "assassinate" the TIME_WAIT state and force the connection to close early. There are many methods to prevent this problem, including making the TIME_WAIT state ignore reset segments.
 
-![](http://img.zhangkexuan.cn/markdown_20210705143900.png)
+![](/img/markdown_20210705143900.png)
 
 As shown in the figure, the client closes normally and enters the TIME_WAIT state, while the server enters the CLOSED state. If at this point a very old packet has just arrived at the client, the client will send an ACK segment with the latest sequence number and ACK number to the server. But this connection is already closed as far as the server is concerned; it knows nothing about this ACK segment and has no information about this connection, so it will reply with a reset segment to the client. After receiving this reset segment, the client will close and enter the CLOSED state. The client should have waited 2MSL before entering CLOSED, but it's closed prematurely.
 
@@ -1123,7 +1123,7 @@ Communication such as ssh or online games is interactive communication; each tra
 
 For ssh, TCP handles both the data byte acknowledgment and the byte echo at the same time.
 
-![](http://img.zhangkexuan.cn/markdown_20210706171637.png)
+![](/img/markdown_20210706171637.png)
 
 Every packet with data (length not 0) has PSH set. This flag usually indicates that the sender's buffer is empty. That is, after a packet with PSH set has been sent, the sender has no other packets to transmit.
 
@@ -1137,13 +1137,13 @@ When a TCP connection has in-flight data (data that has been sent but not yet ac
 
 It implements self-clocking control: the faster the ACKs return, the faster the data is transmitted.
 
-![](http://img.zhangkexuan.cn/markdown_20210706200040.png)
+![](/img/markdown_20210706200040.png)
 
 ### Combining Delayed ACK with the Nagle Algorithm
 
 If you combine delayed ACK with the Nagle algorithm directly, the result may be unsatisfactory, because a brief deadlock may occur that persists until the delayed-ACK timer expires.
 
-![](http://img.zhangkexuan.cn/markdown_20210706200204.png)
+![](/img/markdown_20210706200204.png)
 
 ### Disabling the Nagle Algorithm
 

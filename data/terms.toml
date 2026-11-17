@@ -1,0 +1,47 @@
+# Links tags / categories that are spelled differently in each language.
+#
+#   [<taxonomy>."<English name>"]
+#   zh = "<中文名>"
+#
+# The English name is the key; posts keep whatever they are tagged with. The theme uses this to
+#   - match related posts across languages (算法 and Algorithms count as the same tag), and
+#   - make the language switch on a tag/category page go to the matching page.
+# Names that are identical in both languages (Unity, CLR, C#, ...) need no entry.
+
+[tags."Algorithms"]
+zh = "算法"
+[tags."Database"]
+zh = "数据库"
+[tags."Dynamic Programming"]
+zh = "动态规划"
+[tags."Game Development"]
+zh = "游戏开发"
+[tags."Interfaces"]
+zh = "接口"
+[tags."Jottings"]
+zh = "随笔"
+[tags."Programming Languages"]
+zh = "编程语言"
+[tags."Retro"]
+zh = "复古"
+
+[categories."Algorithms"]
+zh = "算法"
+[categories."Backend"]
+zh = "后端"
+[categories."Game Development"]
+zh = "游戏开发"
+[categories."Game Engines"]
+zh = "游戏引擎"
+[categories."Jottings"]
+zh = "随笔"
+[categories."PhD-Life"]
+zh = "PhD生活"
+[categories."Programming Languages"]
+zh = "编程语言"
+[categories."Retro Handhelds"]
+zh = "复古掌机"
+[categories."Security"]
+zh = "安全"
+[categories."Systems Programming"]
+zh = "系统编程"

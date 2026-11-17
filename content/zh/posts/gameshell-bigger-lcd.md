@@ -48,19 +48,19 @@ PCB 推荐 [这家]()，FPC 座的两款的链接：[(1)](<https://item.taobao.c
 
 1. 先把原屏幕和 lcd 背板分离：
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181634.png)
+   ![](/img/markdown_20220512181634.png)
 
 2. 准备前盖、转接板、6cm 异面 45pinFPC 线：
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181652.png)
+   ![](/img/markdown_20220512181652.png)
 
 3. 连接排线：
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181708.png)
+   ![](/img/markdown_20220512181708.png)
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181727.png)
+   ![](/img/markdown_20220512181727.png)
 
-   ![](http://img.zhangkexuan.cn/markdown_20220512181745.png)
+   ![](/img/markdown_20220512181745.png)
 
 4. 替换内核文件 [待更新内容]：
 

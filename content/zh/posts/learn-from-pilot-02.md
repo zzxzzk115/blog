@@ -6,7 +6,7 @@ categories: [游戏引擎]
 toc: true
 ---
 
-![](http://img.zhangkexuan.cn/markdown_20220405172221.png)
+![](/img/markdown_20220405172221.png)
 
 接下来分析一下 Pilot 引擎的文件目录结构，并在过程中简单讲讲 Pilot 引擎使用的第三方库及作用。
 

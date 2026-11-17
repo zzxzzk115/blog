@@ -48,7 +48,7 @@ Subsats 的速度还是感人，我猜作者全是用 Selenium 爬的，能用 r
 
 ## 根据需求导入包
 
-要快速搭建 API 服务，服务器这边我采用 python，使用 fastapi 以及 uvicorn。可以参考我之前的一篇文章 [关于服务器通过 Python 搭建 API 服务](http://blog.zhangkexuan.cn/2020/11/01/about-python-api/)
+要快速搭建 API 服务，服务器这边我采用 python，使用 fastapi 以及 uvicorn。可以参考我之前的一篇文章 [关于服务器通过 Python 搭建 API 服务](/posts/about-python-api)
 
 我们还需要用到 python 的 request 和 json 两个包，这两个包应该是 python 默认自带的，如果没有，就用 pip 安装。它们分别对应请求 url 并获得数据、数据解析。
 

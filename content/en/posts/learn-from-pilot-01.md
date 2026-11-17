@@ -7,7 +7,7 @@ toc: true
 aiTranslated: true
 ---
 
-![Pilot successfully compiled and running on Windows](http://img.zhangkexuan.cn/markdown_20220405155248.png)
+![Pilot successfully compiled and running on Windows](/img/markdown_20220405155248.png)
 
 The Pilot engine is a mini game engine developed jointly by the GAMES104 course team. It's small, but it has everything it needs. It's open source, so we can grab its source code on GitHub. Below I'll briefly go over how to get the Pilot engine running on Windows and debug it with breakpoints.
 
@@ -38,7 +38,7 @@ For now I'd recommend cloning the repository and pulling updates whenever there 
 
 If you only need the Release build, just double-click `build_windows.bat` in the root directory.
 
-![](http://img.zhangkexuan.cn/markdown_20220405161120.png)
+![](/img/markdown_20220405161120.png)
 
 The build commands will then run. Once they finish, two new folders will appear in the root directory:
 
@@ -55,21 +55,21 @@ In the build folder that was just generated, the solution file we need has alrea
 
 Once it's open, the solution explorer looks like this:
 
-![](http://img.zhangkexuan.cn/markdown_20220405161614.png)
+![](/img/markdown_20220405161614.png)
 
 The default startup project is currently ALL_BUILD, and we need to change it to `PilotEditor`.
 
 Just right-click the PilotEditor project -> Set as Startup Project.
 
-![](http://img.zhangkexuan.cn/markdown_20220405161817.png)
+![](/img/markdown_20220405161817.png)
 
 The project is already in Debug mode by default, so we can just click the green triangle to start debugging.
 
 For example, let's set a breakpoint in the `PilotEditor::run` function:
 
-![](http://img.zhangkexuan.cn/markdown_20220405162317.png)
+![](/img/markdown_20220405162317.png)
 
 From here you can step through and see how the runtime ticks each module internally:
 
-![](http://img.zhangkexuan.cn/markdown_20220405163057.png)
+![](/img/markdown_20220405163057.png)
 

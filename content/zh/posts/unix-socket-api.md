@@ -22,17 +22,17 @@ toc: true
 
 大多数网络应用按照划分成客户端(client) 和服务器(server) 来组织的，即 C/S 模式。客户端和服务器间通过应用协议来通信。
 
-![](http://img.zhangkexuan.cn/markdown_20210708173859.png)
+![](/img/markdown_20210708173859.png)
 
 ### Web 应用的通信过程
 
-Web 客户端应用(浏览器) 对 Web 服务器发起请求时，在应用层一般使用 HTTP/HTTPS 协议进行通信，进而在传输层使用 TCP 协议进行通信，进而在网络层使用 IP 协议进行通信，进而在链路层使用以太网协议进行通信，最后在物理层通过传输介质传输比特流。然后反向再从物理层到应用层一层一层通信，最后服务端收到数据。![](http://img.zhangkexuan.cn/markdown_20210708173952.png)
+Web 客户端应用(浏览器) 对 Web 服务器发起请求时，在应用层一般使用 HTTP/HTTPS 协议进行通信，进而在传输层使用 TCP 协议进行通信，进而在网络层使用 IP 协议进行通信，进而在链路层使用以太网协议进行通信，最后在物理层通过传输介质传输比特流。然后反向再从物理层到应用层一层一层通信，最后服务端收到数据。![](/img/markdown_20210708173952.png)
 
 ### OSI 模型
 
 描述网络中各个协议层的常用方法是使用国际标准化组织(International Organization for Standardization, ISO) 提出的计算机通信开放系统互联(Open Systems Interconnection, OSI) 模型。OSI 模型是七层网络模型。
 
-![](http://img.zhangkexuan.cn/markdown_20210708174451.png)
+![](/img/markdown_20210708174451.png)
 
 上图，黑色加粗的线将 OSI 模型的顶上层和底下四层分开。之所以这样，有两个原因：
 
@@ -57,7 +57,7 @@ UDP 是一个简单的、不可靠的数据报协议；TCP 是一个复杂、可
 
 TCP/IP 协议族总图如下：
 
-![](http://img.zhangkexuan.cn/markdown_20210708192122.png)
+![](/img/markdown_20210708192122.png)
 
 ## 用户数据报协议(UDP)
 
@@ -89,7 +89,7 @@ SCTP 与 TCP 大多相同，不同的是，它是面向消息(message-oriented) 
 
 ### 三次握手
 
-![](http://img.zhangkexuan.cn/markdown_20210708200352.png)
+![](/img/markdown_20210708200352.png)
 
 ### TCP 常用选项
 
@@ -99,11 +99,11 @@ SCTP 与 TCP 大多相同，不同的是，它是面向消息(message-oriented) 
 
 ### 四次挥手
 
-![](http://img.zhangkexuan.cn/markdown_20210708200846.png)
+![](/img/markdown_20210708200846.png)
 
 ### TCP 状态图
 
-![](http://img.zhangkexuan.cn/markdown_20210708200954.png)
+![](/img/markdown_20210708200954.png)
 
 ### TIME_WAIT 状态
 
@@ -119,7 +119,7 @@ SCTP 与 TCP 大多相同，不同的是，它是面向消息(message-oriented) 
 - 注册端口号：1024~49151
 - 动态端口号：49152~65535
 
-![](http://img.zhangkexuan.cn/markdown_20210708201913.png)
+![](/img/markdown_20210708201913.png)
 
 ## 套接字对
 
@@ -131,11 +131,11 @@ SCTP 与 TCP 大多相同，不同的是，它是面向消息(message-oriented) 
 
 Linux 的并发服务器采用 fork 函数生成子进程的方式来实现。
 
-![](http://img.zhangkexuan.cn/markdown_20210708204317.png)
+![](/img/markdown_20210708204317.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210708204331.png)
+![](/img/markdown_20210708204331.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210708204346.png)
+![](/img/markdown_20210708204346.png)
 
 # 套接字编程简介
 

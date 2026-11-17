@@ -6,7 +6,7 @@ categories: [游戏引擎]
 toc: true
 ---
 
-![](http://img.zhangkexuan.cn/markdown_20220512101936.png)
+![](/img/markdown_20220512101936.png)
 
 接下来分析一下 CMake 在 Pilot 引擎中的作用。
 
@@ -24,13 +24,13 @@ toc: true
 
 CMake 则是根据 CMakeLists.txt 文件中描述的内容，生成项目文件，包括但不限于 Visual Studio 项目文件、Ninja 项目文件、Unix Makefiles 项目文件、MinGW Makefiles 项目文件等等。具体生成什么项目文件，可以通过命令行参数(-G) 指定，即指定 CMake 使用的 Generator(生成器)：
 
-![](http://img.zhangkexuan.cn/markdown_20220512104932.png)
+![](/img/markdown_20220512104932.png)
 
 也就是说，CMake 实际上是一个<项目文件生成工具>，CMakeLists.txt 是一个项目生成规则描述文件(配置文件)，CMake 通过 CMakeLists.txt 的描述来生成项目文件。
 
 ## 逐语句分析 Pilot 根目录的 CMakeLists.txt
 
-![](http://img.zhangkexuan.cn/markdown_20220512101936.png)
+![](/img/markdown_20220512101936.png)
 
 蓝色高亮的内容叫做 CMake 命令，小括号里面的内容叫做命令参数。我们一句一句来分析命令及参数的含义。
 
@@ -110,7 +110,7 @@ add_subdirectory(engine)
 
 ## 逐语句分析 engine 目录的 CMakeLists.txt
 
-![](http://img.zhangkexuan.cn/markdown_20220512144653.png)
+![](/img/markdown_20220512144653.png)
 
 ```cmake
 set(ENGINE_ROOT_DIR "${PILOT_ROOT_DIR}/engine")
