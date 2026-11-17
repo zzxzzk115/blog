@@ -10,7 +10,7 @@ I am supervised by Dr. [Rafael Kuffner dos Anjos](https://rafaelkuffner.github.i
 
 Before starting my PhD, I completed an MSc in **High-Performance Graphics and Games Engineering** at the University of Leeds with Distinction. My MSc covered modelling and rendering, animation and simulation, geometry processing, high-performance graphics, and scientific computation.
 
-I also have professional experience developing game servers in Shanghai, mainly with C#, multithreading, networking, and performance optimisation.
+Before my PhD, I worked as a game server engineer at Blackjack Studio, the Shanghai R&D centre of Zilong Game Limited, mainly with C#, multithreading, networking, and performance optimisation.
 
 ## What I'm working on
 
@@ -20,7 +20,16 @@ This blog is where I keep technical notes, tutorials, and things I learn while e
 
 ## Away from research
 
-I collect retro handhelds and enjoy getting games and software running on GameShell, Game Boy, PocketCHIP, Trimui, and whatever else I can get my hands on. I also enjoy singing. [OmniLyrics](https://github.com/zzxzzk115/OmniLyrics) grew out of wanting a lyric tool that worked the way I wanted. Curiosity and the satisfaction of making something keep me coming back.
+I collect retro handhelds and enjoy getting games and software running on GameShell, Game Boy, PocketCHIP, Trimui, and whatever else I can get my hands on. I'm also an indie game developer, with small games on [itch.io](https://lazy-v.itch.io/), and an indie musician: I like singing and have written a few tracks, released on [NetEase Cloud Music](https://music.163.com/#/artist?id=33612866). [OmniLyrics](https://github.com/zzxzzk115/OmniLyrics) grew out of wanting a lyric tool that worked the way I wanted. Curiosity and the satisfaction of making something keep me coming back.
+
+{{< details "My music (click to listen)" >}}
+{{< netease 1402719608 >}}
+{{< netease 1431168150 >}}
+{{< netease 1402843948 >}}
+{{< netease 1847289377 >}}
+
+More on my [NetEase Cloud Music page](https://music.163.com/#/artist?id=33612866).
+{{< /details >}}
 
 ## Find me
 
@@ -28,6 +37,7 @@ I collect retro handhelds and enjoy getting games and software running on GameSh
 - [Casual page](https://zzxzzk115.github.io/casual/) — games, tools, and interests
 - [GitHub](https://github.com/zzxzzk115)
 - [itch.io](https://lazy-v.itch.io/)
+- [NetEase Cloud Music](https://music.163.com/#/artist?id=33612866)
 - Email: [zzxzzk115@gmail.com](mailto:zzxzzk115@gmail.com)
 
 ### WeChat {#wechat}

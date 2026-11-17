@@ -6,7 +6,7 @@
   [en.params]
     description = "Notes on graphics, games, and things I build. By Kexuan Zhang / Lazy_V."
     [en.params.authorCard]
-      bio = "PhD researcher in perceptual graphics at Leeds. Graphics, games, and retro handhelds."
+      bio = "PhD researcher in perceptual graphics at Leeds. Graphics, games, and retro handhelds.<br>Former game server engineer, indie game developer and indie musician."
 
 [zh]
   weight = 2
@@ -17,4 +17,4 @@
     description = "图形、游戏，以及我捣鼓的小东西。张可宣 / Lazy_V 的技术笔记。"
     slogan = "TALK IS CHEAP, SHOW ME THE CODE."
     [zh.params.authorCard]
-      bio = "利兹大学感知图形学博士生。图形、游戏与复古掌机。"
+      bio = "利兹大学感知图形学博士生。图形、游戏与复古掌机。<br>前游戏服务器工程师、独立游戏开发者、独立音乐人。"
