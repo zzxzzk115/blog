@@ -35,13 +35,27 @@ toc: true
 
 ### 本地写作
 
-安装 Hugo（Windows 上用 winget，macOS 上用 Homebrew）：
+安装 Hugo：
 
-```bash
+{{< tabs >}}
+{{< tab "Windows" >}}
+```powershell
 winget install Hugo.Hugo.Extended
-# macOS
+```
+{{< /tab >}}
+{{< tab "macOS" >}}
+```bash
 brew install hugo
 ```
+{{< /tab >}}
+{{< tab "Linux" >}}
+```bash
+sudo snap install hugo
+```
+
+发行版自带的 hugo 包可能偏旧，也可以从 [GitHub Releases](https://github.com/gohugoio/hugo/releases) 下载 extended 版本。
+{{< /tab >}}
+{{< /tabs >}}
 
 拉取博客仓库（带上主题子模块），然后启动本地预览：
 
@@ -51,4 +65,10 @@ cd blog
 hugo server
 ```
 
-写新文章时，在 `content/zh/posts/` 和 `content/en/posts/` 下各放一个同名的 Markdown 文件，就会自动成为中英文互译的两篇。写完推送到 GitHub，剩下的交给 GitHub Actions。
+写新文章用仓库里的小脚本，一次生成中英两份同名文件（同名即互为译文），默认是草稿：
+
+```bash
+python tools/new_post.py my-new-post --zh "中文标题" --en "English title" --tags "算法" --categories "随笔"
+```
+
+用 VS Code 的话，仓库里的 `.vscode/` 已经配好了：命令面板里运行 **Blog: new post** 按提示填写即可，**Blog: preview** 启动带草稿的预览；Markdown 里输入 `alert`、`img`、`video`、`tabs` 等前缀按 Tab 就能插入对应组件。写完删掉 `draft: true`，推送到 GitHub，剩下的交给 GitHub Actions。

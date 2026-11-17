@@ -1,0 +1,9 @@
+{
+  // Let snippet prefixes (more, alert, img, video ...) expand with Tab in Markdown.
+  "[markdown]": {
+    "editor.tabCompletion": "onlySnippets",
+    "editor.quickSuggestions": { "other": "off", "comments": "off", "strings": "off" },
+    "editor.wordWrap": "on"
+  },
+  "files.eol": "\n"
+}

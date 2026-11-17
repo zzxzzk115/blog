@@ -35,13 +35,27 @@ AI turned out to be really handy for this, since I'm not a front-end developer. 
 
 ### Writing locally
 
-Install Hugo (winget on Windows, Homebrew on macOS):
+Install Hugo:
 
-```bash
+{{< tabs >}}
+{{< tab "Windows" >}}
+```powershell
 winget install Hugo.Hugo.Extended
-# macOS
+```
+{{< /tab >}}
+{{< tab "macOS" >}}
+```bash
 brew install hugo
 ```
+{{< /tab >}}
+{{< tab "Linux" >}}
+```bash
+sudo snap install hugo
+```
+
+Distro packages can lag behind; you can also grab the extended build from [GitHub Releases](https://github.com/gohugoio/hugo/releases).
+{{< /tab >}}
+{{< /tabs >}}
 
 Clone the blog repository with the theme submodule and start the local preview:
 
@@ -51,4 +65,10 @@ cd blog
 hugo server
 ```
 
-For a new post, put a Markdown file with the same name under both `content/zh/posts/` and `content/en/posts/`, and the two become translations of each other. Push to GitHub and let GitHub Actions do the rest.
+For a new post, a small script in the repo creates the Chinese and English files at once (same name means they are translations of each other), as drafts:
+
+```bash
+python tools/new_post.py my-new-post --zh "中文标题" --en "English title" --tags "算法" --categories "随笔"
+```
+
+In VS Code, `.vscode/` is already set up: run **Blog: new post** from the command palette and fill in the prompts, and **Blog: preview** starts a preview that includes drafts. In Markdown, type a prefix such as `alert`, `img`, `video` or `tabs` and press Tab to insert that component. When the post is done, remove `draft: true`, push to GitHub and let GitHub Actions do the rest.

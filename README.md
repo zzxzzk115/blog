@@ -14,6 +14,24 @@ hugo server
 
 英文版 <http://localhost:1313/>，中文版 <http://localhost:1313/zh/>。构建：`hugo --gc --minify`，输出在 `public/`。
 
+## 写作
+
+新建一篇（中英两份同时生成，`draft: true`，标签/分类的英文名按 `data/terms.toml` 自动对应）：
+
+```bash
+python tools/new_post.py my-new-post --zh "中文标题" --en "English title" --tags "算法, Unity" --categories "随笔" --open
+```
+
+- `--section posts/game-engine` 放到子目录；`--only zh` 只建一种语言。
+- 图片放 `static/img/<slug>/`，文中写 `![说明](/img/<slug>/xxx.png)`。
+- 预览含草稿：`hugo server -D`；写完删掉 `draft: true` 再推送。
+- 只建一个文件也可以用 Hugo 自带的：`hugo new content content/zh/posts/xxx.md`（模板在 `archetypes/default.md`）。
+
+VS Code（`.vscode/` 已配好，无需插件）：
+
+- `Ctrl+Shift+P` → `Tasks: Run Task` → **Blog: new post**（依次填 slug、标题、目录、标签）、**Blog: preview (with drafts)**（也是 `Ctrl+Shift+B`）、**Blog: build**。
+- Markdown 里输入前缀按 Tab：`more` `alert` `img` `code` `video` `bilibili` `gallery` `tabs` `badge` `pdf` `math` `mermaid` `friend`。
+
 ## 目录结构
 
 ```

@@ -1,0 +1,55 @@
+{
+  // Type the prefix in a Markdown file and press Tab (or Ctrl+Space to list them all).
+  "More (summary break)": {
+    "scope": "markdown", "prefix": "more",
+    "body": ["<!--more-->", ""]
+  },
+  "Alert / callout": {
+    "scope": "markdown", "prefix": "alert",
+    "body": ["> [!${1|NOTE,TIP,IMPORTANT,WARNING,CAUTION|}]", "> $0"]
+  },
+  "Image": {
+    "scope": "markdown", "prefix": "img",
+    "body": ["![${1:说明}](/img/${TM_FILENAME_BASE}/${2:file.png})"]
+  },
+  "Code block": {
+    "scope": "markdown", "prefix": "code",
+    "body": ["```${1|cpp,csharp,python,bash,go,glsl,hlsl,cmake,json,yaml,toml,text|}", "$0", "```"]
+  },
+  "Video": {
+    "scope": "markdown", "prefix": "video",
+    "body": ["{{< video src=\"/video/${1:file.mp4}\" caption=\"${2}\" >}}"]
+  },
+  "Bilibili": {
+    "scope": "markdown", "prefix": "bilibili",
+    "body": ["{{< bilibili ${1:BVxxxxxxxxxx} >}}"]
+  },
+  "Gallery": {
+    "scope": "markdown", "prefix": "gallery",
+    "body": ["{{< gallery >}}", "/img/${TM_FILENAME_BASE}/${1:1.png}", "/img/${TM_FILENAME_BASE}/${2:2.png}", "{{< /gallery >}}"]
+  },
+  "Tabs": {
+    "scope": "markdown", "prefix": "tabs",
+    "body": ["{{< tabs >}}", "{{< tab \"${1:Windows}\" >}}", "$2", "{{< /tab >}}", "{{< tab \"${3:macOS}\" >}}", "$4", "{{< /tab >}}", "{{< /tabs >}}"]
+  },
+  "Badge": {
+    "scope": "markdown", "prefix": "badge",
+    "body": ["{{< badge \"${1:text}\" >}}"]
+  },
+  "PDF": {
+    "scope": "markdown", "prefix": "pdf",
+    "body": ["{{< pdf src=\"/src/${1:file.pdf}\" >}}"]
+  },
+  "Math (block)": {
+    "scope": "markdown", "prefix": "math",
+    "body": ["$$", "$0", "$$"]
+  },
+  "Mermaid": {
+    "scope": "markdown", "prefix": "mermaid",
+    "body": ["```mermaid", "graph LR", "  ${1:A} --> ${2:B}", "```"]
+  },
+  "Friend card": {
+    "scope": "markdown", "prefix": "friend",
+    "body": ["{{< friend name=\"${1}\" url=\"${2:https://}\" desc=\"${3}\" avatar=\"${4}\" tags=\"${5}\" >}}"]
+  }
+}

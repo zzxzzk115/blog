@@ -1,0 +1,50 @@
+{
+  // Ctrl+Shift+P -> "Tasks: Run Task" -> pick one. "Blog: preview" is also the default build task (Ctrl+Shift+B).
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Blog: new post",
+      "type": "process",
+      "command": "python",
+      "args": [
+        "tools/new_post.py", "${input:slug}",
+        "--zh", "${input:zhTitle}", "--en", "${input:enTitle}",
+        "--section", "${input:section}",
+        "--tags", "${input:tags}", "--categories", "${input:categories}",
+        "--open"
+      ],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+    },
+    {
+      "label": "Blog: preview (with drafts)",
+      "type": "process",
+      "command": "hugo",
+      "args": ["server", "-D", "--navigateToChanged"],
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Blog: build (like the deploy)",
+      "type": "process",
+      "command": "hugo",
+      "args": ["--gc", "--minify"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+    }
+  ],
+  "inputs": [
+    { "id": "slug", "type": "promptString", "description": "File name / URL part, e.g. vulkan-render-graph" },
+    { "id": "zhTitle", "type": "promptString", "description": "中文标题（可留空）" },
+    { "id": "enTitle", "type": "promptString", "description": "English title (optional)" },
+    {
+      "id": "section", "type": "pickString", "description": "Where it goes",
+      "options": ["posts", "posts/game-engine", "posts/phd-life", "posts/programming-languages", "posts/algorithms", "game-dev"],
+      "default": "posts"
+    },
+    { "id": "tags", "type": "promptString", "description": "Tags, comma-separated, in Chinese (English names come from data/terms.toml)" },
+    { "id": "categories", "type": "promptString", "description": "Categories, comma-separated, in Chinese" }
+  ]
+}
