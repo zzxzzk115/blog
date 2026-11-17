@@ -33,7 +33,7 @@ For the **virtual machine**, you can use [Virtual Box](https://www.virtualbox.or
 
 For **assembly**, let's just stick with the author's nask.exe (the download link died with the repository; it ships in the book's tool kit); we don't need to write our own assembler.
 
-We also need a **Bash environment**. You can use [Git](https://git-scm.com/downloads) Bash; I'm using [Cmder](https://cmder.net/).
+We also need a **Bash environment**. You can use [Git](https://git-scm.com/downloads) Bash; I'm using [Cmder](https://cmder.app/).
 
 # 2. Editing the image file in hex
 

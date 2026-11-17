@@ -27,7 +27,7 @@ Aria2 and Transmission on the home page are both download tools. They can be acc
 
 The cloud drive is a private cloud. The admin adds users in the backend, and you can upload, download and share files. With plugins installed, you can also edit code online, play videos online, preview documents online, extract archives online, and so on.
 
-[Jack's Blog](http://zhangkexuan.cn) is my personal blog.
+Jack's Blog is my personal blog (its old domain `zhangkexuan.cn` is dead; this blog you are reading is its successor).
 
 Here's what Aria2 looks like once it's set up:
 

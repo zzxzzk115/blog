@@ -32,7 +32,7 @@ cnblogs: 12638174
 
 **汇编** 的话，还是老老实实采用作者的 nask.exe（原下载链接随仓库失效，可在书附带的工具包中找到）吧，我们并不需要自己写一个汇编器。
 
-我们还需要一个 **Bash 环境**，你可以选择 [Git](https://git-scm.com/downloads) 的 Bash，我这里使用 [Cmder](https://cmder.net/)。
+我们还需要一个 **Bash 环境**，你可以选择 [Git](https://git-scm.com/downloads) 的 Bash，我这里使用 [Cmder](https://cmder.app/)。
 
 # 2. 以 16 进制方式编辑 image 映像文件
 
