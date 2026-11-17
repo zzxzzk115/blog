@@ -13,7 +13,7 @@ cnblogs: 12698697
 
 # 准备工作
 
-## 1. 下载依赖项
+## 下载依赖项
 
 这次就不一一说明了，直接把要装的依赖项一口气发出来吧！
 
@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install -y libsdl1.2-dev libsdl2-dev libboost-system-dev libboost-filesystem-dev libboost-date-time-dev libfreeimage-dev libfreetype6-dev libeigen3-dev libcurl4-openssl-dev libasound2-dev libgl1-mesa-dev cmake build-essential pkg-config
 ```
 
-## 2. 下载 RetroArch 的源码
+## 下载 RetroArch 的源码
 
 ```bash
 git clone https://github.com/zzxzzk115/RetroArch.git

@@ -15,7 +15,7 @@ aiTranslated: true
 
 <!--more-->
 
-## 1. What the Dorm Assistant Can Do
+## What the Dorm Assistant Can Do
 
 Right now the Dorm Assistant works as a private dorm server, a download box, a private cloud drive, Samba file sharing, DLNA media streaming, and lets you open the door from the LAN or remotely. (A voice assistant or surveillance feature will probably be added later.)
 
@@ -87,7 +87,7 @@ There's actually also a PC executable, a Wox plugin on PC, an Android app, and a
 
 That basically covers the features.
 
-## 2. Preparing for the Dorm Assistant
+## Preparing for the Dorm Assistant
 
 ### Background knowledge:
 
@@ -128,7 +128,7 @@ The standard cost should be around 500 CNY, with a UPS and a drive enclosure.
 
 ### Software:
 
-#### 1. First boot of the Raspberry Pi
+#### First boot of the Raspberry Pi
 
 Getting your Raspberry Pi from Taobao is an exciting moment. You'll definitely be itching to use it.
 
@@ -187,7 +187,7 @@ Connect the power to the Raspberry Pi and switch it on. When the indicator light
 
 That completes the first boot.
 
-#### 2. Connecting to the Raspberry Pi terminal over SSH
+#### Connecting to the Raspberry Pi terminal over SSH
 
 First, we need the Raspberry Pi's LAN IP:
 
@@ -225,9 +225,9 @@ Then enter the password `raspberry` and press Enter to get into the Raspberry Pi
 
 At this point the ssh connection to the Raspberry Pi is ready.
 
-#### 3. Some necessary settings
+#### Some necessary settings
 
-##### ① Switch to a domestic mirror
+##### Switch to a domestic mirror
 
 ```bash
 sudo nano /etc/apt/sources.list
@@ -273,7 +273,7 @@ Then compare against the index and update the dependencies:
 sudo apt-get upgrade -y
 ```
 
-##### ② Set up Chinese
+##### Set up Chinese
 
 Install a Chinese font:
 
@@ -297,7 +297,7 @@ Uncheck `en_GB.UTF-8 UTF-8`, and check `en_US.UTF-8 UTF-8`, `zh_CN.UTF-8 UTF-8` 
 
 There are other related settings too, which I'll mention later. Use `Tab` or the left/right keys to move to `Finish` and press Enter. It prompts you to reboot right away, and the changes take effect after the reboot.
 
-##### ③ Change the password, enable VNC, change the default resolution
+##### Change the password, enable VNC, change the default resolution
 
 ![Fa46pR.png](/img/csdn/85023305-16.png)
 
@@ -315,7 +315,7 @@ Choose the seventh option, then `A5 Resolution`:
 
 Pick a resolution that suits you; I recommend 1920x1080 HD.
 
-#### 4. Connecting to the Raspberry Pi with VNC Viewer
+#### Connecting to the Raspberry Pi with VNC Viewer
 
 [`VNC Viewer`](https://www.realvnc.com/en/connect/download/viewer/) is available on the official website, in versions for every platform.
 
@@ -339,7 +339,7 @@ On Android, any terminal app that can ssh will do.
 
 `VNC Viewer` also has `iOS` and `Android` versions, so you can control the Raspberry Pi graphically from your phone too.
 
-#### 5. Setting a static IP for the Raspberry Pi
+#### Setting a static IP for the Raspberry Pi
 
 Why not set the static IP from the terminal? Because the GUI is easier!
 
@@ -363,7 +363,7 @@ When you're done, click `应用` (Apply). My Raspberry Pi now has the static IP 
 
 Only with a static IP set will the Raspberry Pi avoid being assigned a dynamic IP address every time it reboots.
 
-#### 6. Installing the Arduino IDE
+#### Installing the Arduino IDE
 
 **Word of advice: don't install it with `sudo apt-get install arduino` — that's a very old version.**
 
@@ -402,13 +402,13 @@ Open the example sketch `Blink`
 
 Click the right-pointing arrow to upload the code. Once the upload succeeds and the Arduino's LED starts blinking, it's working properly.
 
-#### 7. SFTP file access
+#### SFTP file access
 
 On Windows use `WinSCP`; on macOS or Linux you can use `FileZilla`.
 
 All you need is the Raspberry Pi's LAN IP, username and password to access the Raspberry Pi and manage its files. It's simple, so I won't go into detail here.
 
-#### 8. Buying and resolving a domain
+#### Buying and resolving a domain
 
 I use Tencent Cloud. There are many places to buy a domain, so I'll only talk about DNS resolution.
 
@@ -420,15 +420,15 @@ For example, on Tencent Cloud — the domain I bought is code4world.cn:
 
 Resolving it like this points pi.code4world.cn to frp.kerwin.cn, which enables frp intranet tunneling. I'll cover frp intranet tunneling later.
 
-## 3. Building the Dorm Assistant's Modules
+## Building the Dorm Assistant's Modules
 
-### 1. Setting up a web server with Apache2 or Nginx
+### Setting up a web server with Apache2 or Nginx
 
 > Either Apache2 or Nginx works, and setting them up is quite similar.
 >
 > Pick one of the two, don't install both: they do the same thing and both listen on port 80 by default, so installing both is pointless and they'll conflict.
 
-#### ① Setting up Apache2
+#### Setting up Apache2
 
 Install Apache2:
 
@@ -559,7 +559,7 @@ Type `192.168.1.107:70` into your browser and press Enter, and you'll see php's 
 
 Apache2 + php is now set up.
 
-#### ② Setting up Nginx
+#### Setting up Nginx
 
 If you've installed Apache2, don't install Nginx too.
 
@@ -616,7 +616,7 @@ sudo service nginx restart
 
 And the configuration is done.
 
-#### ③ Setting the site logo
+#### Setting the site logo
 
 The site's `logo` is the `favicon.ico`. It usually just goes in the site root. How do you make an `ico` icon?
 
@@ -628,11 +628,11 @@ Visit the site above, convert the `png` image of the `logo` you want into `ico` 
 
 Once it's in place, clear your browser cache and refresh the page, and you'll see the site with the logo you just added.
 
-#### ④ More
+#### More
 
 For more, go learn at [W3School](http://www.w3school.com.cn)...
 
-### 2. Setting up Oray (Peanut Shell) for ssh and vnc from outside the LAN
+### Setting up Oray (Peanut Shell) for ssh and vnc from outside the LAN
 
 Go to the [download page](https://hsk.oray.com/download/) and download the Raspberry Pi version:
 
@@ -680,7 +680,7 @@ Enter `<domain>:<external port>`. If you can see the desktop after entering the 
 
 To make the external ports easier to remember, you can download the Peanut Shell app on your phone.
 
-### 3. Setting up frp for more intranet tunneling
+### Setting up frp for more intranet tunneling
 
 First download it
 
@@ -768,7 +768,7 @@ Likewise, other startup commands can generally be done the same way.
 
 Now visiting `http://pi.code4world.cn` (the domain has since expired) is equivalent to visiting `http://192.168.1.107:80`, i.e. `http://192.168.1.107` — but the latter only works on the LAN, while the former works from anywhere.
 
-### 4. Mounting the hard drive
+### Mounting the hard drive
 
 First, open the VNC desktop.
 
@@ -823,9 +823,9 @@ Change the read/write permissions
 sudo chmod -R 777 /media/pi/MyDisk
 ```
 
-### 5. Setting up Aria2 and Transmission as a download box
+### Setting up Aria2 and Transmission as a download box
 
-#### ① Aria2 and the Aria-Ng Web UI
+#### Aria2 and the Aria-Ng Web UI
 
 Install aria2
 
@@ -1004,7 +1004,7 @@ In the remotely accessed aria2 web UI, under `设置` (Settings) -> `Aria2 RPC �
 
 Then fill in the secret and refresh. If it says it's connected, you're done.
 
-#### ② Transmission
+#### Transmission
 
 Install transmission
 
@@ -1130,7 +1130,7 @@ After `cd`-ing to the frp path:
 
 Visit `http://<the domain you just set>` to access transmission remotely. And with that, both local and remote downloading work.
 
-### 6. Setting up the private cloud
+### Setting up the private cloud
 
 We'll use KodExplorer (可道云), which is fairly simple to configure.
 
@@ -1156,7 +1156,7 @@ The regular user's username is `default` with default password `default`; the gu
 
 You can configure a lot more in the backend; try it out yourself for the details.
 
-### 7. Setting up Samba
+### Setting up Samba
 
 Install Samba
 
@@ -1211,7 +1211,7 @@ where `/media/pi` is the share path you just set.
 
 Samba is now set up.
 
-### 8. Setting up miniDLNA
+### Setting up miniDLNA
 
 Update the package sources
 
@@ -1247,11 +1247,11 @@ Restart minidlna
 
 miniDLNA is now set up. Any phone or computer that supports DLNA can directly play videos, view pictures, listen to music... from the Raspberry Pi.
 
-### 9. Dorm door-opening assistant
+### Dorm door-opening assistant
 
 > This module comes in two parts. One is opening the door with a standalone Arduino + buzzer + servo + RC522 (RFID) module; the other is the Raspberry Pi using Python's serial and socket libraries to open the door via Socket from multiple devices on the LAN, and from a phone outside the LAN.
 
-#### ① Opening the door with the campus card using Arduino + buzzer + servo + RC522
+#### Opening the door with the campus card using Arduino + buzzer + servo + RC522
 
 First, the wiring diagram:
 
@@ -1447,7 +1447,7 @@ void loop() {
 
 Upload (flash) it, then once it succeeds, swipe a card and test whether it controls the buzzer and rotates the servo. If it works, on to the next part.
 
-#### ② Opening the door from multiple devices with Raspberry Pi + Python's serial and socket libraries
+#### Opening the door from multiple devices with Raspberry Pi + Python's serial and socket libraries
 
 > This part involves Python, serial ports, sockets, Windows batch files, Java and Android Studio, Swift and Xcode, HTML+JS+PHP, Wox plugins and more.
 

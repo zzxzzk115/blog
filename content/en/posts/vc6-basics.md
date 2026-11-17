@@ -15,7 +15,7 @@ Since a lot of classmates can't get vc++6.0 to work properly, don't know how to 
 
 <!--more-->
 
-## 1.Getting the Tools Ready
+## Getting the Tools Ready
 
 - First, here are the resources you need. There are just two files: one installer, and one MSDEV.exe used as a replacement. Link: https://pan.baidu.com/s/1nvqrePV  Password: wsvd
 
@@ -25,7 +25,7 @@ Since a lot of classmates can't get vc++6.0 to work properly, don't know how to 
 
 - Finally, double-click the desktop shortcut and it should run normally.
 
-## 2.Creating a Project and a File
+## Creating a Project and a File
 
 - First, click File->New.
 
@@ -59,7 +59,7 @@ Since a lot of classmates can't get vc++6.0 to work properly, don't know how to 
 
 ![00](/img/csdn/78707323-9.png)
 
-## 3.Common Little Problems (Updated Occasionally)
+## Common Little Problems (Updated Occasionally)
 
 - can not open file debug/*.exe
 
@@ -69,7 +69,7 @@ Since a lot of classmates can't get vc++6.0 to work properly, don't know how to 
 
 - If it won't run no matter what, then your workspace was created in vc's default MyProjects workspace, which causes lots of problems. So when you create a workspace, be sure to pick a folder of your own, preferably one without Chinese characters in the path.
 
-## 4.Takeaways
+## Takeaways
 
 - If it isn't a problem with your code, searching the error message on Baidu will usually solve it
 

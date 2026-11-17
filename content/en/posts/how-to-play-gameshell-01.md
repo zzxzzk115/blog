@@ -32,7 +32,7 @@ It's fair to say that gamers, indie game developers, makers and **GEEKs** alike 
 
 ## System Settings
 
-### 1. Set the System Language to Chinese
+### Set the System Language to Chinese
 
 I know some people will say they don't understand English and want to switch the system language to Chinese. So here's how to change it.
 
@@ -50,21 +50,21 @@ In `Settings->Language`, just pick `简体中文` (Simplified Chinese). I've fla
 
 First, the **biggest gotcha**: if you want to leave the GameShell charging, you must switch to `服务器模式` (server mode) by choosing `服务器` (Server) in `设置->电源选项` (Settings -> Power Options). Otherwise it'll shut down while charging (this really happened to me)! Another way is to plug it in and then power it off — the screen stays dark, but it's actually charging!
 
-### 2. Adjusting the Time Zone
+### Adjusting the Time Zone
 
 After changing the language, you notice the time is off, so you'll want to set the system time to China time.
 
 GameShell supports time zone settings. In `设置->时区` (Settings -> Time Zone), choose `Asia`, then `Shanghai`, i.e. Shanghai time. When looking for `Shanghai`, you can use the left/right buttons to quickly page up and down.
 
-### 3. Adjusting the Volume
+### Adjusting the Volume
 
 You can go into `设置->音量` (Settings -> Volume) and press left/right to adjust the volume. GameShell also provides the shortcuts `Shift` + `Select` and `Shift` + `Start` — as you can see, these are the `-` and `+` on the case, for volume down and volume up respectively.
 
-### 4. Adjusting the Brightness
+### Adjusting the Brightness
 
 In `设置->背光亮度` (Settings -> Backlight Brightness), press left/right to adjust the GameShell's screen brightness.
 
-### 5. Connecting to WiFi and Bluetooth, Turning Airplane Mode On and Off
+### Connecting to WiFi and Bluetooth, Turning Airplane Mode On and Off
 
 Without the internet, it's just not the same! You've got to get online!
 
@@ -74,7 +74,7 @@ For Bluetooth, go to `设置->蓝牙` (Settings -> Bluetooth) to search for devi
 
 Airplane mode is mostly useful when you want to save battery while gaming; you can turn it on and off in `设置->飞行模式` (Settings -> Airplane Mode). With airplane mode on, neither WiFi nor Bluetooth is available.
 
-### 6. Changing the Controller Layout
+### Changing the Controller Layout
 
 While using it, you may find the `A` and `B` the system tells you to press are swapped compared to what's in your hands.
 
@@ -98,7 +98,7 @@ Here's the question: how do you transfer files to the GameShell?
 
 ### Transferring Files to the GameShell
 
-#### 1. Accessing GameShell's Built-in Samba File Sharing Server
+#### Accessing GameShell's Built-in Samba File Sharing Server
 
 **Samba** is a file sharing service. GameShell comes with Samba, configured to share the `games` folder and `musics` folder in the user's home directory, so we can transfer games and music.
 
@@ -134,7 +134,7 @@ The folders inside are all game ROM folders or game folders. For example, GBA RO
 
 Once the ROMs are in place, go back to the menu, open `Retro Games`, enter the corresponding emulator, and open a game to play.
 
-#### 2. SCP
+#### SCP
 
 If you want to do command-line SCP file transfers from a Bash environment, you can use **Cmder**, which is great. That's pretty inefficient though, so here I recommend `WinSCP` or `MobaXterm`. WinSCP is dedicated to SCP file transfer, while MobaXterm is a free all-in-one tool with tons of features. Both can transfer files.
 

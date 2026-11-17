@@ -18,7 +18,7 @@ cnblogs: 12638174
 
 可以在 GitHub 跟进我的学习实践进度...（原仓库 Use30DaysToMakeOS 已不存在，可查看 [Wayback Machine 存档](https://web.archive.org/web/20201016085805/https://github.com/zzxzzk115/Use30DaysToMakeOS)）
 
-# 1. 工具准备
+# 工具准备
 
 作者使用的工具，并不是我熟悉的，也不一定是最好的解决方案。
 
@@ -34,9 +34,9 @@ cnblogs: 12638174
 
 我们还需要一个 **Bash 环境**，你可以选择 [Git](https://git-scm.com/downloads) 的 Bash，我这里使用 [Cmder](https://cmder.app/)。
 
-# 2. 以 16 进制方式编辑 image 映像文件
+# 以 16 进制方式编辑 image 映像文件
 
-## 2.1. Bash 环境，dd 命令，生成全 0 的 image 文件
+## Bash 环境，dd 命令，生成全 0 的 image 文件
 
 软盘规定大小必须为 `1440` **KB**，也就是 `1474560` 字节（1440 * 1024 **Bytes**，1 **KB** = 1024 **Bytes**）。
 
@@ -70,7 +70,7 @@ dd if=/dev/zero of=helloos.img count=1474560 bs=1
 
 可以看到，生成了一个名为 `helloos.img`、大小为 1440 **KB** 的映像文件，成功。
 
-## 2.2. 使用 16 进制编辑器，编辑 helloos.img
+## 使用 16 进制编辑器，编辑 helloos.img
 
 用 16 进制编辑器打开刚刚生成的 `helloos.img`，然后进入漫长的对着敲环节，体会一下当年打孔编程的快感（打孔那就更累了，那是 2 进制，这里好歹是 16 进制）。
 
@@ -86,7 +86,7 @@ dd if=/dev/zero of=helloos.img count=1474560 bs=1
 
 到这里，img 文件编辑完成。
 
-# 3. 使用虚拟机，以软盘方式启动
+# 使用虚拟机，以软盘方式启动
 
 打开 VMware：
 
@@ -126,7 +126,7 @@ dd if=/dev/zero of=helloos.img count=1474560 bs=1
 
 ![vm19](/img/cnblogs/12638174-13.png)
 
-# 4. 使用 Visual Studio Code 进行汇编代码的编写
+# 使用 Visual Studio Code 进行汇编代码的编写
 
 手撸 16 进制，我反正是累死了，你们呢？
 

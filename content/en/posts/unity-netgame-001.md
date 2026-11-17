@@ -66,7 +66,7 @@ The socket communication flow is:
 >
 > What Echo does: the client sends the text in the InputField to the server, the server prints a log to the console and sends the received message back to the client, and the client's Text control displays the message text received from the server.
 
-## 0. The Concepts of Synchronous and Asynchronous
+## The Concepts of Synchronous and Asynchronous
 
 Synchronous means: after the sender sends data, it waits for the receiver to send back a response before sending the next packet.
 
@@ -74,7 +74,7 @@ Asynchronous means: after the sender sends data, it doesn't wait for the receive
 
 Synchronous is usually avoided because it blocks threads and hurts program performance. But synchronous programs are much easier to write, so I'll start with the simplest synchronous program.
 
-## 1. Synchronous
+## Synchronous
 
 Scene setup:
 
@@ -230,7 +230,7 @@ Client and server programs like these are simple to write, but they may cause st
 
 
 
-## 2. Asynchronous
+## Asynchronous
 
 In the asynchronous version, the corresponding APIs change. Connect becomes BeginConnect, Accept becomes BeginAccept, Receive becomes BeginReceive, and Send becomes BeginSend. The new methods all take a delegate of type void Callback(IAsyncResult ar) as a callback and all return an object of the IAsyncResult interface type. To finish them, there are corresponding methods EndConnect, EndAccept, EndReceive, EndSend and so on, which take an IAsyncResult object as a parameter.
 
@@ -528,13 +528,13 @@ A program like this is efficient, uses relatively little CPU, doesn't block, and
 
 For details on the APIs used in the program, see the [official Microsoft C# API docs](https://docs.microsoft.com/zh-cn/dotnet/csharp/).
 
-## 3. Results
+## Results
 
 Using the asynchronous version as an example:
 
 ![EchoAsyncShowcase](/img/markdown_20201031112712.png)
 
-## 4. Summary
+## Summary
 
 Synchronous methods are easy to write but blocking, which can hurt program efficiency.
 

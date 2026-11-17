@@ -22,7 +22,7 @@ So this time I tried installing version 11.3. The goal is to be able to run `No9
 
 # Preparation
 
-## 1. Download the Linux source for Love2D 11.3
+## Download the Linux source for Love2D 11.3
 
 First of all, obviously, we need to download Love2d 11.3.
 
@@ -30,19 +30,19 @@ But starting with 11, there's no armhf deb package anymore, so we'll build and i
 
 Download [love-11.3-linux-src.tar.gz](https://github.com/love2d/love/releases/download/11.3/love-11.3-linux-src.tar.gz)
 
-## 2. Install the C/C++ compilers and Make
+## Install the C/C++ compilers and Make
 
 Since Love2D is written in C/C++, we need `gcc` and `g++`. And since building Love2D from source uses `make`, we need the `make` tool too. In fact, gcc, g++ and make are dependencies of lots of packages, so we have to install them first.
 
 `sudo apt-get install gcc g++ make`
 
-## 3. Install pkg-config
+## Install pkg-config
 
 The PocketChip doesn't come with `pkg-config`, so we need to install that as well; other packages need it too.
 
 `sudo apt-get install pkg-config`
 
-## 4. Install Lua and LuaJIT
+## Install Lua and LuaJIT
 
 `sudo apt-get install lua5.2` installs Lua 5.2.
 
@@ -56,7 +56,7 @@ Then go into the LuaJIT root directory: `cd LuaJIT-2.0.5`
 
 Finally, just run `make & sudo make install`.
 
-## 5. Install SDL2
+## Install SDL2
 
 Most cross-platform scripting game engines written in C/C++, such as Pygame and Love2D, use SDL2.
 
@@ -64,15 +64,15 @@ So we need to install it:
 
 `sudo apt-get install libsdl2-dev`
 
-## 6. Install OpenAL
+## Install OpenAL
 
 Love2D uses OpenAL for audio, so we need it too:
 
 `sudo apt-get install libopenal-dev`
 
-## 7. Install FreeType2
+## Install FreeType2
 
-### 1. Install Python 2 and Python 3
+### Install Python 2 and Python 3
 
 FreeType2 needs Python 2 and Python 3, plus the corresponding pip and pip3.
 
@@ -80,7 +80,7 @@ Let's install them:
 
 `sudo apt-get install python python-pip python3 python3-pip`
 
-### 2. Download the FreeType2 source
+### Download the FreeType2 source
 
 Download: [freetype-2.10.1.tar.gz](https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz)
 
@@ -98,7 +98,7 @@ Install:
 
 The install is pretty slow, so you might want to read a book in the meantime.
 
-## 8. Install libmodplug, libvorbis, libmpg123 and libtheora
+## Install libmodplug, libvorbis, libmpg123 and libtheora
 
 `sudo apt-get install libmodplug-dev libvorbis-dev libmpg123-dev libtheora-dev` 
 

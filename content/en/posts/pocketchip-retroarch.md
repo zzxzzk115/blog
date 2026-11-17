@@ -14,7 +14,7 @@ cnblogs: 12698697
 
 # Preparation
 
-## 1. Install the dependencies
+## Install the dependencies
 
 I won't go through them one by one this time; here's every dependency you need in one go!
 
@@ -23,7 +23,7 @@ sudo apt update
 sudo apt install -y libsdl1.2-dev libsdl2-dev libboost-system-dev libboost-filesystem-dev libboost-date-time-dev libfreeimage-dev libfreetype6-dev libeigen3-dev libcurl4-openssl-dev libasound2-dev libgl1-mesa-dev cmake build-essential pkg-config
 ```
 
-## 2. Get the RetroArch source code
+## Get the RetroArch source code
 
 ```bash
 git clone https://github.com/zzxzzk115/RetroArch.git

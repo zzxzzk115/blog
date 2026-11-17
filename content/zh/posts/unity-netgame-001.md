@@ -65,7 +65,7 @@ Socket 通信流程为：
 >
 > Echo 的效果就是，客户端给服务端发送 InputField 输入框内的文本消息，服务端控制台打印日志，把接收到的消息发送回客户端，客户端的 Text 控件显示从服务端接收到的消息文本。
 
-## 0. 同步和异步的概念
+## 同步和异步的概念
 
 同步是指：发送方发出数据后，等接收方发回响应以后才发下一个数据包的通讯方式。 
 
@@ -73,7 +73,7 @@ Socket 通信流程为：
 
 同步往往不被采纳，因为会造成线程阻塞，影响程序性能。但是同步程序要好写很多，所以我先从最简单的同步程序讲起。
 
-## 1. 同步篇
+## 同步篇
 
 场景搭建：
 
@@ -229,7 +229,7 @@ namespace Echo_Server_Sync
 
 
 
-## 2. 异步篇
+## 异步篇
 
 异步程序中，对应的 API 发生了变换。Connect 变为 BeginConnect，Accept 变为 BeginAccept，Receive 变为 BeginReceive，Send 变为 BeginSend。改变后的方法均需要传入 void Callback(IAsyncResult ar) 类型的委托作为回调，均返回一个 IAsyncResult 接口类型的对象。相应需要结束，就有 EndConnect、EndAccept、EndReceive、EndSend 等方法，需要传入一个 IAsyncResult 类型的对象作为参数。
 
@@ -527,13 +527,13 @@ namespace Echo_Server_Async
 
 关于程序中的 API，详见 [微软官方 C# API 文档](https://docs.microsoft.com/zh-cn/dotnet/csharp/)。
 
-## 3.运行效果
+## 运行效果
 
 以异步为例:
 
 ![EchoAsyncShowcase](/img/markdown_20201031112712.png)
 
-## 4. 总结
+## 总结
 
 同步方法好写但阻塞，可能影响程序的效率。
 

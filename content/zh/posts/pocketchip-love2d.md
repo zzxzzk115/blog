@@ -21,7 +21,7 @@ Pocketchip 换源、更新以后，通过 `sudo apt-get -f install love` 安装�
 
 # 准备工作
 
-## 1. 下载 Love2D_11.3 版本的 Linux 源码
+## 下载 Love2D_11.3 版本的 Linux 源码
 
 首先当然要下载 11.3 版本的 Love2d。
 
@@ -29,19 +29,19 @@ Pocketchip 换源、更新以后，通过 `sudo apt-get -f install love` 安装�
 
 下载 [love-11.3-linux-src.tar.gz](https://github.com/love2d/love/releases/download/11.3/love-11.3-linux-src.tar.gz)
 
-## 2. 安装 C/C++ 编译器与 Make
+## 安装 C/C++ 编译器与 Make
 
 由于 Love2D 是 C/C++ 写的，就需要 `gcc` 和 `g++`，当然，由于 Love2D 源码安装使用了 `make`，我们也要安装 `make` 工具。其实很多软件包的依赖项都是 gcc、g++ 和 make，所以我们必须先装好它们。
 
 `sudo apt-get install gcc g++ make`
 
-## 3. 安装 pkg-config
+## 安装 pkg-config
 
 Pocketchip 没有自带 `pkg-config`，我们也要安装它，其他软件包也需要它。
 
 `sudo apt-get install pkg-config`
 
-## 4. 安装 Lua 环境及 LuaJIT
+## 安装 Lua 环境及 LuaJIT
 
 `sudo apt-get install lua5.2` 安装 Lua5.2
 
@@ -55,7 +55,7 @@ LuaJIT 的安装很简单，先解压这个压缩包：
 
 最后 `make & sudo make install` 即可。
 
-## 5. 安装 SDL2
+## 安装 SDL2
 
 大部分使用 C/C++ 编写的跨平台脚本游戏引擎，例如 Pygame、Love2D 等，都使用了 SDL2。
 
@@ -63,15 +63,15 @@ LuaJIT 的安装很简单，先解压这个压缩包：
 
 `sudo apt-get install libsdl2-dev`
 
-## 6. 安装 OpenAL
+## 安装 OpenAL
 
 Love2D 音频采用 OpenAL，所以我们也要安装它：
 
 `sudo apt-get install libopenal-dev`
 
-## 7. 安装 FreeType2
+## 安装 FreeType2
 
-### 1. 安装 python2 python3 环境
+### 安装 python2 python3 环境
 
 FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
@@ -79,7 +79,7 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 `sudo apt-get install python python-pip python3 python3-pip`
 
-### 2. 下载 FreeType2 源码
+### 下载 FreeType2 源码
 
 下载：[freetype-2.10.1.tar.gz](https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz)
 
@@ -97,7 +97,7 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 安装过程比较慢，可以看看书。
 
-## 8. 安装 libmodplug、libvorbis、libmpg123 以及 libtheora
+## 安装 libmodplug、libvorbis、libmpg123 以及 libtheora
 
 `sudo apt-get install libmodplug-dev libvorbis-dev libmpg123-dev libtheora-dev` 
 

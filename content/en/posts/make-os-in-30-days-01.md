@@ -19,7 +19,7 @@ aiTranslated: true
 
 You could follow my progress on GitHub... (the Use30DaysToMakeOS repository no longer exists; see the [Wayback Machine copy](https://web.archive.org/web/20201016085805/https://github.com/zzxzzk115/Use30DaysToMakeOS))
 
-# 1. Tools
+# Tools
 
 The tools the author uses aren't ones I know, and they aren't necessarily the best choice either.
 
@@ -35,9 +35,9 @@ For **assembly**, let's just stick with the author's nask.exe (the download link
 
 We also need a **Bash environment**. You can use [Git](https://git-scm.com/downloads) Bash; I'm using [Cmder](https://cmder.app/).
 
-# 2. Editing the image file in hex
+# Editing the image file in hex
 
-## 2.1. Generating an all-zero image file with dd in Bash
+## Generating an all-zero image file with dd in Bash
 
 A floppy disk must be exactly `1440` **KB**, i.e. `1474560` bytes (1440 * 1024 **Bytes**, 1 **KB** = 1024 **Bytes**).
 
@@ -71,7 +71,7 @@ In the `Day01->codes` folder, I right-click, open **Cmder** there and run the co
 
 You can see an image file named `helloos.img` of 1440 **KB** was created. Success.
 
-## 2.2. Editing helloos.img in a hex editor
+## Editing helloos.img in a hex editor
 
 Open the freshly generated `helloos.img` in the hex editor, then begin the long stretch of copying bytes by hand, and get a taste of the joy of punch-card programming (punch cards were even worse, that's binary; at least this is hex).
 
@@ -87,7 +87,7 @@ And the start of line 00001400:
 
 That's it, the img file is done.
 
-# 3. Booting it from a floppy in a virtual machine
+# Booting it from a floppy in a virtual machine
 
 Open VMware:
 
@@ -127,7 +127,7 @@ In the end it shows `hello, world`:
 
 ![vm19](/img/cnblogs/12638174-13.png)
 
-# 4. Writing assembly in Visual Studio Code
+# Writing assembly in Visual Studio Code
 
 Typing hex by hand nearly killed me. How about you?
 

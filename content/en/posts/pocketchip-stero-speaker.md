@@ -18,7 +18,7 @@ cnblogs: 12716175
 >
 > This mod is cheap, and anyone with a pair of hands can do it.
 
-# 0. Buy the Parts
+# Buy the Parts
 
 No parts, no mod.
 
@@ -38,13 +38,13 @@ No parts, no mod.
 
 (I forgot to include the hot glue and the glue gun in the photo above.)
 
-# 1. Unplug the Power Connector
+# Unplug the Power Connector
 
 Before soldering, you must unplug the power connector, otherwise it isn't safe.
 
 ![](/img/markdown_20220512181852.png)
 
-# 2. Mount the Class D Amplifier Board
+# Mount the Class D Amplifier Board
 
 Before mounting it, cover the chip with heat-resistant tape to protect it.
 
@@ -62,7 +62,7 @@ Then fix the amp board in place with the hot glue gun:
 
 ![](/img/markdown_20220512182007.png)
 
-# 3. Start Soldering
+# Start Soldering
 
 First solder the amp board's `-` to the `GND` pin, i.e. the negative goes to ground.
 

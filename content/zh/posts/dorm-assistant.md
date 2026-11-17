@@ -14,7 +14,7 @@ csdn: 85023305
 
 <!--more-->
 
-## 1. 寝室助手的功能
+## 寝室助手的功能
 
 寝室助手目前可以实现寝室私有服务器、下载机、私有云盘、Samba 文件共享、DLNA 流媒体、内网开门、远程开门等功能。(语音助手或者监控功能预计以后会添加)
 
@@ -86,7 +86,7 @@ iOS APP 实现内网开门:
 
 功能到这里就基本介绍完了。
 
-## 2. 寝室助手的准备工作
+## 寝室助手的准备工作
 
 ### 知识储备：
 
@@ -127,7 +127,7 @@ iOS APP 实现内网开门:
 
 ### 软件准备：
 
-#### 1. 树莓派的初步启动
+#### 树莓派的初步启动
 
 拿到淘宝来的树莓派，是一件振奋人心的事情。你一定会迫不及待想去使用它。
 
@@ -186,7 +186,7 @@ priority=1
 
 到这里初步启动完成
 
-#### 2. 使用 SSH 连接树莓派终端
+#### 使用 SSH 连接树莓派终端
 
 首先，需要得到树莓派的内网 ip：
 
@@ -224,9 +224,9 @@ Windows 可以用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) �
 
 此时 ssh 连接树莓派的工作就绪。
 
-#### 3. 进行必要的设置
+#### 进行必要的设置
 
-##### ①更换国内镜像源
+##### 更换国内镜像源
 
 ```bash
 sudo nano /etc/apt/sources.list
@@ -272,7 +272,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 ```
 
-##### ②设置中文
+##### 设置中文
 
 安装中文字体：
 
@@ -296,7 +296,7 @@ sudo raspi-config
 
 还有其他相关的设置，后面提到。`Tab` 或左右键移动到 `Finish`，并回车，提示立即重启，重启当即生效。
 
-##### ③修改密码，开启 VNC，修改默认分辨率
+##### 修改密码，开启 VNC，修改默认分辨率
 
 ![Fa46pR.png](/img/csdn/85023305-16.png)
 
@@ -314,7 +314,7 @@ sudo raspi-config
 
 选择你想要的合适的分辨率，我推荐 1920x1080 高清分辨率。
 
-#### 4. 使用 VNC Viewer 连接树莓派
+#### 使用 VNC Viewer 连接树莓派
 
 [`VNC Viewer`](https://www.realvnc.com/en/connect/download/viewer/) 可以在官网获得，它有各个版本。
 
@@ -338,7 +338,7 @@ sudo raspi-config
 
 `VNC Viewer` 同样有 `iOS` 和 `Android` 端，用手机也可以对树莓派进行图形化控制。
 
-#### 5. 为树莓派设定静态 ip
+#### 为树莓派设定静态 ip
 
 为什么不用终端设定静态 ip，因为图形化操作简单！
 
@@ -362,7 +362,7 @@ sudo raspi-config
 
 只有设定了静态 ip，每当树莓派重启的时候，它才不会被动态分配 ip 地址。
 
-#### 6. 安装 Arduino IDE
+#### 安装 Arduino IDE
 
 **忠告：不要通过 `sudo apt-get install arduino` 的方式进行安装，那是很老的版本。**
 
@@ -401,13 +401,13 @@ ls /dev/tty*
 
 点击向右的箭头就是上传代码，上传成功后，Arduino 的 led 开始闪烁，则说明正常工作。
 
-#### 7. SFTP 文件访问
+#### SFTP 文件访问
 
 Windows 中使用 `WinSCP`，MacOS 或 Linux 可用 `FileZilla`
 
 只需要知道树莓派内网 ip，用户名和密码即可访问树莓派并进行文件控制，操作简单，在此不多叙述。
 
-#### 8. 域名的购买与解析
+#### 域名的购买与解析
 
 本人使用腾讯云，关于域名购买，渠道很多，我只谈解析。
 
@@ -419,15 +419,15 @@ Windows 中使用 `WinSCP`，MacOS 或 Linux 可用 `FileZilla`
 
 这样解析，就可以将 pi.code4world.cn 解析到 frp.kerwin.cn 从而实现 frp 内网穿透，关于 frp 内网穿透，后面会提到。
 
-## 3. 寝室助手的模块搭建
+## 寝室助手的模块搭建
 
-### 1. Apache2 或者 Nginx 来搭建 Web 服务器
+### Apache2 或者 Nginx 来搭建 Web 服务器
 
 > Apache2 和 Nginx 都可以，两者搭建起来也比较类似。
 >
 > 两者二选一，不要都安装，因为功能相同，默认都开放 80 端口，都安装的意义不大并且会冲突。
 
-#### ①Apache2 的搭建
+#### Apache2 的搭建
 
 安装 Apache2:
 
@@ -558,7 +558,7 @@ sudo service apache2 start
 
 此时 apache2+php 搭建完成。
 
-#### ②Nginx 的搭建
+#### Nginx 的搭建
 
 安装了 Apache2 就不要再安装 Nginx 了。
 
@@ -615,7 +615,7 @@ sudo service nginx restart
 
 这样就完成了配置。
 
-#### ③设置网站的 logo
+#### 设置网站的 logo
 
 网站的 `logo`，即 `favicon.ico`。一般放在网站根目录即可。如何制作 `ico` 图标？
 
@@ -627,11 +627,11 @@ easyicon 的在线转换工具（网站已关闭，原链接已失效）
 
 放进去了以后，清空浏览器缓存，刷新网页，即可看到网站带有刚刚放的 `logo`。
 
-#### ④更多
+#### 更多
 
 更多知识请去 [W3School](http://www.w3school.com.cn) 学习...
 
-### 2. 搭建花生壳平台，进行外网 ssh 和外网 vnc
+### 搭建花生壳平台，进行外网 ssh 和外网 vnc
 
 进入 [下载界面](https://hsk.oray.com/download/)，下载树莓派版本:
 
@@ -679,7 +679,7 @@ Putty 上 `Host Name(or IP Address)` 填写域名，`Port` 填写外网端口，
 
 为了方便记住外网端口，可在手机端下载花生壳 app。
 
-### 3. 搭建 frp，进行更多的内网穿透
+### 搭建 frp，进行更多的内网穿透
 
 首先下载
 
@@ -767,7 +767,7 @@ nohup /home/pi/frp_0.16.0_linux_arm/frpc -c /home/pi/frp_0.16.0_linux_arm/frpc.i
 
 此时我访问 `http://pi.code4world.cn`（域名现已失效）相当于访问 `http://192.168.1.107:80` 即 `http://192.168.1.107`，但是后者是内网访问，前者无论身处何地，都可以访问。
 
-### 4. 硬盘的挂载
+### 硬盘的挂载
 
 首先进入 VNC 图形界面。
 
@@ -822,9 +822,9 @@ sudo mkdir /media/pi/MyDisk/Downloads
 sudo chmod -R 777 /media/pi/MyDisk
 ```
 
-### 5. Aria2 和 Transmission 的搭建，实现下载机
+### Aria2 和 Transmission 的搭建，实现下载机
 
-#### ①Aria2 和 Aria-Ng Web-UI
+#### Aria2 和 Aria-Ng Web-UI
 
 安装 aria2
 
@@ -1003,7 +1003,7 @@ use_gzip = true
 
 再填入密钥并刷新，提示已连接，则成功。
 
-#### ②Transmission
+#### Transmission
 
 安装 transmission
 
@@ -1129,7 +1129,7 @@ use_gzip = true
 
 访问 `http://刚刚的域名` 即可远程访问 transmission，到这里，无论是本地下载，还是远程下载，都可以实现。
 
-### 6. 私有云的搭建
+### 私有云的搭建
 
 我们使用可道云，配置比较简单。
 
@@ -1155,7 +1155,7 @@ chmod -Rf 777 ./*
 
 后台可以设置更多，详情请自行尝试。
 
-### 7. Samba 的搭建
+### Samba 的搭建
 
 安装 Samba
 
@@ -1210,7 +1210,7 @@ sudo chmod -R 777 /media/pi
 
 此时 Samba 设置完毕。
 
-### 8. miniDLNA 的搭建
+### miniDLNA 的搭建
 
 更新软件源
 
@@ -1246,11 +1246,11 @@ media_dir=/
 
 此时 miniDLNA 搭建完毕，手机或者电脑只要支持 DLNA，都能直接播放树莓派里的视频，查看图片，收听音乐...
 
-### 9. 寝室开门助手
+### 寝室开门助手
 
 > 本模块将分成两部分，一部分是单独 Arduino+ 蜂鸣器+舵机+RC522(RFID 射频) 模块的开门实现，另一部分是树莓派通过 Python 的 serial 库和 socket 库实现多端内网 Socket 开门和手机外网开门。
 
-#### ①Arduino+ 蜂鸣器+舵机+RC522 实现校园卡开门
+#### Arduino+ 蜂鸣器+舵机+RC522 实现校园卡开门
 
 首先看看线路图：
 
@@ -1446,7 +1446,7 @@ void loop() {
 
 上传（烧写），成功后刷卡，测试能否控制蜂鸣器的鸣叫，舵机旋转。如果成功，我们进入下一个环节。
 
-#### ②树莓派+python 的 serial 库、socket 库实现多端开门
+#### 树莓派+python 的 serial 库、socket 库实现多端开门
 
 > 本环节涉及 Python、serial 串口、socket 套接字、Windows 批处理、Java 和 Android Studio、Swift 和 XCode，HTML+JS+PHP，以及 Wox 插件等内容。
 
