@@ -30,7 +30,7 @@ endADT
 
 <!--more-->
 
-# 1. Sequential Storage Structure of a Linear List
+## Sequential Storage Structure of a Linear List
 
 ![Sequential storage structure of a linear list](/img/csdn/78572087-1.jpg)
 
@@ -179,7 +179,7 @@ Status ListDelete(SqList *L,int i,ElemType *e)
 }
 ```
 
-## 4.Pros and Cons of the Sequential Storage Structure
+### Pros and Cons
 
 -  Pros
 	-  No extra storage space is needed to represent the logical relationships between elements in the list
@@ -191,9 +191,9 @@ Status ListDelete(SqList *L,int i,ElemType *e)
 
 ----
 
-# 2. Linked Storage Structure of a Linear List
+## Linked Storage Structure of a Linear List
 
-## Singly Linked List
+### Singly Linked List
 
 ![Singly linked list](/img/csdn/78572087-3.jpg)
 
@@ -354,7 +354,7 @@ Status ClearList (LinkList *L)
 }
 ```
 
-### Pros and Cons: Singly Linked List vs. Sequential Storage Structure
+#### Singly Linked List vs. Sequential Storage Structure
 
 - Storage allocation
 
@@ -384,7 +384,7 @@ Status ClearList (LinkList *L)
 
 ----
 
-## Static Linked List
+### Static Linked List
 
 **"A linked list described using an array is called a static linked list"**: an array of structs stores the data (the data field) and the cursor (Cursor; 0 means it points nowhere) separately.
 

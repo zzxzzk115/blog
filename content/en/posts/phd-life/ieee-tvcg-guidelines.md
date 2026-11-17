@@ -20,7 +20,7 @@ A checklist to read before preparing a submission.
 >
 > It is a personal reference, not the journal's official instructions. Figures and procedural details quoted below come from the original March 2026 summary and have not been independently verified for every TVCG article type. Check the journal's current instructions for page limits, fees, abstract length, file requirements, and the submission system before submitting.
 
-## 1. Choosing a publication
+## Choosing a publication
 
 IEEE Computer Society publishes journals and magazines:
 
@@ -31,7 +31,7 @@ IEEE Computer Society publishes journals and magazines:
 
 TVCG covers computer graphics, visualisation, and VR/AR. Important aspects of a submission include technical completeness, thorough experimental validation, and reproducibility. The original summary cited an acceptance rate of approximately 25%; treat that as an unverified contextual figure, not a current official statistic.
 
-## 2. Preparing the manuscript
+## Preparing the manuscript
 
 ### File formats
 
@@ -82,17 +82,17 @@ A common research-paper structure is:
 4. Results
 5. Discussion / Conclusion
 
-## 3. Supplemental material
+## Supplemental material
 
 Useful supplements can include videos, animations, additional figures and tables, code, and extended experiments.
 
 Upload them as separate files when requested by the portal. The original summary quotes a 350 MB limit; check the current upload limits rather than assuming that value applies to every submission. Follow the journal's rules for appendices and ensure the main paper remains understandable on its own.
 
-## 4. Sharing data and code
+## Sharing data and code
 
 The original checklist highlights IEEE DataPort for data, and Code Ocean or GitHub for code. Well-documented data and code can support reproducibility and make the work easier to use and evaluate. Choose a suitable repository, licence, and release format for the material you can share.
 
-## 5. Originality and related work
+## Originality and related work
 
 ### Original work
 
@@ -112,7 +112,7 @@ Editors and reviewers assess whether the extension contains sufficient new mater
 
 Do not submit the same manuscript to multiple publications at the same time. Undisclosed overlap with published work can also lead to rejection.
 
-## 6. Submitting the paper
+## Submitting the paper
 
 Follow the submission link on the journal's official website. The original summary mentions ScholarOne and IEEE Author Portal; the current journal page determines which system to use.
 
@@ -132,7 +132,7 @@ Keywords help route the manuscript to appropriate editors and reviewers. The ori
 
 If the portal allows it, suggest reviewers without conflicts of interest. Requests to exclude reviewers should include an appropriate reason and follow the journal's policy.
 
-## 7. Peer review
+## Peer review
 
 The original summary describes single-anonymous review, in which reviewers know the authors' identities but authors do not know the reviewers'. Review models differ between journals and submission tracks; do not assume a double-anonymous option exists without checking.
 
@@ -148,19 +148,19 @@ The original checklist describes three or more reviewers and two to four months 
 
 Possible outcomes include acceptance, minor revision, major revision, and rejection.
 
-## 8. Ethics and permissions
+## Ethics and permissions
 
 Attribute all sources, obtain any required permissions for reused images or other material, and make sure every author agrees to the submission. Follow IEEE's policies on plagiarism and publication ethics.
 
 For research involving human participants or animals, provide the applicable ethics approval and explain it in the manuscript as required by the journal and your institution.
 
-## 9. Fees and open access
+## Fees and open access
 
 Distinguish traditional publication from open access. Open access may involve an article processing charge; excess-page charges or other fees may be separate. Traditional publication does not necessarily mean that every possible charge is waived.
 
 The original summary quotes USD 220 per excess page. Check the current journal fee schedule, applicable article type, and any institutional agreement before relying on that figure.
 
-## 10. After acceptance
+## After acceptance
 
 ### Final materials
 
@@ -179,7 +179,7 @@ Early Access can make an accepted article available and citable before assignmen
 
 Complete the publisher's production and proof stages, then check the published version and its metadata.
 
-## 11. Practical submission checklist
+## Practical submission checklist
 
 ### Technical content
 
@@ -195,6 +195,6 @@ Complete the publisher's production and proof stages, then check the published v
 
 Common weaknesses include insufficient evaluation, confusing figures, unclear contributions, and incomplete coverage of related work.
 
-## 12. Main points
+## Main points
 
 The checklist centres on originality, technical completeness, convincing evaluation, clear writing, and compliance with the journal's format and submission requirements. Acceptance depends on the research itself, the evidence supporting it, and how clearly the manuscript communicates those contributions.
