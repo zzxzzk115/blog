@@ -18,7 +18,8 @@ hugo server
 ```
 config/_default/
   hugo.toml          站点全局（语言默认值、URL 规则、输出格式）
-  languages.toml     en / zh 的标题、描述、内容目录
+  languages.toml     en / zh 的标题、描述
+  module.toml        content/en、content/zh、content/shared 分别挂载到哪种语言
   menus.en.toml      英文导航
   menus.zh.toml      中文导航
   params.toml        主题参数（mainSections、侧边栏、链接、评论）
@@ -29,8 +30,10 @@ content/
     intro.md friends.md archives.md
   zh/                中文，/zh/
     posts/ game-dev/ hpg-notes/     与 en 一一对应的译文（同路径 = 互为翻译）
-                     posts/ 根目录下还有 2020–2022 的 Hexo 文章，URL 为 /zh/:year/:month/:day/:slug/
-    intro.md friends.md archives.md games.md
+    intro.md friends.md archives.md
+  shared/            同时挂载到两种语言（config/_default/module.toml）
+    posts/           2020–2022 的 Hexo 文章（中文），URL：/2021/01/10/slug/ 与 /zh/2021/01/10/slug/
+    games.md tags/
 static/
   images/ src/ logo.png bg.png favicon.ico    来自 VuePress .vuepress/public
   wiki/ GameSrc/ GameAssets/ devterm/         来自 Hexo（原样的静态页面 / 网页游戏）
@@ -44,7 +47,7 @@ tools/                     迁移脚本
 
 - VuePress 页面：`url:` front matter 保留原地址（`/posts/phd-life/openxr-simulator.html`、`/zh/...`）。部署到 `https://zzxzzk115.github.io/blog/` 时把 `baseURL` 改成该地址即可，路径会自动加 `/blog`。
 - RSS 仍是 `/rss.xml`、`/zh/rss.xml`；另有 `atom.xml`。
-- Hexo 时期的文章：`/zh/2021/01/10/astar-in-unity/`（原来没有 `/zh` 前缀，原域名已失效）。没有写 `url` 的新文章也用这个格式。
+- Hexo 时期的文章：英文侧 `/2021/01/10/astar-in-unity/`（与原 Hexo 地址一致），中文侧 `/zh/2021/01/10/astar-in-unity/`。没有写 `url` 的新文章也用这个格式。
 - 分类 / 标签页地址变了：VuePress 的 `/category/xxx/` 改为 `/categories/xxx/`。
 
 ## 迁移脚本

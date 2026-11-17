@@ -1,5 +1,4 @@
 [en]
-  contentDir = "content/en"
   weight = 1
   locale = "en-US"
   label = "English"
@@ -8,7 +7,6 @@
     description = "Notes on graphics, games, and things I build. By Kexuan Zhang / Lazy_V."
 
 [zh]
-  contentDir = "content/zh"
   weight = 2
   locale = "zh-CN"
   label = "中文"

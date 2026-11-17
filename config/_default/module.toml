@@ -1,0 +1,20 @@
+# Content layout:
+#   content/en      English-only pages  -> /
+#   content/zh      Chinese-only pages  -> /zh/
+#   content/shared  pages shown in both languages (the 2020–2022 posts, written in Chinese);
+#                   the two copies are translations of each other.
+[[mounts]]
+  source = "content/en"
+  target = "content"
+  [mounts.sites.matrix]
+    languages = ["en"]
+[[mounts]]
+  source = "content/zh"
+  target = "content"
+  [mounts.sites.matrix]
+    languages = ["zh"]
+[[mounts]]
+  source = "content/shared"
+  target = "content"
+  [mounts.sites.matrix]
+    languages = ["en", "zh"]
