@@ -67,5 +67,4 @@ editURL = "https://github.com/zzxzzk115/blog/edit/master/"
   copy = "zkx954294627"
 [[social]]
   name = "RSS"
-  icon = "fa fa-rss"
-  url = "rss.xml"
+  rss = true
