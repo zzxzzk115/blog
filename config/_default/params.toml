@@ -5,28 +5,12 @@ author = "Lazy_V"
 # Pages can opt out with `article: false` in front matter.
 mainSections = ["posts", "game-dev", "hpg-notes"]
 
-widgets = ["author", "search", "category", "tagcloud", "timeline", "recent_posts", "links"]
+widgets = ["author", "search", "category", "tagcloud", "timeline", "recent_posts"]
 
 
 # "Edit this page" links (path from content/ is appended)
 editURL = "https://github.com/zzxzzk115/blog/edit/master/"
 
-[[links]]
-  title = "GitHub"
-  url = "https://github.com/zzxzzk115"
-  icon = "fa fa-github"
-[[links]]
-  title = "Bilibili"
-  url = "https://space.bilibili.com/33320940"
-  icon = "icon-bilibili"
-[[links]]
-  title = "itch.io"
-  url = "https://lazy-v.itch.io/"
-  icon = "fa fa-gamepad"
-[[links]]
-  title = "Homepage"
-  url = "https://zzxzzk115.github.io/"
-  icon = "fa fa-home"
 
 [copyright]
   enable = true
@@ -65,6 +49,14 @@ editURL = "https://github.com/zzxzzk115/blog/edit/master/"
   name = "itch.io"
   icon = "fa fa-gamepad"
   url = "https://lazy-v.itch.io/"
+[[social]]
+  name = "Portfolio"
+  icon = "fa fa-at"
+  url = "https://zzxzzk115.github.io/"
+[[social]]
+  name = "QQ"
+  icon = "fa fa-qq"
+  copy = "954294627"
 [[social]]
   name = "Email"
   icon = "fa fa-envelope"

@@ -16,7 +16,7 @@ url: /zh/intro.html
 
 我喜欢开发图形库、引擎、游戏和小工具。目前的图形项目包括跨平台渲染 API [VRI](https://github.com/zzxzzk115/VRI)，以及在它之上开发的图形框架 [libvultra](https://github.com/zzxzzk115/libvultra)。我也在独立跟学 CIS5650，学习 CUDA，尤其关注 GPU 驱动渲染、大场景和全局光照。
 
-这个博客用来记录技术笔记、教程，以及动手实验时学到的东西。文章中的工具与版本以写作时的环境为准。最新的研究、项目和计划，可以看我的[个人主页](https://zzxzzk115.github.io/)。
+这个博客用来记录技术笔记、教程，以及动手实验时学到的东西。文章中的工具与版本以写作时的环境为准。最新的研究、项目和计划，可以看我的 [个人主页](https://zzxzzk115.github.io/)。
 
 ## 科研之外
 

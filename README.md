@@ -28,17 +28,18 @@ config/_default/
 content/
   en/                英文，站点根路径 /
     posts/ game-dev/ hpg-notes/     文章（按主题分目录，目录的 _index.md 即栏目页）
+                     posts/*.md 根目录：2020–2022 的 Hexo 文章（AI 翻译，aiTranslated: true）
     intro.md friends.md archives.md
   zh/                中文，/zh/
     posts/ game-dev/ hpg-notes/     与 en 一一对应的译文（同路径 = 互为翻译）
+                     posts/*.md 根目录：2020–2022 的 Hexo 文章原文，URL /zh/2021/01/10/slug/
     intro.md friends.md archives.md
   shared/            同时挂载到两种语言（config/_default/module.toml）
-    posts/           2020–2022 的 Hexo 文章（中文），URL：/2021/01/10/slug/ 与 /zh/2021/01/10/slug/
-    games.md tags/
+    tags/            含特殊字符的标签显示名（C#、TCP/IP…）
 static/
   images/ src/ logo.png bg.png favicon.ico    来自 VuePress .vuepress/public
   img/                                        七牛云图床（img.zhangkexuan.cn）恢复的图片，文章里是 /img/<文件名>
-  wiki/ GameSrc/ GameAssets/ devterm/         来自 Hexo（原样的静态页面 / 网页游戏）
+  GameSrc/ GameAssets/ devterm/               来自 Hexo（网页游戏等，原样保留）
   avatar.png                                  侧边栏作者卡片的 1-bit 头像（GitHub 头像原图）
 themes/freemind-bithack/   主题，git submodule（独立仓库 hugo-theme-freemind-bithack）
 .github/workflows/deploy.yml  push 后用 Hugo 构建并发布到 GitHub Pages
@@ -51,7 +52,8 @@ tools/                     迁移脚本
 
 - VuePress 页面：`url:` front matter 保留原地址（`/posts/phd-life/openxr-simulator.html`、`/zh/...`）。部署到 `https://zzxzzk115.github.io/blog/` 时把 `baseURL` 改成该地址即可，路径会自动加 `/blog`。
 - RSS 仍是 `/rss.xml`、`/zh/rss.xml`；另有 `atom.xml`。
-- Hexo 时期的文章：英文侧 `/2021/01/10/astar-in-unity/`（与原 Hexo 地址一致），中文侧 `/zh/2021/01/10/astar-in-unity/`。没有写 `url` 的新文章也用这个格式。
+- Hexo 时期的文章：英文译文 `/2021/01/10/astar-in-unity/`（与原 Hexo 地址一致），中文原文 `/zh/2021/01/10/astar-in-unity/`。没有写 `url` 的新文章也用这个格式。
+- 分类按现在博客的体系重新归类，另加 Systems Programming / 系统编程、Retro Handhelds / 复古掌机、Security / 安全（映射见 `tools/legacy_categories.py`）。
 - 分类 / 标签页地址变了：VuePress 的 `/category/xxx/` 改为 `/categories/xxx/`。
 
 ## 迁移脚本
@@ -78,6 +80,14 @@ pocketchip-stero-speaker、run-godot-game-on-gameshell（41 张）、tcpip-notes
 ```bash
 grep -rl "img.zhangkexuan.cn" content
 ```
+
+## 已合并 / 移除
+
+- 友链：新旧合并为一页（去掉已失效的站点）。
+- 游戏：旧"在线游玩"页并入 Games Gallery（本站可直接玩 CatMarioGB）。
+- 侧边栏：链接挂件并入作者卡片（GitHub、B 站、itch.io、个人主页、QQ、邮箱、微信、RSS）。
+- About：只保留现在的 intro。
+- Wiki：已移除。
 
 ## 评论
 

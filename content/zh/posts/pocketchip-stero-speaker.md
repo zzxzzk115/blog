@@ -1,0 +1,107 @@
+---
+title: 'PocketChip 魔改加双扬声器'
+date: 2022-05-12T19:47:41
+tags: [PocketChip]
+categories: [复古掌机]
+toc: true
+---
+
+> PocketChip 本身不带扬声器，只提供 3.5mm 耳机接口。
+>
+> 有的时候不想带耳机，想外放，怎么办呢？
+>
+> 由于 Pocketchip 开放了 GPIO，我们可以自己焊！
+>
+> 此次魔改，成本不高，有手就行。
+
+# 0. 购买材料
+
+没有材料，谈何魔改。
+
+- 8Ω 23mm 小喇叭 * 2 [推荐链接](https://m.tb.cn/h.Vhm6Jfh?sm=915842)
+- 迷你 D 类功放板 * 1 [推荐链接](https://m.tb.cn/h.V7fuAky?sm=7d460f)
+- 电烙铁 * 1
+- 松香 * 1
+- 锡丝 * 1
+- 热熔枪 * 1
+- 热熔胶条 * 1
+- 30AWG 线 若干
+- 耐高温绝缘胶带 * 1
+- 会电焊的人 * 1
+- PocketChip 一台 (我想看这篇的人都有吧)
+
+![](http://img.zhangkexuan.cn/markdown_20220512181827.png)
+
+（上图忘记放热熔胶和热熔胶枪了）
+
+# 1. 拔掉电源接口
+
+焊接之前必须要把电源接口拔了，否则不安全。
+
+![](http://img.zhangkexuan.cn/markdown_20220512181852.png)
+
+# 2. 固定 D 类功放板
+
+固定之前，先用耐高温胶带，将晶片粘住保护起来。
+
+![](http://img.zhangkexuan.cn/markdown_20220512181918.png)
+
+![](http://img.zhangkexuan.cn/markdown_20220512181934.png)
+
+
+
+再用热熔胶枪固定功放板：
+
+![](http://img.zhangkexuan.cn/markdown_20220512181952.png)
+
+
+
+![](http://img.zhangkexuan.cn/markdown_20220512182007.png)
+
+# 3. 开始焊接
+
+先将功放板的 `-` 焊接至 `GND` 引脚，也就是负极接地
+
+![](http://img.zhangkexuan.cn/markdown_20220512182023.png)
+
+
+
+再把+5v(正极) 接 `VCC-5V`:
+
+![](http://img.zhangkexuan.cn/markdown_20220512182038.png)
+
+
+
+然后按照以下规则焊接:
+
+`L`->`HPL`
+
+`⊥`->`HPCOM`
+
+`R`->`HPR`
+
+![](http://img.zhangkexuan.cn/markdown_20220512182056.png)
+
+
+
+接下来用热熔枪固定左右喇叭：
+
+![](http://img.zhangkexuan.cn/markdown_20220512182111.png)
+
+
+
+然后，右喇叭（你看到的左边的喇叭）的 `-` 接到功放板 R 的 `-`，另一边接 R 的 `+`
+
+左喇叭同理正负对应接到 L 的正负。
+
+![](http://img.zhangkexuan.cn/markdown_20220512182133.png)
+
+
+
+到这里，焊接就完成了！插上电池接口，拼回去，可以开机试试，打开某个有音效的游戏或者软件，测试测试。
+
+这样就免去了必须带耳机的麻烦之处，不过，如果想插耳机的时候自动不外放的话，我还得研究研究。
+
+----
+
+2022/05/12 从博客园迁移至此。

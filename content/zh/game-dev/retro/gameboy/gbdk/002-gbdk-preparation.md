@@ -22,7 +22,7 @@ GBDK 是开源工具，我们可以在 GitHub 上直接下载最新的 Release �
 
 撰写本文时，GBDK 的稳定版本为 v4.1.1，[点击直接下载](https://github.com/gbdk-2020/gbdk-2020/releases/download/4.1.1/gbdk-macos.tar.gz)。
 
-你也可以访问[这里](https://github.com/gbdk-2020/gbdk-2020/releases)下载最新的版本。
+你也可以访问 [这里](https://github.com/gbdk-2020/gbdk-2020/releases) 下载最新的版本。
 
 ## 文件结构介绍
 
@@ -33,8 +33,8 @@ GBDK 是开源工具，我们可以在 GitHub 上直接下载最新的 Release �
 - {{< icon "folder" >}} lib/ (包含相关库文件)
 - {{< icon "folder" >}} examples/ (包含提供的样例)
 - {{< icon "folder" >}} licenses/ (包含所有许可证)
-- {{< icon "pdf" >}} gbdk_manual.pdf (gbdk手册)
-- {{< icon "pdf" >}} sdccman.pdf (sdcc手册)
+- {{< icon "pdf" >}} gbdk_manual.pdf (gbdk 手册)
+- {{< icon "pdf" >}} sdccman.pdf (sdcc 手册)
 - {{< icon "changelog" >}} ChangeLog (更新日志)
 - {{< icon "readme" >}} README (自述文件)
 
@@ -89,7 +89,7 @@ GBTD (GameBoy Tile Designer) 和 GBMB (GameBoy Map Builder) 分别用于瓦块�
 
 我们后续会用到这两个工具，这里我们先下载准备好。[点击下载](https://github.com/gbdk-2020/GBTD_GBMB/releases/download/2.4.5/GBTD_GBMB_release.zip)
 
-最新版本在[这个页面](https://github.com/gbdk-2020/GBTD_GBMB/releases)。
+最新版本在 [这个页面](https://github.com/gbdk-2020/GBTD_GBMB/releases)。
 
 下载好并解压后，我们会得到 `GBTD_GBMB_release` 文件夹，里面包括 `GBTD` 文件夹和 `GBMB` 文件夹。
 

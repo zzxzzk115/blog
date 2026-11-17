@@ -254,7 +254,7 @@ SomeStaticAbstractMethodBase is invoked.
 
 <iframe style="width: 100%; height: 400px;" src="https://sharplab.io/#v2:EYLgtghglgdgNAFxAJwK7wCYgNQB8ACATAIwCwAUBfgMwAEsCApsgGYQDGjtAkgCKOMADtxgBlAPapknAMLiMjADwAVAHy0A7gAtmXZbRA9+QkRKmz5StRQDeFWg9r4ALLQlhGAWUYIt8gBQAlADc9o74xABstBDAAM4IyBwITq7ujKIIEAhQ7ACC8YnJ3r4BIRQAvhRUdES0xsJiktKMcgoAQhBxXIZ8Ao1mLW1KDabNFh1djKq2YQ40tABuUMgIqBAANqlu4h4lfhhBc7R25I7nTsQAnP4AROn78p3d9HH0MIviANaMGAB0t3KZ0cVUowPmtSi23SmWyuQKCSS7AQj0OgWOpwu4WudxhWRy+UKSJRPgOzy4UDesE+P3+gNC4NooNBNSchHq/TG5laln4yCgi1+Bg5Jia3OG5LgRk5YqGlkUo1lE0YfIFvxm5Ex4To4kFyH5Cmhuy8pLKGOO5wiN3uxtRqsFGFe7xpvwBQPOLMZCxgjA0l2iLh2HlhBIRRWRqKOjK1WKtuONIfhROKpow9qFlOd31d9OOzOq5AWdUVg2VykYCWYsy9kIDrnLCRUxClykIqiCtAtjm0uloymIwr6otLPIUTdUUp9GijWIcPeQenZhn7k99M8cMYu/doCAHAF5aFO+8QggzZ332Qh2Qej63T12HLu/g9U/fGecr8/ba/3bP+1/g3xJNERTUo0TPP9CAAjIgMJECIx/CCHHzMEGGYGBNjZS4AHZq0tKFA08aAYH8CIAAYAG0AF0YmQABzOJ0WjB8RQGcZR0YBsmGQP4uIVGURwlKYpRLdjhnTDB21/ZDKgoIA="></iframe>
 
-## .NET 如何支持[泛型数学](https://learn.microsoft.com/zh-cn/dotnet/standard/generics/math)
+## .NET 如何支持 [泛型数学](https://learn.microsoft.com/zh-cn/dotnet/standard/generics/math)
 
 为了支持泛型数学，**.NET 7.0 将所有的基元类型进行了重新实现**。
 

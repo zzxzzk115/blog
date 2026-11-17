@@ -33,24 +33,19 @@
   name = "GB/GBC 游戏开发"
   pageRef = "/game-dev/retro/gameboy/intro"
   weight = 2
-[[main]]
-  parent = "game-dev"
-  name = "在线游玩"
-  pageRef = "/games"
-  weight = 3
 
-[[main]]
-  identifier = "wiki"
-  name = "Wiki"
-  url = "/wiki/"
-  weight = 55
-  params.icon = "fa fa-book"
 [[main]]
   identifier = "about"
   name = "关于"
   pageRef = "/intro"
   weight = 60
   params.icon = "fa fa-user"
+[[main]]
+  identifier = "portfolio"
+  name = "个人主页"
+  url = "https://zzxzzk115.github.io/"
+  weight = 65
+  params.icon = "fa fa-at"
 [[main]]
   identifier = "friends"
   name = "友链"
