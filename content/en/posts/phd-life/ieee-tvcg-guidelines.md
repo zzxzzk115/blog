@@ -5,7 +5,6 @@ author: Lazy_V
 date: 2026-03-30T00:00:00
 categories: [PhD-Life]
 tags: [TVCG]
-sticky: true
 star: true
 url: /posts/phd-life/ieee-tvcg-guidelines.html
 original: true

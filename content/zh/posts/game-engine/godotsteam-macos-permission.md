@@ -4,7 +4,6 @@ author: Lazy_V
 date: 2026-04-12T00:00:00
 categories: [游戏引擎]
 tags: [Godot]
-sticky: true
 star: true
 url: /zh/posts/game-engine/godotsteam-macos-permission.html
 original: true

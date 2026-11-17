@@ -5,7 +5,6 @@ author: Lazy_V
 date: 2025-02-11T00:00:00
 categories: [PhD生活]
 tags: [OpenXR]
-sticky: true
 star: true
 url: /zh/posts/phd-life/openxr-simulator.html
 original: true
