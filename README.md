@@ -1,7 +1,8 @@
 # new-blog
 
 Lazy_V's Blog 2.0：Hugo + [freemind-bithack](themes/freemind-bithack/README.md) 主题，中英双语。
-合并了现在的 VuePress 博客（zzxzzk115/blog）和 2020–2022 的 Hexo 旧博客（MyBlog）。
+合并了此前的 VuePress 博客、2020–2022 的 Hexo 旧博客（MyBlog），以及更早的 CSDN、博客园文章。
+VuePress 版本完整归档在 [zzxzzk115/vuepress-hope-blog](https://github.com/zzxzzk115/vuepress-hope-blog)（私有、只读）。
 
 ## 本地运行
 
@@ -54,15 +55,18 @@ content/
                      posts/*.md 根目录：2020–2022 的 Hexo 文章原文，URL /zh/2021/01/10/slug/
     intro.md friends.md archives.md
   shared/            同时挂载到两种语言（config/_default/module.toml）
-    tags/            含特殊字符的标签显示名（C#、TCP/IP…）
+    tags/            名字含特殊字符的标签的显示名（C#、C++、.NET、TCP/IP、A*）
+  en|zh/tags/ en|zh/categories/   只有一种语言用到的此类名字（Async I/O、Backend & Networking…）
+                     这些都由 tools/taxonomy.py 生成
 static/
-  images/ src/ logo.png bg.png favicon.ico    来自 VuePress .vuepress/public
-  img/                                        七牛云图床（img.zhangkexuan.cn）恢复的图片，文章里是 /img/<文件名>
+  images/ src/ favicon.ico                   来自 VuePress .vuepress/public
+  img/                                        文章图片：七牛云图床恢复的 /img/<文件名>，CSDN /img/csdn/，博客园 /img/cnblogs/ 等
+  video/                                      本地托管的视频（原优酷）
   GameSrc/ GameAssets/ devterm/               来自 Hexo（网页游戏等，原样保留）
   avatar.png                                  侧边栏作者卡片的 1-bit 头像（GitHub 头像原图）
 themes/freemind-bithack/   主题，git submodule（独立仓库 hugo-theme-freemind-bithack）
 .github/workflows/deploy.yml  push 后用 Hugo 构建并发布到 GitHub Pages
-tools/                     迁移脚本
+tools/                     写作（new_post.py）、分类标签（taxonomy.py）和迁移脚本
 ```
 
 **写新文章**：在 `content/en/<栏目>/` 和 `content/zh/<栏目>/` 下放同名文件，两篇自动互为翻译。只写一种语言也可以。
@@ -72,7 +76,7 @@ tools/                     迁移脚本
 - VuePress 页面：`url:` front matter 保留原地址（`/posts/phd-life/openxr-simulator.html`、`/zh/...`）。部署到 `https://zzxzzk115.github.io/blog/` 时把 `baseURL` 改成该地址即可，路径会自动加 `/blog`。
 - RSS 仍是 `/rss.xml`、`/zh/rss.xml`；另有 `atom.xml`。
 - Hexo 时期的文章：英文译文 `/2021/01/10/astar-in-unity/`（与原 Hexo 地址一致），中文原文 `/zh/2021/01/10/astar-in-unity/`。没有写 `url` 的新文章也用这个格式。
-- 分类按现在博客的体系重新归类，另加 Systems Programming / 系统编程、Retro Handhelds / 复古掌机、Security / 安全（映射见 `tools/legacy_categories.py`）。
+- 分类与标签已统一整理（9 个分类、78 个标签，中英对照见 `tools/taxonomy-plan.md`）。
 - 分类 / 标签页地址变了：VuePress 的 `/category/xxx/` 改为 `/categories/xxx/`。
 
 ## 迁移脚本
@@ -90,15 +94,14 @@ python tools/migrate_hexo.py <MyBlog hexo 分支>/hexo/source --static-dirs wiki
 
 ## 图片
 
-七牛云备份中找到的 190 张已放进 `static/img/`，文章链接改成 `/img/<文件名>`。备份只到 2021-02，
-以下文章的 110 张图片（2021-07 ~ 2022-05 上传）不在备份里，仍是原来的 `http://img.zhangkexuan.cn/...` 地址：
-games、gameshell-bigger-lcd、how-to-play-gameshell-01、learn-from-pilot-01/02/03、pocketchip-love2d、
-pocketchip-stero-speaker、run-godot-game-on-gameshell（41 张）、tcpip-notes、unix-socket-api、win32multithreading02。
-找到后放进 `static/img/` 并把链接改成 `/img/<文件名>` 即可：
+所有文章图片都在本仓库里，不依赖外部图床：
 
-```bash
-grep -rl "img.zhangkexuan.cn" content
-```
+- 七牛云图床（`img.zhangkexuan.cn`）的图片已全部恢复到 `static/img/`，链接是 `/img/<文件名>`。
+- CSDN 和博客园文章的图片下载到 `static/img/csdn/`、`static/img/cnblogs/`。
+- 已失效外站的图片从 Wayback Machine 找回（`static/img/xuefei/`、`static/img/msf/`）。
+- 原来在优酷上的寝室助手开门视频在 `static/video/dorm/`。
+
+死链的处理：能找到替代的换成新链接或 Wayback Machine 存档，找不到的去掉链接、改成文字说明。
 
 ## 已合并 / 移除
 
@@ -120,4 +123,4 @@ grep -rl "img.zhangkexuan.cn" content
 
 ## 待办
 
-- [ ] 找回 2021-07 之后的图床图片（见上）
+- 无。
