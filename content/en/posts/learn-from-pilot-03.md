@@ -1,5 +1,5 @@
 ---
-title: 'Learning from the Pilot Engine (3) - The Role of CMake in Pilot (Part 1)'
+title: 'Learning from the Pilot Engine (3): The Role of CMake in Pilot (Part 1)'
 date: 2022-05-12T19:47:40
 tags: [PilotEngine, GAMES104]
 categories: [Game Engines]

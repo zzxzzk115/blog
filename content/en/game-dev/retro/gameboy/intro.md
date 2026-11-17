@@ -1,5 +1,5 @@
 ---
-title: GB/GBC Game Development — Introduction
+title: 'GB/GBC Game Development: Introduction'
 author: Lazy_V
 date: 2022-12-18T19:00:00
 categories: [Game-Development]

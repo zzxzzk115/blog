@@ -1,5 +1,5 @@
 ---
-title: About me
+title: 'About Me'
 article: false
 url: /intro.html
 ---

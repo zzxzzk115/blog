@@ -1,5 +1,5 @@
 ---
-title: 'Learning from the Pilot Engine (1) - Getting It Running on Windows'
+title: 'Learning from the Pilot Engine (1): Getting It Running on Windows'
 date: 2022-04-05T15:29:43
 tags: [PilotEngine, GAMES104]
 categories: [Game Engines]

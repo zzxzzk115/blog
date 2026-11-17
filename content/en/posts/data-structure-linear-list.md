@@ -1,5 +1,5 @@
 ---
-title: 'Data Structures - Linear List'
+title: 'Data Structures: Linear List'
 date: 2017-11-18T23:19:50
 categories: [Algorithms]
 tags: [Data Structures]

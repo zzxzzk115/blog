@@ -1,5 +1,5 @@
 ---
-title: The algorithm framework for solving DP problems
+title: 'The Algorithm Framework for Solving DP Problems'
 author: Lazy_V
 date: 2022-12-09T00:00:00
 categories: [Algorithms]

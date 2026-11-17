@@ -1,5 +1,5 @@
 ---
-title: Implement automatically increase ids in MongoDB
+title: 'Implementing Auto-Increment IDs in MongoDB'
 author: Lazy_V
 date: 2022-11-27T00:00:00
 categories: [Backend]

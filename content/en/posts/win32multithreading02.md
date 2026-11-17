@@ -1,5 +1,5 @@
 ---
-title: '*Multithreading Applications in Win32* Reading Notes (2)'
+title: 'Reading Notes on Multithreading Applications in Win32 (2)'
 date: 2020-03-29T14:49:00
 categories: [Systems Programming]
 tags: [win32, multithreading, notes]

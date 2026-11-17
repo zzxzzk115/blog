@@ -1,5 +1,5 @@
 ---
-title: Deeply dive into static abstract interface methods in C# 11
+title: 'A Deep Dive into Static Abstract Interface Methods in C# 11'
 author: Lazy_V
 date: 2022-11-30T00:00:00
 categories: [Programming-Languages]
