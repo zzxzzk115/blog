@@ -28,15 +28,15 @@ GBDK 是开源工具，我们可以在 GitHub 上直接下载最新的 Release �
 
 解压下载得到的压缩包后，我们得到一个名为 `gbdk` 的文件夹，其中的文件结构如下：
 
-- {{< icon "folder" >}} bin/ (包含所有预编译好的可执行程序)
-- {{< icon "folder" >}} include/ (包含相关头文件)
-- {{< icon "folder" >}} lib/ (包含相关库文件)
-- {{< icon "folder" >}} examples/ (包含提供的样例)
-- {{< icon "folder" >}} licenses/ (包含所有许可证)
-- {{< icon "pdf" >}} gbdk_manual.pdf (gbdk 手册)
-- {{< icon "pdf" >}} sdccman.pdf (sdcc 手册)
-- {{< icon "changelog" >}} ChangeLog (更新日志)
-- {{< icon "readme" >}} README (自述文件)
+- {{< icon "folder" >}} `bin/` (包含所有预编译好的可执行程序)
+- {{< icon "folder" >}} `include/` (包含相关头文件)
+- {{< icon "folder" >}} `lib/` (包含相关库文件)
+- {{< icon "folder" >}} `examples/` (包含提供的样例)
+- {{< icon "folder" >}} `licenses/` (包含所有许可证)
+- {{< icon "pdf" >}} `gbdk_manual.pdf` (gbdk 手册)
+- {{< icon "pdf" >}} `sdccman.pdf` (sdcc 手册)
+- {{< icon "changelog" >}} `ChangeLog` (更新日志)
+- {{< icon "readme" >}} `README` (自述文件)
 
 接下来我们需要把 `gbdk` 文件夹移动到一个合适的位置，并添加环境变量。
 
@@ -51,7 +51,7 @@ sudo cp -r gbdk /opt/gbdk
 然后设置相关的环境变量。
 
 {{< alert type="success" >}}
-为了永久生效，可以编辑 /etc/profile 或者你所使用的 shell 配置文件：
+为了永久生效，可以编辑 `/etc/profile` 或者你所使用的 shell 配置文件：
 {{< /alert >}}
 
 {{< tabs >}}
@@ -80,7 +80,7 @@ echo "export GBDKDIR=/opt/gbdk/" | sudo tee -a ~/.zshrc
 {{< /tabs >}}
 
 {{< alert type="info" >}}
-GBDKDIR 系统环境变量是必须设置的内容，除此之外，你可以选择将 bin 目录设置到 PATH 变量中，这样我们可以更方便的使用一些预编译的可执行程序。
+`GBDKDIR` 系统环境变量是必须设置的内容，除此之外，你可以选择将 `bin` 目录设置到 `PATH` 变量中，这样我们可以更方便的使用一些预编译的可执行程序。
 {{< /alert >}}
 
 ## 准备好为 GBDK 而修正的 GBTD 与 GBMB
@@ -152,7 +152,7 @@ wine $GBDKDIR/tools/GBTD/gbtd.exe
 wine $GBDKDIR/tools/GBMB/gbmb.exe
 ```
 
-觉得麻烦，建议使用 alias 命令创建别名，建议写入到 /etc/profile，当然也可以跟上面配置环境变量一样，写入到 shell 的配置文件中：
+觉得麻烦，建议使用 alias 命令创建别名，建议写入到 `/etc/profile`，当然也可以跟上面配置环境变量一样，写入到 shell 的配置文件中：
 
 ```bash
 # 添加到 /etc/profile

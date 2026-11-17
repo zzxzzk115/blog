@@ -66,7 +66,7 @@ GameBoy 中，精灵的渲染有两种模式（二选一）：
 
 GBTD 的最下方有一个颜色选择器。
 
-左侧 L R 显示的是鼠标左键和鼠标右键对应要在画布上绘制的颜色索引。
+左侧 **L** **R** 显示的是鼠标左键和鼠标右键对应要在画布上绘制的颜色索引。
 
 右侧的四个色块代表 0 到 3 四个索引色，每个索引对应的颜色是我们自己通过调色板进行配置的，默认调色板是从白到黑的渐变的四个颜色。
 
@@ -98,21 +98,21 @@ GBTD 不存在橡皮擦工具，这是因为 GameBoy 的颜色模式是索引色
 
 ## 导出绘制的精灵
 
-最上面主菜单点击 `Files/ExportTo`，然后配置如下：
+最上面主菜单点击 **Files → ExportTo**，然后配置如下：
 
 ![导出笑脸为 GBDK 支持的 C 数组](/images/game-dev/retro/gameboy/gbdk/export_smile_face_as_gbdk_c_array.png)
 
 {{< alert type="info" title="关键参数介绍" >}}
-Filename - 导出文件的名称，这里我们填入 `Smile.c`
+**Filename**：导出文件的名称，这里我们填入 `Smile.c`
 
-Type - 导出数据的类型，这里我们选择 `GBDK C file`，代表导出文件中包含的数据是兼容 GBDK 的 C 数组
+**Type**：导出数据的类型，这里我们选择 `GBDK C file`，代表导出文件中包含的数据是兼容 GBDK 的 C 数组
 
-Label - 导出 C 数组的名称，我们在代码中会用到，这里我们命名为 `Smile`
+**Label**：导出 C 数组的名称，我们在代码中会用到，这里我们命名为 `Smile`
 
-Format - 颜色格式，这里我们选择 `Gameboy 4 color`
+**Format**：颜色格式，这里我们选择 `Gameboy 4 color`
 {{< /alert >}}
 
-点击 `OK` 即可导出。导出成功后，会在 `.gbr` 所在同级目录下得到 `Smile.h` 和 `Smile.c` 文件。
+点击 **OK** 即可导出。导出成功后，会在 `.gbr` 所在同级目录下得到 `Smile.h` 和 `Smile.c` 文件。
 
 `.h` 文件中是数组相关的声明，而 `.c` 文件中是具体定义，存放了实际的精灵数据。
 
@@ -183,7 +183,7 @@ void main()
 }
 ```
 
-`set_sprite_data` 的第二个参数是瓦块数量，这里只有一个瓦块，因此应传入 `1`。参数说明见 [GBDK API 文档](https://gbdk.org/docs/api/gb_8h.html)。
+`set_sprite_data` 的第二个参数是**瓦块数量**，这里只有一个瓦块，因此应传入 `1`。参数说明见 [GBDK API 文档](https://gbdk.org/docs/api/gb_8h.html)。
 
 随后，我们编写一个叫做 `Makefile` 的文件。实际上，Makefile 是 make 的配置文件，make 可以方便我们设定编译参数以及具体每个模块的编译流程。这些模块的编译流程大多是重复的，所以使用 make 这套规则去编译，节约了我们的时间，也让编译流程更加清晰。
 
