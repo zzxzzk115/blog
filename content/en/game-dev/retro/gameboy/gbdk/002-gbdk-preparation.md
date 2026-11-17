@@ -5,6 +5,7 @@ date: 2022-12-18T19:10:00
 categories: [Game-Development]
 tags: [Game-Development, Retro, GameBoy, GBDK]
 url: /game-dev/retro/gameboy/gbdk/002-gbdk-preparation.html
+original: true
 ---
 
 GBDK is open source, with release builds available on GitHub. I was using macOS when I wrote this tutorial, so I will start with setting up GBDK on macOS and compiling a Hello World program. The general process is similar on Linux and Windows, although the installation details differ. Feel free to leave a comment if you run into trouble.

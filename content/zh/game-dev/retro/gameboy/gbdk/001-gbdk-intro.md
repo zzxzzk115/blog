@@ -5,6 +5,7 @@ date: 2022-12-18T19:05:00
 categories: [游戏开发]
 tags: [游戏开发, 复古, GameBoy, GBDK]
 url: /zh/game-dev/retro/gameboy/gbdk/001-gbdk-intro.html
+original: true
 ---
 
 对于经典的 GB/GBC 开发，高手们习惯使用汇编。但是使用汇编需要我们首先对 GB/GBC 整个硬件原理和完整的指令集有了完整的了解后才合适，这样的成本太高了。

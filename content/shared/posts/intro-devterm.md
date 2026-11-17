@@ -6,7 +6,7 @@ tags: [OpenSource, DevTerm, Clockwork, MicroPC]
 toc: true
 ---
 
-![devterm_main_picture](http://img.zhangkexuan.cn/markdown_20201124140839.png)
+![devterm_main_picture](/img/markdown_20201124140839.png)
 
 DevTerm 是一种后现代的、数字的、简约的生活方式。A5印刷纸的尺寸，将完整的PC功能与复古主义结合，配备了6.8英寸的超宽屏，经典QWERTY键盘，必要的接口，达到高速无限连接，具有较长的电池寿命，甚至包括实用的热敏打印机。
 
@@ -22,15 +22,15 @@ DevTerm 是一种后现代的、数字的、简约的生活方式。A5印刷纸�
 
 **TRS-80 Model 100**
 
-![trs-80 model 100](http://img.zhangkexuan.cn/markdown_20201125150156.png)
+![trs-80 model 100](/img/markdown_20201125150156.png)
 
 **NEC PC-8300**
 
-![nec_pc_8300](http://img.zhangkexuan.cn/markdown_20201125145618.png)
+![nec_pc_8300](/img/markdown_20201125145618.png)
 
 **上世纪的一些MiniPC**
 
-![](http://img.zhangkexuan.cn/markdown_20201125133248.png)
+![](/img/markdown_20201125133248.png)
 
 对于TRS-80 Model100，比尔盖茨说：“这应该是由我亲自参与写了大量代码的最后一台机器”，可见比尔盖茨对它的喜爱。
 
@@ -40,11 +40,11 @@ DevTerm 是一种后现代的、数字的、简约的生活方式。A5印刷纸�
 
 帖主用TRS-80 Model100 + 树莓派3 + 宽屏DIY了一台真正可以敲的MiniPC:
 
-![trs-80 model 100 + rpi3](http://img.zhangkexuan.cn/markdown_20201125150611.png)
+![trs-80 model 100 + rpi3](/img/markdown_20201125150611.png)
 
 好了，回归正题。
 
-![devterm_bottom_picture](http://img.zhangkexuan.cn/markdown_20201124141951.png)
+![devterm_bottom_picture](/img/markdown_20201124141951.png)
 
 可以看到，这次推出的新设备DevTerm与GameShell也有几分相似，却又有很多新的功能和玩法。
 
@@ -74,15 +74,15 @@ Micro-HDMI接口，也让它可以将屏幕内容输出到显示器上。
 
 玩法自然是ARM Linux PC能做的，它基本都能做。
 
-![devterm_function](http://img.zhangkexuan.cn/markdown_20201124145122.png)
+![devterm_function](/img/markdown_20201124145122.png)
 
-![tech_support](http://img.zhangkexuan.cn/markdown_20201124145351.png)
+![tech_support](/img/markdown_20201124145351.png)
 
 可运行的操作系统目前有clockworkOS、debian、ubuntu、Raspberry Pi等。
 
 然后，原本GameShell支持的开源游戏平台，它也都支持，不仅如此，它还支持更多桌面PC应用，你可以用它上网、敲代码、写文档、看视频等等。
 
-![assembly](http://img.zhangkexuan.cn/markdown_20201124145501.png)
+![assembly](/img/markdown_20201124145501.png)
 
 它同样采用模块化设计，这使得你可以方便地更改和替换模块、进行DIY。
 
@@ -90,7 +90,7 @@ Micro-HDMI接口，也让它可以将屏幕内容输出到显示器上。
 
 ## 主板（MainBoard）
 
-![mainboard](http://img.zhangkexuan.cn/markdown_20201124145825.png)
+![mainboard](/img/markdown_20201124145825.png)
 
 新的主板，支持你插入不同的核心模块进行工作。比如插入树莓派CM3模块，或者clockwork推出的A04、A06模块。
 
@@ -100,7 +100,7 @@ Micro-HDMI接口，也让它可以将屏幕内容输出到显示器上。
 
 ## 核心模块（Core Module）
 
-![core_module](http://img.zhangkexuan.cn/markdown_20201124150447.png)
+![core_module](/img/markdown_20201124150447.png)
 
 所有核心模块的配置，一眼可见。
 
@@ -112,7 +112,7 @@ A-0602和A-0604型号也仅RAM的存储空间不同，一个是2GB，另一个�
 
 ## 扩展模块（Ext. Module）
 
-![ext_module](http://img.zhangkexuan.cn/markdown_20201124151415.png)
+![ext_module](/img/markdown_20201124151415.png)
 
 扩展模块进行了接口的扩展以及安装了风扇模块。
 
@@ -124,7 +124,7 @@ A-0602和A-0604型号也仅RAM的存储空间不同，一个是2GB，另一个�
 
 ## 键盘（Keyboard）
 
-![keyboard](http://img.zhangkexuan.cn/markdown_20201124152007.png)
+![keyboard](/img/markdown_20201124152007.png)
 
 65%的QWERTY键盘，配备了十字键和ABXY，外加TrackBall和三个鼠标按键，这使得DevTerm可以进行正常的PC软件的使用。
 
@@ -132,13 +132,13 @@ A-0602和A-0604型号也仅RAM的存储空间不同，一个是2GB，另一个�
 
 ## 模块化
 
-![module_design](http://img.zhangkexuan.cn/markdown_20201124152341.png)
+![module_design](/img/markdown_20201124152341.png)
 
 DevTerm的模块化设计和资料几乎完全开源，让它变成了一个易于扩展、易于DIY的设备。它面向的并非普通用户，它主要面向的是极客、设计师、玩家、复古爱好者等。
 
 # 价格
 
-![price](http://img.zhangkexuan.cn/markdown_20201124152938.png)
+![price](/img/markdown_20201124152938.png)
 
 价格还算能够接受，大概2000左右买顶配。
 

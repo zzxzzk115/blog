@@ -5,6 +5,7 @@ date: 2022-11-27T00:00:00
 categories: [Backend]
 tags: [MongoDB, Database]
 url: /posts/backend/mongodb/auto-increment-id-in-mongodb.html
+original: true
 ---
 
 In MongoDB, every documents have an object id (Bson ID). But sometimes we need ids that can automatically increase when creating a new model. And the id should be an integer starts from 1. How to deal with the problem?

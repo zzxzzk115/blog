@@ -8,6 +8,7 @@ Lazy_V's Blog 2.0：Hugo + [freemind-bithack](themes/freemind-bithack/README.md)
 只需要 [Hugo](https://gohugo.io/installation/)（Windows：`winget install Hugo.Hugo.Extended`），不需要 Node。
 
 ```bash
+git submodule update --init
 hugo server
 ```
 
@@ -22,8 +23,8 @@ config/_default/
   module.toml        content/en、content/zh、content/shared 分别挂载到哪种语言
   menus.en.toml      英文导航
   menus.zh.toml      中文导航
-  params.toml        主题参数（mainSections、侧边栏、链接、评论）
-  markup.toml        Markdown / 代码高亮 / 数学公式
+  params.toml        主题参数（mainSections、侧边栏、作者卡片、社交链接、评论、编辑链接）
+  markup.toml        Markdown / 代码高亮 / 数学公式 / ==mark== 等扩展
 content/
   en/                英文，站点根路径 /
     posts/ game-dev/ hpg-notes/     文章（按主题分目录，目录的 _index.md 即栏目页）
@@ -36,8 +37,11 @@ content/
     games.md tags/
 static/
   images/ src/ logo.png bg.png favicon.ico    来自 VuePress .vuepress/public
+  img/                                        七牛云图床（img.zhangkexuan.cn）恢复的图片，文章里是 /img/<文件名>
   wiki/ GameSrc/ GameAssets/ devterm/         来自 Hexo（原样的静态页面 / 网页游戏）
-themes/freemind-bithack/   主题（可独立成仓库）
+  avatar.png                                  侧边栏作者卡片的 1-bit 头像（GitHub 头像原图）
+themes/freemind-bithack/   主题，git submodule（独立仓库 hugo-theme-freemind-bithack）
+.github/workflows/deploy.yml  push 后用 Hugo 构建并发布到 GitHub Pages
 tools/                     迁移脚本
 ```
 
@@ -63,8 +67,28 @@ python tools/migrate_hexo.py <MyBlog hexo 分支>/hexo/source --static-dirs wiki
 
 - `content/zh/game-dev/retro/gameboy/gbdk/002-gbdk-preparation.md`：原文 `::: tip`（"MacOS 和 Linux 需要准备 Wine 环境"）缺少结束的 `:::`，已补上（英文版本来就是闭合的）。
 
+## 图片
+
+七牛云备份中找到的 190 张已放进 `static/img/`，文章链接改成 `/img/<文件名>`。备份只到 2021-02，
+以下文章的 110 张图片（2021-07 ~ 2022-05 上传）不在备份里，仍是原来的 `http://img.zhangkexuan.cn/...` 地址：
+games、gameshell-bigger-lcd、how-to-play-gameshell-01、learn-from-pilot-01/02/03、pocketchip-love2d、
+pocketchip-stero-speaker、run-godot-game-on-gameshell（41 张）、tcpip-notes、unix-socket-api、win32multithreading02。
+找到后放进 `static/img/` 并把链接改成 `/img/<文件名>` 即可：
+
+```bash
+grep -rl "img.zhangkexuan.cn" content
+```
+
+## 评论
+
+沿用 VuePress 博客的 giscus（`zzxzzk115/blog` 的 Announcements 分类，按 pathname 匹配）。
+部署到 `https://zzxzzk115.github.io/blog/` 后页面路径与原来一致，已有评论会自动对上。
+
+## 部署
+
+1. 仓库 Settings → Pages → Source 选 **GitHub Actions**。
+2. push 到 `master`（或 `main`），`deploy.yml` 会安装 Hugo、拉取主题 submodule、按 Pages 地址设置 `baseURL` 构建并发布。
+
 ## 待办
 
-- [ ] `img.zhangkexuan.cn`（七牛云）图片约 295 处失效，需要下载原图后替换链接
-- [ ] 评论系统选型（giscus？）
-- [ ] 部署：GitHub Actions 构建 → GitHub Pages，替换 zzxzzk115/blog
+- [ ] 找回 2021-07 之后的图床图片（见上）

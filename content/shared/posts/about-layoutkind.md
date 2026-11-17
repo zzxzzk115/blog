@@ -52,7 +52,7 @@ struct StructSequential
 
 为了测试值类型变量的内存分配情况，需要开启/unsafe开关，在VS里，打开项目设置，点击"生成"，勾选"运行不安全代码"：
 
-![open_unsafe](http://img.zhangkexuan.cn/markdown_20201122210307.png)
+![open_unsafe](/img/markdown_20201122210307.png)
 
 通过unsafe块，得到内存地址：
 
@@ -79,11 +79,11 @@ unsafe
 
 结果：
 
-![result_layoutkind_auto_sequential](http://img.zhangkexuan.cn/markdown_20201123121552.png)
+![result_layoutkind_auto_sequential](/img/markdown_20201123121552.png)
 
 用内存图的形式表示一下这两个结构体变量的内存分配情况：
 
-![data_image](http://img.zhangkexuan.cn/markdown_20201123141654.png)
+![data_image](/img/markdown_20201123141654.png)
 
 可以看到，LayoutKind.Auto会以一种最节约内存的形式对字段进行布局和内存对齐。这种布局是编译器自动提供的，是编译器自己找到的一种最优的字段布局方式，所以字段在内存中的排布顺序和定义字段时的顺序可能会不一样。
 
@@ -97,11 +97,11 @@ unsafe
 
 新建一个C++（非CLI），DLL项目：
 
-![new_cpp(notcli)_dll](http://img.zhangkexuan.cn/markdown_20201123143252.png)
+![new_cpp(notcli)_dll](/img/markdown_20201123143252.png)
 
 然后在StructDLL.cpp中添加结构体和需要导出的方法（使用extern "C"的话，函数的入口就是函数名，否则是带有其它参数标记的一长串字符串，仅限用于没有重载函数的时候方便找到函数）：
 
-![](http://img.zhangkexuan.cn/markdown_20201123152943.png)
+![](/img/markdown_20201123152943.png)
 
 上面的函数的作用是将传入的Point变量的x, y, z全部反转。
 
@@ -109,25 +109,25 @@ unsafe
 
 在C# CLR的项目中导入这个DLL中的GetPointString方法：
 
-![import_dll](http://img.zhangkexuan.cn/markdown_20201123153111.png)
+![import_dll](/img/markdown_20201123153111.png)
 
 C++类型和C#类型对照参考：[https://www.cnblogs.com/zhangweizhong/p/8119395.html](https://www.cnblogs.com/zhangweizhong/p/8119395.html)
 
 进行测试：
 
-![Point类型定义](http://img.zhangkexuan.cn/markdown_20201123153248.png)
+![Point类型定义](/img/markdown_20201123153248.png)
 
-![test](http://img.zhangkexuan.cn/markdown_20201123153133.png)
+![test](/img/markdown_20201123153133.png)
 
 结果：
 
-![result_sequential_dll](http://img.zhangkexuan.cn/markdown_20201123153309.png)
+![result_sequential_dll](/img/markdown_20201123153309.png)
 
 成功调用。
 
 **假如** 对Point设置的布局采用Layout.Auto呢？看看效果：
 
-![error1](http://img.zhangkexuan.cn/markdown_20201123153438.png)
+![error1](/img/markdown_20201123153438.png)
 
 抛出异常，说明是"无效的托管/非托管类型组合"。可以肯定的是，因为此时的内存布局和对齐与C++不一致，导致不能成功传入符合要求的参数，导致调用失败，抛出异常。
 
@@ -137,11 +137,11 @@ C++类型和C#类型对照参考：[https://www.cnblogs.com/zhangweizhong/p/8119
 
 LayoutKind.Explicit要求必须对每一个字段声明偏移量：
 
-![error2](http://img.zhangkexuan.cn/markdown_20201123160711.png)
+![error2](/img/markdown_20201123160711.png)
 
 像这样是满足要求的：
 
-![fieldoffset](http://img.zhangkexuan.cn/markdown_20201123160827.png)
+![fieldoffset](/img/markdown_20201123160827.png)
 
 测试一下：
 
@@ -159,7 +159,7 @@ unsafe
 
 结果：
 
-![result_explicit_1](http://img.zhangkexuan.cn/markdown_20201123161137.png)
+![result_explicit_1](/img/markdown_20201123161137.png)
 
 可以发现，这样的结构，没有进行内存对齐，因为偏移量都是自己定义的。
 
@@ -167,21 +167,21 @@ unsafe
 
 由于float占用4个字节，这里的字段的偏移量应该分别是是0,4,8。
 
-![explicit_point](http://img.zhangkexuan.cn/markdown_20201123165052.png)
+![explicit_point](/img/markdown_20201123165052.png)
 
 结果：
 
-![result_explicit](http://img.zhangkexuan.cn/markdown_20201123165217.png)
+![result_explicit](/img/markdown_20201123165217.png)
 
 成功调用。
 
 如果不按照C++内存对齐方式来，我们定义为0,5,10的话呢？理论上是会报错的，测试一下：
 
-![result_explicit_error](http://img.zhangkexuan.cn/markdown_20201123170011.png)
+![result_explicit_error](/img/markdown_20201123170011.png)
 
 并没有报错。我们画内存图来分析一下：
 
-![analysis](http://img.zhangkexuan.cn/markdown_20201123230956.png)
+![analysis](/img/markdown_20201123230956.png)
 
 按照C#这边的内存布局，传送到C++(DLL)的数据是偏移量0-11的数据块，C++对偏移量为0-3，4-7，8-11的三个字段，进行取反（最高位从0变为1，或者从1变为0），改变好后，传送会C#这边，C#这边按照自己的内存布局再进行解析，得到的数据就是错误的数据，但并没有报错，因为只是数据错了。（见上图）
 

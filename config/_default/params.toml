@@ -5,13 +5,11 @@ author = "Lazy_V"
 # Pages can opt out with `article: false` in front matter.
 mainSections = ["posts", "game-dev", "hpg-notes"]
 
-widgets = ["search", "category", "tagcloud", "timeline", "recent_posts", "links"]
+widgets = ["author", "search", "category", "tagcloud", "timeline", "recent_posts", "links"]
 
-# 1-bit GitHub avatar instead of the original theme's red "V"
-logo = "avatar.png"
-favicon = "avatar.png"
-# The original theme's red "V", blinking before the slogan
-sloganIcon = "favicon.png"
+
+# "Edit this page" links (path from content/ is appended)
+editURL = "https://github.com/zzxzzk115/blog/edit/master/"
 
 [[links]]
   title = "GitHub"
@@ -35,5 +33,47 @@ sloganIcon = "favicon.png"
   license = "CC BY-NC-SA 4.0"
   licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
+
+[authorCard]
+  name = "Lazy_V"
+  # 1-bit GitHub avatar
+  avatar = "avatar.png"
+
+# Same giscus discussion repo as the VuePress blog; with the same page paths
+# (baseURL .../blog/), existing comment threads carry over.
 [comments]
-  provider = ""
+  provider = "giscus"
+  [comments.giscus]
+    repo = "zzxzzk115/blog"
+    repoId = "R_kgDOIgnAxw"
+    category = "Announcements"
+    categoryId = "DIC_kwDOIgnAx84CSx8v"
+    mapping = "pathname"
+
+[pageviews]
+  provider = ""   # "busuanzi" / "vercount"
+
+[[social]]
+  name = "GitHub"
+  icon = "fa fa-github"
+  url = "https://github.com/zzxzzk115"
+[[social]]
+  name = "Bilibili"
+  icon = "icon-bilibili"
+  url = "https://space.bilibili.com/33320940"
+[[social]]
+  name = "itch.io"
+  icon = "fa fa-gamepad"
+  url = "https://lazy-v.itch.io/"
+[[social]]
+  name = "Email"
+  icon = "fa fa-envelope"
+  url = "mailto:zzxzzk115@gmail.com"
+[[social]]
+  name = "WeChat"
+  icon = "fa fa-weixin"
+  copy = "zkx954294627"
+[[social]]
+  name = "RSS"
+  icon = "fa fa-rss"
+  url = "rss.xml"

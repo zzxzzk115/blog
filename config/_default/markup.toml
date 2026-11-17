@@ -12,9 +12,29 @@
 [goldmark.renderer]
   unsafe = true
 
-[goldmark.parser.attribute]
-  block = true
-  title = true
+[goldmark.parser]
+  # Standalone images become <figure> with a caption (render-image.html)
+  wrapStandAloneImageWithinParagraph = false
+  [goldmark.parser.attribute]
+    block = true
+    title = true
+
+# ==mark==, H~2~O, x^2^ and ~~delete~~.
+# ++insert++ stays off: lines mentioning "C++ … C++" would otherwise be underlined.
+# The extras' delete replaces goldmark's strikethrough, which would otherwise eat single ~.
+[goldmark.extensions]
+  strikethrough = false
+[goldmark.extensions.extras]
+  [goldmark.extensions.extras.delete]
+    enable = true
+  [goldmark.extensions.extras.insert]
+    enable = false
+  [goldmark.extensions.extras.mark]
+    enable = true
+  [goldmark.extensions.extras.subscript]
+    enable = true
+  [goldmark.extensions.extras.superscript]
+    enable = true
 
 [goldmark.extensions.passthrough]
   enable = true

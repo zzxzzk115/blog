@@ -149,7 +149,7 @@ public class PlayerInputHandler : MonoBehaviour
 
 代码写完了，场景中创建空物体，把Player.cs和PlayerInputHandler.cs均拖拽到同一空物体上，然后运行进行测试：
 
-![A-Shoot,B-Jump](http://img.zhangkexuan.cn/markdown_20201102104226.png)
+![A-Shoot,B-Jump](/img/markdown_20201102104226.png)
 
 后续还可以自由更改绑定关系，例如A改为跳跃，B改为射击:
 
@@ -158,7 +158,7 @@ keyBindDic[KeyCode.A] = new JumpCommand();
 keyBindDic[KeyCode.B] = new ShootCommand();
 ```
 
-![A-Jump,B-Shoot](http://img.zhangkexuan.cn/markdown_20201102104415.png)
+![A-Jump,B-Shoot](/img/markdown_20201102104415.png)
 
 甚至可以不要A按键处理任何事情，而是射击改为C键：
 
@@ -167,7 +167,7 @@ keyBindDic.Remove(KeyCode.A);
 keyBindDic.Add(KeyCode.C, new ShootCommand());
 ```
 
-![B-Jump,C-Shoot](http://img.zhangkexuan.cn/markdown_20201102104518.png)
+![B-Jump,C-Shoot](/img/markdown_20201102104518.png)
 
 可以体会到，命令模式是多么有魅力！
 

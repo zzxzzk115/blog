@@ -8,6 +8,7 @@ tags: [TVCG]
 sticky: true
 star: true
 url: /posts/phd-life/ieee-tvcg-guidelines.html
+original: true
 ---
 
 A checklist to read before preparing a submission.

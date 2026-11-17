@@ -202,27 +202,27 @@ toc: true
 
 登录GitHub，点击头像，点击Settings
 
-![github-settings](http://img.zhangkexuan.cn/markdown_20201105174801.png)
+![github-settings](/img/markdown_20201105174801.png)
 
 点击Developer settings
 
-![github-develoer-settings](http://img.zhangkexuan.cn/markdown_20201105174855.png)
+![github-develoer-settings](/img/markdown_20201105174855.png)
 
 点击Personal access tokens
 
-![github-personal-access-token](http://img.zhangkexuan.cn/markdown_20201105205557.png)
+![github-personal-access-token](/img/markdown_20201105205557.png)
 
 点击Generate new token
 
-![github-new-token](http://img.zhangkexuan.cn/markdown_20201105205648.png)
+![github-new-token](/img/markdown_20201105205648.png)
 
 Note填写Token标记名，例如GitHub User API，由于不需要其他的权限，底下都不用勾选：
 
-![github-token-note](http://img.zhangkexuan.cn/markdown_20201105205930.png)
+![github-token-note](/img/markdown_20201105205930.png)
 
 点击Generate token
 
-![github-generate-token](http://img.zhangkexuan.cn/markdown_20201105210031.png)
+![github-generate-token](/img/markdown_20201105210031.png)
 
 然后就可以看到或者访问获取你的token了。
 

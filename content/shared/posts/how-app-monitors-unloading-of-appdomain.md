@@ -16,9 +16,9 @@ AppDomain可以被手动卸载，有的时候我们可能需要程序能够监�
 
 为了快速找到有哪些事件成员，我通过AppDomain的静态方法CreateDomain创建一个AppDomain实例后，通过智能感知，勾选闪电图标（代表事件），来快速得到结果：
 
-![](http://img.zhangkexuan.cn/markdown_20210127201650.png)
+![](/img/markdown_20210127201650.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210127201736.png)
+![](/img/markdown_20210127201736.png)
 
 可以发现，提供了9种公开的事件成员:
 
@@ -40,39 +40,39 @@ AppDomain可以被手动卸载，有的时候我们可能需要程序能够监�
 
 先看看DomainUnload事件的委托类型：
 
-![](http://img.zhangkexuan.cn/markdown_20210127202702.png)
+![](/img/markdown_20210127202702.png)
 
 是EventHandler类型，那么我们的监听方法需要的方法的结构为`void 方法名(object, EventArgs)`
 
 我定义一个静态方法去监听（因为测试代码在静态方法中）:
 
-![](http://img.zhangkexuan.cn/markdown_20210127202945.png)
+![](/img/markdown_20210127202945.png)
 
 然后测试代码为：
 
-![](http://img.zhangkexuan.cn/markdown_20210127203020.png)
+![](/img/markdown_20210127203020.png)
 
 # 测试
 
 Main方法：
 
-![](http://img.zhangkexuan.cn/markdown_20210127203101.png)
+![](/img/markdown_20210127203101.png)
 
 
 
 结果：
 
-![](http://img.zhangkexuan.cn/markdown_20210127203206.png)
+![](/img/markdown_20210127203206.png)
 
 # 分析
 
 sender的实际类型实际上是AppDomain类型，所以可以通过as操作得到AppDomain的实例，进而获得更加详尽的信息:
 
-![](http://img.zhangkexuan.cn/markdown_20210127203504.png)
+![](/img/markdown_20210127203504.png)
 
 结果：
 
-![](http://img.zhangkexuan.cn/markdown_20210127203615.png)
+![](/img/markdown_20210127203615.png)
 
 
 

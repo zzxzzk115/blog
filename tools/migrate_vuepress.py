@@ -37,7 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from migrate_hexo import RENAMED_TERMS, safe_term, write_renamed_terms  # noqa: E402
 
 SITE = Path(__file__).resolve().parent.parent
-DROP_KEYS = {"icon", "index", "isOriginal", "layout", "home", "heroImage", "heroText",
+DROP_KEYS = {"icon", "index", "layout", "home", "heroImage", "heroText",
              "heroFullScreen", "footer", "projects", "bgImage", "tagline", "dir"}
 ALERT_TYPES = {"tip": "success", "info": "info", "note": "info", "important": "info",
                "warning": "warning", "danger": "danger", "caution": "danger"}
@@ -110,6 +110,9 @@ def build_front_matter(data, order, url, body):
             items = [safe_term(tax, x) for x in as_list(val)]
             if items:
                 out.append(f"{tax}: [{', '.join(yaml_scalar(i) for i in items)}]")
+            continue
+        if key == "isOriginal":
+            out.append(f"original: {val}")
             continue
         if key == "order":
             # hope uses `order` for sidebar position; only meaningful for section pages here.

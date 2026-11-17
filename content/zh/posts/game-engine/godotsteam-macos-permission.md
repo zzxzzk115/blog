@@ -7,6 +7,7 @@ tags: [Godot]
 sticky: true
 star: true
 url: /zh/posts/game-engine/godotsteam-macos-permission.html
+original: true
 ---
 
 很简单，先重制相关权限

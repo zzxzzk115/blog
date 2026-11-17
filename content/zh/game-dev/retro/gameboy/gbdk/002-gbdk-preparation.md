@@ -5,6 +5,7 @@ date: 2022-12-18T19:10:00
 categories: [游戏开发]
 tags: [游戏开发, 复古, GameBoy, GBDK]
 url: /zh/game-dev/retro/gameboy/gbdk/002-gbdk-preparation.html
+original: true
 ---
 
 GBDK 是开源工具，我们可以在 GitHub 上直接下载最新的 Release 版本。

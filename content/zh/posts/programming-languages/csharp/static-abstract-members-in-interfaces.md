@@ -6,6 +6,7 @@ categories: [编程语言]
 tags: [编程语言, CSharp, DotNET, 接口]
 star: true
 url: /zh/posts/programming-languages/csharp/static-abstract-members-in-interfaces.html
+original: true
 ---
 
 静态抽象接口方法是 C# 11 (对应 .NET 7.0) 引入的新特性。本篇我们来探究一下为什么要有它、它是什么，以及怎么使用它。

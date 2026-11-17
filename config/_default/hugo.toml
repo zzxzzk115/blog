@@ -12,6 +12,7 @@ summaryLength = 150
 # Keep hexo-style term URLs: /tags/Unity/ instead of /tags/unity/
 disablePathToLower = true
 enableRobotsTXT = true
+enableEmoji = true
 
 [taxonomies]
   category = "categories"
@@ -23,7 +24,7 @@ enableRobotsTXT = true
   posts = "/:year/:month/:day/:contentbasename/"
 
 [outputs]
-  home = ["html", "rss", "atom", "searchxml"]
+  home = ["html", "rss", "atom", "jsonfeed", "searchindex", "webmanifest"]
   section = ["html"]
   taxonomy = ["html"]
   term = ["html"]
@@ -34,3 +35,18 @@ enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
+
+# "Related posts" under each article
+[related]
+  includeNewer = true
+  threshold = 60
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+  [[related.indices]]
+    name = "date"
+    weight = 10

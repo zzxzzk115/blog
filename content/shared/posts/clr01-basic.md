@@ -28,7 +28,7 @@ Unity之所以能够跨平台，和Mono或者IL2CPP有关。而Mono和.NET Frame
 
 聊CLR之前，先聊聊Java以及Java虚拟机。Java借助于其跨平台特性而风靡各个平台。Java能跨平台，得益于Java虚拟机。javac编译器将Java的源码编译为字节码，字节码是在Java虚拟机上可执行的二进制文件。
 
-![Java执行模型](http://img.zhangkexuan.cn/markdown_20201116150437.png)
+![Java执行模型](/img/markdown_20201116150437.png)
 
 只要电脑安装了Java运行时，就可以通过Java运行时运行Java程序。回顾一下Java的命令行编译运行过程：先`javac ***.java`得到一个`***.class`的字节码文件（你可以用文本编辑器打开，里面都是0和1），再用`java ***`来运行这个字节码文件。
 
@@ -46,7 +46,7 @@ Unity之所以能够跨平台，和Mono或者IL2CPP有关。而Mono和.NET Frame
 
 类比于Java生成的字节码，CLR也有类似字节码的东西，但却截然不同。不同的面向CLR的编程语言的编译器可以将各自源代码编译成托管模块。
 
-![clr-runtime1](http://img.zhangkexuan.cn/markdown_20201116152543.png)
+![clr-runtime1](/img/markdown_20201116152543.png)
 
 托管模块并不是二进制的字节码。托管模块通常包含几个部分：
 
@@ -97,7 +97,7 @@ C++默认生成的是非托管代码的EXE/DLL模块，运行时操作非托管�
 
 编译器生成了托管模块以后，还会将生成的托管模块和资源文件（如果有）合并，生成一个程序集。如果一个程序集里只有一个托管模块，并且没有资源文件，那么这个程序集就是托管模块，无需进行额外的操作。
 
- ![clr_assembly](http://img.zhangkexuan.cn/markdown_20201116180054.png)
+ ![clr_assembly](/img/markdown_20201116180054.png)
 
 ## 加载公共语言运行时
 
@@ -107,15 +107,15 @@ C++默认生成的是非托管代码的EXE/DLL模块，运行时操作非托管�
 
 想要检查自己的Windows电脑是否已经安装了.NET Framework，只需要访问`%SystemRoot%\System32`路径，查看有没有`MSCorEE.dll`文件。
 
-![mscoree.dll](http://img.zhangkexuan.cn/markdown_20201116194902.png)
+![mscoree.dll](/img/markdown_20201116194902.png)
 
 如果有，说明电脑已经安装好了.NET Framework。
 
 当然，一台电脑可能安装了多个.NET Framework的不同版本。访问`%SystemRoot%\Microsoft.NET\Framework`和`%SystemRoot%\Microsoft.NET\Framework64`查看。
 
-![framework](http://img.zhangkexuan.cn/markdown_20201116195015.png)
+![framework](/img/markdown_20201116195015.png)
 
-![framework64](http://img.zhangkexuan.cn/markdown_20201116195046.png)
+![framework64](/img/markdown_20201116195046.png)
 
 ### 查看CLR版本号
 
@@ -123,7 +123,7 @@ C++默认生成的是非托管代码的EXE/DLL模块，运行时操作非托管�
 
 我先用Everything找到clrver.exe所在的位置：
 
-![find_clrver.exe](http://img.zhangkexuan.cn/markdown_20201116200557.png)
+![find_clrver.exe](/img/markdown_20201116200557.png)
 
 然后在所在目录打开cmder：
 
@@ -131,7 +131,7 @@ C++默认生成的是非托管代码的EXE/DLL模块，运行时操作非托管�
 clrver.exe -all
 ```
 
-![clrver.exe -all](http://img.zhangkexuan.cn/markdown_20201116195445.png)
+![clrver.exe -all](/img/markdown_20201116195445.png)
 
 可以看到有不同的版本。
 
@@ -141,7 +141,7 @@ clrver.exe -all
 clrver.exe <PID>
 ```
 
-![clrver<PID>](http://img.zhangkexuan.cn/markdown_20201116200221.png)
+![clrver<PID>](/img/markdown_20201116200221.png)
 
 也可以查看它们对应使用CLR的版本号。
 
@@ -171,7 +171,7 @@ C#编译器提供了`/platform`命令行开关选项，它提供了一些备选�
 
 Windows检查EXE文件头，决定是创建32位还是64位进程后，会在进程地址空间加载MSCorEE.dll的x86,x64或ARM版本。如果是Windows的x86或ARM版本，MSCoreEE.dll的x86版本在`%SystemRoot%\System32`目录中。如果是Windows的x64版本，MSCoreEE.dll的x86版本在`%SystemRoot%\SysWow64`目录中，x64版本在`%SystemRoot%\System32`中（向后兼容）。然后，进程的主线程调用`MSCorEE.dll`中定义的一个方法，这个方法初始化CLR，加载EXE程序集，再调用其入口方法(Main)。然后，托管应用程序就启动并运行了。
 
-![load_clr](http://img.zhangkexuan.cn/markdown_20201116212756.png)
+![load_clr](/img/markdown_20201116212756.png)
 
 > 非托管应用程序用LoadLibrary加载托管程序集，Windows会自动加载并初始化CLR。64为进程无法完全加载/platform:x86开关编译的托管程序集，但是/platform:x86开关编译的可执行文件在64位Windows中可以用WoW64技术来加载。
 
@@ -201,7 +201,7 @@ static void Main()
 
 在执行Main方法以前，CLR **首先检测** 出Main方法里 **引用的所有类型** 。CLR **分配一个内部数据结构** 来管理对引用类型的访问，上面的代码引用了Console类型，则分配的内部数据结构存放的都是Console类型的方法的记录项， **每一个记录项里包含方法的地址** ，根据这个地址可以找到方法的具体实现。这个结构初始化时，CLR将 **每个记录项都指向一个JITCompiler函数** ，它来完成后续的工作。
 
-![data_struct](http://img.zhangkexuan.cn/markdown_20201116220042.png)
+![data_struct](/img/markdown_20201116220042.png)
 
 
 
@@ -214,13 +214,13 @@ Main方法首次调用WriteLine(string)方法时，JITCompiler函数会被调用
 5. 在Type表中修改与方法对应的条目，使它指向3分配的内存块
 6. 跳转到内存块中的本机代码
 
-![jitcompiler](http://img.zhangkexuan.cn/markdown_20201116222714.png)
+![jitcompiler](/img/markdown_20201116222714.png)
 
 这么做的 **目的就是，第一次先在内存块中存储编译好的本机CPU代码，下一次再调用同一方法时，直接跳转到该内存块，执行本机CPU代码，而不用再次将IL编译为本机CPU代码** 。
 
 所以当调用`Console.WriteLine("Goodbye");`的时候，不再调用JITCompiler函数，而是直接跳转到之前分配的内存块中执行已经生成好的本机CPU指令。
 
-![second_time](http://img.zhangkexuan.cn/markdown_20201116223435.png)
+![second_time](/img/markdown_20201116223435.png)
 
 这样做的话， **方法第一次调用的时候有一定的性能损失，但是对于后面该方法的调用，就是全速运行了** （执行的是本机CPU指令）。
 
@@ -426,13 +426,13 @@ csc.exe Program.cs
 
 实际操作：打开.NET Framework所在目录，可以发现csc.exe和MSCorLib.dll都在这同一个目录中（所以上面的命令行是可行的，使用的是相对路径）
 
-![csc.exe](http://img.zhangkexuan.cn/markdown_20201118101403.png)
+![csc.exe](/img/markdown_20201118101403.png)
 
-![mscorlib.dll](http://img.zhangkexuan.cn/markdown_20201118101509.png)
+![mscorlib.dll](/img/markdown_20201118101509.png)
 
 为了和书中的例子进行区分，我们先把.NET Framework的路径加入环境变量PATH中，当然，可能环境变量中已经配置了这个路径，你可以自己看看：
 
-![path](http://img.zhangkexuan.cn/markdown_20201118101713.png)
+![path](/img/markdown_20201118101713.png)
 
 这样我们就可以在任意路径使用csc.exe和引用mscorlib.dll及其他微软提供的所有程序集了。
 
@@ -455,17 +455,17 @@ public sealed class Program
 csc.exe /out:Hello.exe Hello.cs
 ```
 
-![csc_cmder](http://img.zhangkexuan.cn/markdown_20201118102256.png)
+![csc_cmder](/img/markdown_20201118102256.png)
 
 这样就得到了Hello.exe。最后用cmder运行Hello.exe:
 
-![csc_cmder_run](http://img.zhangkexuan.cn/markdown_20201118102339.png)
+![csc_cmder_run](/img/markdown_20201118102339.png)
 
 可以看到，运行成功。
 
 如果加上/nostdlib参数：
 
-![nostdlib](http://img.zhangkexuan.cn/markdown_20201118102523.png)
+![nostdlib](/img/markdown_20201118102523.png)
 
 的确报错了。错误指出System.Object未定义或未导入，可能是因为System.Console继承自System.Object，System.Console的声明不是在mscorlib.dll中，声明中得出它继承自System.Object，但System.Object的声明和定义在mscorlib.dll，加上/nostdlib就无法得到System.Object的定义。
 
@@ -486,15 +486,15 @@ csc.exe /out:Hello.exe Hello.cs
 csc.exe @TestRsp.rsp Hello.cs
 ```
 
-![](http://img.zhangkexuan.cn/markdown_20201118104328.png)
+![](/img/markdown_20201118104328.png)
 
 得到了HelloRsp.exe。运行效果自然和Hello.exe一模一样。
 
 命令行默认指定了全局响应文件CSC.rsp，它在.NET Framework的根目录中：
 
-![csc.rsp](http://img.zhangkexuan.cn/markdown_20201118104510.png)
+![csc.rsp](/img/markdown_20201118104510.png)
 
-![csc.rsp.src](http://img.zhangkexuan.cn/markdown_20201118104609.png)
+![csc.rsp.src](/img/markdown_20201118104609.png)
 
 当然，如果指定了csc.rsp，但没有引用到里面的任意程序集，就不会影响最后的程序集文件，不会影响程序执行性能。
 
@@ -514,11 +514,11 @@ csc.exe @TestRsp.rsp Hello.cs
 
 可以用ILDasm.exe查看元数据，ILDasm.exe的具体位置可以用Everything找到
 
-![ildasm](http://img.zhangkexuan.cn/markdown_20201118140145.png)
+![ildasm](/img/markdown_20201118140145.png)
 
 用ildasm.exe打开之前写的Hello.exe:
 
-![ildasm_hello.exe](http://img.zhangkexuan.cn/markdown_20201118203348.png)
+![ildasm_hello.exe](/img/markdown_20201118203348.png)
 
 可以看到这样的结构：
 
@@ -536,7 +536,7 @@ csc.exe @TestRsp.rsp Hello.cs
 
 MANIFEST是清单文件:
 
-![MANIFEST](http://img.zhangkexuan.cn/markdown_20201118204431.png)
+![MANIFEST](/img/markdown_20201118204431.png)
 
 大致可以分析出Hello程序集引用了程序集mscorlib，并说明了mscorlib程序集的公钥和版本号，说明了Hello程序集的一些特性、哈希算法、版本号。
 
@@ -546,13 +546,13 @@ MANIFEST是清单文件:
 
 Program是类，Program下有三个元素，第一个是Program类的类型定义，是public sealed class三个C#关键字在IL中的表达:
 
-![Programe-class-defination](http://img.zhangkexuan.cn/markdown_20201118204516.png)
+![Programe-class-defination](/img/markdown_20201118204516.png)
 
 可以看到Program类是公共密封类，继承自mscorlib.dll中定义的System.Object类。
 
 .ctor : void() 是指无参、返回值类型为void的实例构造器
 
-![constructor_of_Program](http://img.zhangkexuan.cn/markdown_20201118204822.png)
+![constructor_of_Program](/img/markdown_20201118204822.png)
 
 大致从instance和.ctor可以看出它是实例构造器，从cil managed可以看出这个方法的内容属于CIL托管代码。
 
@@ -560,7 +560,7 @@ Program是类，Program下有三个元素，第一个是Program类的类型定�
 
 Main : void() 是指无参、返回值类型为void的入口方法Main
 
-![Main](http://img.zhangkexuan.cn/markdown_20201118205716.png)
+![Main](/img/markdown_20201118205716.png)
 
 .entrypoint代表这个方法是入口方法。nop命令是空操作。ldstr命令是为字符串分配内存并存储，这里定义了"Hello, World"这样一个字符串。
 
@@ -570,21 +570,21 @@ ret操作自然是代表函数返回(return)
 
 还可以查看元数据表，通过点击 视图->元信息->显示！:
 
-![show_meta_manifest](http://img.zhangkexuan.cn/markdown_20201118210709.png)
+![show_meta_manifest](/img/markdown_20201118210709.png)
 
-![metainfo](http://img.zhangkexuan.cn/markdown_20201118210801.png)
+![metainfo](/img/markdown_20201118210801.png)
 
 里面可以看到关于 定义表、引用表和清单表的描述。
 
 还可以通过 视图->统计 查看一些统计信息：
 
-![statistics](http://img.zhangkexuan.cn/markdown_20201118211138.png)
+![statistics](/img/markdown_20201118211138.png)
 
 大概可以根据字面意思了解很多统计数据。数据的单位默认是字节，除非打了括号，括号前的是数量，括号里是字节数。
 
 通过File Size验证一下文件大小：
 
-![file_size](http://img.zhangkexuan.cn/markdown_20201118211446.png)
+![file_size](/img/markdown_20201118211446.png)
 
 的确是3584字节。
 
@@ -633,7 +633,7 @@ csc.exe /t:module A.cs
 
 会得到A.netmodule模块文件
 
-![a.netmodule](http://img.zhangkexuan.cn/markdown_20201118230226.png)
+![a.netmodule](/img/markdown_20201118230226.png)
 
 然后我编译B.cs的同时添加A.netmodule，得到C.dll程序集:
 
@@ -641,15 +641,15 @@ csc.exe /t:module A.cs
 csc.exe /out:C.dll /t:library /addmodule:A.netmodule B.cs
 ```
 
-![c.dll](http://img.zhangkexuan.cn/markdown_20201118230622.png)
+![c.dll](/img/markdown_20201118230622.png)
 
 我们用ILDasm.exe打开这个C.dll看看文件结构和元数据表：
 
-![ildasm.exe_c.dll](http://img.zhangkexuan.cn/markdown_20201118230748.png)
+![ildasm.exe_c.dll](/img/markdown_20201118230748.png)
 
 可以看到，里面并没有A类型，那A去哪了？我们再看看元数据表：
 
-![A.netmodule_metainfo](http://img.zhangkexuan.cn/markdown_20201118231038.png)
+![A.netmodule_metainfo](/img/markdown_20201118231038.png)
 
 程序集确实包含了对A.netmodule文件的类型的引用。
 
@@ -673,17 +673,17 @@ csc.exe /t:module B.cs
 al.exe /out:C(al).dll /t:library A.netmodule B.netmodule
 ```
 
-![b.netmodule_c(al).dll](http://img.zhangkexuan.cn/markdown_20201119093959.png)
+![b.netmodule_c(al).dll](/img/markdown_20201119093959.png)
 
 用ILDasm.exe来看看：
 
-![c_al.dll_ildasm](http://img.zhangkexuan.cn/markdown_20201119094449.png)
+![c_al.dll_ildasm](/img/markdown_20201119094449.png)
 
 可以看到里面没有IL，而且只有一个清单。
 
 再看看元数据表：
 
-![metainfo_c(al).dll](http://img.zhangkexuan.cn/markdown_20201119094640.png)
+![metainfo_c(al).dll](/img/markdown_20201119094640.png)
 
 可以看出，这是一个多文件程序集，而且它是有清单表的。
 

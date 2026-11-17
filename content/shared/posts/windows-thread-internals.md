@@ -28,7 +28,7 @@ ETHREAD结构和它所指向的其它结构存在于系统地址空间中。
 
 - ETHREAD结构图
 
-  ![](http://img.zhangkexuan.cn/markdown_20210124163516.png)
+  ![](/img/markdown_20210124163516.png)
 
 
 
@@ -72,7 +72,7 @@ ETHREAD结构的第一个成员被称为TCB，也就是线程控制块(Thread Co
 
 - KTHREAD结构图
 
-  ![](http://img.zhangkexuan.cn/markdown_20210124164334.png)
+  ![](/img/markdown_20210124164334.png)
 
 
 
@@ -112,7 +112,7 @@ KTHREAD结构的第一个成员叫做分发器头，标记了任务分发器相�
 
 - 线程环境块结构图
 
-  ![](http://img.zhangkexuan.cn/markdown_20210124180149.png)
+  ![](/img/markdown_20210124180149.png)
 
 
 
@@ -171,7 +171,7 @@ KTHREAD结构的第一个成员叫做分发器头，标记了任务分发器相�
 
 - CSR_THREAD结构图
 
-  ![](http://img.zhangkexuan.cn/markdown_20210125093856.png)
+  ![](/img/markdown_20210125093856.png)
 
 
 
@@ -199,7 +199,7 @@ CSR_THREAD的第一个成员记录了线程创建的时间。
 
 - W32THREAD结构图
 
-  ![](http://img.zhangkexuan.cn/markdown_20210125095204.png)
+  ![](/img/markdown_20210125095204.png)
 
 
 
@@ -271,7 +271,7 @@ Windows必须确定在运行线程的逻辑处理器上接下来应该运行哪�
 
 要理解线程调度算法，首先必须了解Windows使用的优先级级别。 如下图所示，Windows内部使用32个优先级级别，从0到31不等（31是最高的）。
 
-![](http://img.zhangkexuan.cn/markdown_20210125103308.png)
+![](/img/markdown_20210125103308.png)
 
  这些优先级的对应值划分如下：
 
@@ -305,9 +305,9 @@ Time-Critical和Idle级别（15和-15）称为饱和值(saturation)，表示应�
 
 下面的图表显示了从Windows优先级到内部Windows数字优先级的映射:
 
-![](http://img.zhangkexuan.cn/markdown_20210125104350.png)
+![](/img/markdown_20210125104350.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210125104425.png)
+![](/img/markdown_20210125104425.png)
 
 Time-Critical和Idle线程优先级保持各自的值，而不管进程优先级类别如何（除非它是实时的）。这是因为Windows API通过传入16或-16作为请求的相对优先级，从内核请求优先级的饱和。 用于得到这些值的公式如下(HIGH_PRIORITY等于31)：
 
@@ -356,7 +356,7 @@ Idle = -(HIGH_PRIORITY+1) / 2 = -32 / 2 = -16
 
 下图显示了线程的主要状态转换。 (显示的数值表示每个状态的内部值，可以使用诸如Performance Monitor之类的工具查看。) 就绪状态和延迟就绪状态被图中表示为一个状态。 这反映了延迟就绪状态作为调度例程的临时占位符的事实。 对于备用状态也是如此。 这些状态几乎总是非常短暂的。 这些状态中的线程总是快速过渡到就绪、运行或等待。
 
-![](http://img.zhangkexuan.cn/markdown_20210125143445.png)
+![](/img/markdown_20210125143445.png)
 
 
 
@@ -374,7 +374,7 @@ Idle = -(HIGH_PRIORITY+1) / 2 = -32 / 2 = -16
 
 为了提高可伸缩性，包括线程分配并发，Windows多处理器系统每个处理器拥有分发器就绪队列和共享处理器组队列，如下图所示。 这样，每个CPU就可以检查自己的共享就绪队列，以便下一个线程运行，而不必锁定整个系统的就绪队列。
 
-![](http://img.zhangkexuan.cn/markdown_20210127112536.png)
+![](/img/markdown_20210127112536.png)
 
 > P代表进程，T代表线程
 

@@ -8,6 +8,7 @@ tags: [OpenXR]
 sticky: true
 star: true
 url: /zh/posts/phd-life/openxr-simulator.html
+original: true
 ---
 
 如果你没有 XR 头显，但你想开发 OpenXR 应用，你可以使用 Meta XR 仿真器，它还不错。

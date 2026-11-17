@@ -5,6 +5,8 @@
   title = "Lazy_V's Blog"
   [en.params]
     description = "Notes on graphics, games, and things I build. By Kexuan Zhang / Lazy_V."
+    [en.params.authorCard]
+      bio = "PhD researcher in perceptual graphics at Leeds. Graphics, games, and retro handhelds."
 
 [zh]
   weight = 2
@@ -14,3 +16,5 @@
   [zh.params]
     description = "图形、游戏，以及我捣鼓的小东西。张可宣 / Lazy_V 的技术笔记。"
     slogan = "TALK IS CHEAP, SHOW ME THE CODE."
+    [zh.params.authorCard]
+      bio = "利兹大学感知图形学博士生。图形、游戏与复古掌机。"

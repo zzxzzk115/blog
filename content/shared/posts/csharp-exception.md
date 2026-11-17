@@ -190,7 +190,7 @@ class Program
 
 结果为：
 
-![](http://img.zhangkexuan.cn/markdown_20210109203152.png)
+![](/img/markdown_20210109203152.png)
 
 例子中，Method3中的`int b = a / 0;`这句会导致抛出System.DivideByZeroException的异常。但是Method3中并没有catch到，所以它会去调用它的上层方法Method2中寻找有没有匹配DivideByZeroException的catch，发现还是没有，再去调用Method2的Method1中寻找，好的，最后找到了。然后就是从内而外执行finally块中的内容，但是捕获到异常的那一层特殊一点，它会先执行匹配到的catch块中的内容（这里是打印了e.ToString()），再执行该catch块后面的finally块的内容。
 
@@ -287,13 +287,13 @@ class Program
 
   切换到Release，重新生成解决方案，以Release方式运行。运行前的文件夹内容：
 
-  ![](http://img.zhangkexuan.cn/markdown_20210109205908.png)
+  ![](/img/markdown_20210109205908.png)
 
   运行结果及运行后文件夹内容：
 
-  ![](http://img.zhangkexuan.cn/markdown_20210109205949.png)
+  ![](/img/markdown_20210109205949.png)
 
-  ![](http://img.zhangkexuan.cn/markdown_20210109210002.png)
+  ![](/img/markdown_20210109210002.png)
 
   即使线程终止了，但finally块的内容还是被执行了。
 
@@ -372,9 +372,9 @@ class Program
 
   结果为：
 
-  ![](http://img.zhangkexuan.cn/markdown_20210109210921.png)
+  ![](/img/markdown_20210109210921.png)
 
-  ![](http://img.zhangkexuan.cn/markdown_20210109210933.png)
+  ![](/img/markdown_20210109210933.png)
 
   可以看到，并没有Method1Finally.txt。
   
@@ -400,9 +400,9 @@ System.Exception是C#的大部分异常类的基类（有些特例没有遵守�
 
 其实Exception的ToString()内部实现是这样的：
 
-![](http://img.zhangkexuan.cn/markdown_20210109214228.png)
+![](/img/markdown_20210109214228.png)
 
-![](http://img.zhangkexuan.cn/markdown_20210109214057.png)
+![](/img/markdown_20210109214057.png)
 
 Exception的ToString里面用到了Message属性来获取错误信息，用到了GetStackTrace方法来获取栈追踪信息。
 
@@ -410,17 +410,17 @@ Exception的ToString里面用到了Message属性来获取错误信息，用到�
 
 而这个GetStackTrace，正是StackTrace属性中使用的方法：
 
-![](http://img.zhangkexuan.cn/markdown_20210109215247.png)
+![](/img/markdown_20210109215247.png)
 
 和StackTrace相关的有两个私有字段：`_stackTraceString`和`_remoteStackTraceString`。
 
 `_stackTraceString`在Exception新建实例的时候被赋值为null:
 
-![](http://img.zhangkexuan.cn/markdown_20210109222718.png)
+![](/img/markdown_20210109222718.png)
 
 `_remoteStackTraceString`是Exception类的实例被反序列化时设置的：
 
-![](http://img.zhangkexuan.cn/markdown_20210109235104.png)
+![](/img/markdown_20210109235104.png)
 
 可以看到，它获得序列化信息中存储的RemoteStackTraceString信息，然后+=序列化信息中存储的StackTraceString信息。这样它不会像`_stackTraceString`每次在构造器中被赋值为null，它会在多次序列化反序列化的操作中保存所有的栈追踪信息。
 
@@ -446,7 +446,7 @@ throw new IOException();
 
 以GameFramework中的GameFrameworkException的实现为例子：
 
-![](http://img.zhangkexuan.cn/markdown_20210110001827.png)
+![](/img/markdown_20210110001827.png)
 
 自定义的异常类至少要实现四个构造器，还需要被Serializable特性标记。
 
@@ -503,7 +503,7 @@ Main方法中的catch会不会捕获到t线程中抛出的异常呢？
 
 结果：
 
-![](http://img.zhangkexuan.cn/markdown_20210110004028.png)
+![](/img/markdown_20210110004028.png)
 
 直接抛出未处理的异常。
 

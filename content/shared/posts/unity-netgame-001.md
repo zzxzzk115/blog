@@ -77,7 +77,7 @@ Socket通信流程为：
 
 场景搭建：
 
-![EchoSyncScene](http://img.zhangkexuan.cn/markdown_20201029174457.png)
+![EchoSyncScene](/img/markdown_20201029174457.png)
 
 > 说明：Unity场景中空物体EchoSync绑定客户端脚本EchoSync.cs，有一个ConnectButton按钮，绑定客户端脚本的Connection方法，有一个Send按钮，绑定客户端脚本的Send方法，有一个InputField对应输入框，有一个Text对应服务端发回来的信息显示，InputField和Text通过public绑定。这里设计好服务端IP为localhost(127.0.0.1)，端口号8888。
 
@@ -531,7 +531,7 @@ namespace Echo_Server_Async
 
 以异步为例:
 
-![EchoAsyncShowcase](http://img.zhangkexuan.cn/markdown_20201031112712.png)
+![EchoAsyncShowcase](/img/markdown_20201031112712.png)
 
 ## 4. 总结
 

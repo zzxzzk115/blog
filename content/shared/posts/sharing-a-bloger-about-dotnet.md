@@ -9,5 +9,5 @@ tags: [CLR, Sharing]
 
 内容比较深入，有点硬核，如果想解决一些CLR底层原理的困惑，就可以看看。
 
-![](http://img.zhangkexuan.cn/markdown_20210121151754.png)
+![](/img/markdown_20210121151754.png)
 

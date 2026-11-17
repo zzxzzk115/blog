@@ -102,45 +102,45 @@ toc: true
 
 Visual Studio添加C++/CLI功能(使用Visual Studio Installer，修改，找到C++中的C++/CLI，打勾，确认)后，新建Visual C++ -> CLR -> 类库 ：
 
-![](http://img.zhangkexuan.cn/markdown_20201122000948.png)
+![](/img/markdown_20201122000948.png)
 
 在CLR_DLL.h中添加Add方法:
 
-![add_clr_def](http://img.zhangkexuan.cn/markdown_20201122001432.png)
+![add_clr_def](/img/markdown_20201122001432.png)
 
 在CLR_DLL.cpp中实现Add方法：
 
-![add_clr_impl](http://img.zhangkexuan.cn/markdown_20201122001450.png)
+![add_clr_impl](/img/markdown_20201122001450.png)
 
 生成解决方案，得到CLR_DLL.dll:
 
-![log1](http://img.zhangkexuan.cn/markdown_20201122001551.png)
+![log1](/img/markdown_20201122001551.png)
 
-![CLR_DLL.dll](http://img.zhangkexuan.cn/markdown_20201122001636.png)
+![CLR_DLL.dll](/img/markdown_20201122001636.png)
 
 文件大小95232字节。打开设置查看：
 
-![clr_dll_settings](http://img.zhangkexuan.cn/markdown_20201122001751.png)
+![clr_dll_settings](/img/markdown_20201122001751.png)
 
 开启了/CLR开关。
 
 如果用ILDasm.exe打开：
 
-![clr_dll_ildasm](http://img.zhangkexuan.cn/markdown_20201122001918.png)
+![clr_dll_ildasm](/img/markdown_20201122001918.png)
 
 可以查看清单、元数据表、标头、以及IL代码，说明此时的DLL_Test.dll是程序集。
 
 - Add方法:
 
-![add_clr](http://img.zhangkexuan.cn/markdown_20201122002357.png)
+![add_clr](/img/markdown_20201122002357.png)
 
 - 元数据表：
 
-![metainfo_clr](http://img.zhangkexuan.cn/markdown_20201122002502.png)
+![metainfo_clr](/img/markdown_20201122002502.png)
 
 - 标头：
 
-![headers](http://img.zhangkexuan.cn/markdown_20201122002630.png)
+![headers](/img/markdown_20201122002630.png)
 
 这说明，开启/CLR开关生成的DLL文件是程序集。
 
@@ -148,27 +148,27 @@ Visual Studio添加C++/CLI功能(使用Visual Studio Installer，修改，找到
 
 新建Visual C++ -> Windows 桌面 -> 动态链接库(DLL):
 
-![noclr_dll](http://img.zhangkexuan.cn/markdown_20201122002901.png)
+![noclr_dll](/img/markdown_20201122002901.png)
 
 在NOCLR_DLL.cpp中添加Add方法：
 
-![noclr_dll.cpp](http://img.zhangkexuan.cn/markdown_20201122003240.png)
+![noclr_dll.cpp](/img/markdown_20201122003240.png)
 
 生成解决方案，得到NOCLR_DLL.dll：
 
-![log2](http://img.zhangkexuan.cn/markdown_20201122003401.png)
+![log2](/img/markdown_20201122003401.png)
 
-![NOCLR_DLL.dll](http://img.zhangkexuan.cn/markdown_20201122003433.png)
+![NOCLR_DLL.dll](/img/markdown_20201122003433.png)
 
 文件大小35328字节，代码虽然差不多，但目前得到的DLL文件比上面C++/CLI编译生成的DLL文件明显小了几倍。打开设置查看：
 
-![NOCLR_DLL_settings](http://img.zhangkexuan.cn/markdown_20201122003554.png)
+![NOCLR_DLL_settings](/img/markdown_20201122003554.png)
 
 没有开启/CLR开关。
 
 如果用ILDasm.exe打开：
 
-![NOCLR_headers](http://img.zhangkexuan.cn/markdown_20201122003828.png)
+![NOCLR_headers](/img/markdown_20201122003828.png)
 
 报错，提示没有有效的CLR头。这在我们的预料中。因为非托管C++生成的DLL文件根本就不是程序集，没有CLR头，没有元数据、IL、资源文件等等。
 
@@ -178,19 +178,19 @@ Visual Studio添加C++/CLI功能(使用Visual Studio Installer，修改，找到
 
 C#项目中，右键解决方案，添加引用：
 
-![add_ref](http://img.zhangkexuan.cn/markdown_20201122004729.png)
+![add_ref](/img/markdown_20201122004729.png)
 
 浏览之前生成的CLR_DLL.dll，点击添加：
 
-![browse_and_add](http://img.zhangkexuan.cn/markdown_20201122004911.png)
+![browse_and_add](/img/markdown_20201122004911.png)
 
 然后在Main方法中可以调用CLRDLL.Class1.Add()方法了：
 
-![call_add_clr](http://img.zhangkexuan.cn/markdown_20201122005130.png)
+![call_add_clr](/img/markdown_20201122005130.png)
 
 结果：
 
-![result_clr](http://img.zhangkexuan.cn/markdown_20201122005209.png)
+![result_clr](/img/markdown_20201122005209.png)
 
 正确调用。
 
@@ -200,23 +200,23 @@ C#项目中，右键解决方案，添加引用：
 
 首先要用Depends.exe查看Add方法的入口：
 
-![search_for_Add_EntryPoint](http://img.zhangkexuan.cn/markdown_20201122010356.png)
+![search_for_Add_EntryPoint](/img/markdown_20201122010356.png)
 
-![EntryPoint_of_Add](http://img.zhangkexuan.cn/markdown_20201122010500.png)
+![EntryPoint_of_Add](/img/markdown_20201122010500.png)
 
 可以得到Add方法的EntryPoint为：`?Add@@YAHHH@Z`。
 
 把之前生成的NOCLR_DLL.dll复制到C#项目的bin/Debug中：
 
-![copy_to_Debug](http://img.zhangkexuan.cn/markdown_20201122005906.png)
+![copy_to_Debug](/img/markdown_20201122005906.png)
 
 然后在Main方法前用DllImport导入DLL：
 
-![import](http://img.zhangkexuan.cn/markdown_20201122010609.png)
+![import](/img/markdown_20201122010609.png)
 
 运行结果：
 
-![result_noclr](http://img.zhangkexuan.cn/markdown_20201122010638.png)
+![result_noclr](/img/markdown_20201122010638.png)
 
 正确调用。
 

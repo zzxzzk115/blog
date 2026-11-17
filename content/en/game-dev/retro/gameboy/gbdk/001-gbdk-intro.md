@@ -5,6 +5,7 @@ date: 2022-12-18T19:05:00
 categories: [Game-Development]
 tags: [Game-Development, Retro, GameBoy, GBDK]
 url: /game-dev/retro/gameboy/gbdk/001-gbdk-intro.html
+original: true
 ---
 
 Assembly language is a common choice for GB/GBC development. However, starting with it requires learning the hardware and instruction set together, which can be a substantial barrier for a beginner.

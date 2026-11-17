@@ -31,7 +31,7 @@ if (p1.Equals(p2))
 
 再看看IL代码：
 
-![il_point](http://img.zhangkexuan.cn/markdown_20201120174752.png)
+![il_point](/img/markdown_20201120174752.png)
 
 你觉得共发生了几次装箱呢？1次？2次？还是其他？
 
@@ -55,7 +55,7 @@ constrained. 指令有什么作用呢？
 
 根据文档中的定义：
 
-![constrained.](http://img.zhangkexuan.cn/markdown_20201120180905.png)
+![constrained.](/img/markdown_20201120180905.png)
 
 关键部分是：
 

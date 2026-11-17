@@ -7,6 +7,7 @@ tags: [Godot]
 sticky: true
 star: true
 url: /posts/game-engine/godotsteam-macos-permission.html
+original: true
 ---
 
 These are the steps I used for repeated permission prompts with a locally installed GodotSteam build on macOS.

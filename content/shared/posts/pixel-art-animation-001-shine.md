@@ -10,15 +10,15 @@ toc: true
 
 闪光应该是沿着物体反光面的光的运动轨迹，光从某个点出发，再到某个点结束，像这样：
 
-![BasicShine](http://img.zhangkexuan.cn/BasicShine.gif)
+![BasicShine](/img/BasicShine.gif)
 
 当然，为了营造一种更具视觉效果的闪光，还可以更加丰富一下，像这样，加几帧:
 
-![ExtraShine](http://img.zhangkexuan.cn/ExtraShine.gif)
+![ExtraShine](/img/ExtraShine.gif)
 
 然后应用到真实物体中：
 
-![SwordShine](http://img.zhangkexuan.cn/SwordShine.gif)
+![SwordShine](/img/SwordShine.gif)
 
 ____
 

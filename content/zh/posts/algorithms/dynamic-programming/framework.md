@@ -5,6 +5,7 @@ date: 2022-12-09T00:00:00
 categories: [算法]
 tags: [算法, 动态规划]
 url: /zh/posts/algorithms/dynamic-programming/framework.html
+original: true
 ---
 
 动态规划问题在算法中属于复杂的问题. 然而，当你理解它的关键概念和算法框架后，解决它实际上是很简单的。

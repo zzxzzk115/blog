@@ -6,6 +6,7 @@ categories: [Programming-Languages]
 tags: [Programming-Languages, CSharp, DotNET, Interfaces]
 star: true
 url: /posts/programming-languages/csharp/static-abstract-members-in-interfaces.html
+original: true
 ---
 
 Static abstract interface method is a new feature in C# 11 (corresponding .NET 7.0). In this article, we are going to deeply dive into it, talk about why we need it, what it is and how to use it.

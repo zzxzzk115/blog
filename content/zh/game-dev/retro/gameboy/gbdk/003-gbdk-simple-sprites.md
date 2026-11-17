@@ -5,6 +5,7 @@ date: 2022-12-20T00:00:00
 categories: [游戏开发]
 tags: [游戏开发, 复古, GameBoy, GBDK]
 url: /zh/game-dev/retro/gameboy/gbdk/003-gbdk-simple-sprites.html
+original: true
 ---
 
 GameBoy 屏幕分辨率为 160*144，对于现在而言，这是非常低的，但是这个分辨率对于那个像素时代而言，却已经足以显示一个个生动活泼的角色了。

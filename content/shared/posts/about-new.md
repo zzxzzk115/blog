@@ -49,11 +49,11 @@ int *i = new int;
 
 查看地址0x02912B7处的汇编代码：
 
-![](http://img.zhangkexuan.cn/markdown_20201124224401.png)
+![](/img/markdown_20201124224401.png)
 
 跳转到了0x0291C50，应该是operator new的源码：
 
-![](http://img.zhangkexuan.cn/markdown_20201124224653.png)
+![](/img/markdown_20201124224653.png)
 
 果不其然。
 
@@ -150,21 +150,21 @@ new主要做了两件事：
 
 我们查看0x01512B7处:
 
-![](http://img.zhangkexuan.cn/markdown_20201125102455.png)
+![](/img/markdown_20201125102455.png)
 
 跳转到了0x0151C50:
 
-![](http://img.zhangkexuan.cn/markdown_20201125102657.png)
+![](/img/markdown_20201125102657.png)
 
 还是一样的，之前的全局void* ::operator new(size_t size)函数。
 
 那么构造函数做了什么事呢？
 
-![](http://img.zhangkexuan.cn/markdown_20201125102828.png)
+![](/img/markdown_20201125102828.png)
 
 跳转到0x0151910：
 
-![](http://img.zhangkexuan.cn/markdown_20201125103055.png)
+![](/img/markdown_20201125103055.png)
 
 没有调用其他函数，也没有返回任何值，仅仅是在之前分配的内存中生成对象，初始化字段默认值，初始化this指针等等。
 
@@ -221,17 +221,17 @@ TestClassWithNew *tcn = new TestClassWithNew();
 
 查看反汇编：
 
-![](http://img.zhangkexuan.cn/markdown_20201127232230.png)
+![](/img/markdown_20201127232230.png)
 
 可以看出调用了operator new函数，也调用了类的构造函数。
 
 调用的operator new函数位于0x011912C1处：
 
-![](http://img.zhangkexuan.cn/markdown_20201127232333.png)
+![](/img/markdown_20201127232333.png)
 
 跳转至0x01191740处：
 
-![](http://img.zhangkexuan.cn/markdown_20201127232415.png)
+![](/img/markdown_20201127232415.png)
 
 嗯，调用的就是重载后的operator new函数了。
 
@@ -258,11 +258,11 @@ int *arr0 = new int[3];
 
 查看反汇编：
 
-![](http://img.zhangkexuan.cn/markdown_20201127232839.png)
+![](/img/markdown_20201127232839.png)
 
 经过两次查询地址后，得到operator new[]的源码：
 
-![](http://img.zhangkexuan.cn/markdown_20201127232957.png)
+![](/img/markdown_20201127232957.png)
 
 本质上还是调用的operator new函数。回过头来分析反汇编的第一句：
 
@@ -323,7 +323,7 @@ IL_000e: stloc.1      // tc1
 
 查询[官方OpCodes的newobj指令的说明](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes.newobj?view=netframework-4.8)：
 
-![](http://img.zhangkexuan.cn/markdown_20201128002256.png)
+![](/img/markdown_20201128002256.png)
 
 关键点是：
 
@@ -331,7 +331,7 @@ IL_000e: stloc.1      // tc1
 
 可以看到newobj主要是调用了引用类型的实例构造器的，那引用类型的实例构造器又做了什么事呢？
 
-![](http://img.zhangkexuan.cn/markdown_20201128003025.png)
+![](/img/markdown_20201128003025.png)
 
 可以看到，如果调用的是无参实例构造器，则会仅调用父类的实例构造器；如果调用的是有参实例构造器，会先调用父类的实例构造器，再根据传入的参数列表来对字段进行初始化。
 
@@ -339,7 +339,7 @@ IL_000e: stloc.1      // tc1
 
 关于Object的实例构造器，它实际上什么事都没做：
 
-![](http://img.zhangkexuan.cn/markdown_20201128004254.png)
+![](/img/markdown_20201128004254.png)
 
 这也在《CLR via C#》的p162有相关的说明。Object的实例构造器直接返回。
 
@@ -351,7 +351,7 @@ IL_000e: stloc.1      // tc1
 
 对比newobj指令，我觉得上面那句话的附加字段还是要改成所有实例字段和附加字段。因为官方给出的说明是（虽然我觉得官方也没说得很清楚...）：
 
-![](http://img.zhangkexuan.cn/markdown_20201128010914.png)
+![](/img/markdown_20201128010914.png)
 
 《CLR via C#》p82-p83也专门对new进行了描述，我简化并总结了一下：
 

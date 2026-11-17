@@ -79,7 +79,7 @@ Mono和.NET Framework使用的是同一套标准，但Mono提供的功能要少�
 
 Mono的C#编译器(MCS)将C#代码编译成IL（中间语言、符合ECMA CLI规范），其次Mono运行时提供JIT编译器或AOT编译器在运行时将IL编译成对应平台的原生码（Native Code），最后在不同平台执行各自编译出的原生码，做到跨平台。
 
-![full_build_mono](http://img.zhangkexuan.cn/markdown_20201117155619.png)
+![full_build_mono](/img/markdown_20201117155619.png)
 
 ## Unity为什么跨平台
 
@@ -93,13 +93,13 @@ Unity逐渐意识到，导致必须要想一个新的对策。新的对策就是
 
 IL2CPP顾名思义，就是将IL中间语言转换成CPP文件。转换成的CPP文件再通过C++编译器和libil2cpp库编译成原生二进制可执行文件。
 
-![il2cpp](http://img.zhangkexuan.cn/markdown_20201117160610.png)
+![il2cpp](/img/markdown_20201117160610.png)
 
 首先通过Mono的C#编译器将高级语言编译成IL，然后使用IL2CPP.exe将IL编译成C++代码，然后再由各个平台的C++编译器直接编译成能执行的原生可执行汇编代码，执行于IL2CPP VM。
 
-![IL2CPP_workflow](http://img.zhangkexuan.cn/markdown_20201117160737.png)
+![IL2CPP_workflow](/img/markdown_20201117160737.png)
 
-![IL2CPP_workflow2](http://img.zhangkexuan.cn/markdown_20201117160805.png)
+![IL2CPP_workflow2](/img/markdown_20201117160805.png)
 
 最后一步的IL2CPP VM是一个内存管理器，它负责提供诸如GC管理，线程创建这类的服务性工作。但是由于去除了IL加载和动态解析的工作，使得IL2CPP VM可以做的很小，并且使得游戏载入时间缩短。
 

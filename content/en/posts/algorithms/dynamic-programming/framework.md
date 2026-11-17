@@ -5,6 +5,7 @@ date: 2022-12-09T00:00:00
 categories: [Algorithms]
 tags: [Algorithms, Dynamic-Programming]
 url: /posts/algorithms/dynamic-programming/framework.html
+original: true
 ---
 
 Dynamic Programming problems are the most complicated problems in algorithms. However, it is actually simple to solve if you understand the key concepts and the main algorithm framework of DP.

@@ -5,6 +5,7 @@ date: 2022-12-20T00:00:00
 categories: [Game-Development]
 tags: [Game-Development, Retro, GameBoy, GBDK]
 url: /game-dev/retro/gameboy/gbdk/003-gbdk-simple-sprites.html
+original: true
 ---
 
 The Game Boy has a screen resolution of 160 × 144 pixels. That may seem tiny today, but it was enough to bring many memorable characters to life.

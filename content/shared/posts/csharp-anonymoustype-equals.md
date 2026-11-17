@@ -26,7 +26,7 @@ o是 **匿名类型** 。
 
 我们编译以后查看IL反汇编就能得知了：
 
-![](http://img.zhangkexuan.cn/markdown_20210114170834.png)
+![](/img/markdown_20210114170834.png)
 
 可以看到，这样一种匿名类型，里面有两个私有字段，分别叫`<Age>i__Field`和`<Name>i__Field`，还有对应属性生成的方法`get_Age`和`getName`，有重写过的`Equals`、`GetHashCode`、`ToString`，还有实例属性`Age`和`Name`。
 
@@ -44,7 +44,7 @@ var o5 = new { Age = 30, Name = "?"};
 
 一切看IL来分析：
 
-![](http://img.zhangkexuan.cn/markdown_20210114172906.png)
+![](/img/markdown_20210114172906.png)
 
 可见，C#编译器根据 **对象初始化器** 中的不同结构来生成不同的匿名类型。
 
@@ -64,13 +64,13 @@ Console.WriteLine(o1.Equals(o2));
 
 来看看结果：
 
-![](http://img.zhangkexuan.cn/markdown_20210114173253.png)
+![](/img/markdown_20210114173253.png)
 
 是True。说明匿名类型一定重写了Equals方法，并且实现了逐字段比较。
 
 查看IL看看Equals是怎么实现的：
 
-![](http://img.zhangkexuan.cn/markdown_20210114173423.png)
+![](/img/markdown_20210114173423.png)
 
 关键在于里里面的call和callvirt。
 
@@ -95,19 +95,19 @@ IL_0033:  callvirt   instance bool class [mscorlib]System.Collections.Generic.Eq
 
 看看源码：
 
-![](http://img.zhangkexuan.cn/markdown_20210114174343.png)
+![](/img/markdown_20210114174343.png)
 
 返回的是静态只读字段defaultComparer，该字段通过CreateComparer方法初始化。
 
 再来看看CreateComparer方法：
 
-![](http://img.zhangkexuan.cn/markdown_20210114174620.png)
+![](/img/markdown_20210114174620.png)
 
 简单看来，就是通过RuntimeType得到泛型参数T的运行时实际类型，如果然后返回一个对应的具体XXXEqualityComparer实例。这些XXXEqualityComparer都是EqualityComparer的派生类、具体实现类。
 
 再来看看对应的API文档：
 
-![](http://img.zhangkexuan.cn/markdown_20210114175119.png)
+![](/img/markdown_20210114175119.png)
 
 那我们得到的是什么类型的相等比较器呢？
 
@@ -115,7 +115,7 @@ IL_0033:  callvirt   instance bool class [mscorlib]System.Collections.Generic.Eq
 
 再来看看泛型类型相等比较器的实现：
 
-![](http://img.zhangkexuan.cn/markdown_20210114175812.png)
+![](/img/markdown_20210114175812.png)
 
 可以看到，它的确是EqualityComparer\<T\>的派生类。这就很好理解了。当我们在对象初始化器中声明属性并赋值的时候，就相当于GenericEqualityComparer\<T\>中将T指定为赋予值的类型。比如`Name = "Jack"`，就是指定T为String；`Age = 22`，就是指定T为Int32。
 
@@ -125,17 +125,17 @@ IL_0033:  callvirt   instance bool class [mscorlib]System.Collections.Generic.Eq
 
 来看源码：
 
-![](http://img.zhangkexuan.cn/markdown_20210114180836.png)
+![](/img/markdown_20210114180836.png)
 
 抽象方法。已经很明显了。因为GenericEqualityComparer\<T\>是EqualityComparer\<T\>的派生类，所以我们以callvirt调用EqualityComparer\<T\>的Equals方法时，首先会判断当前对象的实际类型，判断出是之前得到的GenericEqualityComparer\<T\>，所以真正调用的方法是GenericEqualityComparer\<T\>实现的Equals:
 
-![](http://img.zhangkexuan.cn/markdown_20210114181356.png)
+![](/img/markdown_20210114181356.png)
 
 ### 联系起来
 
 还记得之前Equals的IL嘛：
 
-![](http://img.zhangkexuan.cn/markdown_20210114173423.png)
+![](/img/markdown_20210114173423.png)
 
 现在再来分析，那就是先通过调用get_Default方法得到一个EqualityComparer（GenericEqualityComparer\<T\>），再将两个匿名类型实例对象的字段放到栈上，最后调用EqualityComparer（GenericEqualityComparer\<T\>）的Equals方法，返回一个bool值，最后将所有bool值综合判断，如果每个字段都相等，则结果就是true，否则是false。
 

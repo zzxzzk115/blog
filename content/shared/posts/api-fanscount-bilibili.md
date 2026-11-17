@@ -204,11 +204,11 @@ if __name__ == '__main__':
 
 我的FansCount（先这么叫吧，名字说实话还没想好）:
 
-![fanscount-speed](http://img.zhangkexuan.cn/markdown_20201102224651.png)
+![fanscount-speed](/img/markdown_20201102224651.png)
 
 Subsats:
 
-![substat-speed](http://img.zhangkexuan.cn/markdown_20201102224746.png)
+![substat-speed](/img/markdown_20201102224746.png)
 
 好家伙，这速度差别，我直接好家伙。120ms和2.34s的差别！
 
