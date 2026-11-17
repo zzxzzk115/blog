@@ -8,7 +8,6 @@ url: /friends.html
 {{< friend name="B3n1gn X @W-Mai" url="https://benign.host/" desc="Overflow Stack Developer" avatar="https://benign.host/_astro/24841247_iUHr3.webp" >}}
 {{< friend name="Ringotc" url="https://ringotc.github.io/" desc="Data science" >}}
 {{< friend name="zsw" url="https://zsw-test.github.io/" desc="C++ backend" >}}
-{{< friend name="f2h2h1" url="https://f2h2h1.github.io/" desc="PHP backend" >}}
 
 ## Exchange links
 
