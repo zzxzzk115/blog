@@ -119,7 +119,7 @@ IEEE Computer Society 提供多种期刊与杂志，主要分为：
 - 按出现顺序编号
 - 使用 IEEE 标准格式：
 
-```
+```text
 [1] Author(s), Title, Journal/Conference, Year, pages
 ```
 

@@ -123,7 +123,7 @@ To avoid race conditions, we need an operation that completes without being inte
 
 Here's an example function:
 
-```
+```c
 int flag = 0;
 returnType functionName(parameters)
 {

@@ -91,7 +91,7 @@ for (int i = 0; i < 10; i++)
 
 得到输出：
 
-```
+```text
 A
 AA
 AAA
@@ -226,7 +226,7 @@ internal class Program
 
 先猜猜结果是什么？
 
-```
+```text
 SomeMethodBase is invoked.
 SomeMethodDerived is invoked.
 SomeStaticAbstractMethodBase is invoked.
@@ -239,7 +239,7 @@ SomeStaticAbstractMethodDerived is invoked.
 
 这里结果是：
 
-```
+```text
 SomeMethodBase is invoked.
 SomeMethodDerived is invoked.
 SomeStaticAbstractMethodBase is invoked.

@@ -1,5 +1,0 @@
----
-title: Jottings
-article: false
----
-

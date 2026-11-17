@@ -89,7 +89,7 @@ for (int i = 0; i < 10; i++)
 
 Output:
 
-```
+```text
 A
 AA
 AAA
@@ -224,7 +224,7 @@ internal class Program
 
 Guess what the result is first?
 
-```
+```text
 SomeMethodBase is invoked.
 SomeMethodDerived is invoked.
 SomeStaticAbstractMethodBase is invoked.
@@ -235,7 +235,7 @@ Would you guess the result like this?
 
 Actually, the result is not like this, it's:
 
-```
+```text
 SomeMethodBase is invoked.
 SomeMethodDerived is invoked.
 SomeStaticAbstractMethodBase is invoked.

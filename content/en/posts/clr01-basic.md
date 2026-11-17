@@ -128,7 +128,7 @@ First I used Everything to find where clrver.exe is:
 
 Then I opened cmder in that directory:
 
-```
+```batch
 clrver.exe -all
 ```
 
@@ -138,7 +138,7 @@ You can see there are different versions.
 
 Then I ran some random client-server game demo, looked up their PIDs (process IDs) in Task Manager, and then:
 
-```
+```batch
 clrver.exe <PID>
 ```
 
@@ -476,7 +476,7 @@ A response file is really just a list of arguments. For example, /t, /r and /out
 
 For example, put the arguments above in a response file called TestRsp.rsp:
 
-```
+```text
 /out:HelloRsp.exe
 /t:exe
 ```

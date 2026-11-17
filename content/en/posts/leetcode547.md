@@ -20,7 +20,7 @@ Given an **N \* N** matrix **M** representing the friend relationships between s
 
 Example 1:
 
-```
+```text
 Input:
 [[1,1,0],
  [1,1,0],
@@ -32,7 +32,7 @@ Student 2 is in a friend circle by himself. So return 2.
 
 Example 2:
 
-```
+```text
 Input:
 [[1,1,0],
  [1,1,1],

@@ -36,7 +36,7 @@ int *i = new int;
 
 利用 Visual Studio，查看反汇编(Debug，不是 Release)：
 
-```assembly
+```nasm
 0029183E  push        4  						; int占4字节
 00291840  call        operator new (02912B7h)  	; 调用void* ::operator new(size_t size)
 00291845  add         esp,4  					; 平衡栈
@@ -123,7 +123,7 @@ TestClass *tc0 = new TestClass();
 
 Debug 模式运行，查看反汇编：
 
-```assembly
+```nasm
 00151B5D  push        4  
 00151B5F  call        operator new (01512B7h)  
 00151B64  add         esp,4  
@@ -266,7 +266,7 @@ int *arr0 = new int[3];
 
 本质上还是调用的 operator new 函数。回过头来分析反汇编的第一句：
 
-```assembly
+```nasm
 00E9180E  push        0Ch
 ```
 
@@ -309,7 +309,7 @@ TestClass tc1 = new TestClass(3, false);
 
 查看 IL 反汇编：
 
-```assembly
+```cil
 IL_0001: newobj       instance void TestCLR.TestClass::.ctor()
 IL_0006: stloc.0      // tc0
 
@@ -392,7 +392,7 @@ TestStruct ts1 = new TestStruct(1, 2);
 
 查看 IL 反汇编:
 
-```assembly
+```cil
 IL_0001: ldloca.s     ts0
 IL_0003: initobj      CLR_Test.Program/TestStruct
 

@@ -37,7 +37,7 @@ What goes on behind this one line of code?
 
 Using Visual Studio, let's look at the disassembly (Debug, not Release):
 
-```assembly
+```nasm
 0029183E  push        4  						; an int takes 4 bytes
 00291840  call        operator new (02912B7h)  	; call void* ::operator new(size_t size)
 00291845  add         esp,4  					; balance the stack
@@ -124,7 +124,7 @@ TestClass *tc0 = new TestClass();
 
 Run it in Debug mode and look at the disassembly:
 
-```assembly
+```nasm
 00151B5D  push        4  
 00151B5F  call        operator new (01512B7h)  
 00151B64  add         esp,4  
@@ -267,7 +267,7 @@ After following the address twice, we get the source of operator new[]:
 
 Under the hood it still calls the operator new function. Going back and analyzing the first line of the disassembly:
 
-```assembly
+```nasm
 00E9180E  push        0Ch
 ```
 
@@ -310,7 +310,7 @@ TestClass tc1 = new TestClass(3, false);
 
 Look at the IL disassembly:
 
-```assembly
+```cil
 IL_0001: newobj       instance void TestCLR.TestClass::.ctor()
 IL_0006: stloc.0      // tc0
 
@@ -393,7 +393,7 @@ TestStruct ts1 = new TestStruct(1, 2);
 
 Look at the IL disassembly:
 
-```assembly
+```cil
 IL_0001: ldloca.s     ts0
 IL_0003: initobj      CLR_Test.Program/TestStruct
 

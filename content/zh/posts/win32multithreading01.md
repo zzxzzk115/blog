@@ -122,7 +122,7 @@ B 后敲完，保存了。
 
 举个函数的例子：
 
-```
+```c
 int flag = 0;
 returnType functionName(parameters)
 {

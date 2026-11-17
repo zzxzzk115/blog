@@ -45,7 +45,7 @@ $Env:XR_RUNTIME_JSON = "C:\MetaXRSimulator\meta_openxr_simulator.json"
 {{< /tab >}}
 {{< tab "CMD" >}}
 
-```
+```batch
 set XR_RUNTIME_JSON="C:\MetaXRSimulator\meta_openxr_simulator.json"
 :: then run your OpenXR apps
 ```

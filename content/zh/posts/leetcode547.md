@@ -19,7 +19,7 @@ tags: [LeetCode, DFS, BFS, Union-Find-Sets]
 
 示例 1:
 
-```
+```text
 输入：
 [[1,1,0],
  [1,1,0],
@@ -31,7 +31,7 @@ tags: [LeetCode, DFS, BFS, Union-Find-Sets]
 
 示例 2：
 
-```
+```text
 输入：
 [[1,1,0],
  [1,1,1],

@@ -7,6 +7,9 @@ toc: true
 aiTranslated: true
 ---
 
+> [!NOTE]
+> This post was written on 2020-10-25 and no longer matches the current setup; it is kept for the record. For the latest, see [Reviving My Old Blog with Hugo](/posts/hugo-blog-revival).
+
 Coding Pages deploys incredibly slowly and the site takes forever to update, which was really disappointing. In the end I decided to host my blog on an Alibaba Cloud server instead. This post walks through in detail how to host a Hexo static blog on an Alibaba Cloud server (Ubuntu 20.04).
 
 <!--more-->
@@ -131,7 +134,7 @@ chmod +x /home/git/MyBlog.git/hooks/post-receive
 
 First install Nginx
 
-```bahs
+```bash
 apt-get install nginx
 ```
 

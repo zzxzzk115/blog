@@ -76,7 +76,7 @@ Console.WriteLine(o1.Equals(o2));
 
 抽离出来就是:
 
-```assembly
+```cil
 IL_000a:  call       class [mscorlib]System.Collections.Generic.EqualityComparer`1<!0> class [mscorlib]System.Collections.Generic.EqualityComparer`1<!'<Name>j__TPar'>::get_Default()
 
 IL_001b:  callvirt   instance bool class [mscorlib]System.Collections.Generic.EqualityComparer`1<!'<Name>j__TPar'>::Equals(!0, !0)

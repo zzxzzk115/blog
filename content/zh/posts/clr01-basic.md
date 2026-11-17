@@ -127,7 +127,7 @@ C++ 默认生成的是非托管代码的 EXE/DLL 模块，运行时操作非托�
 
 然后在所在目录打开 cmder：
 
-```
+```batch
 clrver.exe -all
 ```
 
@@ -137,7 +137,7 @@ clrver.exe -all
 
 然后我随便找了一个客户端-服务器的游戏的 DEMO 运行，去任务管理器查看它们的 PID（进程 ID），再：
 
-```
+```batch
 clrver.exe <PID>
 ```
 
@@ -475,7 +475,7 @@ csc.exe /out:Hello.exe Hello.cs
 
 例如把上面的参数写到响应文件 TestRsp.rsp 中:
 
-```
+```text
 /out:HelloRsp.exe
 /t:exe
 ```

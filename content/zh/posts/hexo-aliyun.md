@@ -6,6 +6,9 @@ categories: [随笔]
 toc: true
 ---
 
+> [!NOTE]
+> 本文写于 2020-10-25，与当前环境不同，仅供收纳，最新内容请查看：[用 Hugo 复活老博客](/posts/hugo-blog-revival)
+
 Coding Pages 部署速度极慢，网页更新太慢，很令我失望，最后我还是决定把博客搭建在阿里云服务器上。本篇博文详细指出如何将 hexo 静态博客搭建在阿里云服务器上(Ubuntu 20.04)。
 
 <!--more-->
@@ -130,7 +133,7 @@ chmod +x /home/git/MyBlog.git/hooks/post-receive
 
 先安装 Nginx
 
-```bahs
+```bash
 apt-get install nginx
 ```
 
