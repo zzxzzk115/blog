@@ -3,7 +3,7 @@ title: GBDK 环境搭建
 author: Lazy_V
 date: 2022-12-18T19:10:00
 categories: [游戏开发]
-tags: [游戏开发, 复古, GameBoy, GBDK]
+tags: [GameBoy, GBDK]
 url: /zh/game-dev/retro/gameboy/gbdk/002-gbdk-preparation.html
 original: true
 ---

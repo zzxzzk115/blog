@@ -2,7 +2,7 @@
 title: 'CLR：计算限制的异步操作'
 date: 2021-06-17T14:07:57
 categories: [编程语言]
-tags: [multithreading, CLR, CSharp, ThreadPool]
+tags: [CLR, CSharp, 多线程, 线程池]
 toc: true
 ---
 

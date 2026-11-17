@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (3): Supervised Learning'
 date: 2018-04-16T22:32:55
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning]
 original: true
 csdn: 79967405
 aiTranslated: true

@@ -1,8 +1,8 @@
 ---
 title: 关于服务器通过 Python 搭建 API 服务
 date: 2020-11-01T12:27:04
-tags: [python, API]
-categories: [后端]
+tags: [Python, API]
+categories: [后端与网络]
 toc: true
 ---
 

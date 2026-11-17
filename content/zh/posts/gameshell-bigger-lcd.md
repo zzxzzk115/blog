@@ -1,7 +1,7 @@
 ---
 title: 'GameShell 魔改大屏攻略'
 date: 2020-04-09T15:56:00
-tags: [GameShell, LCD]
+tags: [GameShell, ClockworkPi, 改装]
 categories: [复古掌机]
 toc: true
 cnblogs: 12667486

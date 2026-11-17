@@ -2,7 +2,7 @@
 title: The Differences and Connections Between Dynamic Link Libraries (DLL) and .NET Framework Assemblies
 date: 2020-11-21T21:31:18
 categories: [Programming Languages]
-tags: [DLL, CLR]
+tags: [DotNET, CLR, DLL]
 toc: true
 aiTranslated: true
 ---

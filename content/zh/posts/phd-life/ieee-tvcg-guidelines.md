@@ -3,8 +3,8 @@ title: IEEE TVCG 投稿指南
 description: 投稿前看看指南。
 author: Lazy_V
 date: 2026-03-30T00:00:00
-categories: [PhD生活]
-tags: [TVCG]
+categories: [随笔]
+tags: [TVCG, 学术]
 star: true
 url: /zh/posts/phd-life/ieee-tvcg-guidelines.html
 original: true

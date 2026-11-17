@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (5): Binary Classification'
 date: 2018-04-16T23:08:55
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning]
 original: true
 csdn: 79968075
 aiTranslated: true

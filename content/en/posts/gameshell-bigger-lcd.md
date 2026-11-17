@@ -1,7 +1,7 @@
 ---
 title: 'A Guide to Modding a Bigger Screen into the GameShell'
 date: 2020-04-09T15:56:00
-tags: [GameShell, LCD]
+tags: [GameShell, ClockworkPi, Modding]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true

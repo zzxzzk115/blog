@@ -2,7 +2,7 @@
 title: 'Win32 多线程 API 和 C# 多线程 API 的对应关系'
 date: 2021-06-15T18:47:27
 categories: [系统编程]
-tags: [win32, multithreading, API, CSharp]
+tags: [Win32, 多线程, CSharp]
 toc: true
 ---
 

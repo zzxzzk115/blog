@@ -1,8 +1,8 @@
 ---
 title: 'Unix Network Programming: The Sockets Networking API'
 date: 2021-07-08T17:14:42
-categories: [Backend]
-tags: [TCP-IP, Unix, Socket, API]
+categories: [Backend-Networking]
+tags: [TCP-IP, Network Programming, Socket, Unix]
 toc: true
 aiTranslated: true
 ---

@@ -2,7 +2,7 @@
 title: '《Win32 多线程程序设计》读书笔记（二）'
 date: 2020-03-29T14:49:00
 categories: [系统编程]
-tags: [win32, multithreading, notes]
+tags: [Win32, 多线程]
 toc: true
 cnblogs: 12592275
 ---

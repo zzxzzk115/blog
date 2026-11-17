@@ -3,8 +3,8 @@ title: IEEE TVCG Submission Guidelines
 description: A general checklist to read before preparing a submission.
 author: Lazy_V
 date: 2026-03-30T00:00:00
-categories: [PhD-Life]
-tags: [TVCG]
+categories: [Jottings]
+tags: [TVCG, Academia]
 star: true
 url: /posts/phd-life/ieee-tvcg-guidelines.html
 original: true

@@ -1,7 +1,7 @@
 ---
 title: 'Running Godot Games on GameShell'
 date: 2021-09-20T12:43:02
-tags: [Godot, GameShell]
+tags: [GameShell, ClockworkPi, Godot]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true

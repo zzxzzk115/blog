@@ -2,7 +2,7 @@
 title: '机器学习笔记(5)——二分分类'
 date: 2018-04-16T23:08:55
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习]
 original: true
 csdn: 79968075
 ---

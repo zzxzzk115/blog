@@ -3,7 +3,7 @@ title: GB/GBC 游戏开发：简介
 author: Lazy_V
 date: 2022-12-18T19:00:00
 categories: [游戏开发]
-tags: [游戏开发, 复古, GameBoy]
+tags: [GameBoy]
 url: /zh/game-dev/retro/gameboy/intro.html
 ---
 

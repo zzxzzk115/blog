@@ -2,7 +2,7 @@
 title: 'Exploring How the CLR''s StructLayoutAttribute Controls Type Field Layout'
 date: 2020-11-21T23:31:50
 categories: [Programming Languages]
-tags: [CLR, StructLayoutAttribute]
+tags: [CLR, CSharp, Memory Layout]
 toc: true
 aiTranslated: true
 ---

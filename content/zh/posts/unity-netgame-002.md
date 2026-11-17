@@ -1,7 +1,7 @@
 ---
 title: 'Unity 网游实战(2)：状态检测 Poll 和多路复用 Select'
 date: 2020-10-30T10:46:59
-tags: [tutorial, network, Unity]
+tags: [Unity, 网络编程]
 categories: [游戏开发]
 toc: true
 ---

@@ -1,8 +1,8 @@
 ---
 title: 'Algorithms: Quick Sort'
 date: 2018-02-19T12:29:10
-categories: [Algorithms]
-tags: [Algorithms, Sorting]
+categories: [Algorithms-Data-Structures]
+tags: [Sorting]
 original: true
 csdn: 79336832
 aiTranslated: true

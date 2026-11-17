@@ -3,8 +3,8 @@ title: 'Developing Native OpenXR PC Apps Without a Headset Using the Meta XR Sim
 description: If you don't have an XR headset but you want to develop OpenXR apps, you can use Meta XR Simulator! It's great.
 author: Lazy_V
 date: 2025-02-11T00:00:00
-categories: [PhD-Life]
-tags: [OpenXR]
+categories: [Game Development]
+tags: [OpenXR, XR]
 star: true
 url: /posts/phd-life/openxr-simulator.html
 original: true

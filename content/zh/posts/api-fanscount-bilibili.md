@@ -1,8 +1,8 @@
 ---
 title: '轮子那点事儿(1)：获取 bilibili 粉丝数的 API 的制作'
 date: 2020-11-02T21:15:26
-categories: [后端]
-tags: [tutorial, API, bilibili, codefromscratch, python]
+categories: [后端与网络]
+tags: [Python, API, 造轮子, bilibili]
 toc: true
 ---
 

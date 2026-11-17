@@ -1,8 +1,8 @@
 ---
 title: 'Algorithms: Bubble Sort'
 date: 2018-02-19T12:14:07
-categories: [Algorithms]
-tags: [Algorithms, Sorting]
+categories: [Algorithms-Data-Structures]
+tags: [Sorting]
 original: true
 csdn: 79336722
 aiTranslated: true

@@ -1,7 +1,7 @@
 ---
 title: 'Hosting Hexo on an Alibaba Cloud Server (Ubuntu 20.04)'
 date: 2020-10-25T00:57:00
-tags: [tutorial, record]
+tags: [Hexo, Blogging]
 categories: [Jottings]
 toc: true
 aiTranslated: true

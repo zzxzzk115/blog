@@ -1,7 +1,7 @@
 ---
 title: 'The Command Pattern and Its Use in Unity'
 date: 2020-11-02T10:31:00
-tags: [tutorial, design-pattern, Unity]
+tags: [Unity, Design Patterns]
 categories: [Game Development]
 toc: true
 aiTranslated: true

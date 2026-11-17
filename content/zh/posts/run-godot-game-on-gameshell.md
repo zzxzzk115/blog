@@ -1,7 +1,7 @@
 ---
 title: 在 GameShell 上运行 Godot 游戏
 date: 2021-09-20T12:43:02
-tags: [Godot, GameShell]
+tags: [GameShell, ClockworkPi, Godot]
 categories: [复古掌机]
 toc: true
 ---

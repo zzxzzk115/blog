@@ -1,8 +1,8 @@
 ---
 title: "LeetCode-547: Friend Circles (Medium)"
 date: 2020-12-24T13:05:12
-categories: [Algorithms]
-tags: [LeetCode, DFS, BFS, Union-Find-Sets]
+categories: [Algorithms-Data-Structures]
+tags: [LeetCode, Graph Theory, DFS, BFS, Union-Find]
 aiTranslated: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: '轮子那点事儿(2)：获取 GitHub Followers, Stars, Forks 的 API 的制作'
 date: 2020-11-05T17:32:26
-categories: [后端]
-tags: [tutorial, API, github, codefromscratch, python]
+categories: [后端与网络]
+tags: [Python, API, 造轮子, GitHub]
 toc: true
 ---
 

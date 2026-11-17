@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (7): Logistic Regression Cost Function'
 date: 2018-04-19T19:01:17
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning, Logistic Regression]
 toc: true
 original: true
 csdn: 80009225

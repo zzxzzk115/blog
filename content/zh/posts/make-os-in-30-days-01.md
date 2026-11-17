@@ -2,7 +2,7 @@
 title: '《30 天自制操作系统》Day01'
 date: 2020-04-05T17:39:00
 categories: [系统编程]
-tags: [OS, assembly, notes]
+tags: [操作系统, 汇编]
 toc: true
 original: true
 cnblogs: 12638174

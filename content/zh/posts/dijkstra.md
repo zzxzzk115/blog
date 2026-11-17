@@ -1,8 +1,8 @@
 ---
 title: '算法——最短路径之 Dijkstra'
 date: 2018-03-24T14:43:46
-categories: [算法]
-tags: [算法, 最短路径]
+categories: [算法与数据结构]
+tags: [图论, 最短路径]
 original: true
 csdn: 79677792
 ---

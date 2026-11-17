@@ -1,8 +1,8 @@
 ---
 title: 'Unix 网络编程：套接字联网 API'
 date: 2021-07-08T17:14:42
-categories: [后端]
-tags: [TCP-IP, Unix, Socket, API]
+categories: [后端与网络]
+tags: [TCP-IP, 网络编程, Socket, Unix]
 toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: 'DevTerm, an Open-Source Retro Portable Terminal'
 date: 2020-11-24T14:04:19
 categories: [Retro Handhelds]
-tags: [OpenSource, DevTerm, Clockwork, MicroPC]
+tags: [DevTerm, ClockworkPi]
 toc: true
 aiTranslated: true
 ---

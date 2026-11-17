@@ -2,7 +2,7 @@
 title: 'CLR: Compute-Bound Asynchronous Operations'
 date: 2021-06-17T14:07:57
 categories: [Programming Languages]
-tags: [multithreading, CLR, CSharp, ThreadPool]
+tags: [CLR, CSharp, Multithreading, Thread Pool]
 toc: true
 aiTranslated: true
 ---

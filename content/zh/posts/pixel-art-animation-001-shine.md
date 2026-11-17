@@ -2,7 +2,7 @@
 title: '像素艺术动画学习：001-闪光'
 date: 2021-01-22T18:54:19
 categories: [游戏开发]
-tags: [PixelArt, Animation]
+tags: [像素艺术, 动画]
 toc: true
 ---
 

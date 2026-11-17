@@ -1,8 +1,8 @@
 ---
 title: '算法——快速排序'
 date: 2018-02-19T12:29:10
-categories: [算法]
-tags: [算法, 排序]
+categories: [算法与数据结构]
+tags: [排序]
 original: true
 csdn: 79336832
 ---

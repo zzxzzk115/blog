@@ -3,7 +3,7 @@ title: 深入探究 C# 11 的静态抽象接口方法
 author: Lazy_V
 date: 2022-11-30T00:00:00
 categories: [编程语言]
-tags: [编程语言, CSharp, DotNET, 接口]
+tags: [CSharp, DotNET, 接口]
 star: true
 url: /zh/posts/programming-languages/csharp/static-abstract-members-in-interfaces.html
 original: true

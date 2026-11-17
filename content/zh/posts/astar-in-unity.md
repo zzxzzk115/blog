@@ -2,7 +2,7 @@
 title: A* 算法及它在 Unity 中 2D 的 Demo 实现
 date: 2021-01-10T10:03:25
 categories: [游戏开发]
-tags: [Unity, AStar, PathFinding, 算法]
+tags: [Unity, 寻路, AStar]
 toc: true
 mathjax: true
 ---

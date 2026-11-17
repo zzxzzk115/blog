@@ -2,7 +2,7 @@
 title: 'Implementing Auto-Increment IDs in MongoDB'
 author: Lazy_V
 date: 2022-11-27T00:00:00
-categories: [Backend]
+categories: [Backend-Networking]
 tags: [MongoDB, Database]
 url: /posts/backend/mongodb/auto-increment-id-in-mongodb.html
 original: true

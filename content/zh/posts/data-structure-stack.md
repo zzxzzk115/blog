@@ -1,8 +1,8 @@
 ---
 title: '数据结构-栈'
 date: 2017-11-25T15:45:25
-categories: [算法]
-tags: [数据结构]
+categories: [算法与数据结构]
+tags: [C]
 toc: true
 original: true
 csdn: 78632278

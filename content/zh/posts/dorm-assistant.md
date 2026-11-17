@@ -1,8 +1,8 @@
 ---
 title: '开源项目——寝室助手'
 date: 2018-12-16T02:05:13
-categories: [后端]
-tags: [RaspberryPi, Arduino, Python, tutorial]
+categories: [后端与网络]
+tags: [Raspberry Pi, Arduino, Python]
 toc: true
 original: true
 csdn: 85023305

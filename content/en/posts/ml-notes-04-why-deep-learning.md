@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (4): Why Is Deep Learning Taking Off'
 date: 2018-04-16T22:51:06
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning]
 original: true
 csdn: 79967916
 aiTranslated: true

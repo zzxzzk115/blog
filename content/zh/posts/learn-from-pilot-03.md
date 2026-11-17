@@ -1,7 +1,7 @@
 ---
 title: '从 Pilot 引擎学知识(3)-CMake 在 Pilot 中的作用(上)'
 date: 2022-05-12T19:47:40
-tags: [PilotEngine, GAMES104]
+tags: [Pilot, GAMES104]
 categories: [游戏引擎]
 toc: true
 ---

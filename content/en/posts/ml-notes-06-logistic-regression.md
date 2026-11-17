@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (6): Logistic Regression'
 date: 2018-04-19T18:34:30
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning, Logistic Regression]
 original: true
 csdn: 80008903
 aiTranslated: true

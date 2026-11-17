@@ -2,7 +2,7 @@
 title: Sharing a Blog by a .NET Blogger
 date: 2021-01-21T15:09:34
 categories: [Programming Languages]
-tags: [CLR, Sharing]
+tags: [DotNET]
 aiTranslated: true
 ---
 

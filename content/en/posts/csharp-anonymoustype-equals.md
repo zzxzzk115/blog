@@ -2,7 +2,7 @@
 title: Identity and Equality of C# Anonymous Types
 date: 2021-01-14T16:57:59
 categories: [Programming Languages]
-tags: [CLR, CSharp, AnonymousType]
+tags: [CLR, CSharp, Anonymous Types]
 toc: true
 aiTranslated: true
 ---

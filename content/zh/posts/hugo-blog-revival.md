@@ -1,7 +1,7 @@
 ---
 title: 用 Hugo 复活老博客
 date: 2026-11-17T20:00:00
-tags: [tutorial, record]
+tags: [Hugo, 博客]
 categories: [随笔]
 toc: true
 ---

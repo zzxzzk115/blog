@@ -2,7 +2,7 @@
 title: '[教程]VC++6.0 的简单使用'
 date: 2017-12-04T11:18:36
 categories: [编程语言]
-tags: [C, tutorial]
+tags: [C, CPP]
 toc: true
 original: true
 csdn: 78707323

@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (2): What Is a Neural Network'
 date: 2018-04-16T22:00:18
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning, Neural Networks]
 toc: true
 original: true
 csdn: 79966886

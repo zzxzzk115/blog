@@ -2,7 +2,7 @@
 title: '对<老熟人?>new 关键字的探究(已更新)'
 date: 2020-11-24T20:31:15
 categories: [编程语言]
-tags: [CSharp, CPP, new]
+tags: [CSharp, CPP]
 toc: true
 ---
 

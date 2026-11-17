@@ -2,7 +2,7 @@
 title: "I Got Careless: Does Calling Equals on a Value Type Box in the CLR?"
 date: 2020-11-20T17:32:27
 categories: [Programming Languages]
-tags: [trap, CLR]
+tags: [CLR, CSharp]
 toc: true
 aiTranslated: true
 ---

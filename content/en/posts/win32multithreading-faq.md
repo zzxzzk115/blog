@@ -2,7 +2,7 @@
 title: 'FAQ Notes for Multithreading Applications in Win32'
 date: 2021-05-26T17:55:30
 categories: [Systems Programming]
-tags: [win32, multithreading, faq]
+tags: [Win32, Multithreading]
 toc: true
 aiTranslated: true
 ---

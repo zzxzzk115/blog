@@ -2,7 +2,7 @@
 title: 'Notes on the Exceptions Chapter of CLR via C#'
 date: 2021-01-09T13:12:18
 categories: [Programming Languages]
-tags: [CLR, CSharp, Exception]
+tags: [CLR, CSharp, Exception Handling]
 toc: true
 aiTranslated: true
 ---

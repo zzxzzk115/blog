@@ -2,7 +2,7 @@
 title: 'Learning Pixel Art Animation: 001 - Shine'
 date: 2021-01-22T18:54:19
 categories: [Game Development]
-tags: [PixelArt, Animation]
+tags: [Pixel Art, Animation]
 toc: true
 aiTranslated: true
 ---

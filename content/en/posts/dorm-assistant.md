@@ -1,8 +1,8 @@
 ---
 title: 'Open-Source Project: Dorm Assistant'
 date: 2018-12-16T02:05:13
-categories: [Backend]
-tags: [RaspberryPi, Arduino, Python, tutorial]
+categories: [Backend-Networking]
+tags: [Raspberry Pi, Arduino, Python]
 toc: true
 original: true
 csdn: 85023305

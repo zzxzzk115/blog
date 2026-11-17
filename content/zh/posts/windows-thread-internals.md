@@ -2,7 +2,7 @@
 title: 深入理解 Windows 线程
 date: 2021-01-24T15:49:11
 categories: [系统编程]
-tags: [Thread, Windows]
+tags: [Windows, 多线程]
 toc: true
 ---
 

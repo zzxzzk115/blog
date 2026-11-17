@@ -2,7 +2,7 @@
 title: 关于 CLR 的 StructLayoutAttribute 控制类型的字段布局的探究
 date: 2020-11-21T23:31:50
 categories: [编程语言]
-tags: [CLR, StructLayoutAttribute]
+tags: [CLR, CSharp, 内存布局]
 toc: true
 ---
 

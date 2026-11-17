@@ -2,7 +2,7 @@
 title: 'CLR via C# Q&A (Updated)'
 date: 2020-12-03T11:55:37
 categories: [Programming Languages]
-tags: [Q-A, CLR]
+tags: [CLR]
 toc: true
 aiTranslated: true
 ---

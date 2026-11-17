@@ -1,8 +1,8 @@
 ---
 title: Building an API Service on a Server with Python
 date: 2020-11-01T12:27:04
-tags: [python, API]
-categories: [Backend]
+tags: [Python, API]
+categories: [Backend-Networking]
 toc: true
 aiTranslated: true
 ---

@@ -2,7 +2,7 @@
 title: C# 匿名类型的同一性与相等性
 date: 2021-01-14T16:57:59
 categories: [编程语言]
-tags: [CLR, CSharp, AnonymousType]
+tags: [CLR, CSharp, 匿名类型]
 toc: true
 ---
 

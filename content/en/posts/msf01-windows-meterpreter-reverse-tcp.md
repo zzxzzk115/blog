@@ -1,8 +1,8 @@
 ---
 title: 'Metasploit (1): A Walkthrough of Compromising a Win10 Machine'
 date: 2020-11-09T11:59:17
-categories: [Security]
-tags: [internet-security, record, tutorial, msf, badusb]
+categories: [Backend-Networking]
+tags: [Security, Metasploit, BadUSB, Windows]
 toc: true
 aiTranslated: true
 ---

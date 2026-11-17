@@ -2,7 +2,7 @@
 title: 'Reading Notes on Multithreading Applications in Win32 (3)'
 date: 2020-04-13T14:08:00
 categories: [Systems Programming]
-tags: [win32, multithreading, notes]
+tags: [Win32, Multithreading]
 toc: true
 original: true
 cnblogs: 12691052

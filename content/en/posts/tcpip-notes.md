@@ -1,8 +1,8 @@
 ---
 title: 'TCP/IP Notes'
 date: 2021-06-24T10:07:59
-categories: [Backend]
-tags: [TCP-IP, notes]
+categories: [Backend-Networking]
+tags: [TCP-IP, Network Programming]
 toc: true
 aiTranslated: true
 ---

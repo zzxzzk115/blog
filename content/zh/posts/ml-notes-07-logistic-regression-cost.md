@@ -2,7 +2,7 @@
 title: '机器学习笔记(7)——逻辑回归：代价函数'
 date: 2018-04-19T19:01:17
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习, 逻辑回归]
 toc: true
 original: true
 csdn: 80009225

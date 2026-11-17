@@ -2,7 +2,7 @@
 title: '机器学习笔记(4)——为什么深度学习会兴起'
 date: 2018-04-16T22:51:06
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习]
 original: true
 csdn: 79967916
 ---

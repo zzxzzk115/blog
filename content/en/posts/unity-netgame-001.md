@@ -1,7 +1,7 @@
 ---
 title: 'Unity Online Game Development in Practice (1): Echo, the Simplest Network Program'
 date: 2020-10-23T12:36:00
-tags: [tutorial, network, Unity]
+tags: [Unity, Network Programming]
 categories: [Game Development]
 toc: true
 aiTranslated: true

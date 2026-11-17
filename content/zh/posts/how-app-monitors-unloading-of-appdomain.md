@@ -2,7 +2,7 @@
 title: 程序如何监视 AppDomain 的卸载
 date: 2021-01-27T20:09:08
 categories: [编程语言]
-tags: [AppDomain, CLR, CSharp]
+tags: [CLR, CSharp, AppDomain]
 toc: true
 ---
 

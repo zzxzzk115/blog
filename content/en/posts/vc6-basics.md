@@ -2,7 +2,7 @@
 title: '[Tutorial] Basic Usage of VC++6.0'
 date: 2017-12-04T11:18:36
 categories: [Programming Languages]
-tags: [C, tutorial]
+tags: [C, CPP]
 toc: true
 original: true
 csdn: 78707323

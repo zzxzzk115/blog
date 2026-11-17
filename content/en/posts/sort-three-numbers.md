@@ -1,7 +1,7 @@
 ---
 title: 'Common Ways to Sort Three Numbers'
 date: 2017-11-14T10:32:58
-categories: [Algorithms]
+categories: [Algorithms-Data-Structures]
 tags: [Sorting, C]
 toc: true
 original: true

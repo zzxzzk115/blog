@@ -1,7 +1,7 @@
 ---
 title: 'PocketChip 魔改加双扬声器'
 date: 2020-04-16T22:04:00
-tags: [PocketChip]
+tags: [PocketChip, 改装]
 categories: [复古掌机]
 toc: true
 cnblogs: 12716175

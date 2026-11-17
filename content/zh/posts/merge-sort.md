@@ -1,8 +1,8 @@
 ---
 title: '算法——归并排序'
 date: 2018-03-24T14:34:41
-categories: [算法]
-tags: [算法, 排序]
+categories: [算法与数据结构]
+tags: [排序]
 original: true
 csdn: 79677641
 ---

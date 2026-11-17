@@ -2,7 +2,7 @@
 title: 对于《CLR via C#》中异常部分的整理
 date: 2021-01-09T13:12:18
 categories: [编程语言]
-tags: [CLR, CSharp, Exception]
+tags: [CLR, CSharp, 异常处理]
 toc: true
 ---
 

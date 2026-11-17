@@ -1,8 +1,8 @@
 ---
 title: '数据结构 - 线性表'
 date: 2017-11-18T23:19:50
-categories: [算法]
-tags: [数据结构]
+categories: [算法与数据结构]
+tags: [C]
 toc: true
 math: true
 original: true

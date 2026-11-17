@@ -1,7 +1,7 @@
 ---
 title: '从 Pilot 引擎学知识(1)-在 Windows 上跑起来'
 date: 2022-04-05T15:29:43
-tags: [PilotEngine, GAMES104]
+tags: [Pilot, GAMES104]
 categories: [游戏引擎]
 toc: true
 ---

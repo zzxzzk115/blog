@@ -2,7 +2,7 @@
 title: 'Overlapped I/O: Asynchronous, Non-Blocking I/O'
 date: 2021-06-21T10:32:47
 categories: [Systems Programming]
-tags: [multithreading, win32, OverlappedI-O]
+tags: [Win32, Multithreading, AsyncIO]
 toc: true
 aiTranslated: true
 ---

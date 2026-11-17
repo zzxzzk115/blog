@@ -1,8 +1,8 @@
 ---
 title: 'Reinventing the Wheel (1): Building an API to Get bilibili Follower Counts'
 date: 2020-11-02T21:15:26
-categories: [Backend]
-tags: [tutorial, API, bilibili, codefromscratch, python]
+categories: [Backend-Networking]
+tags: [Python, API, Reinventing the Wheel, bilibili]
 toc: true
 aiTranslated: true
 ---

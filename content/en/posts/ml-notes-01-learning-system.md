@@ -2,7 +2,7 @@
 title: 'Machine Learning Notes (1): Course Outline'
 date: 2018-04-16T21:23:20
 categories: [Machine Learning]
-tags: [Machine Learning]
+tags: [Deep Learning]
 original: true
 csdn: 79966399
 aiTranslated: true

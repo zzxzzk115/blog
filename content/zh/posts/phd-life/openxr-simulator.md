@@ -3,8 +3,8 @@ title: 无需头显，使用 Meta XR 仿真器，开发 OpenXR PC 原生应用
 description: 如果你没有 XR 头显，但你想开发 OpenXR 应用，你可以使用 Meta XR 仿真器，它还不错。
 author: Lazy_V
 date: 2025-02-11T00:00:00
-categories: [PhD生活]
-tags: [OpenXR]
+categories: [游戏开发]
+tags: [OpenXR, XR]
 star: true
 url: /zh/posts/phd-life/openxr-simulator.html
 original: true

@@ -1,8 +1,8 @@
 ---
 title: LeetCode-547:朋友圈（中等）
 date: 2020-12-24T13:05:12
-categories: [算法]
-tags: [LeetCode, DFS, BFS, Union-Find-Sets]
+categories: [算法与数据结构]
+tags: [LeetCode, 图论, DFS, BFS, 并查集]
 ---
 
 # LeetCode-547. 朋友圈

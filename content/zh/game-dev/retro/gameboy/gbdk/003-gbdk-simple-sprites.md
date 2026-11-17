@@ -3,7 +3,7 @@ title: 使用 GBDK 绘制简单的精灵
 author: Lazy_V
 date: 2022-12-20T00:00:00
 categories: [游戏开发]
-tags: [游戏开发, 复古, GameBoy, GBDK]
+tags: [GameBoy, GBDK]
 url: /zh/game-dev/retro/gameboy/gbdk/003-gbdk-simple-sprites.html
 original: true
 ---

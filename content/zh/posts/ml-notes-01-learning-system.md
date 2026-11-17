@@ -2,7 +2,7 @@
 title: '机器学习笔记(1)——学习体系'
 date: 2018-04-16T21:23:20
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习]
 original: true
 csdn: 79966399
 ---

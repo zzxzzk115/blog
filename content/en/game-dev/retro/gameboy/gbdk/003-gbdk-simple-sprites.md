@@ -2,8 +2,8 @@
 title: Drawing a Simple Sprite with GBDK
 author: Lazy_V
 date: 2022-12-20T00:00:00
-categories: [Game-Development]
-tags: [Game-Development, Retro, GameBoy, GBDK]
+categories: [Game Development]
+tags: [GameBoy, GBDK]
 url: /game-dev/retro/gameboy/gbdk/003-gbdk-simple-sprites.html
 original: true
 ---

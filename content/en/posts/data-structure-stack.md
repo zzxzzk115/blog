@@ -1,8 +1,8 @@
 ---
 title: 'Data Structures: Stack'
 date: 2017-11-25T15:45:25
-categories: [Algorithms]
-tags: [Data Structures]
+categories: [Algorithms-Data-Structures]
+tags: [C]
 toc: true
 original: true
 csdn: 78632278

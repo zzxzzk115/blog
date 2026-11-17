@@ -2,7 +2,7 @@
 title: Why Unity Can Be Cross-Platform
 date: 2020-11-17T14:49:51
 categories: [Game Engines]
-tags: [Unity, crossplatform, Mono, DotNET, CIL, CLI, CLR]
+tags: [Unity, Cross-Platform, Mono, CIL, DotNET, CLR]
 toc: true
 aiTranslated: true
 ---

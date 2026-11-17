@@ -2,8 +2,8 @@
 title: Setting Up GBDK
 author: Lazy_V
 date: 2022-12-18T19:10:00
-categories: [Game-Development]
-tags: [Game-Development, Retro, GameBoy, GBDK]
+categories: [Game Development]
+tags: [GameBoy, GBDK]
 url: /game-dev/retro/gameboy/gbdk/002-gbdk-preparation.html
 original: true
 ---

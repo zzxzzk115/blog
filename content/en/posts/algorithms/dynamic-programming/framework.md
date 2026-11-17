@@ -2,8 +2,8 @@
 title: 'The Algorithm Framework for Solving DP Problems'
 author: Lazy_V
 date: 2022-12-09T00:00:00
-categories: [Algorithms]
-tags: [Algorithms, Dynamic-Programming]
+categories: [Algorithms-Data-Structures]
+tags: [Dynamic Programming]
 url: /posts/algorithms/dynamic-programming/framework.html
 original: true
 ---

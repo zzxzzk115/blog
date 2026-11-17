@@ -13,6 +13,8 @@ summaryLength = 150
 disablePathToLower = true
 enableRobotsTXT = true
 enableEmoji = true
+# Keep tag and category names as written (bilibili, not Bilibili).
+capitalizeListTitles = false
 
 [taxonomies]
   category = "categories"

@@ -10,7 +10,8 @@ usage:
   slug        file name and URL part: lowercase-words-with-dashes
   --section   folder under content/<lang>/ (default: posts)
   --tags / --categories   comma-separated, as you'd write them in the zh post; English names are
-              looked up in data/terms.toml (Algorithms = 算法 ...), unknown names are copied as-is
+              looked up in data/terms.toml (多线程 -> Multithreading ...), unknown names are copied as-is.
+              Existing tags and categories are listed in tools/taxonomy-plan.md; reuse them where you can
   --only      create just one language
   --open      open the created files in VS Code
 """
@@ -76,6 +77,13 @@ def main():
     tags_zh, cats_zh = split(a.tags), split(a.categories)
     tags_en = [tag_map.get(t, t) for t in tags_zh]
     cats_en = [cat_map.get(c, c) for c in cats_zh]
+    # Names like C#, C++, .NET, TCP/IP need their URL-safe key in front matter (see tools/taxonomy.py).
+    try:
+        from taxonomy import KEYS
+    except ImportError:
+        KEYS = {}
+    key = lambda names: [KEYS.get(n, n) for n in names]
+    tags_zh, cats_zh, tags_en, cats_en = key(tags_zh), key(cats_zh), key(tags_en), key(cats_en)
 
     langs = [a.only] if a.only else ["zh", "en"]
     made = []

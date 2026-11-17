@@ -2,7 +2,7 @@
 title: 'Making an OS in 30 Days: Day 01'
 date: 2020-04-05T17:39:00
 categories: [Systems Programming]
-tags: [OS, assembly, notes]
+tags: [OS, Assembly]
 toc: true
 original: true
 cnblogs: 12638174

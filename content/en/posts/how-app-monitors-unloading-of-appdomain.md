@@ -2,7 +2,7 @@
 title: How a Program Can Monitor AppDomain Unloading
 date: 2021-01-27T20:09:08
 categories: [Programming Languages]
-tags: [AppDomain, CLR, CSharp]
+tags: [CLR, CSharp, AppDomain]
 toc: true
 aiTranslated: true
 ---

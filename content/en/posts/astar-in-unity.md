@@ -2,7 +2,7 @@
 title: The A* Algorithm and a 2D Demo Implementation in Unity
 date: 2021-01-10T10:03:25
 categories: [Game Development]
-tags: [Unity, AStar, PathFinding, Algorithms]
+tags: [Unity, Pathfinding, AStar]
 toc: true
 mathjax: true
 aiTranslated: true

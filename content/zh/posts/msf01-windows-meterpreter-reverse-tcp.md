@@ -1,8 +1,8 @@
 ---
 title: 'Metasploit(1):记录一次 Win10 的渗透过程'
 date: 2020-11-09T11:59:17
-categories: [安全]
-tags: [internet-security, record, tutorial, msf, badusb]
+categories: [后端与网络]
+tags: [安全, Metasploit, BadUSB, Windows]
 toc: true
 ---
 

@@ -23,6 +23,7 @@ python tools/new_post.py my-new-post --zh "中文标题" --en "English title" --
 ```
 
 - `--section posts/game-engine` 放到子目录；`--only zh` 只建一种语言。
+- 已有的分类与标签（中英对照、篇数）见 `tools/taxonomy-plan.md`，尽量复用。全站整理改 `tools/taxonomy.py` 里的表，再 `python tools/taxonomy.py --apply`：它会一起改文章 front matter、`C#`/`C++` 这类名字的 URL 安全键与显示名页面，以及 `data/terms.toml` 的中英配对。
 - 图片放 `static/img/<slug>/`，文中写 `![说明](/img/<slug>/xxx.png)`。
 - 预览含草稿：`hugo server -D`；写完删掉 `draft: true` 再推送。
 - 只建一个文件也可以用 Hugo 自带的：`hugo new content content/zh/posts/xxx.md`（模板在 `archetypes/default.md`）。

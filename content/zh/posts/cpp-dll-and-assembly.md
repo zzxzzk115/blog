@@ -2,7 +2,7 @@
 title: 动态链接库 DLL 和.NET Framework 程序集的区别与联系
 date: 2020-11-21T21:31:18
 categories: [编程语言]
-tags: [DLL, CLR]
+tags: [DotNET, CLR, DLL]
 toc: true
 ---
 

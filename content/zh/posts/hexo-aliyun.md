@@ -1,7 +1,7 @@
 ---
 title: 'hexo 搭建在阿里云服务器上(Ubuntu 20.04)'
 date: 2020-10-25T00:57:00
-tags: [tutorial, record]
+tags: [Hexo, 博客]
 categories: [随笔]
 toc: true
 ---

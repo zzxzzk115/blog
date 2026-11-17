@@ -1,7 +1,7 @@
 ---
 title: 'Unity Online Game Development in Practice (2): Status Checking with Poll and Multiplexing with Select'
 date: 2020-10-30T10:46:59
-tags: [tutorial, network, Unity]
+tags: [Unity, Network Programming]
 categories: [Game Development]
 toc: true
 aiTranslated: true

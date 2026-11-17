@@ -2,7 +2,7 @@
 title: 'Git Badges: Shields.io and Substats'
 date: 2020-11-02T15:41:21
 categories: [Jottings]
-tags: [tutorial, git, beautify]
+tags: [Git, Shields.io, Blogging]
 toc: true
 aiTranslated: true
 ---

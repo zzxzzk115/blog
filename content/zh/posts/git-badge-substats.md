@@ -2,7 +2,7 @@
 title: Git 小徽章：Shields.io 与 Substats
 date: 2020-11-02T15:41:21
 categories: [随笔]
-tags: [tutorial, git, beautify]
+tags: [Git, Shields.io, 博客]
 toc: true
 ---
 

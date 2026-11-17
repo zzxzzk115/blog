@@ -2,8 +2,8 @@
 title: 'A Deep Dive into Static Abstract Interface Methods in C# 11'
 author: Lazy_V
 date: 2022-11-30T00:00:00
-categories: [Programming-Languages]
-tags: [Programming-Languages, CSharp, DotNET, Interfaces]
+categories: [Programming Languages]
+tags: [CSharp, DotNET, Interfaces]
 star: true
 url: /posts/programming-languages/csharp/static-abstract-members-in-interfaces.html
 original: true

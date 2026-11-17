@@ -1,8 +1,8 @@
 ---
 title: 'Algorithms: Shortest Paths with Dijkstra'
 date: 2018-03-24T14:43:46
-categories: [Algorithms]
-tags: [Algorithms, Shortest Path]
+categories: [Algorithms-Data-Structures]
+tags: [Graph Theory, Shortest Path]
 original: true
 csdn: 79677792
 aiTranslated: true

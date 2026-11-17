@@ -1,7 +1,7 @@
 ---
 title: 'How to Play with GameShell (01)'
 date: 2020-03-31T23:29:00
-tags: [GameShell]
+tags: [GameShell, ClockworkPi]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true

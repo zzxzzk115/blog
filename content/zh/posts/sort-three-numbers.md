@@ -1,7 +1,7 @@
 ---
 title: '三个数的排序常用方法'
 date: 2017-11-14T10:32:58
-categories: [算法]
+categories: [算法与数据结构]
 tags: [排序, C]
 toc: true
 original: true

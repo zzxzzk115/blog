@@ -2,7 +2,7 @@
 title: '[Translation] Handles and Objects on Windows'
 date: 2021-01-22T15:23:47
 categories: [Systems Programming]
-tags: [Windows, Handles, Objects]
+tags: [Windows, Kernel Objects]
 toc: true
 aiTranslated: true
 ---

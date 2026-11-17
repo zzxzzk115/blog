@@ -2,7 +2,7 @@
 title: 在 MongoDB 中实现自增 ID
 author: Lazy_V
 date: 2022-11-27T00:00:00
-categories: [后端]
+categories: [后端与网络]
 tags: [MongoDB, 数据库]
 url: /zh/posts/backend/mongodb/auto-increment-id-in-mongodb.html
 original: true

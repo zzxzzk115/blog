@@ -1,8 +1,8 @@
 ---
 title: 'Algorithms: Merge Sort'
 date: 2018-03-24T14:34:41
-categories: [Algorithms]
-tags: [Algorithms, Sorting]
+categories: [Algorithms-Data-Structures]
+tags: [Sorting]
 original: true
 csdn: 79677641
 aiTranslated: true

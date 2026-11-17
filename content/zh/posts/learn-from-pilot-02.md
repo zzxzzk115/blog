@@ -1,7 +1,7 @@
 ---
 title: '从 Pilot 引擎学知识(2)-文件目录结构'
 date: 2022-04-05T16:47:40
-tags: [PilotEngine, GAMES104]
+tags: [Pilot, GAMES104]
 categories: [游戏引擎]
 toc: true
 ---

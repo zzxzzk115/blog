@@ -1,8 +1,8 @@
 ---
 title: 'Reinventing the Wheel (2): Building an API for GitHub Followers, Stars and Forks'
 date: 2020-11-05T17:32:26
-categories: [Backend]
-tags: [tutorial, API, github, codefromscratch, python]
+categories: [Backend-Networking]
+tags: [Python, API, Reinventing the Wheel, GitHub]
 toc: true
 aiTranslated: true
 ---

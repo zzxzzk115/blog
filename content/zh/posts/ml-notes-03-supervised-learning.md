@@ -2,7 +2,7 @@
 title: '机器学习笔记(3)——监督学习'
 date: 2018-04-16T22:32:55
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习]
 original: true
 csdn: 79967405
 ---

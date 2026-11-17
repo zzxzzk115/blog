@@ -1,7 +1,7 @@
 ---
 title: Reviving My Old Blog with Hugo
 date: 2026-11-17T20:00:00
-tags: [tutorial, record]
+tags: [Hugo, Blogging]
 categories: [Jottings]
 toc: true
 ---

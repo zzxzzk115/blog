@@ -2,7 +2,7 @@
 title: 分享一个.NET 相关博主的博客地址
 date: 2021-01-21T15:09:34
 categories: [编程语言]
-tags: [CLR, Sharing]
+tags: [DotNET]
 ---
 
 分享一个最近看到的博客地址：[https://mattwarren.org/](https://mattwarren.org/)，其中内容与.NET、CLR 相关，有很多不错的文章。

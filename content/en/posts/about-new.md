@@ -2,7 +2,7 @@
 title: 'Digging into the <Old Friend?> new Keyword (Updated)'
 date: 2020-11-24T20:31:15
 categories: [Programming Languages]
-tags: [CSharp, CPP, new]
+tags: [CSharp, CPP]
 toc: true
 aiTranslated: true
 ---

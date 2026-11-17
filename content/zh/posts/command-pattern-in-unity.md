@@ -1,7 +1,7 @@
 ---
 title: '命令模式与其在 Unity 中的应用'
 date: 2020-11-02T10:31:00
-tags: [tutorial, design-pattern, Unity]
+tags: [Unity, 设计模式]
 categories: [游戏开发]
 toc: true
 ---

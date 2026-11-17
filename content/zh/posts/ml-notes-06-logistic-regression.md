@@ -2,7 +2,7 @@
 title: '机器学习笔记(6)——逻辑回归'
 date: 2018-04-19T18:34:30
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习, 逻辑回归]
 original: true
 csdn: 80008903
 ---

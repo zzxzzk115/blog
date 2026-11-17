@@ -1,7 +1,7 @@
 ---
 title: 'Modding the PocketChip with Stereo Speakers'
 date: 2020-04-16T22:04:00
-tags: [PocketChip]
+tags: [PocketChip, Modding]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true

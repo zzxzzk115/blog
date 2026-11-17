@@ -2,7 +2,7 @@
 title: '[译]Windows 的 Handles 和 Objects'
 date: 2021-01-22T15:23:47
 categories: [系统编程]
-tags: [Windows, Handles, Objects]
+tags: [Windows, 内核对象]
 toc: true
 ---
 

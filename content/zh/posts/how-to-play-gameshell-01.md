@@ -1,7 +1,7 @@
 ---
 title: 'GameShell 怎么玩(01)'
 date: 2020-03-31T23:29:00
-tags: [GameShell]
+tags: [GameShell, ClockworkPi]
 categories: [复古掌机]
 toc: true
 cnblogs: 12609595

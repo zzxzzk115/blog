@@ -2,7 +2,7 @@
 title: 'DevTerm，一款开源复古便携终端设备'
 date: 2020-11-24T14:04:19
 categories: [复古掌机]
-tags: [OpenSource, DevTerm, Clockwork, MicroPC]
+tags: [DevTerm, ClockworkPi]
 toc: true
 ---
 

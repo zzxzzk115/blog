@@ -2,8 +2,8 @@
 title: 解决 DP 问题的算法框架
 author: Lazy_V
 date: 2022-12-09T00:00:00
-categories: [算法]
-tags: [算法, 动态规划]
+categories: [算法与数据结构]
+tags: [动态规划]
 url: /zh/posts/algorithms/dynamic-programming/framework.html
 original: true
 ---

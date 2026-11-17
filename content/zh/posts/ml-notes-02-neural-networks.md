@@ -2,7 +2,7 @@
 title: '机器学习笔记(2)——什么是神经网络'
 date: 2018-04-16T22:00:18
 categories: [机器学习]
-tags: [机器学习]
+tags: [深度学习, 神经网络]
 toc: true
 original: true
 csdn: 79966886

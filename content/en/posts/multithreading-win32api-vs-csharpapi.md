@@ -2,7 +2,7 @@
 title: 'Mapping Win32 Multithreading APIs to C# Multithreading APIs'
 date: 2021-06-15T18:47:27
 categories: [Systems Programming]
-tags: [win32, multithreading, API, CSharp]
+tags: [Win32, Multithreading, CSharp]
 toc: true
 aiTranslated: true
 ---

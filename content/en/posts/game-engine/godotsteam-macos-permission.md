@@ -2,7 +2,7 @@
 title: Repeated macOS Permission Prompts with GodotSteam or a Custom Godot Build
 author: Lazy_V
 date: 2026-04-12T00:00:00
-categories: [Game-Engines]
+categories: [Game Engines]
 tags: [Godot]
 star: true
 url: /posts/game-engine/godotsteam-macos-permission.html

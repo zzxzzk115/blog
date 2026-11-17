@@ -1,7 +1,7 @@
 ---
 title: 'Learning from the Pilot Engine (2): File and Directory Structure'
 date: 2022-04-05T16:47:40
-tags: [PilotEngine, GAMES104]
+tags: [Pilot, GAMES104]
 categories: [Game Engines]
 toc: true
 aiTranslated: true

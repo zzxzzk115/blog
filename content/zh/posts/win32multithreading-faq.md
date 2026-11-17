@@ -2,7 +2,7 @@
 title: 《Win32 多线程程序设计》FAQ 整理
 date: 2021-05-26T17:55:30
 categories: [系统编程]
-tags: [win32, multithreading, faq]
+tags: [Win32, 多线程]
 toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: 'Overlapped I/O：异步、非阻塞式 I/O 技术'
 date: 2021-06-21T10:32:47
 categories: [系统编程]
-tags: [multithreading, win32, OverlappedI-O]
+tags: [Win32, 多线程, 异步IO]
 toc: true
 ---
 
