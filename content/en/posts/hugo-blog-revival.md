@@ -48,12 +48,29 @@ winget install Hugo.Hugo.Extended
 brew install hugo
 ```
 {{< /tab >}}
-{{< tab "Linux" >}}
+{{< tab "Arch" >}}
 ```bash
-sudo snap install hugo
+sudo pacman -S hugo
+```
+{{< /tab >}}
+{{< tab "Debian / Ubuntu" >}}
+```bash
+VER=0.170.0
+wget https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.deb
+sudo dpkg -i hugo_extended_${VER}_linux-amd64.deb
 ```
 
-Distro packages can lag behind; you can also grab the extended build from [GitHub Releases](https://github.com/gohugoio/hugo/releases).
+The hugo in apt is usually far behind, so install the official extended `.deb` instead; on ARM, replace `amd64` with `arm64`.
+{{< /tab >}}
+{{< tab "Other Linux" >}}
+```bash
+VER=0.170.0
+mkdir -p ~/.local/bin
+curl -L https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.tar.gz | tar -xz -C ~/.local/bin hugo
+hugo version
+```
+
+Works on any distribution (Fedora, openSUSE, ...): the official extended binary, unpacked into `~/.local/bin` (make sure it is on your `PATH`). On ARM, replace `amd64` with `arm64`.
 {{< /tab >}}
 {{< /tabs >}}
 

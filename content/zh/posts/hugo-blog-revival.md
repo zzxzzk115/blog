@@ -48,12 +48,29 @@ winget install Hugo.Hugo.Extended
 brew install hugo
 ```
 {{< /tab >}}
-{{< tab "Linux" >}}
+{{< tab "Arch" >}}
 ```bash
-sudo snap install hugo
+sudo pacman -S hugo
+```
+{{< /tab >}}
+{{< tab "Debian / Ubuntu" >}}
+```bash
+VER=0.170.0
+wget https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.deb
+sudo dpkg -i hugo_extended_${VER}_linux-amd64.deb
 ```
 
-发行版自带的 hugo 包可能偏旧，也可以从 [GitHub Releases](https://github.com/gohugoio/hugo/releases) 下载 extended 版本。
+apt 源里的 hugo 往往旧很多，直接装官方的 extended 版 `.deb`；ARM 机器把 `amd64` 换成 `arm64`。
+{{< /tab >}}
+{{< tab "其他 Linux" >}}
+```bash
+VER=0.170.0
+mkdir -p ~/.local/bin
+curl -L https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.tar.gz | tar -xz -C ~/.local/bin hugo
+hugo version
+```
+
+适用于任何发行版（Fedora、openSUSE 等）：官方的 extended 版二进制，解压到 `~/.local/bin`（确保它在 `PATH` 里）。ARM 机器把 `amd64` 换成 `arm64`。
 {{< /tab >}}
 {{< /tabs >}}
 
