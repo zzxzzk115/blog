@@ -24,6 +24,14 @@ zh = "随笔"
 zh = "编程语言"
 [tags."Retro"]
 zh = "复古"
+[tags."Sorting"]
+zh = "排序"
+[tags."Data Structures"]
+zh = "数据结构"
+[tags."Machine Learning"]
+zh = "机器学习"
+[tags."Shortest Path"]
+zh = "最短路径"
 
 [categories."Algorithms"]
 zh = "算法"
@@ -33,6 +41,8 @@ zh = "后端"
 zh = "游戏开发"
 [categories."Game Engines"]
 zh = "游戏引擎"
+[categories."Machine Learning"]
+zh = "机器学习"
 [categories."Jottings"]
 zh = "随笔"
 [categories."PhD-Life"]

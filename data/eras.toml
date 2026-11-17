@@ -1,0 +1,20 @@
+# Periods of this blog, used to group the archive page (newest first).
+# A post belongs to the era whose [from, to] range contains its date; leave `to` out for "until now".
+# Titles and notes are per language.
+
+[[eras]]
+from = "2022-11-01"
+title = { en = "Work & PhD", zh = "工作与读博" }
+note = { en = "VuePress Theme Hope, now Hugo", zh = "VuePress Theme Hope 时期，现已迁到 Hugo" }
+
+[[eras]]
+from = "2020-10-01"
+to = "2022-10-31"
+title = { en = "Growing Up", zh = "日渐成熟" }
+note = { en = "Self-hosted Hexo blog", zh = "自建 Hexo 博客时期" }
+
+[[eras]]
+from = "2017-01-01"
+to = "2020-09-30"
+title = { en = "First Steps", zh = "初学计算机" }
+note = { en = "CSDN", zh = "CSDN 时期" }
