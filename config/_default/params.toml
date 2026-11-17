@@ -3,9 +3,15 @@ author = "Lazy_V"
 
 # Sections whose pages count as articles (home page, archives, feeds, recent posts).
 # Pages can opt out with `article: false` in front matter.
-mainSections = ["posts", "game-dev", "hpg-notes", "legacy"]
+mainSections = ["posts", "game-dev", "hpg-notes"]
 
-widgets = ["search", "category", "tagcloud", "recent_posts", "links"]
+widgets = ["search", "category", "tagcloud", "timeline", "recent_posts", "links"]
+
+# 1-bit GitHub avatar instead of the original theme's red "V"
+logo = "avatar.png"
+favicon = "avatar.png"
+# The original theme's red "V", blinking before the slogan
+sloganIcon = "favicon.png"
 
 [[links]]
   title = "GitHub"

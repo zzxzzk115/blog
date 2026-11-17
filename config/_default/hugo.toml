@@ -18,8 +18,9 @@ enableRobotsTXT = true
   tag = "tags"
 
 [permalinks.page]
-  # Legacy (hexo) posts keep their original URL shape: /zh/2021/01/10/astar-in-unity/
-  legacy = "/:year/:month/:day/:contentbasename/"
+  # Posts without an explicit `url` (the 2020–2022 hexo posts, and new posts) get
+  # the hexo URL shape: /zh/2021/01/10/astar-in-unity/
+  posts = "/:year/:month/:day/:contentbasename/"
 
 [outputs]
   home = ["html", "rss", "atom", "searchxml"]

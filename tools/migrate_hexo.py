@@ -1,7 +1,7 @@
 """Migrate a Hexo `source/` directory into this Hugo site.
 
 Usage:
-    python tools/migrate_hexo.py <hexo-source-dir> [--lang zh] [--section legacy] [--pages games] [--static-dirs wiki,GameSrc,...]
+    python tools/migrate_hexo.py <hexo-source-dir> [--lang zh] [--section posts] [--pages games] [--static-dirs wiki,GameSrc,...]
 
 What it does:
   * source/_posts/*.md          -> content/<lang>/<section>/*.md
@@ -109,7 +109,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", type=Path, help="Hexo source/ directory")
     ap.add_argument("--lang", default="zh", help="content/<lang>/")
-    ap.add_argument("--section", default="legacy")
+    ap.add_argument("--section", default="posts")
     ap.add_argument("--pages", default="games", help="comma separated source/<page>/index.md to import")
     ap.add_argument("--static-dirs", default="", help="comma separated dirs copied to static/")
     args = ap.parse_args()

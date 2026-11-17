@@ -1,5 +1,0 @@
-{{- /* Used by a content page with `layout: archives` (e.g. content/archives.md). */ -}}
-{{ define "main" }}
-{{- $pages := partial "func/articles.html" . }}
-{{ partial "archive-list.html" (dict "pages" $pages "title" (.Title | default (T "archive_a")) "page" .) }}
-{{ end }}

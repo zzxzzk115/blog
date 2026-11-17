@@ -29,7 +29,7 @@ content/
     intro.md friends.md archives.md
   zh/                中文，/zh/
     posts/ game-dev/ hpg-notes/     与 en 一一对应的译文（同路径 = 互为翻译）
-    legacy/          Hexo 旧博客文章，URL 保持 /zh/:year/:month/:day/:slug/
+                     posts/ 根目录下还有 2020–2022 的 Hexo 文章，URL 为 /zh/:year/:month/:day/:slug/
     intro.md friends.md archives.md games.md
 static/
   images/ src/ logo.png bg.png favicon.ico    来自 VuePress .vuepress/public
@@ -44,7 +44,7 @@ tools/                     迁移脚本
 
 - VuePress 页面：`url:` front matter 保留原地址（`/posts/phd-life/openxr-simulator.html`、`/zh/...`）。部署到 `https://zzxzzk115.github.io/blog/` 时把 `baseURL` 改成该地址即可，路径会自动加 `/blog`。
 - RSS 仍是 `/rss.xml`、`/zh/rss.xml`；另有 `atom.xml`。
-- Hexo 旧文章：`/zh/2021/01/10/astar-in-unity/`（原来没有 `/zh` 前缀，原域名已失效）。
+- Hexo 时期的文章：`/zh/2021/01/10/astar-in-unity/`（原来没有 `/zh` 前缀，原域名已失效）。没有写 `url` 的新文章也用这个格式。
 - 分类 / 标签页地址变了：VuePress 的 `/category/xxx/` 改为 `/categories/xxx/`。
 
 ## 迁移脚本
