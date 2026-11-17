@@ -8,6 +8,10 @@ mainSections = ["posts", "game-dev", "hpg-notes"]
 widgets = ["author", "search", "category", "tagcloud", "timeline", "recent_posts"]
 
 
+# Lazy_V's red V: home page logo and browser icon (the theme's defaults are generic)
+logo = "images/lazy-v.png"
+favicon = "images/lazy-v.png"
+
 # "Edit this page" links (path from content/ is appended)
 editURL = "https://github.com/zzxzzk115/blog/edit/master/"
 
