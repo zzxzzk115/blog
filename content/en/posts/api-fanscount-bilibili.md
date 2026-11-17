@@ -7,11 +7,14 @@ toc: true
 aiTranslated: true
 ---
 
+> [!NOTE]
+> The server behind the API in this post was shut down long ago, so the addresses in the code no longer work and are kept for the record. The follower badges shown on this page now read Bilibili's official API directly: `https://api.bilibili.com/x/relation/stat?vmid=<uid>` (JSON key `$.data.follower`).
+
 Subsats is still painfully slow. My guess is the author scrapes everything with Selenium. Why use Selenium when plain requests would do? So I decided to build a similar API service myself. I've already finished the service for getting bilibili follower counts. Check out the loading speed comparison (only the first load really counts; after that things may be cached and there's no point comparing. The left one uses my own API, the right one uses Subsats):
 
 <div class="align-left">
-    <img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fbilibili%2Fuid%2F33320940&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.follower&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D33320940&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D33320940&label=bilibili%20fans&query=%24.data.follower&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
 </div>
 <!--more-->
 
@@ -173,7 +176,7 @@ I set the port to 40001, and the domain with an A record pointing to my server i
 
 Visit `http://www.zhangkexuan.cn:40001/api/fanscount/bilibili/uid/33320940`
 
-to get the follower count: [Click to visit](http://www.zhangkexuan.cn:40001/api/fanscount/bilibili/uid/33320940)
+to get the follower count. (The server behind this API was shut down long ago; the address no longer works and is kept only as an example.)
 
 Result:
 
@@ -227,7 +230,7 @@ For example, to show the follower count of Mr. Chen (uid: 208259):
 <img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fbilibili%2Fuid%2F208259&logo=bilibili&labelColor=FE7398&logoColor=white">
 ```
 
-<img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fbilibili%2Fuid%2F208259&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+<img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.follower&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D208259&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
 
 # Summary
 

@@ -6,12 +6,14 @@ tags: [tutorial, API, github, codefromscratch, python]
 toc: true
 ---
 
+> [!NOTE]
+> 文中自建接口的服务器早已停用，代码里的地址已失效，仅作记录。页面上显示的 Followers / Stars 徽章已改用 shields.io 自带的 GitHub 徽章；按用户统计的 Forks 徽章没有现成替代，已移除。
+
 上次我们完成了 bilibili 粉丝数 API 的制作，并应用于 Shields.io，成功显示。这次我们来造 GitHub！先看看效果：
 
 <div class="align-left">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Followers&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2Fzzxzzk115%2Ffollowers&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Stars&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2Fzzxzzk115%2Fstars&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Forks&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2Fzzxzzk115%2Fforks&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/followers/zzxzzk115?label=GitHub%20Followers&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/stars/zzxzzk115?label=GitHub%20Stars&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
 </div>
 
 <!--more-->
@@ -426,7 +428,7 @@ if __name__ == '__main__':
 
 访问 `http://www.zhangkexuan.cn:40001/api/fanscount/github/uname/zzxzzk115/followers`
 
-即可得到 GitHub 的 Followers 的数值：[点击访问](http://www.zhangkexuan.cn:40001/api/fanscount/github/uname/zzxzzk115/followers)
+即可得到 GitHub 的 Followers 的数值。（这个接口所在的服务器早已停用，地址已失效，仅作示例。）
 
 结果：
 
@@ -477,9 +479,8 @@ forks:
 举个例子，显示 OneLoneCoder(我很喜欢的一个 Youtuber) 的 Followers 和 Stars:
 
 <div class="align-left">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Followers&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2FOneLoneCoder%2Ffollowers&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Stars&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2FOneLoneCoder%2Fstars&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Forks&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2FOneLoneCoder%2Fforks&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/followers/OneLoneCoder?label=GitHub%20Followers&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/stars/OneLoneCoder?label=GitHub%20Stars&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
 </div>
 
 

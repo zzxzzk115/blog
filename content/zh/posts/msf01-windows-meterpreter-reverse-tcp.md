@@ -20,7 +20,7 @@ Metasploit 的设计初衷是打造成一个攻击工具开发平台，本书稍
 
 # Metasploit 的框架图
 
-![metasploit-framework-pic](https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1064390767,3519747425&fm=26&gp=0.jpg)
+![metasploit-framework-pic](/img/msf/metasploit.jpg)
 
 我们常用到的主要是 Tools，Modules 和 Interfaces 里的 Console。
 

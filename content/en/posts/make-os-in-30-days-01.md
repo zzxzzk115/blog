@@ -17,7 +17,7 @@ aiTranslated: true
 
 <!--more-->
 
-You can follow my progress on [GitHub](https://github.com/zzxzzk115/Use30DaysToMakeOS)...
+You could follow my progress on GitHub... (the Use30DaysToMakeOS repository no longer exists; see the [Wayback Machine copy](https://web.archive.org/web/20201016085805/https://github.com/zzxzzk115/Use30DaysToMakeOS))
 
 # 1. Tools
 
@@ -29,9 +29,9 @@ For a **hex editor**, you can use [WinHex](http://www.x-ways.net/winhex/); I'll 
 
 My **text editor** of choice is [Visual Studio Code](https://code.visualstudio.com/); pick whatever you like.
 
-For the **virtual machine**, you can use [Virtual Box](https://www.virtualbox.org/) or [VMware](https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html). I'll use VMware Workstation 14 because it's more powerful.
+For the **virtual machine**, you can use [Virtual Box](https://www.virtualbox.org/) or [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion). I'll use VMware Workstation 14 because it's more powerful.
 
-For **assembly**, let's just stick with the author's [nask.exe](https://github.com/zzxzzk115/Use30DaysToMakeOS/raw/master/Day01/tools/nask.exe); we don't need to write our own assembler.
+For **assembly**, let's just stick with the author's nask.exe (the download link died with the repository; it ships in the book's tool kit); we don't need to write our own assembler.
 
 We also need a **Bash environment**. You can use [Git](https://git-scm.com/downloads) Bash; I'm using [Cmder](https://cmder.net/).
 

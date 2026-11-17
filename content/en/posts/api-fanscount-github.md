@@ -7,12 +7,14 @@ toc: true
 aiTranslated: true
 ---
 
+> [!NOTE]
+> The server behind the API in this post was shut down long ago, so the addresses in the code no longer work and are kept for the record. The Followers / Stars badges shown on this page now use shields.io's built-in GitHub badges; there is no ready-made replacement for the per-user Forks badge, so it was removed.
+
 Last time we built an API for bilibili follower counts, plugged it into Shields.io, and got it displaying. This time we're building one for GitHub! Here's what it looks like:
 
 <div class="align-left">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Followers&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2Fzzxzzk115%2Ffollowers&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Stars&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2Fzzxzzk115%2Fstars&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Forks&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2Fzzxzzk115%2Fforks&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/followers/zzxzzk115?label=GitHub%20Followers&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/stars/zzxzzk115?label=GitHub%20Stars&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
 </div>
 
 <!--more-->
@@ -427,7 +429,7 @@ if __name__ == '__main__':
 
 Visit `http://www.zhangkexuan.cn:40001/api/fanscount/github/uname/zzxzzk115/followers`
 
-to get the GitHub Followers count: [click to visit](http://www.zhangkexuan.cn:40001/api/fanscount/github/uname/zzxzzk115/followers)
+to get the GitHub Followers count. (The server behind this API was shut down long ago; the address no longer works and is kept only as an example.)
 
 Result:
 
@@ -478,9 +480,8 @@ forks:
 For example, here are the Followers and Stars of OneLoneCoder (a YouTuber I really like):
 
 <div class="align-left">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Followers&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2FOneLoneCoder%2Ffollowers&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Stars&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2FOneLoneCoder%2Fstars&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?color=A8A8A8&label=GitHub%20Forks&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fgithub%2Funame%2FOneLoneCoder%2Fforks&logo=github&labelColor=303030&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/followers/OneLoneCoder?label=GitHub%20Followers&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/github/stars/OneLoneCoder?label=GitHub%20Stars&logo=github&labelColor=303030&color=A8A8A8&logoColor=white" class="nofancybox">
 </div>
 
 

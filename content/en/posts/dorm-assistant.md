@@ -21,7 +21,7 @@ Right now the Dorm Assistant works as a private dorm server, a download box, a p
 
 Let me give a quick demo of what it does.
 
-My dorm server's home page (port 80, /var/www/html/index.html) is resolved to the domain http://pi.code4world.cn (I was too lazy to write HTML+CSS+JS/PHP, so please forgive the looks).
+My dorm server's home page (port 80, /var/www/html/index.html) is resolved to the domain `pi.code4world.cn` (the domain has since expired) (I was too lazy to write HTML+CSS+JS/PHP, so please forgive the looks).
 
 Aria2 and Transmission on the home page are both download tools. They can be accessed from both outside and inside the LAN, which means you can download remotely, or download files to the server while you're in the dorm.
 
@@ -207,7 +207,7 @@ On macOS or Linux, just open `Terminal` and type `ssh pi@192.168.1.107`
 
 Enter the default password `raspberry ` and press Enter, and you're in the Raspberry Pi's terminal.
 
-On Windows, you can use [putty](http://www.mycodes.net/130/681.htm) to connect to the Raspberry Pi's terminal:
+On Windows, you can use [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) to connect to the Raspberry Pi's terminal:
 
 Select SSH,
 
@@ -620,7 +620,7 @@ And the configuration is done.
 
 The site's `logo` is the `favicon.ico`. It usually just goes in the site root. How do you make an `ico` icon?
 
-https://www.easyicon.net/covert/
+easyicon's online converter (the site has shut down; the link is dead)
 
 Visit the site above, convert the `png` image of the `logo` you want into `ico` format, rename it `favicon.ico`, and put it in the site root, e.g. in `/var/www/html`. How do you put it there? See `7. SFTP file access` above.
 
@@ -722,7 +722,7 @@ log_max_days = 7
 login_fail_exit = false
 ```
 
-This uses a free frp service, at http://frp.kerwin.cn
+This uses a free frp service, at `frp.kerwin.cn` (the service has shut down; the link is dead)
 
 The reason for using free frp is that we don't need to spend money on a VPS.
 
@@ -766,7 +766,7 @@ Change the paths to match your own file paths.
 
 Likewise, other startup commands can generally be done the same way.
 
-Now visiting http://pi.code4world.cn is equivalent to visiting http://192.168.1.107:80, i.e. http://192.168.1.107 — but the latter only works on the LAN, while the former works from anywhere.
+Now visiting `http://pi.code4world.cn` (the domain has since expired) is equivalent to visiting `http://192.168.1.107:80`, i.e. `http://192.168.1.107` — but the latter only works on the LAN, while the former works from anywhere.
 
 ### 4. Mounting the hard drive
 
@@ -972,7 +972,7 @@ Go to `设置` (Settings), `全局` (Global), set the language to `中文` (Chin
 
 ![Fw98ij.png](/img/csdn/85023305-34.png)
 
-After refreshing, you can start download tasks. On the LAN visit `http://<Raspberry Pi LAN IP>/aira-ng`; from outside visit http://pi.code4world.cn/aira-ng , where pi.code4world.cn is 192.168.1.107:80 — adjust according to the intranet tunneling you set up yourself.
+After refreshing, you can start download tasks. On the LAN visit `http://<Raspberry Pi LAN IP>/aira-ng`; from outside visit `http://pi.code4world.cn/aira-ng` (the domain has since expired), where pi.code4world.cn is 192.168.1.107:80 — adjust according to the intranet tunneling you set up yourself.
 
 From outside, you need to set the rpc address, which means using frp again:
 

@@ -21,7 +21,7 @@ From [Baidu Baike](https://baike.baidu.com/item/Metasploit/4926164?fr=aladdin)
 
 # Metasploit's Architecture Diagram
 
-![metasploit-framework-pic](https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1064390767,3519747425&fm=26&gp=0.jpg)
+![metasploit-framework-pic](/img/msf/metasploit.jpg)
 
 The parts we commonly use are mainly Tools, Modules, and the Console under Interfaces.
 

@@ -10,7 +10,7 @@ aiTranslated: true
 
 > Reposted from my old CSDN blog: [机器学习笔记(1)——学习体系](https://blog.csdn.net/zkx981105/article/details/79966399) (written 2018-04-16); formatting tidied during migration.
 
-The course is Professor Andrew Ng's free machine learning course on NetEase: [Machine Learning](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
+The course is Professor Andrew Ng's free machine learning course on NetEase: Machine Learning (the original NetEase course page is dead; the same course series is on [Coursera](https://www.coursera.org/specializations/deep-learning))
 
 <!--more-->
 

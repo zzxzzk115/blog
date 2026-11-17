@@ -14,7 +14,7 @@ STL: Standard Template Library, the C++ standard template library, which wraps u
 
 <!--more-->
 
-The example code for this post is at [https://github.com/zzxzzk115/STL_vector](https://github.com/zzxzzk115/STL_vector)
+The example code for this post used to be in the GitHub repository `zzxzzk115/STL_vector` (the repository no longer exists; see the [Wayback Machine copy](https://web.archive.org/web/20180617170405/https://github.com/zzxzzk115/STL_vector))
 
 Let's first look at how to use vector:
 

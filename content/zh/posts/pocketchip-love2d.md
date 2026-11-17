@@ -27,7 +27,7 @@ Pocketchip 换源、更新以后，通过 `sudo apt-get -f install love` 安装�
 
 但是 11 开始不提供 armhf 版本的 deb 安装包了，所以我们选择源码编译安装。
 
-下载 [love-11.3-linux-src.tar.gz](https://bitbucket.org/rude/love/downloads/love-11.3-linux-src.tar.gz)
+下载 [love-11.3-linux-src.tar.gz](https://github.com/love2d/love/releases/download/11.3/love-11.3-linux-src.tar.gz)
 
 ## 2. 安装 C/C++ 编译器与 Make
 
@@ -45,7 +45,7 @@ Pocketchip 没有自带 `pkg-config`，我们也要安装它，其他软件包�
 
 `sudo apt-get install lua5.2` 安装 Lua5.2
 
-LuaJIT 需要下载这个文件 [LuaJIT-2.0.5.tar.gz](http://luajit.org/download/LuaJIT-2.0.5.tar.gz)
+LuaJIT 需要下载这个文件 [LuaJIT-2.0.5.tar.gz](https://web.archive.org/web/20240805175559/http://luajit.org/download/LuaJIT-2.0.5.tar.gz)（官网已不再提供，此为 Wayback Machine 存档）
 
 LuaJIT 的安装很简单，先解压这个压缩包：
 
@@ -81,7 +81,7 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 ### 2. 下载 FreeType2 源码
 
-下载：[freetype-2.10.1.tar.gz](https://ayera.dl.sourceforge.net/project/freetype/freetype2/2.10.1/freetype-2.10.1.tar.gz)
+下载：[freetype-2.10.1.tar.gz](https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz)
 
 解压:
 

@@ -9,7 +9,7 @@ csdn: 79966399
 
 > 本文转载自我在 CSDN 的旧博客：[机器学习笔记(1)——学习体系](https://blog.csdn.net/zkx981105/article/details/79966399)（写于 2018-04-16），迁移时整理了格式。
 
-课程是网易的免费课程 吴恩达 Andrew Ng 教授的机器学习：[机器学习](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
+课程是网易的免费课程 吴恩达 Andrew Ng 教授的机器学习：机器学习（网易云课堂的原课程页已失效，同一系列课程可在 [Coursera](https://www.coursera.org/specializations/deep-learning) 学习）
 
 <!--more-->
 

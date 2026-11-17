@@ -13,7 +13,7 @@ STL : Standard Template Library, C++ 标准模板库, 封装好了各种接口�
 
 <!--more-->
 
-本文实例代码在 [https://github.com/zzxzzk115/STL_vector](https://github.com/zzxzzk115/STL_vector)
+本文实例代码原在 GitHub 仓库 `zzxzzk115/STL_vector` 中（该仓库已不存在，可查看 [Wayback Machine 存档](https://web.archive.org/web/20180617170405/https://github.com/zzxzzk115/STL_vector)）
 
 我们先来看看 vector 的使用方法：
 

@@ -6,11 +6,14 @@ tags: [tutorial, API, bilibili, codefromscratch, python]
 toc: true
 ---
 
+> [!NOTE]
+> 文中自建接口的服务器早已停用，代码里的地址已失效，仅作记录。页面上显示的粉丝数徽章已改为直接读取哔哩哔哩官方接口 `https://api.bilibili.com/x/relation/stat?vmid=<uid>`（JSON 键为 `$.data.follower`）。
+
 Subsats 的速度还是感人，我猜作者全是用 Selenium 爬的，能用 request 的为什么要用 Selenium？于是我打算自己做一个类似的 API 服务。我目前已经做好了获取 bilibili 粉丝数的服务，看看加载速度的对比效果吧（第一次加载才有意义，后面可能已经有缓存了就没有比较的必要了。左边是用的我自己做的 API，右边用的是 Subsats）：
 
 <div class="align-left">
-    <img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fbilibili%2Fuid%2F33320940&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D33320940&label=bilibili%20fans&query=$.data.totalSubs&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.follower&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D33320940&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D33320940&label=bilibili%20fans&query=%24.data.follower&color=282c34&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
 </div>
 <!--more-->
 
@@ -172,7 +175,7 @@ if __name__ == '__main__':
 
 访问 `http://www.zhangkexuan.cn:40001/api/fanscount/bilibili/uid/33320940`
 
-即可得到粉丝数：[点击访问](http://www.zhangkexuan.cn:40001/api/fanscount/bilibili/uid/33320940)
+即可得到粉丝数。（这个接口所在的服务器早已停用，地址已失效，仅作示例。）
 
 结果:
 
@@ -226,7 +229,7 @@ Subsats:
 <img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fbilibili%2Fuid%2F208259&logo=bilibili&labelColor=FE7398&logoColor=white">
 ```
 
-<img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.value&url=http%3A%2F%2Fwww.zhangkexuan.cn%3A40001%2Fapi%2Ffanscount%2Fbilibili%2Fuid%2F208259&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
+<img src="https://img.shields.io/badge/dynamic/json?color=282c34&label=bilibili%E7%B2%89%E4%B8%9D%E6%95%B0&query=%24.data.follower&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D208259&logo=bilibili&labelColor=FE7398&logoColor=white" class="nofancybox">
 
 # 总结
 

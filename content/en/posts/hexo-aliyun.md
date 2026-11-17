@@ -74,7 +74,7 @@ cnpm install # Install any dependencies that may still be needed
 hexo s
 ```
 
-Once it starts successfully, open [http://localhost:4000](http://localhost:4000) in your browser and you'll see Hexo's default hello world page.
+Once it starts successfully, open `http://localhost:4000` in your browser and you'll see Hexo's default hello world page.
 
 # On the Cloud Server
 

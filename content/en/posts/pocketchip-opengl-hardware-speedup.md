@@ -10,9 +10,9 @@ cnblogs: 12698439
 
 > Originally published on my old cnblogs blog: [\[转载\]Pocketchip开启OpenGL硬件加速，性能大提升！](https://www.cnblogs.com/lazy-v/p/12698439.html) (written 2020-04-14).
 
-> This post is reposted with permission. Original article: https://www.xuefei.net.cn/index.php/archives/89/
+> This post is reposted with permission. Original article: `https://www.xuefei.net.cn/index.php/archives/89/` (the site has shut down; see the [Wayback Machine copy](https://web.archive.org/web/20250909004748/https://www.xuefei.net.cn/index.php/archives/89/))
 >
-> Author: [xuefei](https://www.xuefei.net.cn/index.php/author/1/) · Date: 2020-04-14 · Category: [pocketchip](https://www.xuefei.net.cn/index.php/category/pocketchip/)
+> Author: xuefei · Date: 2020-04-14 · Category: pocketchip
 
 Install the dependencies:
 
@@ -41,7 +41,7 @@ cd lib/
 sudo mv libGL.so.1 /usr/lib/arm-linux-gnueabihf/libGL.so.1.2.0
 ```
 
-If you installed [xf86-video-fbturbo](https://www.xuefei.net.cn/index.php/archives/90/) before, disable it first:
+If you installed xf86-video-fbturbo (that post went down with the original site) before, disable it first:
 
 ```bash
 sudo nano /etc/X11/xorg.conf
@@ -67,7 +67,7 @@ glxgears
 
 On the GUI edition you should see the picture below; on the home edition you might not see the gears, because the window is too big…
 
-![glxgears running](https://www.xuefei.net.cn/usr/uploads/2020/04/2157792144.jpg)
+![glxgears running](/img/xuefei/glxgears.jpg)
 
 Links:
 

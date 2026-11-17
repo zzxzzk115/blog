@@ -28,7 +28,7 @@ First of all, obviously, we need to download Love2d 11.3.
 
 But starting with 11, there's no armhf deb package anymore, so we'll build and install from source.
 
-Download [love-11.3-linux-src.tar.gz](https://bitbucket.org/rude/love/downloads/love-11.3-linux-src.tar.gz)
+Download [love-11.3-linux-src.tar.gz](https://github.com/love2d/love/releases/download/11.3/love-11.3-linux-src.tar.gz)
 
 ## 2. Install the C/C++ compilers and Make
 
@@ -46,7 +46,7 @@ The PocketChip doesn't come with `pkg-config`, so we need to install that as wel
 
 `sudo apt-get install lua5.2` installs Lua 5.2.
 
-For LuaJIT, download this file: [LuaJIT-2.0.5.tar.gz](http://luajit.org/download/LuaJIT-2.0.5.tar.gz)
+For LuaJIT, download this file: [LuaJIT-2.0.5.tar.gz](https://web.archive.org/web/20240805175559/http://luajit.org/download/LuaJIT-2.0.5.tar.gz) (no longer on the official site; this is the Wayback Machine copy)
 
 Installing LuaJIT is easy. First extract the archive:
 
@@ -82,7 +82,7 @@ Let's install them:
 
 ### 2. Download the FreeType2 source
 
-Download: [freetype-2.10.1.tar.gz](https://ayera.dl.sourceforge.net/project/freetype/freetype2/2.10.1/freetype-2.10.1.tar.gz)
+Download: [freetype-2.10.1.tar.gz](https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz)
 
 Extract it:
 

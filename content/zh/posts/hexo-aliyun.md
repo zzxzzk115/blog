@@ -73,7 +73,7 @@ cnpm install #安装可能还需要的依赖项
 hexo s
 ```
 
-成功启动以后，浏览器访问 [http://localhost:4000](http://localhost:4000) 就能看到 hexo 的默认 helloworld 页面。
+成功启动以后，浏览器访问 `http://localhost:4000` 就能看到 hexo 的默认 helloworld 页面。
 
 # 云服务器中的操作
 

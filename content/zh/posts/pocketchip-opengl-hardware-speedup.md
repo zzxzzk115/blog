@@ -9,9 +9,9 @@ cnblogs: 12698439
 
 > 本文最初发表于我在博客园的旧博客：[\[转载\]Pocketchip 开启 OpenGL 硬件加速，性能大提升！](https://www.cnblogs.com/lazy-v/p/12698439.html)（写于 2020-04-14）。
 
-> 此篇为转载内容，经过转载许可。原文地址：https://www.xuefei.net.cn/index.php/archives/89/
+> 此篇为转载内容，经过转载许可。原文地址：`https://www.xuefei.net.cn/index.php/archives/89/`（原站已关闭，可查看 [Wayback Machine 存档](https://web.archive.org/web/20250909004748/https://www.xuefei.net.cn/index.php/archives/89/)）
 >
-> 作者：[xuefei](https://www.xuefei.net.cn/index.php/author/1/) · 时间：2020-04-14 · 分类：[pocketchip](https://www.xuefei.net.cn/index.php/category/pocketchip/)
+> 作者：xuefei · 时间：2020-04-14 · 分类：pocketchip
 
 安装依赖：
 
@@ -40,7 +40,7 @@ cd lib/
 sudo mv libGL.so.1 /usr/lib/arm-linux-gnueabihf/libGL.so.1.2.0
 ```
 
-如果之前安装了 [xf86-video-fbturbo](https://www.xuefei.net.cn/index.php/archives/90/)，请先禁用：
+如果之前安装了 xf86-video-fbturbo（原文链接已随原站失效），请先禁用：
 
 ```bash
 sudo nano /etc/X11/xorg.conf
@@ -66,7 +66,7 @@ glxgears
 
 如果是 GUI 版会看到下图，如果是 home 版可能看不到齿轮，因为窗口太大……
 
-![glxgears 运行效果](https://www.xuefei.net.cn/usr/uploads/2020/04/2157792144.jpg)
+![glxgears 运行效果](/img/xuefei/glxgears.jpg)
 
 相关地址：
 

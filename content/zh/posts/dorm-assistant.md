@@ -20,7 +20,7 @@ csdn: 85023305
 
 我来简单演示一下它的功能。
 
-我的寝室的服务器主页(80 端口 /var/www/html/index.html) 域名解析为 http://pi.code4world.cn (懒得写 html+css+js/php，美观请谅解)
+我的寝室的服务器主页(80 端口 /var/www/html/index.html) 域名解析为 `pi.code4world.cn`（域名现已失效）(懒得写 html+css+js/php，美观请谅解)
 
 主页的 Aria2 和 Transmission 都是下载工具，可以实现外网访问和内网访问，也就是说可以进行远程下载和在寝室里下载文件到服务器。
 
@@ -206,7 +206,7 @@ MacOS 或 linux 直接打开 `Terminal`，输入 `ssh pi@192.168.1.107`
 
 输入初始密码 `raspberry ` 并回车，即可访问到树莓派的终端。
 
-Windows 可以用 [putty](http://www.mycodes.net/130/681.htm) 连接树莓派的终端：
+Windows 可以用 [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) 连接树莓派的终端：
 
 选择 SSH，
 
@@ -619,7 +619,7 @@ sudo service nginx restart
 
 网站的 `logo`，即 `favicon.ico`。一般放在网站根目录即可。如何制作 `ico` 图标？
 
-https://www.easyicon.net/covert/
+easyicon 的在线转换工具（网站已关闭，原链接已失效）
 
 访问上面的网站，将想要的 `logo` 的 `png` 格式图片转换为 `ico` 格式，重命名为 `favicon.ico`，放在网站根目录中，例如放在 `/var/www/html` 中，怎么放呢？请看上面提到的 `7. SFTP文件访问`。
 
@@ -721,7 +721,7 @@ log_max_days = 7
 login_fail_exit = false
 ```
 
-这里使用了免费的 frp 服务，网址为 http://frp.kerwin.cn
+这里使用了免费的 frp 服务，网址为 `frp.kerwin.cn`（该服务已停止，链接已失效）
 
 使用免费 frp 的原因是我们无需再花钱搭建 VPS。
 
@@ -765,7 +765,7 @@ nohup /home/pi/frp_0.16.0_linux_arm/frpc -c /home/pi/frp_0.16.0_linux_arm/frpc.i
 
 同理，其他开机启动指令一般可以用相同的方法实现。
 
-此时我访问 http://pi.code4world.cn 相当于访问 http://192.168.1.107:80 即 http://192.168.1.107 但是后者是内网访问，前者无论身处何地，都可以访问。
+此时我访问 `http://pi.code4world.cn`（域名现已失效）相当于访问 `http://192.168.1.107:80` 即 `http://192.168.1.107`，但是后者是内网访问，前者无论身处何地，都可以访问。
 
 ### 4. 硬盘的挂载
 
@@ -971,7 +971,7 @@ sudo mv aria-ng /var/www/html/
 
 ![Fw98ij.png](/img/csdn/85023305-34.png)
 
-刷新后，即可开始下载任务，内网访问 `http://树莓派内网ip/aira-ng`，外网访问 http://pi.code4world.cn/aira-ng ，其中 pi.code4world.cn 是 192.168.1.107:80，具体根据你自己设定的内网穿透来访问。
+刷新后，即可开始下载任务，内网访问 `http://树莓派内网ip/aira-ng`，外网访问 `http://pi.code4world.cn/aira-ng`（域名现已失效），其中 pi.code4world.cn 是 192.168.1.107:80，具体根据你自己设定的内网穿透来访问。
 
 外网需要设定 rpc 地址，需要再次用到 frp：
 

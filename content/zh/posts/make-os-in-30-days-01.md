@@ -16,7 +16,7 @@ cnblogs: 12638174
 
 <!--more-->
 
-可以在 [GitHub](https://github.com/zzxzzk115/Use30DaysToMakeOS) 跟进我的学习实践进度...
+可以在 GitHub 跟进我的学习实践进度...（原仓库 Use30DaysToMakeOS 已不存在，可查看 [Wayback Machine 存档](https://web.archive.org/web/20201016085805/https://github.com/zzxzzk115/Use30DaysToMakeOS)）
 
 # 1. 工具准备
 
@@ -28,9 +28,9 @@ cnblogs: 12638174
 
 **文本编辑器** 我首选 [Visual Studio Code](https://code.visualstudio.com/)，你可以选择自己喜欢的文本编辑器。
 
-**虚拟机** 的话，你可以使用 [Virtual Box](https://www.virtualbox.org/) 或者 [VMware](https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html)。我将使用 VMware Workstation 14，因为它更加强大。
+**虚拟机** 的话，你可以使用 [Virtual Box](https://www.virtualbox.org/) 或者 [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)。我将使用 VMware Workstation 14，因为它更加强大。
 
-**汇编** 的话，还是老老实实采用作者的 [nask.exe](https://github.com/zzxzzk115/Use30DaysToMakeOS/raw/master/Day01/tools/nask.exe) 吧，我们并不需要自己写一个汇编器。
+**汇编** 的话，还是老老实实采用作者的 nask.exe（原下载链接随仓库失效，可在书附带的工具包中找到）吧，我们并不需要自己写一个汇编器。
 
 我们还需要一个 **Bash 环境**，你可以选择 [Git](https://git-scm.com/downloads) 的 Bash，我这里使用 [Cmder](https://cmder.net/)。
 
