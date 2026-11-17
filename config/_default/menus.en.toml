@@ -1,0 +1,54 @@
+[[main]]
+  identifier = "archives"
+  name = "Archives"
+  pageRef = "/archives"
+  weight = 10
+  params.icon = "fa fa-archive"
+[[main]]
+  identifier = "categories"
+  name = "Categories"
+  pageRef = "/categories"
+  weight = 20
+  params.icon = "fa fa-folder"
+[[main]]
+  identifier = "tags"
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
+  params.icon = "fa fa-tags"
+
+[[main]]
+  identifier = "game-dev"
+  name = "Game Dev"
+  pageRef = "/game-dev"
+  weight = 40
+  params.icon = "fa fa-gamepad"
+[[main]]
+  parent = "game-dev"
+  name = "Games Gallery"
+  pageRef = "/game-dev/001-games-gallery"
+  weight = 1
+[[main]]
+  parent = "game-dev"
+  name = "GB/GBC Game Development"
+  pageRef = "/game-dev/retro/gameboy/intro"
+  weight = 2
+
+[[main]]
+  identifier = "about"
+  name = "About"
+  pageRef = "/intro"
+  weight = 60
+  params.icon = "fa fa-user"
+[[main]]
+  identifier = "friends"
+  name = "Friends"
+  pageRef = "/friends"
+  weight = 70
+  params.icon = "fa fa-users"
+[[main]]
+  identifier = "rss"
+  name = "RSS"
+  url = "/rss.xml"
+  weight = 90
+  params.icon = "fa fa-rss"

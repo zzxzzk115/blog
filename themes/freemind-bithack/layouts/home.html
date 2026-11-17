@@ -8,8 +8,14 @@
     {{ partial "post/slogan.html" . }}
     <div id="top_search"></div>
     <div class="mypage">
-      {{- $pages := where site.RegularPages "Type" "in" site.MainSections }}
-      {{- $paginator := .Paginate $pages.ByDate.Reverse }}
+      {{- /* `sticky: true` posts are pinned to the top, newest first. */}}
+      {{- $all := partial "func/articles.html" . }}
+      {{- $sticky := where $all "Params.sticky" true }}
+      {{- /* Build a plain slice so Hugo doesn't re-sort it by weight. */}}
+      {{- $pages := slice }}
+      {{- range $sticky }}{{ $pages = $pages | append . }}{{ end }}
+      {{- range where $all "Params.sticky" "!=" true }}{{ $pages = $pages | append . }}{{ end }}
+      {{- $paginator := .Paginate $pages }}
       {{- range $paginator.Pages }}
         {{ partial "post/title.html" (dict "item" . "index" true) }}
         {{ partial "post/entry.html" . }}

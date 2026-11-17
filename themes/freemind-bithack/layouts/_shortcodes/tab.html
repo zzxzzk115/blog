@@ -1,0 +1,9 @@
+{{- /* One tab inside {{< tabs >}}. Renders nothing itself; the parent collects it. */ -}}
+{{- with .Parent }}
+  {{- $tabs := .Store.Get "tabs" | default slice }}
+  {{- $label := $.Get "label" | default ($.Get 0) | default (printf "Tab %d" (add (len $tabs) 1)) }}
+  {{- $content := $.Inner | $.Page.RenderString (dict "display" "block") }}
+  {{- .Store.Set "tabs" ($tabs | append (dict "label" $label "content" $content)) }}
+{{- else }}
+  {{- errorf "%s: {{< tab >}} must be inside {{< tabs >}}" $.Position }}
+{{- end }}

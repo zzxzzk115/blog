@@ -15,3 +15,5 @@ alert_tip: Tip
 alert_important: Important
 alert_warning: Warning
 alert_caution: Caution
+sticky: Pinned
+subsections: Sections

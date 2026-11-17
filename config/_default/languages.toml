@@ -1,0 +1,18 @@
+[en]
+  contentDir = "content/en"
+  weight = 1
+  locale = "en-US"
+  label = "English"
+  title = "Lazy_V's Blog"
+  [en.params]
+    description = "Notes on graphics, games, and things I build. By Kexuan Zhang / Lazy_V."
+
+[zh]
+  contentDir = "content/zh"
+  weight = 2
+  locale = "zh-CN"
+  label = "中文"
+  title = "Lazy_V 的博客"
+  [zh.params]
+    description = "图形、游戏，以及我捣鼓的小东西。张可宣 / Lazy_V 的技术笔记。"
+    slogan = "TALK IS CHEAP, SHOW ME THE CODE."

@@ -1,0 +1,33 @@
+# Theme options (defaults: themes/freemind-bithack/hugo.toml)
+author = "Lazy_V"
+
+# Sections whose pages count as articles (home page, archives, feeds, recent posts).
+# Pages can opt out with `article: false` in front matter.
+mainSections = ["posts", "game-dev", "hpg-notes", "legacy"]
+
+widgets = ["search", "category", "tagcloud", "recent_posts", "links"]
+
+[[links]]
+  title = "GitHub"
+  url = "https://github.com/zzxzzk115"
+  icon = "fa fa-github"
+[[links]]
+  title = "Bilibili"
+  url = "https://space.bilibili.com/33320940"
+  icon = "icon-bilibili"
+[[links]]
+  title = "itch.io"
+  url = "https://lazy-v.itch.io/"
+  icon = "fa fa-gamepad"
+[[links]]
+  title = "Homepage"
+  url = "https://zzxzzk115.github.io/"
+  icon = "fa fa-home"
+
+[copyright]
+  enable = true
+  license = "CC BY-NC-SA 4.0"
+  licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+[comments]
+  provider = ""

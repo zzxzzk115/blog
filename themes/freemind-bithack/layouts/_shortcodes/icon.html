@@ -1,0 +1,9 @@
+{{- /*
+  Inline Font Awesome 4 icon.
+  {{< icon folder >}}  ->  <i class="fa fa-folder"></i>
+  {{< icon "fa fa-github" >}} uses the classes as given.
+*/ -}}
+{{- $name := .Get 0 | default (.Get "icon") }}
+{{- $class := cond (strings.Contains $name " ") $name (printf "fa fa-%s" $name) -}}
+<i class="{{ $class }}" aria-hidden="true"></i>
+{{- /* chomp */ -}}

@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "GBDK_VSC",
+            "includePath": [
+                "${GBDKDIR}/include/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "${GBDKDIR}/bin/lcc",
+            "cStandard": "gnu99"
+        }
+    ],
+    "version": 4
+}

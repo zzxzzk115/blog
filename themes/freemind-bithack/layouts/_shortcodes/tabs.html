@@ -1,0 +1,23 @@
+{{- /*
+  Tabs. Each {{< tab "Label" >}} child becomes a tab.
+  {{< tabs >}}
+  {{< tab "macOS" >}} ...markdown... {{< /tab >}}
+  {{< tab "Linux" >}} ...markdown... {{< /tab >}}
+  {{< /tabs >}}
+*/ -}}
+{{- /* Touch .Inner so the child tabs have run before we read the store. */}}
+{{- $_ := .Inner }}
+{{- $id := printf "tabs-%d" .Ordinal }}
+{{- $tabs := .Store.Get "tabs" | default slice }}
+<div class="md-tabs" id="{{ $id }}">
+  <ul class="nav nav-tabs" role="tablist">
+    {{- range $i, $t := $tabs }}
+    <li role="presentation"{{ if eq $i 0 }} class="active"{{ end }}><a href="#{{ $id }}-{{ $i }}" role="tab" data-toggle="tab">{{ $t.label }}</a></li>
+    {{- end }}
+  </ul>
+  <div class="tab-content">
+    {{- range $i, $t := $tabs }}
+    <div role="tabpanel" class="tab-pane{{ if eq $i 0 }} active{{ end }}" id="{{ $id }}-{{ $i }}">{{ $t.content }}</div>
+    {{- end }}
+  </div>
+</div>

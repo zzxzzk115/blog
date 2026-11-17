@@ -1,0 +1,71 @@
+[[main]]
+  identifier = "archives"
+  name = "归档"
+  pageRef = "/archives"
+  weight = 10
+  params.icon = "fa fa-archive"
+[[main]]
+  identifier = "categories"
+  name = "分类"
+  pageRef = "/categories"
+  weight = 20
+  params.icon = "fa fa-folder"
+[[main]]
+  identifier = "tags"
+  name = "标签"
+  pageRef = "/tags"
+  weight = 30
+  params.icon = "fa fa-tags"
+
+[[main]]
+  identifier = "game-dev"
+  name = "游戏开发"
+  pageRef = "/game-dev"
+  weight = 40
+  params.icon = "fa fa-gamepad"
+[[main]]
+  parent = "game-dev"
+  name = "游戏画廊"
+  pageRef = "/game-dev/001-games-gallery"
+  weight = 1
+[[main]]
+  parent = "game-dev"
+  name = "GB/GBC 游戏开发"
+  pageRef = "/game-dev/retro/gameboy/intro"
+  weight = 2
+[[main]]
+  parent = "game-dev"
+  name = "在线游玩（旧）"
+  pageRef = "/games"
+  weight = 3
+
+[[main]]
+  identifier = "legacy"
+  name = "旧博客"
+  pageRef = "/legacy"
+  weight = 50
+  params.icon = "fa fa-history"
+[[main]]
+  identifier = "wiki"
+  name = "Wiki"
+  url = "/wiki/"
+  weight = 55
+  params.icon = "fa fa-book"
+[[main]]
+  identifier = "about"
+  name = "关于"
+  pageRef = "/intro"
+  weight = 60
+  params.icon = "fa fa-user"
+[[main]]
+  identifier = "friends"
+  name = "友链"
+  pageRef = "/friends"
+  weight = 70
+  params.icon = "fa fa-users"
+[[main]]
+  identifier = "rss"
+  name = "订阅"
+  url = "/zh/rss.xml"
+  weight = 90
+  params.icon = "fa fa-rss"

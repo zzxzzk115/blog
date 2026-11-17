@@ -15,3 +15,5 @@ alert_tip: 提示
 alert_important: 重要
 alert_warning: 警告
 alert_caution: 危险
+sticky: 置顶
+subsections: 目录

@@ -1,15 +1,14 @@
 """Migrate a Hexo `source/` directory into this Hugo site.
 
 Usage:
-    python tools/migrate_hexo.py <hexo-source-dir> [--section posts] [--static-dirs wiki,GameSrc,...]
+    python tools/migrate_hexo.py <hexo-source-dir> [--lang zh] [--section legacy] [--pages games] [--static-dirs wiki,GameSrc,...]
 
 What it does:
-  * source/_posts/*.md          -> content/<section>/*.md
+  * source/_posts/*.md          -> content/<lang>/<section>/*.md
       - `category: X`            -> `categories: [X]`
       - `<!-- more -->`          -> `<!--more-->` (Hugo summary divider)
       - `layout:` lines dropped (the theme decides layouts)
-  * source/<page>/index.md      -> content/<page>.md   (about, friends, games, ...)
-      - pages whose layout is categories/tags are skipped (Hugo builds those)
+  * source/<page>/index.md      -> content/<lang>/<page>.md   (only pages listed in --pages)
   * --static-dirs               -> copied verbatim to static/ (hexo `skip_render` dirs)
 
 Existing files in content/ are overwritten; nothing else is touched.
@@ -41,6 +40,17 @@ def safe_term(taxonomy: str, name: str) -> str:
 def convert_terms(taxonomy: str, val: str) -> str:
     items = [v.strip().strip("'\"") for v in val.strip("[]").split(",") if v.strip()]
     return "[" + ", ".join(safe_term(taxonomy, i) for i in items) + "]"
+
+
+def write_renamed_terms(content_dir: Path):
+    """content/<lang>/<taxonomy>/<safe>/_index.md restores the display title of renamed terms."""
+    for (tax, safe), original in sorted(RENAMED_TERMS.items()):
+        idx = content_dir / tax / safe / "_index.md"
+        idx.parent.mkdir(parents=True, exist_ok=True)
+        title = original.replace('"', '\\"')
+        idx.write_text(f'---\ntitle: "{title}"\n---\n', encoding="utf-8")
+        print(f"term {content_dir.name}/{tax}/{safe} -> \"{original}\"")
+    RENAMED_TERMS.clear()
 
 
 def split_front_matter(text: str):
@@ -98,35 +108,31 @@ def convert_file(src: Path, dst: Path, extra_fm: str = ""):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", type=Path, help="Hexo source/ directory")
-    ap.add_argument("--section", default="posts")
+    ap.add_argument("--lang", default="zh", help="content/<lang>/")
+    ap.add_argument("--section", default="legacy")
+    ap.add_argument("--pages", default="games", help="comma separated source/<page>/index.md to import")
     ap.add_argument("--static-dirs", default="", help="comma separated dirs copied to static/")
     args = ap.parse_args()
     src: Path = args.source
     if not (src / "_posts").is_dir():
         sys.exit(f"{src} does not look like a Hexo source dir (no _posts/)")
+    content = SITE / "content" / args.lang
 
     n = 0
     for p in sorted((src / "_posts").glob("*.md")):
-        convert_file(p, SITE / "content" / args.section / p.name)
+        convert_file(p, content / args.section / p.name)
         n += 1
-    print(f"posts: {n} -> content/{args.section}/")
+    print(f"posts: {n} -> content/{args.lang}/{args.section}/")
+    write_renamed_terms(content)
 
-    for (tax, safe), original in sorted(RENAMED_TERMS.items()):
-        idx = SITE / "content" / tax / safe / "_index.md"
-        idx.parent.mkdir(parents=True, exist_ok=True)
-        title = original.replace('"', '\\"')
-        idx.write_text(f'---\ntitle: "{title}"\n---\n', encoding="utf-8")
-        print(f"term {tax}/{safe} -> \"{original}\"")
-
-    static_dirs = {d for d in args.static_dirs.split(",") if d}
-    for d in sorted(src.iterdir()):
-        if not d.is_dir() or d.name.startswith("_") or d.name in static_dirs:
-            continue
-        idx = d / "index.md"
+    for name in [x for x in args.pages.split(",") if x]:
+        idx = src / name / "index.md"
         if idx.is_file():
-            print(f"page {d.name}: {convert_file(idx, SITE / 'content' / f'{d.name}.md')}")
+            print(f"page {name}: {convert_file(idx, content / f'{name}.md')}")
+        else:
+            print(f"page {name}: not found")
 
-    for name in sorted(static_dirs):
+    for name in sorted(d for d in args.static_dirs.split(",") if d):
         s = src / name
         if s.is_dir():
             shutil.copytree(s, SITE / "static" / name, dirs_exist_ok=True)

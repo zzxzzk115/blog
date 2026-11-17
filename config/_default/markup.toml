@@ -1,0 +1,23 @@
+[highlight]
+  noClasses = false
+  lineNos = true
+  lineNumbersInTable = true
+  tabWidth = 4
+
+[tableOfContents]
+  startLevel = 1
+  endLevel = 4
+  ordered = false
+
+[goldmark.renderer]
+  unsafe = true
+
+[goldmark.parser.attribute]
+  block = true
+  title = true
+
+[goldmark.extensions.passthrough]
+  enable = true
+  [goldmark.extensions.passthrough.delimiters]
+    block = [["$$", "$$"], ["\\[", "\\]"]]
+    inline = [["$", "$"], ["\\(", "\\)"]]

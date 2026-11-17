@@ -26,7 +26,7 @@
 .chroma .gi { color: #9c9; }
 
 /* Math rendered by KaTeX at build time */
-.math-block { overflow-x: auto; margin: 1em 0; text-align: center; }
+.math-block { overflow-x: auto; overflow-y: hidden; padding: 4px 0; margin: 1em 0; text-align: center; }
 math[display="block"] { font-size: 1.15em; }
 
 /* Markdown alerts (> [!TIP]) and {{< alert >}} */
@@ -46,3 +46,34 @@ math[display="block"] { font-size: 1.15em; }
 
 .mermaid { background: transparent; border: 0; }
 img { max-width: 100%; }
+
+/* {{< tabs >}} */
+.md-tabs { margin: 1em 0; }
+.md-tabs .nav-tabs { border-bottom: 1px solid #333; }
+.md-tabs .nav-tabs > li > a { border-radius: 0; color: #aaa; background: transparent; border-color: transparent; }
+.md-tabs .nav-tabs > li > a:hover { background: #111; border-color: #333; }
+.md-tabs .nav-tabs > li.active > a,
+.md-tabs .nav-tabs > li.active > a:hover,
+.md-tabs .nav-tabs > li.active > a:focus { color: #0f0; background: #000; border: 1px solid #333; border-bottom-color: #000; }
+.md-tabs .tab-content { border: 1px solid #333; border-top: 0; padding: 12px 15px; }
+.md-tabs .tab-content > .tab-pane > :last-child { margin-bottom: 0; }
+
+/* pinned posts, dropdown menu, language switch */
+.sticky-label { font-size: 60%; vertical-align: middle; border-radius: 0; }
+.navbar-inverse .dropdown-menu { background: #000; border: 1px solid #333; border-radius: 0; }
+.navbar-inverse .dropdown-menu > li > a { color: #ccc; }
+.navbar-inverse .dropdown-menu > li > a:hover { background: #111; color: #0f0; }
+.navbar-inverse .dropdown-menu .divider { background: #333; }
+.lang-switch > a { color: #0f0 !important; }
+
+/* Terminal-style alerts for Markdown alerts / {{< alert >}} (override Bootstrap's loud fills) */
+.md-alert { background: #0b0b0b; border: 1px solid #333; border-left: 4px solid; border-radius: 0; color: #ccc; text-shadow: none; }
+.md-alert.alert-success { border-left-color: #0f0; }
+.md-alert.alert-info    { border-left-color: #39f; }
+.md-alert.alert-warning { border-left-color: #fc3; }
+.md-alert.alert-danger  { border-left-color: #f33; }
+.md-alert.alert-success .md-alert-title { color: #0f0; }
+.md-alert.alert-info .md-alert-title    { color: #39f; }
+.md-alert.alert-warning .md-alert-title { color: #fc3; }
+.md-alert.alert-danger .md-alert-title  { color: #f33; }
+.md-alert a { color: inherit; text-decoration: underline; }

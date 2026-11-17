@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $isPost := in site.MainSections .Type }}
+{{- $isPost := partial "func/is-article.html" . }}
 {{ partial "post/title.html" (dict "item" . "index" false) }}
 
 <div class="row {{ if $isPost }}post{{ else }}page{{ end }}">

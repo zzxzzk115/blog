@@ -1,0 +1,5 @@
+{{- /* All article pages of the current language: regular pages in site.MainSections
+       that don't set `article: false`. Sorted newest first. */ -}}
+{{- $pages := where site.RegularPages "Type" "in" site.MainSections -}}
+{{- $pages = where $pages "Params.article" "!=" false -}}
+{{- return $pages.ByDate.Reverse -}}

@@ -1,0 +1,35 @@
+# Site-wide settings. Language-specific settings live in languages.toml,
+# menus in menus.<lang>.toml, theme options in params.toml, Markdown in markup.toml.
+baseURL = "http://localhost:1313/"
+theme = "freemind-bithack"
+timeZone = "Asia/Shanghai"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false   # en at /, zh at /zh/
+
+hasCJKLanguage = true
+summaryLength = 150
+# Keep hexo-style term URLs: /tags/Unity/ instead of /tags/unity/
+disablePathToLower = true
+enableRobotsTXT = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks.page]
+  # Legacy (hexo) posts keep their original URL shape: /zh/2021/01/10/astar-in-unity/
+  legacy = "/:year/:month/:day/:contentbasename/"
+
+[outputs]
+  home = ["html", "rss", "atom", "searchxml"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
+
+# The VuePress blog published /rss.xml; keep that name for existing subscribers.
+[outputFormats.rss]
+  baseName = "rss"
+
+[pagination]
+  pagerSize = 10

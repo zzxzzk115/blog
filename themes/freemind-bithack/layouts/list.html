@@ -1,3 +1,36 @@
+{{- /* Section pages (e.g. /posts/, /game-dev/retro/): optional intro + sub-sections + all articles below. */ -}}
 {{ define "main" }}
-{{ partial "archive-list.html" (dict "pages" .RegularPagesRecursive.ByDate.Reverse "title" .Title "page" .) }}
+<div class="page-header">
+  <h1 class="archive-title"><i class="fa fa-folder-open"></i> {{ .Title }}</h1>
+</div>
+<div class="row page">
+  <div class="{{ if site.Params.widgets }}col-md-9{{ else }}col-md-12{{ end }}">
+    <div id="top_search"></div>
+    {{- with .Content }}<div class="mypage">{{ . }}</div>{{ end }}
+    {{- with .Sections }}
+    <div class="widget">
+      <h4>{{ T "subsections" }}</h4>
+      <ul class="tag_box inline list-unstyled">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}<span>{{ len .RegularPagesRecursive }}</span></a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+    <div class="archive">
+      {{- range .RegularPagesRecursive.ByDate.Reverse.GroupByDate "2006" }}
+      <h4 class="archive-ul" data-toggle="collapse" data-target="#y{{ .Key }}">{{ .Key }}<b class="caret"></b></h4>
+      <ul id="y{{ .Key }}" class="collapse in">
+        {{- range .Pages }}
+        <li class="listing-item">
+          <span class="date_class">{{ .Date.Format "2006-01-02" }}</span> &raquo;
+          <span class="title"><a href="{{ .RelPermalink }}"{{ with .Description }} title="{{ . }}"{{ end }}>{{ .Title }}</a></span>
+        </li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+  </div>
+  {{ if site.Params.widgets }}{{ partial "sidebar.html" . }}{{ end }}
+</div>
 {{ end }}
