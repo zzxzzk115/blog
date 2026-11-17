@@ -1,10 +1,13 @@
 ---
 title: 'GameShell 魔改大屏攻略'
-date: 2022-05-12T19:47:41
+date: 2020-04-09T15:56:00
 tags: [GameShell, LCD]
 categories: [复古掌机]
 toc: true
+cnblogs: 12667486
 ---
+
+> 本文最初发表于我在博客园的旧博客：[GameShell 魔改大屏攻略](https://www.cnblogs.com/lazy-v/p/12667486.html)（写于 2020-04-09）。
 
 > 目前已经有小伙伴成功魔改，他将过程分享到了 GitHub，这是他分享的仓库地址：https://github.com/Yvees/GameShellHacking
 

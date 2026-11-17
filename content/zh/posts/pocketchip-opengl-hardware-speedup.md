@@ -1,10 +1,13 @@
 ---
 title: 'PocketChip 开启 OpenGL 硬件加速'
-date: 2022-05-12T19:47:41
+date: 2020-04-14T15:44:00
 tags: [PocketChip, OpenGL]
 categories: [复古掌机]
 toc: true
+cnblogs: 12698439
 ---
+
+> 本文最初发表于我在博客园的旧博客：[\[转载\]Pocketchip 开启 OpenGL 硬件加速，性能大提升！](https://www.cnblogs.com/lazy-v/p/12698439.html)（写于 2020-04-14）。
 
 > 此篇为转载内容，经过转载许可。原文地址：https://www.xuefei.net.cn/index.php/archives/89/
 >

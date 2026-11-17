@@ -1,11 +1,14 @@
 ---
 title: 'Modding the PocketChip with Stereo Speakers'
-date: 2022-05-12T19:47:41
+date: 2020-04-16T22:04:00
 tags: [PocketChip]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true
+cnblogs: 12716175
 ---
+
+> Originally published on my old cnblogs blog: [Pocketchip魔改加双扬声器](https://www.cnblogs.com/lazy-v/p/12716175.html) (written 2020-04-16).
 
 > The PocketChip doesn't have a built-in speaker; it only gives you a 3.5mm headphone jack.
 >

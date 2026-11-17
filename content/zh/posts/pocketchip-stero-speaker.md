@@ -1,10 +1,13 @@
 ---
 title: 'PocketChip 魔改加双扬声器'
-date: 2022-05-12T19:47:41
+date: 2020-04-16T22:04:00
 tags: [PocketChip]
 categories: [复古掌机]
 toc: true
+cnblogs: 12716175
 ---
+
+> 本文最初发表于我在博客园的旧博客：[Pocketchip 魔改加双扬声器](https://www.cnblogs.com/lazy-v/p/12716175.html)（写于 2020-04-16）。
 
 > PocketChip 本身不带扬声器，只提供 3.5mm 耳机接口。
 >

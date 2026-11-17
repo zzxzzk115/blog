@@ -1,11 +1,14 @@
 ---
 title: 'Reading Notes on Multithreading Applications in Win32 (Part 1)'
-date: 2020-12-13T11:28:06
+date: 2020-03-29T13:42:00
 categories: [Systems Programming]
 tags: [win32, multithreading, notes]
 toc: true
 aiTranslated: true
+cnblogs: 12591945
 ---
+
+> Originally published on my old cnblogs blog: [《Win32多线程程序设计》读书笔记（一）](https://www.cnblogs.com/lazy-v/p/12591945.html) (written 2020-03-29).
 
 # Chapter 1
 

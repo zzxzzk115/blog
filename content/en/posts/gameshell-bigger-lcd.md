@@ -1,11 +1,14 @@
 ---
 title: 'A Guide to Modding a Bigger Screen into the GameShell'
-date: 2022-05-12T19:47:41
+date: 2020-04-09T15:56:00
 tags: [GameShell, LCD]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true
+cnblogs: 12667486
 ---
+
+> Originally published on my old cnblogs blog: [GameShell魔改大屏攻略](https://www.cnblogs.com/lazy-v/p/12667486.html) (written 2020-04-09).
 
 > Someone has already pulled off this mod and shared the process on GitHub. Here's the repo: https://github.com/Yvees/GameShellHacking
 

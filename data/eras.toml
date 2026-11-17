@@ -17,4 +17,4 @@ note = { en = "Self-hosted Hexo blog", zh = "自建 Hexo 博客时期" }
 from = "2017-01-01"
 to = "2020-09-30"
 title = { en = "First Steps", zh = "初学计算机" }
-note = { en = "CSDN", zh = "CSDN 时期" }
+note = { en = "CSDN and cnblogs", zh = "CSDN 与博客园时期" }

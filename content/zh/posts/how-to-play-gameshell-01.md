@@ -1,10 +1,13 @@
 ---
 title: 'GameShell 怎么玩(01)'
-date: 2022-05-12T19:47:41
+date: 2020-03-31T23:29:00
 tags: [GameShell]
 categories: [复古掌机]
 toc: true
+cnblogs: 12609595
 ---
+
+> 本文最初发表于我在博客园的旧博客：[GameShell 怎么玩](https://www.cnblogs.com/lazy-v/p/12609595.html)（写于 2020-03-31）。
 
 GameShell 怎么玩？我来教你！
 

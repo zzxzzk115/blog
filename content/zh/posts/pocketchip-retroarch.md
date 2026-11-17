@@ -1,10 +1,13 @@
 ---
 title: 'PocketChip 安装 RetroArch'
-date: 2022-05-12T19:47:41
+date: 2020-04-14T16:13:00
 tags: [PocketChip, RetroArch]
 categories: [复古掌机]
 toc: true
+cnblogs: 12698697
 ---
+
+> 本文最初发表于我在博客园的旧博客：[Pocketchip 安装 RetroArch](https://www.cnblogs.com/lazy-v/p/12698697.html)（写于 2020-04-14）。
 
 > RetroArch 是一款万能模拟器，通过加载不同的模拟器核心，可以运行各种模拟器游戏，你也可以设置各种配置，加滤镜和 Shader，让一般的屏幕有着复古的体验。
 

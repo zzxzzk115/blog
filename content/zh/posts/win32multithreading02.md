@@ -1,10 +1,13 @@
 ---
 title: '《Win32 多线程程序设计》读书笔记（二）'
-date: 2020-12-13T13:10:11
+date: 2020-03-29T14:49:00
 categories: [系统编程]
 tags: [win32, multithreading, notes]
 toc: true
+cnblogs: 12592275
 ---
+
+> 本文最初发表于我在博客园的旧博客：[《Win32 多线程程序设计》读书笔记（二）](https://www.cnblogs.com/lazy-v/p/12592275.html)（写于 2020-03-29）。
 
 # 第二章
 

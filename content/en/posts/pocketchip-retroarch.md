@@ -1,11 +1,14 @@
 ---
 title: 'Installing RetroArch on the PocketChip'
-date: 2022-05-12T19:47:41
+date: 2020-04-14T16:13:00
 tags: [PocketChip, RetroArch]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true
+cnblogs: 12698697
 ---
+
+> Originally published on my old cnblogs blog: [Pocketchip安装RetroArch](https://www.cnblogs.com/lazy-v/p/12698697.html) (written 2020-04-14).
 
 > RetroArch is an all-in-one emulator. By loading different emulator cores it can run games for all kinds of systems, and you can tweak all sorts of settings and add filters and shaders to give an ordinary screen that retro feel.
 

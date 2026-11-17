@@ -1,11 +1,14 @@
 ---
 title: 'Enabling OpenGL Hardware Acceleration on PocketChip'
-date: 2022-05-12T19:47:41
+date: 2020-04-14T15:44:00
 tags: [PocketChip, OpenGL]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true
+cnblogs: 12698439
 ---
+
+> Originally published on my old cnblogs blog: [\[转载\]Pocketchip开启OpenGL硬件加速，性能大提升！](https://www.cnblogs.com/lazy-v/p/12698439.html) (written 2020-04-14).
 
 > This post is reposted with permission. Original article: https://www.xuefei.net.cn/index.php/archives/89/
 >

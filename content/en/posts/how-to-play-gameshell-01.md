@@ -1,11 +1,14 @@
 ---
 title: 'How to Play with GameShell (01)'
-date: 2022-05-12T19:47:41
+date: 2020-03-31T23:29:00
 tags: [GameShell]
 categories: [Retro Handhelds]
 toc: true
 aiTranslated: true
+cnblogs: 12609595
 ---
+
+> Originally published on my old cnblogs blog: [GameShell怎么玩](https://www.cnblogs.com/lazy-v/p/12609595.html) (written 2020-03-31).
 
 How do you play with a GameShell? Let me show you!
 

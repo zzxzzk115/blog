@@ -1,10 +1,13 @@
 ---
 title: 'Pocketchip 安装 Love2D 11.3 折腾分享'
-date: 2022-05-12T19:47:41
+date: 2020-04-10T02:19:00
 tags: [PocketChip, Love2D]
 categories: [复古掌机]
 toc: true
+cnblogs: 12670880
 ---
+
+> 本文最初发表于我在博客园的旧博客：[Pocketchip 安装 Love2D(最新 11.3) 折腾分享\[成功\]](https://www.cnblogs.com/lazy-v/p/12670880.html)（写于 2020-04-10）。
 
 [Love2d](https://love2d.org)![](/img/markdown_20220512181405.png) 是一款游戏引擎，基于 C/C++ 编写，使用 Lua 脚本进行封装，简单易用、跨平台。
 
