@@ -7,7 +7,7 @@ toc: true
 cnblogs: 12670880
 ---
 
-> 本文最初发表于我在博客园的旧博客：[Pocketchip 安装 Love2D(最新 11.3) 折腾分享\[成功\]](https://www.cnblogs.com/lazy-v/p/12670880.html)（写于 2020-04-10）。
+> 本文最初发表于我在博客园的旧博客：[Pocketchip 安装 Love2D(最新 11.3) 折腾分享[成功]](https://www.cnblogs.com/lazy-v/p/12670880.html)（写于 2020-04-10）。
 
 [Love2d](https://love2d.org)![](/img/markdown_20220512181405.png) 是一款游戏引擎，基于 C/C++ 编写，使用 Lua 脚本进行封装，简单易用、跨平台。
 

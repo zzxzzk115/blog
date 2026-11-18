@@ -8,7 +8,7 @@ aiTranslated: true
 cnblogs: 12670880
 ---
 
-> Originally published on my old cnblogs blog: [Pocketchip安装Love2D(最新11.3)折腾分享\[成功\]](https://www.cnblogs.com/lazy-v/p/12670880.html) (written 2020-04-10).
+> Originally published on my old cnblogs blog: [Pocketchip安装Love2D(最新11.3)折腾分享[成功]](https://www.cnblogs.com/lazy-v/p/12670880.html) (written 2020-04-10).
 
 [Love2d](https://love2d.org)![](/img/markdown_20220512181405.png) is a game engine written in C/C++ and wrapped with Lua scripting. It's simple, easy to use and cross-platform.
 

@@ -247,7 +247,7 @@ So, using new on a class or struct that overloads operator new:
 
 Using new[] is similar to the cases above. The only difference is that arrays don't call the operator new function, but the operator new[] function.
 
-It also comes in global and overloaded flavors. There's a global void* operator new[]\(size_t size\) function, and user-defined types can overload it with their own logic.
+It also comes in global and overloaded flavors. There's a global `void* operator new[](size_t size)` function, and user-defined types can overload it with their own logic.
 
 Below I only test the primitive-type case.
 

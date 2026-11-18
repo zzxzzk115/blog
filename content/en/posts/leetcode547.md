@@ -55,7 +55,7 @@ Graph traversal can generally be done with Depth First Search or Breadth First S
 
 ## Depth First Search (DFS)
 
-How the DFS works: for i, j (0 to N-1), the current task is to find i's friends. If M\[i\]\[j\] == 1 (meaning i and j are friends) and j hasn't been visited yet, mark j as visited and recurse into the next DFS to find j's friends; otherwise, increment j up to N-1. Keep going until all of i's friends have been marked.
+How the DFS works: for i, j (0 to N-1), the current task is to find i's friends. If `M[i][j] == 1` (meaning i and j are friends) and j hasn't been visited yet, mark j as visited and recurse into the next DFS to find j's friends; otherwise, increment j up to N-1. Keep going until all of i's friends have been marked.
 
 So we can loop i from 0 to N-1, and if i hasn't been marked, recurse with DFS and increment the friend circle count.
 

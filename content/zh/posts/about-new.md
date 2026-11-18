@@ -246,7 +246,7 @@ struct 也是一样。
 
 使用 new[]，和上面的几种情况类似。唯一的不同是，数组调用的不是 operator new 函数，而是 operator new[] 函数。
 
-它也分全局和重载。全局存在一个 void* operator new[]\(size_t size\) 函数，自定义类型可以重载，自己实现逻辑。
+它也分全局和重载。全局存在一个 `void* operator new[](size_t size)` 函数，自定义类型可以重载，自己实现逻辑。
 
 以下只测试基本类型的情况。
 

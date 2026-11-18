@@ -8,7 +8,7 @@ aiTranslated: true
 cnblogs: 12698439
 ---
 
-> Originally published on my old cnblogs blog: [\[转载\]Pocketchip开启OpenGL硬件加速，性能大提升！](https://www.cnblogs.com/lazy-v/p/12698439.html) (written 2020-04-14).
+> Originally published on my old cnblogs blog: [[转载]Pocketchip开启OpenGL硬件加速，性能大提升！](https://www.cnblogs.com/lazy-v/p/12698439.html) (written 2020-04-14).
 
 > This post is reposted with permission. Original article: `https://www.xuefei.net.cn/index.php/archives/89/` (the site has shut down; see the [Wayback Machine copy](https://web.archive.org/web/20250909004748/https://www.xuefei.net.cn/index.php/archives/89/))
 >

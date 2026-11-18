@@ -53,7 +53,7 @@ DWORD WINAPI ThreadFunc(LPVOID p)
 }
 ```
 
-其中，`DWORD` 表示一个 `双字(Double Word)`，而一个 `字(Word)` 代表两个 `字节(Byte)`，所以 **`DWORD` 表示 `4` 个字节，共 `32` 位(bit)。也就是 `unsigned long`。**你会发现原定义是 `typedef unsigned long DWORD;`。这里的 `DWORD` 是函数返回值类型。
+其中，`DWORD` 表示一个 `双字(Double Word)`，而一个 `字(Word)` 代表两个 `字节(Byte)`，所以 **`DWORD` 表示 `4` 个字节，共 `32` 位(bit)。也就是 `unsigned long`**。你会发现原定义是 `typedef unsigned long DWORD;`。这里的 `DWORD` 是函数返回值类型。
 
 `WINAPI` 实际上是 `_stdcall`，代表函数的调用形式。
 
@@ -159,7 +159,7 @@ DWORD WINAPI MyThreadFunction(LPVOID p)
 
 无序的原因，正是因为之前提到的：**无法预测**。
 
-我们的任务就是学会从多线程程序中获得可预期的结果，这也是**《Win32 多线程程序设计》**这本书要教我们的内容。
+我们的任务就是学会从多线程程序中获得可预期的结果，这也是《**Win32 多线程程序设计**》这本书要教我们的内容。
 
 上面的问题体现了目前**多线程程序的几个特点**：
 
