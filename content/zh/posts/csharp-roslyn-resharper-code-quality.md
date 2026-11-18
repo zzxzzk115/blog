@@ -45,7 +45,7 @@ Roslyn 是微软推出的 C#、VB、F# 编译器的开源实现，是一个编�
 
 Unity 的代码分析器仓库在这里：
 
-- <https://github.com/microsoft/Microsoft.Unity.Analyzers>
+{{< linkcard url="https://github.com/microsoft/Microsoft.Unity.Analyzers" title="GitHub - microsoft/Microsoft.Unity.Analyzers: Roslyn analyzers for Unity game developers" desc="Roslyn analyzers for Unity game developers. Contribute to microsoft/Microsoft.Unity.Analyzers development by creating an account on GitHub." site="GitHub" image="/img/linkcards/github-com-microsoft-microsoft-unity-analyzers-3e031a.png" >}}
 
 此外，Resharper 的命令行工具 InspectCode 和 CleanupCode 的工作内容是类似的，即代码的分析与清理。为什么已经存在 Roslyn，还需要使用 Resharper 呢？原因后面会展开描述。
 
@@ -153,7 +153,7 @@ Unity 的代码分析器仓库在这里：
 
 API 文档地址：
 
-- [AnalysisContext 类 (Microsoft.CodeAnalysis.Diagnostics)](https://learn.microsoft.com/zh-cn/dotnet/api/microsoft.codeanalysis.diagnostics.analysiscontext?view=roslyn-dotnet-4.3.0)
+{{< linkcard url="https://learn.microsoft.com/zh-cn/dotnet/api/microsoft.codeanalysis.diagnostics.analysiscontext?view=roslyn-dotnet-4.3.0" title="AnalysisContext 类 (Microsoft.CodeAnalysis.Diagnostics)" desc="用于初始化分析器的上下文。 分析器初始化可以使用 AnalysisContext 来注册在以下任意位置执行的操作： 编译开始，编译结束，完成分析代码文档，完成代码文档的语义分析，完成符号的语义分析，开始对方法主体或出现在方法主体外部的表达式进行语义分析，完成方法主体或显示在方法主体外部的表达式的语义分析，或者完成语法节点的语义分析。" image="/img/linkcards/learn-microsoft-com-zh-cn-dotnet-api-microsoft-c-34581f.png" >}}
 
 我们可以按需注册对应的行为回调，完成诊断对象的创建，并在诊断条件满足的情况下报告诊断。这样，VS 就可以显示对应的警告或者错误提示了。
 
@@ -354,13 +354,13 @@ namespace HelloRoslyn.Test
 
 后续开发可以参考以下教程：
 
-- [语法分析入门](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/get-started/syntax-analysis)
+{{< linkcard url="https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/get-started/syntax-analysis" title="语法分析入门（Roslyn API） - C#" desc="遍历、查询和遍步语法树简介。" image="/img/linkcards/learn-microsoft-com-zh-cn-dotnet-csharp-roslyn-s-7b20d8.png" >}}
 
 #### 语义分析
 
 进行语法分析后，我们可以进而进行语义分析。
 
-- [语义分析入门](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/get-started/semantic-analysis)
+{{< linkcard url="https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/get-started/semantic-analysis" title="语义分析入门 - C#" desc="本教程概述了如何使用 .NET 编译器 SDK 进行语义分析。" image="/img/linkcards/learn-microsoft-com-zh-cn-dotnet-csharp-roslyn-s-16dea4.png" >}}
 
 ### 修正提供器开发流程
 
@@ -374,7 +374,7 @@ namespace HelloRoslyn.Test
 
 > 这里要注意，并不是直接修改原本的文档和解决方案。.NET 编译器平台具有不可变性的基本原则，适用于语法树、编译、符号、语义模型等。所以我们是对文档或解决方案进行覆盖，而不是修改。
 
-- [语法转换 (Roslyn API) 入门](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/get-started/syntax-transformation)
+{{< linkcard url="https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/get-started/syntax-transformation" title="语法转换入门 （Roslyn API） - C#" desc="有关创建和转换语法树的简介。" image="/img/linkcards/learn-microsoft-com-zh-cn-dotnet-csharp-roslyn-s-75bbb5.png" >}}
 
 ### 整合到 CI 流程中
 
@@ -397,7 +397,7 @@ Resharper 的 dotSettings 配置文件包含了代码样式相关的配置，它
 
 在 .NET 5.0 及以后的项目中，我们可以配置项目的 editorConfig，将一些 IDE 警告或错误升级为编译警告或错误，最终在 MSBuild 的 warning 或 error 输出文件中可以找到对应的条目。这意味着对于使用 .NET 6.0 的项目而言，我们仅仅通过 MSBuild 就可以满足需求了。
 
-- [Enable on build (learn.microsoft.com)](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-6#enable-on-build)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-6#enable-on-build" title="Code analysis in .NET" desc="Learn about source code analysis in the .NET SDK." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-fundamentals-co-2e78c0.png" >}}
 
 但在 .NET Framework 中，这个方案是行不通的。我们的 CI 使用 MSBuild 编译解决方案，我们配置的一些 IDE 代码规范，并不会在编译期间得到分析，因为它们属于 IDE 类别，而非编译类别，也就是说，无法将它们升级，它们不会出现在输出文件中，这不是我们期望的结果。
 
@@ -413,7 +413,7 @@ InspectCode 是 Resharper 命令行工具中包含的代码审查工具，它会
 
 具体的配置及命令行参数详见官网，这里不过多展开。
 
-- [InspectCode Command-Line Tool | ReSharper](https://www.jetbrains.com/help/resharper/InspectCode.html)
+{{< linkcard url="https://www.jetbrains.com/help/resharper/InspectCode.html" title="InspectCode Command-Line Tool | ReSharper" site="ReSharper Help" image="/img/linkcards/www-jetbrains-com-help-resharper-inspectcode-htm-747b16.jpg" >}}
 
 ### 使用 CleanupCode 实现代码清理
 
@@ -423,7 +423,7 @@ CleanupCode 是 Resharper 命令行工具中包含的代码清理工具，它支
 
 具体的配置及命令行参数详见官网，这里不过多展开。
 
-- [CleanupCode Command-Line Tool | ReSharper](https://www.jetbrains.com/help/resharper/CleanupCode.html)
+{{< linkcard url="https://www.jetbrains.com/help/resharper/CleanupCode.html" title="CleanupCode Command-Line Tool | ReSharper" site="ReSharper Help" image="/img/linkcards/www-jetbrains-com-help-resharper-cleanupcode-htm-02ad44.jpg" >}}
 
 我们可以考虑在 CI 流程中，首先应用一遍 CleanupCode，进而再进行一次 InspectCode，不过目前这个方案还没有经过讨论。我个人认为，我们不应该依赖于工具在 CI 流程里进行自动化代码修正，而要把代码的修正工作彻底落实到写具体代码的程序员身上，否则很容易出现一些“无所谓，CI 总是会帮我处理好并提交到 Git/SVN”的懒惰想法，我认为这是不可取的，属于负优化，也违背了我们的初衷。当然，这是我个人的想法，具体是否采纳这个方案，还有待讨论。
 
@@ -435,8 +435,12 @@ CleanupCode 是 Resharper 命令行工具中包含的代码清理工具，它支
 
 一些可供参考的链接：
 
-- [紫龙上海CTO王琦：我们对游戏工业化的探索](https://mp.weixin.qq.com/s/62UMgI7q1diJp9JRjzQ4RA)
-- [dotnet/roslyn](https://github.com/dotnet/roslyn)
-- [.NET Compiler Platform SDK (Roslyn API)](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/)
-- [教程：编写第一个分析器和代码修补程序](https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
-- [ReSharper command line tools | ReSharper](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html)
+{{< linkcard url="https://mp.weixin.qq.com/s/62UMgI7q1diJp9JRjzQ4RA" title="紫龙上海CTO王琦：我们对游戏工业化的探索" site="微信公众平台" image="/img/linkcards/mp-weixin-qq-com-s-62umgi7q1dijp9jrjzq4ra-4a9141.jpg" >}}
+
+{{< linkcard url="https://github.com/dotnet/roslyn" title="GitHub - dotnet/roslyn: The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs." desc="The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. - dotnet/roslyn" site="GitHub" image="/img/linkcards/github-com-dotnet-roslyn-fc7711.png" >}}
+
+{{< linkcard url="https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/" title=".NET Compiler Platform SDK (Roslyn API) - C#" desc="了解如何使用 .NET 编译器平台 SDK（也称为 Roslyn API）来了解 .NET 代码、发现错误并修复这些错误。" image="/img/linkcards/learn-microsoft-com-zh-cn-dotnet-csharp-roslyn-s-a05600.png" >}}
+
+{{< linkcard url="https://learn.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix" title="教程：编写第一个分析器和代码修复 - C#" desc="本教程提供了使用 .NET 编译器 SDK（Roslyn API）生成分析器和代码修复的分步说明。" image="/img/linkcards/learn-microsoft-com-zh-cn-dotnet-csharp-roslyn-s-9d33d8.png" >}}
+
+{{< linkcard url="https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html" title="ReSharper command line tools | ReSharper" site="ReSharper Help" image="/img/linkcards/www-jetbrains-com-help-resharper-resharper-comma-ccaca9.jpg" >}}

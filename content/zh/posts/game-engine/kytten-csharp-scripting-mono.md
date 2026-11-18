@@ -35,14 +35,15 @@ C# 脚本系统，是指在引擎非托管层面内嵌 C# 托管运行时，从�
 
 Mono 是一个开源项目，由 Xamarin 公司发起。由于 .NET Framework 只支持 Windows，Mono 应运而生，它的目标是实现跨平台的运行时，实现与 .NET Framework 相同的 ECMA 规范，兼容大部分 .NET Framework 的代码，从而支持使用 C# 编写主流的桌面平台和移动平台的应用程序和库。后来，微软收购了 Xamarin。现在，Mono 具有两个版本，一个由原 Mono 团队继续维护，另一个由微软自己维护，两者功能有所区别，前者更通用，是游戏引擎脚本系统的常用第三方库，后者主要针对微软自家的产品做出了更多的兼容和优化，内嵌到游戏引擎的话并不合适。
 
-- [GitHub - mono/mono](https://github.com/mono/mono)
-- [runtime/src/mono at main · dotnet/runtime](https://github.com/dotnet/runtime/tree/main/src/mono)
+{{< linkcard url="https://github.com/mono/mono" title="GitHub - mono/mono: Mono open source ECMA CLI, C# and .NET implementation." desc="Mono open source ECMA CLI, C# and .NET implementation. - mono/mono" site="GitHub" image="/img/linkcards/github-com-mono-mono-e59a5f.png" >}}
+
+{{< linkcard url="https://github.com/dotnet/runtime/tree/main/src/mono" title="runtime/src/mono at main · dotnet/runtime" desc=".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps. - dotnet/runtime" site="GitHub" image="/img/linkcards/github-com-dotnet-runtime-tree-main-src-mono-b10440.png" >}}
 
 ### CoreCLR
 
 CoreCLR 也是一个开源项目，由微软发起。考虑到 .NET Framework 不支持跨平台，不开源，无法得到社区的支持，微软决定开发一款全新的开源跨平台公共语言运行时，也就是 CoreCLR。它基于 .NET Framework CLR，但它针对平台相关实现进行了重写，对 GC 部分进行了升级和优化，同时提高了多线程和任务等核心功能的性能，其中最重要的是支持跨平台。不过目前，CoreCLR 只支持主流的桌面平台，对于移动平台，微软暂时还是采用 Mono。
 
-[GitHub - dotnet/runtime](https://github.com/dotnet/runtime)
+{{< linkcard url="https://github.com/dotnet/runtime" title="GitHub - dotnet/runtime: .NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps." desc=".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps. - dotnet/runtime" site="GitHub" image="/img/linkcards/github-com-dotnet-runtime-d8611a.png" >}}
 
 ### Mono 与 CoreCLR 的优缺点
 
@@ -61,7 +62,7 @@ Mono 内嵌 API 则支持在 C++ 层面添加内部调用 (Internal Call)，然�
 
 CoreCLR 的优势在于它具有更高的性能和更高的 C# 版本。它的 GC 比 Mono GC 性能要好很多，且提供了更多现代化的功能，例如 Span、Memory 这些为了提高性能而诞生的结构，提供了更多优化性能后的功能组件，支持最新的 C# 版本 (目前是 11)。但是，CoreCLR 目前仅支持以 P/Invoke 的形式进行代码绑定，所以对于内嵌到游戏引擎中而言更为复杂。我们需要在 C++ 层面加载 hostfxr，进而使得游戏引擎成为 CoreCLR 的宿主，这样可以调用 C# 托管代码。但是对于 C# 调用 C++ 代码的情况，我们还是得通过 P/Invoke 去实现。
 
-[Write a custom .NET host (learn.microsoft.com)](https://learn.microsoft.com/en-us/dotnet/core/tutorials/netcore-hosting)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/core/tutorials/netcore-hosting" title="Write a custom .NET runtime host - .NET" desc="Learn to host the .NET runtime from native code to support advanced scenarios that require controlling how the .NET runtime works." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-core-tutorials--442310.png" >}}
 
 ### Kytten Roadmap
 
@@ -83,7 +84,7 @@ CoreCLR 的优势在于它具有更高的性能和更高的 C# 版本。它的 G
 
 简单描述，就是，C/C++ 中，托管了一个 Mono 运行时，在 Mono 运行时中初始化 AppDomain，加载程序集等等。
 
-[Embedding Mono | Mono](https://www.mono-project.com/docs/advanced/embedding/#how-embedding-works)
+{{< linkcard url="https://www.mono-project.com/docs/advanced/embedding/#how-embedding-works" title="Embedding Mono | Mono" >}}
 
 ### 编译 Mono 并获得必要文件
 
@@ -406,7 +407,10 @@ MacOS 和 Linux 平台上 Mono 的内嵌步骤与 Windows 平台实际上大同�
 
 ## 扩展阅读
 
-- [Porting the Unity Engine to .NET CoreCLR | xoofx](https://xoofx.com/blog/2018/04/06/porting-unity-to-coreclr/)
-- [runtime/native-hosting.md at main · dotnet/runtime](https://github.com/dotnet/runtime/blob/main/docs/design/features/native-hosting.md)
-- [Interop with Native Libraries | Mono](https://www.mono-project.com/docs/advanced/pinvoke/)
-- [FlaxEngine/Source/Engine/Scripting at master · FlaxEngine/FlaxEngine](https://github.com/FlaxEngine/FlaxEngine/tree/master/Source/Engine/Scripting)
+{{< linkcard url="https://xoofx.com/blog/2018/04/06/porting-unity-to-coreclr/" title="Porting the Unity Engine to .NET CoreCLR | xoofx" >}}
+
+{{< linkcard url="https://github.com/dotnet/runtime/blob/main/docs/design/features/native-hosting.md" title="runtime/docs/design/features/native-hosting.md at main · dotnet/runtime" desc=".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps. - dotnet/runtime" site="GitHub" image="/img/linkcards/github-com-dotnet-runtime-blob-main-docs-design--c7b068.png" >}}
+
+{{< linkcard url="https://www.mono-project.com/docs/advanced/pinvoke/" title="Interop with Native Libraries | Mono" >}}
+
+{{< linkcard url="https://github.com/FlaxEngine/FlaxEngine/tree/master/Source/Engine/Scripting" title="FlaxEngine/Source/Engine/Scripting at master · FlaxEngine/FlaxEngine" desc="Flax Engine – multi-platform 3D game engine. Contribute to FlaxEngine/FlaxEngine development by creating an account on GitHub." site="GitHub" image="/img/linkcards/github-com-flaxengine-flaxengine-tree-master-sou-80b01a.png" >}}

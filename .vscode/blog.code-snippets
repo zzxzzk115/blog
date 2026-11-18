@@ -48,6 +48,10 @@
     "scope": "markdown", "prefix": "mermaid",
     "body": ["```mermaid", "graph LR", "  ${1:A} --> ${2:B}", "```"]
   },
+  "Link card": {
+    "scope": "markdown", "prefix": "linkcard",
+    "body": ["{{< linkcard url=\"${1:https://}\" title=\"${2}\" desc=\"${3}\" image=\"${4}\" >}}"]
+  },
   "Friend card": {
     "scope": "markdown", "prefix": "friend",
     "body": ["{{< friend name=\"${1}\" url=\"${2:https://}\" desc=\"${3}\" avatar=\"${4}\" tags=\"${5}\" >}}"]

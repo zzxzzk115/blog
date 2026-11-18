@@ -46,7 +46,7 @@ For a more concrete example, Unity actually implements its own code analyzers. W
 
 Unity's code analyzer repository is here:
 
-- <https://github.com/microsoft/Microsoft.Unity.Analyzers>
+{{< linkcard url="https://github.com/microsoft/Microsoft.Unity.Analyzers" title="GitHub - microsoft/Microsoft.Unity.Analyzers: Roslyn analyzers for Unity game developers" desc="Roslyn analyzers for Unity game developers. Contribute to microsoft/Microsoft.Unity.Analyzers development by creating an account on GitHub." site="GitHub" image="/img/linkcards/github-com-microsoft-microsoft-unity-analyzers-3e031a.png" >}}
 
 In addition, ReSharper's command-line tools InspectCode and CleanupCode do similar work, namely analyzing and cleaning up code. Why use ReSharper when Roslyn already exists? I'll explain the reasons later.
 
@@ -154,7 +154,7 @@ Besides symbol actions, many other kinds of actions can be registered, such as c
 
 API documentation:
 
-- [AnalysisContext Class (Microsoft.CodeAnalysis.Diagnostics)](https://learn.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.diagnostics.analysiscontext?view=roslyn-dotnet-4.3.0)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.diagnostics.analysiscontext?view=roslyn-dotnet-4.3.0" title="AnalysisContext Class (Microsoft.CodeAnalysis.Diagnostics)" desc="Context for initializing an analyzer. Analyzer initialization can use an AnalysisContext to register actions to be executed at any of: compilation start,compilation end,completion of parsing a code d…" image="/img/linkcards/learn-microsoft-com-en-us-dotnet-api-microsoft-c-bfdf2c.png" >}}
 
 We can register whichever action callbacks we need, create the diagnostic objects, and report diagnostics when the conditions are met. VS can then display the corresponding warnings or errors.
 
@@ -355,13 +355,13 @@ We can see the syntax tree structure of the code document and get every token al
 
 For further development, refer to the following tutorial:
 
-- [Get started with syntax analysis](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/get-started/syntax-analysis)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/get-started/syntax-analysis" title="Get started with syntax analysis (Roslyn APIs) - C#" desc="An introduction to traversing, querying, and walking syntax trees." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-csharp-roslyn-s-19bcf7.png" >}}
 
 #### Semantic Analysis
 
 After syntax analysis, we can move on to semantic analysis.
 
-- [Get started with semantic analysis](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/get-started/semantic-analysis)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/get-started/semantic-analysis" title="Get started with semantic analysis - C#" desc="This tutorial provides an overview of working with semantic analysis using the .NET Compiler SDK." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-csharp-roslyn-s-2d3cda.png" >}}
 
 ### Fix Provider Development Workflow
 
@@ -375,7 +375,7 @@ The fix logic of a fix provider is essentially a syntax transformation: creating
 
 > Note that we don't modify the original document or solution directly. Immutability is a core principle of the .NET Compiler Platform, applying to syntax trees, compilations, symbols, semantic models and more. So we replace the document or solution rather than modify it.
 
-- [Get started with syntax transformation (Roslyn APIs)](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/get-started/syntax-transformation)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/get-started/syntax-transformation" title="Get started with syntax transformation (Roslyn APIs) - C#" desc="An introduction to creating and transforming syntax trees." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-csharp-roslyn-s-09f5d3.png" >}}
 
 ### Integrating into the CI Process
 
@@ -398,7 +398,7 @@ The reasons are as follows:
 
 In .NET 5.0 and later projects, we can configure the project's editorConfig to promote some IDE warnings or errors to build warnings or errors, so the corresponding entries end up in MSBuild's warning or error output files. This means that for .NET 6.0 projects, MSBuild alone meets our needs.
 
-- [Enable on build (learn.microsoft.com)](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-6#enable-on-build)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-6#enable-on-build" title="Code analysis in .NET" desc="Learn about source code analysis in the .NET SDK." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-fundamentals-co-2e78c0.png" >}}
 
 This approach doesn't work for .NET Framework, though. Our CI builds the solution with MSBuild, and some of the IDE code style rules we configured are not analyzed during the build, because they belong to the IDE category rather than the build category. In other words, they can't be promoted and won't appear in the output files, which is not what we want.
 
@@ -414,7 +414,7 @@ Our most important command-line arguments are: `--no-build` to skip the MSBuild 
 
 See the official documentation for details on configuration and command-line arguments; I won't go into them here.
 
-- [InspectCode Command-Line Tool | ReSharper](https://www.jetbrains.com/help/resharper/InspectCode.html)
+{{< linkcard url="https://www.jetbrains.com/help/resharper/InspectCode.html" title="InspectCode Command-Line Tool | ReSharper" site="ReSharper Help" image="/img/linkcards/www-jetbrains-com-help-resharper-inspectcode-htm-747b16.jpg" >}}
 
 ### Code Cleanup with CleanupCode
 
@@ -424,7 +424,7 @@ It supports dotSettings configuration, editorConfig configuration and command-li
 
 See the official documentation for details on configuration and command-line arguments; I won't go into them here.
 
-- [CleanupCode Command-Line Tool | ReSharper](https://www.jetbrains.com/help/resharper/CleanupCode.html)
+{{< linkcard url="https://www.jetbrains.com/help/resharper/CleanupCode.html" title="CleanupCode Command-Line Tool | ReSharper" site="ReSharper Help" image="/img/linkcards/www-jetbrains-com-help-resharper-cleanupcode-htm-02ad44.jpg" >}}
 
 We could consider running CleanupCode first in the CI process and then running InspectCode, but this approach hasn't been discussed yet. Personally, I don't think we should rely on tools to automatically fix code in the CI process. Fixing code should be fully the responsibility of the programmers who write it; otherwise it's easy for a lazy mindset to set in, along the lines of "whatever, CI will always clean it up and commit it to Git/SVN for me." I think that's unacceptable: it's a counterproductive optimization and goes against our original intent. Of course, that's just my personal view; whether to adopt this approach is still up for discussion.
 
@@ -437,7 +437,10 @@ Thanks to Roslyn and ReSharper, which let us ensure code quality and style consi
 Some links for reference:
 
 - [紫龙上海CTO王琦：我们对游戏工业化的探索](https://mp.weixin.qq.com/s/62UMgI7q1diJp9JRjzQ4RA) (Wang Qi, CTO of Zilong Shanghai: Our Exploration of Game Industrialization)
-- [dotnet/roslyn](https://github.com/dotnet/roslyn)
-- [.NET Compiler Platform SDK (Roslyn API)](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/)
-- [Tutorial: Write your first analyzer and code fix](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
-- [ReSharper command line tools | ReSharper](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html)
+{{< linkcard url="https://github.com/dotnet/roslyn" title="GitHub - dotnet/roslyn: The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs." desc="The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. - dotnet/roslyn" site="GitHub" image="/img/linkcards/github-com-dotnet-roslyn-fc7711.png" >}}
+
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/" title="The .NET Compiler Platform SDK (Roslyn APIs) - C#" desc="Learn to use the .NET Compiler Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-csharp-roslyn-s-5d3222.png" >}}
+
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix" title="Tutorial: Write your first analyzer and code fix - C#" desc="This tutorial provides step-by-step instructions to build an analyzer and code fix using the .NET Compiler SDK (Roslyn APIs)." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-csharp-roslyn-s-76cf9c.png" >}}
+
+{{< linkcard url="https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html" title="ReSharper command line tools | ReSharper" site="ReSharper Help" image="/img/linkcards/www-jetbrains-com-help-resharper-resharper-comma-ccaca9.jpg" >}}

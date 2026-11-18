@@ -27,7 +27,7 @@ KyttenShader 是 Kytten Engine 中的现代的跨平台 Shader 系统，正在�
 
 Slang 是现代的 Shader 语言，它是对 HLSL 语法的扩展，具有更人性化的语法特性。
 
-[Basic Convenience Features](https://shader-slang.com/slang/user-guide/03-convenience-features.html)
+{{< linkcard url="https://shader-slang.org/slang/user-guide/convenience-features.html" title="Basic Convenience Features" desc="Making it easier to work with shaders" site="slang" >}}
 
 它兼容 HLSL，支持参数块 (Parameter Blocks)，支持接口 (Interfaces) 和泛型 (Generics)，支持模块系统 (Module System)，支持 Compute Shader、Rasterization Shader 以及 Ray-Tracing Shader，支持反射，最关键的是，它支持将 Slang 代码或者 HLSL 代码编译为 DXBC、DXIL、SPIR-V、HLSL、GLSL (有限支持 OpenGL，不支持 OpenGL ES)、CUDA 等等几乎所有主流的代码。
 
@@ -35,13 +35,13 @@ Slang 是现代的 Shader 语言，它是对 HLSL 语法的扩展，具有更人
 
 SPIR-V 是 Khronos 组织提出的一套开源的标准可移植的中间语言模型，SPIR-V Cross 则可以将 SPIR-V 格式的二进制文件编译为 GLSL、HLSL、MSL，支持反射。也就是说，支持导出得到 OpenGL、OpenGL ES、Vulkan、DirectX11 以及 Metal 这些平台的 Shader 代码。
 
-[GitHub - KhronosGroup/SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross)
+{{< linkcard url="https://github.com/KhronosGroup/SPIRV-Cross" title="GitHub - KhronosGroup/SPIRV-Cross: SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and…" desc="SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and disassembling SPIR-V back to high level languages. - KhronosGroup/SPIRV-Cross" site="GitHub" image="/img/linkcards/github-com-khronosgroup-spirv-cross-66790a.png" >}}
 
 ### HJSON
 
 HJSON 是对 JSON 的扩展，支持注释，支持行尾省略逗号，支持省略字符串的双引号，支持多行字符串块等等，比 JSON 更人性化，更易读。
 
-[GitHub - hjson/hjson](https://github.com/hjson/hjson)
+{{< linkcard url="https://github.com/hjson/hjson" title="GitHub - hjson/hjson: Hjson, a user interface for JSON" desc="Hjson, a user interface for JSON. Contribute to hjson/hjson development by creating an account on GitHub." site="GitHub" image="/img/linkcards/github-com-hjson-hjson-45de6e.png" >}}
 
 ## KyttenShader 介绍
 
@@ -143,7 +143,7 @@ KyttenShader 后缀为 .kshader，格式采用 HJSON。在 KyttenShader 中，�
 
 与 Unity 的 cginc 类似，Kytten Engine 将会提供内置的 Slang 模块，在 Src 中手动 import 模块文件名称（不带后缀）即可。
 
-[Basic Convenience Features: Modules](https://shader-slang.com/slang/user-guide/03-convenience-features.html#modules)
+{{< linkcard url="https://shader-slang.org/slang/user-guide/modules.html" title="Modules and Access Control" desc="Making it easier to work with shaders" site="slang" >}}
 
 编译流程中，每一个 Stage 除了会被编译以外，还会默认导出 .slang 文件到指定的搜索位置。
 
@@ -179,7 +179,7 @@ KyttenMaterial 本质上引用了一个 KyttenShader，并通过收集 KyttenSha
 
 Unity ShaderLab 采用 HLSLcc 将 HLSL 翻译为 GLSL、GLSL ES、GLSL Vulkan、MetalSL，虽然是可行的方案，但并不是大趋势下的实现方案。大趋势下，势必利用 DirectXShaderCompiler / Slang + SPIR-V Cross 这一强大的体系。当然，Unity 已经在着手接入 SPIR-V Cross，实现新的 Shader 编译系统了。
 
-[Unity-Technologies/SPIRV-Cross](https://github.com/Unity-Technologies/SPIRV-Cross)
+Unity 的 SPIRV-Cross 分支（`Unity-Technologies/SPIRV-Cross`，该仓库现已不存在）
 
 KyttenShader 采用现代的实现方案，由于 Slang 具有非常多的语言特性，使得写 Shader 更加方便、高效、高质量。同时，KyttenShader 有效利用了 SPIR-V Cross 的强大生态。
 
@@ -193,5 +193,6 @@ Cross-Platform Shader Handling, Stephanheigl, <https://stephanheigl.github.io/po
 
 ## 扩展阅读
 
-- [Slang API User's Guide](https://shader-slang.com/slang/api-users-guide.html)
-- [Shader Playground](https://shader-playground.timjones.io/)
+{{< linkcard url="https://shader-slang.org/slang/user-guide/compiling.html" title="Compiling Code with Slang" desc="Making it easier to work with shaders" site="slang" >}}
+
+{{< linkcard url="https://web.archive.org/web/20260416215429/https://shader-playground.timjones.io/" title="Shader Playground" >}}

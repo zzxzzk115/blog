@@ -36,14 +36,15 @@ Another reason is that C# has a better ecosystem. Behind C# is .NET, and .NET ha
 
 Mono is an open-source project started by Xamarin. Since .NET Framework only supported Windows, Mono was created to fill the gap. Its goal is to provide a cross-platform runtime that implements the same ECMA specifications as .NET Framework and is compatible with most .NET Framework code, so that C# can be used to write applications and libraries for mainstream desktop and mobile platforms. Microsoft later acquired Xamarin. Today there are two versions of Mono: one is still maintained by the original Mono team, and the other is maintained by Microsoft itself. Their features differ. The former is more general-purpose and is a commonly used third-party library for game engine scripting systems; the latter has mainly been made more compatible with and optimized for Microsoft's own products, and isn't a good fit for embedding in a game engine.
 
-- [GitHub - mono/mono](https://github.com/mono/mono)
-- [runtime/src/mono at main · dotnet/runtime](https://github.com/dotnet/runtime/tree/main/src/mono)
+{{< linkcard url="https://github.com/mono/mono" title="GitHub - mono/mono: Mono open source ECMA CLI, C# and .NET implementation." desc="Mono open source ECMA CLI, C# and .NET implementation. - mono/mono" site="GitHub" image="/img/linkcards/github-com-mono-mono-e59a5f.png" >}}
+
+{{< linkcard url="https://github.com/dotnet/runtime/tree/main/src/mono" title="runtime/src/mono at main · dotnet/runtime" desc=".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps. - dotnet/runtime" site="GitHub" image="/img/linkcards/github-com-dotnet-runtime-tree-main-src-mono-b10440.png" >}}
 
 ### CoreCLR
 
 CoreCLR is also an open-source project, started by Microsoft. Given that .NET Framework was not cross-platform, not open source and couldn't benefit from community support, Microsoft decided to develop a brand-new, open-source, cross-platform common language runtime — CoreCLR. It is based on the .NET Framework CLR, but its platform-specific implementation was rewritten, the GC was upgraded and optimized, and the performance of core features such as multithreading and tasks was improved. Most importantly, it is cross-platform. For now, though, CoreCLR only supports mainstream desktop platforms; for mobile platforms, Microsoft is still using Mono for the time being.
 
-[GitHub - dotnet/runtime](https://github.com/dotnet/runtime)
+{{< linkcard url="https://github.com/dotnet/runtime" title="GitHub - dotnet/runtime: .NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps." desc=".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps. - dotnet/runtime" site="GitHub" image="/img/linkcards/github-com-dotnet-runtime-d8611a.png" >}}
 
 ### Pros and Cons of Mono and CoreCLR
 
@@ -62,7 +63,7 @@ The Mono embedding API, on the other hand, lets you add an internal call on the 
 
 CoreCLR's advantages are higher performance and a newer C# version. Its GC performs much better than Mono's GC, and it offers more modern features, such as Span and Memory — structures created to improve performance — along with more performance-optimized components, and it supports the latest C# version (currently 11). However, CoreCLR currently only supports binding code via P/Invoke, which makes embedding it in a game engine more complicated. We need to load hostfxr on the C++ side so that the game engine becomes CoreCLR's host, which lets us call managed C# code. But for C# calling C++ code, we still have to go through P/Invoke.
 
-[Write a custom .NET host (learn.microsoft.com)](https://learn.microsoft.com/en-us/dotnet/core/tutorials/netcore-hosting)
+{{< linkcard url="https://learn.microsoft.com/en-us/dotnet/core/tutorials/netcore-hosting" title="Write a custom .NET runtime host - .NET" desc="Learn to host the .NET runtime from native code to support advanced scenarios that require controlling how the .NET runtime works." image="/img/linkcards/learn-microsoft-com-en-us-dotnet-core-tutorials--442310.png" >}}
 
 ### Kytten Roadmap
 
@@ -84,7 +85,7 @@ Building Mono takes a while, so simply installing it is generally a good choice.
 
 Put simply, the C/C++ side hosts a Mono runtime, and within that runtime we initialize an AppDomain, load assemblies and so on.
 
-[Embedding Mono | Mono](https://www.mono-project.com/docs/advanced/embedding/#how-embedding-works)
+{{< linkcard url="https://www.mono-project.com/docs/advanced/embedding/#how-embedding-works" title="Embedding Mono | Mono" >}}
 
 ### Building Mono and Getting the Necessary Files
 
@@ -407,7 +408,10 @@ The next post on the scripting system should be about embedding .NET 8.0 (LTS) i
 
 ## Further Reading
 
-- [Porting the Unity Engine to .NET CoreCLR | xoofx](https://xoofx.com/blog/2018/04/06/porting-unity-to-coreclr/)
-- [runtime/native-hosting.md at main · dotnet/runtime](https://github.com/dotnet/runtime/blob/main/docs/design/features/native-hosting.md)
-- [Interop with Native Libraries | Mono](https://www.mono-project.com/docs/advanced/pinvoke/)
-- [FlaxEngine/Source/Engine/Scripting at master · FlaxEngine/FlaxEngine](https://github.com/FlaxEngine/FlaxEngine/tree/master/Source/Engine/Scripting)
+{{< linkcard url="https://xoofx.com/blog/2018/04/06/porting-unity-to-coreclr/" title="Porting the Unity Engine to .NET CoreCLR | xoofx" >}}
+
+{{< linkcard url="https://github.com/dotnet/runtime/blob/main/docs/design/features/native-hosting.md" title="runtime/docs/design/features/native-hosting.md at main · dotnet/runtime" desc=".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps. - dotnet/runtime" site="GitHub" image="/img/linkcards/github-com-dotnet-runtime-blob-main-docs-design--c7b068.png" >}}
+
+{{< linkcard url="https://www.mono-project.com/docs/advanced/pinvoke/" title="Interop with Native Libraries | Mono" >}}
+
+{{< linkcard url="https://github.com/FlaxEngine/FlaxEngine/tree/master/Source/Engine/Scripting" title="FlaxEngine/Source/Engine/Scripting at master · FlaxEngine/FlaxEngine" desc="Flax Engine – multi-platform 3D game engine. Contribute to FlaxEngine/FlaxEngine development by creating an account on GitHub." site="GitHub" image="/img/linkcards/github-com-flaxengine-flaxengine-tree-master-sou-80b01a.png" >}}

@@ -28,7 +28,7 @@ Through the shader reflection mechanisms provided by certain tools, we can obtai
 
 Slang is a modern shading language. It extends HLSL syntax with more developer-friendly language features.
 
-[Basic Convenience Features](https://shader-slang.com/slang/user-guide/03-convenience-features.html)
+{{< linkcard url="https://shader-slang.org/slang/user-guide/convenience-features.html" title="Basic Convenience Features" desc="Making it easier to work with shaders" site="slang" >}}
 
 It is compatible with HLSL; supports parameter blocks, interfaces and generics, and a module system; supports compute shaders, rasterization shaders and ray-tracing shaders; and supports reflection. Most importantly, it can compile Slang or HLSL code to DXBC, DXIL, SPIR-V, HLSL, GLSL (limited OpenGL support, no OpenGL ES), CUDA and more — practically every mainstream target.
 
@@ -36,13 +36,13 @@ It is compatible with HLSL; supports parameter blocks, interfaces and generics, 
 
 SPIR-V is an open, standard, portable intermediate language model proposed by the Khronos Group. SPIR-V Cross can compile SPIR-V binaries to GLSL, HLSL and MSL, and supports reflection. In other words, it can export shader code for OpenGL, OpenGL ES, Vulkan, DirectX 11 and Metal.
 
-[GitHub - KhronosGroup/SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross)
+{{< linkcard url="https://github.com/KhronosGroup/SPIRV-Cross" title="GitHub - KhronosGroup/SPIRV-Cross: SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and…" desc="SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and disassembling SPIR-V back to high level languages. - KhronosGroup/SPIRV-Cross" site="GitHub" image="/img/linkcards/github-com-khronosgroup-spirv-cross-66790a.png" >}}
 
 ### HJSON
 
 HJSON is an extension of JSON. It supports comments, lets you omit trailing commas at the end of lines, lets you omit double quotes around strings, supports multi-line string blocks and so on, making it friendlier and more readable than JSON.
 
-[GitHub - hjson/hjson](https://github.com/hjson/hjson)
+{{< linkcard url="https://github.com/hjson/hjson" title="GitHub - hjson/hjson: Hjson, a user interface for JSON" desc="Hjson, a user interface for JSON. Contribute to hjson/hjson development by creating an account on GitHub." site="GitHub" image="/img/linkcards/github-com-hjson-hjson-45de6e.png" >}}
 
 ## Introducing KyttenShader
 
@@ -144,7 +144,7 @@ For OpenGL, since the GLSL that Slang generates isn't perfect — it has some is
 
 Similar to Unity's cginc, Kytten Engine will provide built-in Slang modules; you just manually import the module file name (without the extension) in Src.
 
-[Basic Convenience Features: Modules](https://shader-slang.com/slang/user-guide/03-convenience-features.html#modules)
+{{< linkcard url="https://shader-slang.org/slang/user-guide/modules.html" title="Modules and Access Control" desc="Making it easier to work with shaders" site="slang" >}}
 
 During compilation, besides being compiled, each Stage also exports a .slang file to a designated search location by default.
 
@@ -180,7 +180,7 @@ A KyttenMaterial essentially references a KyttenShader. By collecting the Kytten
 
 Unity ShaderLab uses HLSLcc to translate HLSL into GLSL, GLSL ES, GLSL Vulkan and MetalSL. It's a workable approach, but it isn't where the industry is heading. The trend is clearly toward the powerful DirectXShaderCompiler / Slang + SPIR-V Cross toolchain. In fact, Unity has already started integrating SPIR-V Cross to build a new shader compilation system.
 
-[Unity-Technologies/SPIRV-Cross](https://github.com/Unity-Technologies/SPIRV-Cross)
+Unity's SPIRV-Cross fork (`Unity-Technologies/SPIRV-Cross`; the repository no longer exists)
 
 KyttenShader takes the modern approach. Because Slang has so many language features, writing shaders becomes more convenient and efficient, and the results are of higher quality. At the same time, KyttenShader makes effective use of SPIR-V Cross's powerful ecosystem.
 
@@ -194,5 +194,6 @@ Cross-Platform Shader Handling, Stephanheigl, <https://stephanheigl.github.io/po
 
 ## Further Reading
 
-- [Slang API User's Guide](https://shader-slang.com/slang/api-users-guide.html)
-- [Shader Playground](https://shader-playground.timjones.io/)
+{{< linkcard url="https://shader-slang.org/slang/user-guide/compiling.html" title="Compiling Code with Slang" desc="Making it easier to work with shaders" site="slang" >}}
+
+{{< linkcard url="https://web.archive.org/web/20260416215429/https://shader-playground.timjones.io/" title="Shader Playground" >}}
