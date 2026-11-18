@@ -32,11 +32,13 @@
   name = "Games Gallery"
   pageRef = "/game-dev/001-games-gallery"
   weight = 1
+  params.icon = "fa fa-th-large"
 [[main]]
   parent = "game-dev"
   name = "GB/GBC Game Development"
   pageRef = "/game-dev/retro/gameboy/intro"
   weight = 2
+  params.icon = "fa fa-microchip"
 
 [[main]]
   identifier = "about"
