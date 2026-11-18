@@ -25,7 +25,7 @@ url: /zh/game-dev/001-games-gallery.html
 
 用 Lua 编程的幻想主机，自带代码、精灵、地图、音效和音乐编辑器，基于我的 [VRI](https://github.com/zzxzzk115/VRI) 渲染接口，桌面和浏览器都能运行。主机里的游戏本身就是用这些编辑器做出来的示例。
 
-![Lazy-100：编辑器与游戏演示](/img/games/lazy-100/showcase.gif)
+![Lazy-100：编辑器与游戏演示](/img/games/lazy-100/showcase.webp)
 
 - [在浏览器里直接玩 Breakout](https://zzxzzk115.github.io/Lazy-100/?cart=breakout) · [浏览卡带（Breakout、Lazy Bird、Snake）](https://zzxzzk115.github.io/Lazy-100/carts/)
 - [源码](https://github.com/zzxzzk115/Lazy-100) · [卡带目录](https://github.com/zzxzzk115/Lazy-100-games)
@@ -55,7 +55,7 @@ url: /zh/game-dev/001-games-gallery.html
 
 猫里奥 Game Boy 版（支持 GBC），用 GB Studio 制作。目前为 DEMO，包含游戏的基本流程和玩法。
 
-<iframe frameborder="0" src="https://itch.io/embed/1490065" width="552" height="167"><a href="https://lazy-v.itch.io/catmario-gb">CatMario-GB by Lazy_V</a></iframe>
+<iframe loading="lazy" frameborder="0" src="https://itch.io/embed/1490065" width="552" height="167"><a href="https://lazy-v.itch.io/catmario-gb">CatMario-GB by Lazy_V</a></iframe>
 
 {{< gallery grid pixel >}}
 /img/games/catmario-gb/title.png | 标题画面
@@ -69,7 +69,7 @@ url: /zh/game-dev/001-games-gallery.html
 
 经典黄金矿工的重制版，用 [LÖVE](https://love2d.org/)（Love2D）制作。最初是为 [GameShell](https://www.clockworkpi.com/gameshell) 掌机写的「黄金矿工 GameShell 版」，后来改名 GoldMiner-Rebirth，加入了 Trimui 系列（Smart Pro、Brick）的支持，并被收录进 [PortMaster](https://portmaster.games/detail.html?name=goldminer)，支持 PortMaster 的掌机都能玩。
 
-<iframe frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
+<iframe loading="lazy" frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
 
 {{< gallery grid >}}
 /img/games/goldminer-rebirth/screenshots_01_main_menu.png | 主菜单

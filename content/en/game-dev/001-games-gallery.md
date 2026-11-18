@@ -25,7 +25,7 @@ A top-down bullet-hell roguelike: fight alongside clones of your past runs (up t
 
 A Lua fantasy console with built-in code, sprite, map, sound and music editors, built on my [VRI](https://github.com/zzxzzk115/VRI) rendering interface; it runs on desktop and in the browser. Its games are examples made with the console's own tools.
 
-![Lazy-100: the editors and games in action](/img/games/lazy-100/showcase.gif)
+![Lazy-100: the editors and games in action](/img/games/lazy-100/showcase.webp)
 
 - [Play Breakout in your browser](https://zzxzzk115.github.io/Lazy-100/?cart=breakout) · [Browse cartridges (Breakout, Lazy Bird, Snake)](https://zzxzzk115.github.io/Lazy-100/carts/)
 - [Source](https://github.com/zzxzzk115/Lazy-100) · [Cartridge catalog](https://github.com/zzxzzk115/Lazy-100-games)
@@ -55,7 +55,7 @@ Team games I made with GeniusGameStudio in 2020: Worms-style multiplayer 2D arti
 
 A Cat Mario demo for the Game Boy (GBC supported), made with GB Studio. The demo covers the basic game flow and mechanics.
 
-<iframe frameborder="0" src="https://itch.io/embed/1490065" width="552" height="167"><a href="https://lazy-v.itch.io/catmario-gb">CatMario-GB by Lazy_V</a></iframe>
+<iframe loading="lazy" frameborder="0" src="https://itch.io/embed/1490065" width="552" height="167"><a href="https://lazy-v.itch.io/catmario-gb">CatMario-GB by Lazy_V</a></iframe>
 
 {{< gallery grid pixel >}}
 /img/games/catmario-gb/title.png | Title screen
@@ -69,7 +69,7 @@ A Cat Mario demo for the Game Boy (GBC supported), made with GB Studio. The demo
 
 A remake of the classic Gold Miner, made with [LÖVE](https://love2d.org/) (Love2D). It started as "Gold Miner for GameShell", written for the [GameShell](https://www.clockworkpi.com/gameshell) handheld; it was later renamed GoldMiner-Rebirth, gained support for the Trimui series (Smart Pro, Brick), and is now included in [PortMaster](https://portmaster.games/detail.html?name=goldminer), so any handheld that runs PortMaster can play it.
 
-<iframe frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
+<iframe loading="lazy" frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
 
 {{< gallery grid >}}
 /img/games/goldminer-rebirth/screenshots_01_main_menu.png | Main menu
