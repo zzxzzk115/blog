@@ -15,6 +15,8 @@ hugo server
 
 英文版 <http://localhost:1313/>，中文版 <http://localhost:1313/zh/>。构建：`hugo --gc --minify`，输出在 `public/`。
 
+手机预览（同一 Wi-Fi）：`python tools/serve_lan.py`（参数同 `hugo server`，如 `-D`），在电脑上打开它打印的局域网地址，点右下角“手机阅读”扫码。第一次运行 Windows 可能询问是否允许 Hugo 接受连接，在“专用网络”上允许即可。
+
 ## 写作
 
 新建一篇（中英两份同时生成，`draft: true`，标签/分类的英文名按 `data/terms.toml` 自动对应）：
