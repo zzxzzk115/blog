@@ -1,0 +1,14 @@
+# itch.io games for {{< itch >}}; written by tools/itch_card.py, safe to edit.
+
+["https://lazy-v.itch.io/catmario-gb"]
+title = "CatMario-GB"
+author = "Lazy_V"
+desc = "GB version of CatMario."
+cover = "/img/itch/lazy-v-catmario-gb.png"
+pixel = true
+
+["https://lazy-v.itch.io/goldminer-rebirth"]
+title = "GoldMiner-Rebirth"
+author = "Lazy_V"
+desc = "The classic game remake. Build for LOVE2D compatible gaming handheld devices."
+cover = "/img/itch/lazy-v-goldminer-rebirth.png"

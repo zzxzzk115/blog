@@ -55,7 +55,7 @@ url: /zh/game-dev/001-games-gallery.html
 
 猫里奥 Game Boy 版（支持 GBC），用 GB Studio 制作。目前为 DEMO，包含游戏的基本流程和玩法。
 
-{{< linkcard url="https://lazy-v.itch.io/catmario-gb" title="CatMario-GB by Lazy_V" desc="猫里奥的 Game Boy 版。" site="itch.io" image="/img/linkcards/lazy-v-itch-io-catmario-gb-c2f21b.png" >}}
+{{< itch url="https://lazy-v.itch.io/catmario-gb" desc="猫里奥的 Game Boy 版。" >}}
 
 {{< gallery grid pixel >}}
 /img/games/catmario-gb/title.png | 标题画面
@@ -69,7 +69,7 @@ url: /zh/game-dev/001-games-gallery.html
 
 经典黄金矿工的重制版，用 [LÖVE](https://love2d.org/)（Love2D）制作。最初是为 [GameShell](https://www.clockworkpi.com/gameshell) 掌机写的「黄金矿工 GameShell 版」，后来改名 GoldMiner-Rebirth，加入了 Trimui 系列（Smart Pro、Brick）的支持，并被收录进 [PortMaster](https://portmaster.games/detail.html?name=goldminer)，支持 PortMaster 的掌机都能玩。
 
-{{< linkcard url="https://lazy-v.itch.io/goldminer-rebirth" title="GoldMiner-Rebirth by Lazy_V" desc="经典游戏重制，为兼容 LÖVE（Love2D）的掌机打造。" site="itch.io" image="/img/linkcards/lazy-v-itch-io-goldminer-rebirth-f2f65d.png" >}}
+{{< itch url="https://lazy-v.itch.io/goldminer-rebirth" desc="经典游戏重制，为兼容 LÖVE（Love2D）的掌机打造。" >}}
 
 {{< gallery grid >}}
 /img/games/goldminer-rebirth/screenshots_01_main_menu.png | 主菜单
