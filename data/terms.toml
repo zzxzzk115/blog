@@ -54,6 +54,8 @@ zh = "寻路"
 zh = "像素艺术"
 [tags."Reinventing the Wheel"]
 zh = "造轮子"
+[tags."Scripting"]
+zh = "脚本系统"
 [tags."Security"]
 zh = "安全"
 [tags."Shortest Path"]

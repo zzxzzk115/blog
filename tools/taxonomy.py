@@ -53,6 +53,8 @@ TAGS = {
     "动画": "Animation", "XR": "XR", "Love2D": "Love2D", "RetroArch": "RetroArch", "OpenGL": "OpenGL", "改装": "Modding",
     "ClockworkPi": "ClockworkPi", "神经网络": "Neural Networks", "逻辑回归": "Logistic Regression", "Shields.io": "Shields.io",
     "学术": "Academia",
+    # engines
+    "Kytten": "Kytten", "Shader": "Shader", "Slang": "Slang", "SPIR-V": "SPIR-V", "脚本系统": "Scripting",
 }
 
 # Names that can't be used as-is in a URL get a safe key in front matter; the real name is set as the
@@ -132,6 +134,8 @@ PLAN = {
     "posts/unity-netgame-002.md": ("游戏开发", ["Unity", "网络编程"]),
     "posts/how-unity-crossplatform.md": ("游戏引擎", ["Unity", "跨平台", "Mono", "CIL", ".NET", "CLR"]),
     "posts/game-engine/godotsteam-macos-permission.md": ("游戏引擎", ["Godot"]),
+    "posts/game-engine/kytten-shader.md": ("游戏引擎", ["Kytten", "Shader", "Slang", "SPIR-V", "跨平台"]),
+    "posts/game-engine/kytten-csharp-scripting-mono.md": ("游戏引擎", ["Kytten", "脚本系统", "Mono", "C#", ".NET"]),
     "posts/learn-from-pilot-01.md": ("游戏引擎", ["Pilot", "GAMES104"]),
     "posts/learn-from-pilot-02.md": ("游戏引擎", ["Pilot", "GAMES104"]),
     "posts/learn-from-pilot-03.md": ("游戏引擎", ["Pilot", "GAMES104"]),

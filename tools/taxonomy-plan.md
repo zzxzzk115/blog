@@ -1,6 +1,6 @@
 # 分类与标签整理方案
 
-共 77 篇文章。分类 9 → 9，标签 78 → 78。
+共 79 篇文章。分类 9 → 9，标签 83 → 83。
 英文站使用右列的英文名。中英对应关系由三处共同保证，`--apply` 会一起生成：
 
 1. 文章 front matter：名字里有 `#`、`+`、`/`、`*`、`&`、开头是 `.` 的，写成 URL 安全的键（`C#` → `CSharp`，`C++` → `CPP`，`.NET` → `DotNET`，`TCP/IP` → `TCP-IP`，`A*` → `AStar`，`异步 I/O` → `异步IO`）。
@@ -18,7 +18,7 @@
 | 后端与网络 | Backend & Networking | 8 |
 | 算法与数据结构 | Algorithms & Data Structures | 9 |
 | 游戏开发 | Game Development | 10 |
-| 游戏引擎 | Game Engines | 5 |
+| 游戏引擎 | Game Engines | 7 |
 | 复古掌机 | Retro Handhelds | 8 |
 | 机器学习 | Machine Learning | 7 |
 | 随笔 | Jottings | 4 |
@@ -27,14 +27,14 @@
 
 | 中文 | English | 篇数 |
 |---|---|---|
+| C# | C# | 12 |
 | CLR | CLR | 12 |
-| C# | C# | 11 |
 | 多线程 | Multithreading | 8 |
 | 深度学习 | Deep Learning | 7 |
 | Win32 | Win32 | 6 |
+| .NET | .NET | 5 |
 | C | C | 5 |
 | Unity | Unity | 5 |
-| .NET | .NET | 4 |
 | ClockworkPi | ClockworkPi | 4 |
 | GameBoy | GameBoy | 4 |
 | PocketChip | PocketChip | 4 |
@@ -50,9 +50,12 @@
 | Windows | Windows | 3 |
 | 博客 | Blogging | 3 |
 | Godot | Godot | 2 |
+| Kytten | Kytten | 2 |
+| Mono | Mono | 2 |
 | TCP/IP | TCP/IP | 2 |
 | 图论 | Graph Theory | 2 |
 | 改装 | Modding | 2 |
+| 跨平台 | Cross-Platform | 2 |
 | 造轮子 | Reinventing the Wheel | 2 |
 | 逻辑回归 | Logistic Regression | 2 |
 | A* | A* | 1 |
@@ -73,13 +76,15 @@
 | Love2D | Love2D | 1 |
 | Metasploit | Metasploit | 1 |
 | MongoDB | MongoDB | 1 |
-| Mono | Mono | 1 |
 | OpenGL | OpenGL | 1 |
 | OpenXR | OpenXR | 1 |
 | Raspberry Pi | Raspberry Pi | 1 |
 | RetroArch | RetroArch | 1 |
+| Shader | Shader | 1 |
 | Shields.io | Shields.io | 1 |
+| Slang | Slang | 1 |
 | Socket | Socket | 1 |
+| SPIR-V | SPIR-V | 1 |
 | STL | STL | 1 |
 | TVCG | TVCG | 1 |
 | Unix | Unix | 1 |
@@ -103,8 +108,8 @@
 | 汇编 | Assembly | 1 |
 | 神经网络 | Neural Networks | 1 |
 | 线程池 | Thread Pool | 1 |
+| 脚本系统 | Scripting | 1 |
 | 设计模式 | Design Patterns | 1 |
-| 跨平台 | Cross-Platform | 1 |
 
 ## 每篇文章（旧 → 新）
 
@@ -164,6 +169,8 @@
 | Unity 网游实战(1)：最简单的网络程序 Echo | 游戏开发 | 游戏开发 | Unity, 网络编程 | Unity, 网络编程 |
 | Unity 网游实战(2)：状态检测 Poll 和多路复用 Select | 游戏开发 | 游戏开发 | Unity, 网络编程 | Unity, 网络编程 |
 | GodotSteam 等自编译版本在 macOS 上反复弹窗确认权限？几行命令就够了 | 游戏引擎 | 游戏引擎 | Godot | Godot |
+| Kytten 的 C# 脚本系统：Mono 篇 | 游戏引擎 | 游戏引擎 | Kytten, 脚本系统, Mono, C#, .NET | Kytten, 脚本系统, Mono, C#, .NET |
+| KyttenShader：现代的跨平台 Shader 系统 | 游戏引擎 | 游戏引擎 | Kytten, Shader, Slang, SPIR-V, 跨平台 | Kytten, Shader, Slang, SPIR-V, 跨平台 |
 | Unity 为什么能做到跨平台 | 游戏引擎 | 游戏引擎 | Unity, 跨平台, Mono, CIL, .NET, CLR | Unity, 跨平台, Mono, CIL, .NET, CLR |
 | 从 Pilot 引擎学知识(1)-在 Windows 上跑起来 | 游戏引擎 | 游戏引擎 | Pilot, GAMES104 | Pilot, GAMES104 |
 | 从 Pilot 引擎学知识(2)-文件目录结构 | 游戏引擎 | 游戏引擎 | Pilot, GAMES104 | Pilot, GAMES104 |

@@ -17,11 +17,10 @@ url: /zh/game-dev/001-games-gallery.html
 
 ## GoldMiner-Rebirth
 
+经典黄金矿工的重制版，用 [LÖVE](https://love2d.org/)（Love2D）制作。最初是为 [GameShell](https://www.clockworkpi.com/gameshell) 掌机写的「黄金矿工 GameShell 版」，后来改名 GoldMiner-Rebirth，加入了 Trimui 系列（Smart Pro、Brick）的支持，并被收录进 [PortMaster](https://portmaster.games/detail.html?name=goldminer)，支持 PortMaster 的掌机都能玩。
+
 <iframe frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
 
-## 黄金矿工 GameShell 版
-
-为 [GameShell](https://www.clockworkpi.com/gameshell) 掌机制作的黄金矿工，使用 Love2D。
-
-- [从 itch.io 下载](https://lazy-v.itch.io/goldminer-gameshell) · [GitHub Release](https://github.com/zzxzzk115/GoldMiner-GameShell/releases)
-- 遇到 bug 欢迎到 GitHub [提 issue](https://github.com/zzxzzk115/GoldMiner-GameShell/issues)。
+- [从 itch.io 下载](https://lazy-v.itch.io/goldminer-rebirth) · [GitHub Release](https://github.com/zzxzzk115/GoldMiner-Rebirth/releases) · [源码](https://github.com/zzxzzk115/GoldMiner-Rebirth)
+- [在 PortMaster 中安装](https://portmaster.games/detail.html?name=goldminer)（感谢 [JanTrueno](https://github.com/JanTrueno) 的移植）
+- 遇到 bug 欢迎到 GitHub [提 issue](https://github.com/zzxzzk115/GoldMiner-Rebirth/issues)。
