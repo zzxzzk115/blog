@@ -23,7 +23,7 @@ url: /zh/game-dev/001-games-gallery.html
 
 ## Lazy-100
 
-用 Lua 编程的幻想主机，自带代码、精灵、地图、音效和音乐编辑器，基于我的 VRI 渲染接口，桌面和浏览器都能运行。主机里的游戏本身就是用这些编辑器做出来的示例。
+用 Lua 编程的幻想主机，自带代码、精灵、地图、音效和音乐编辑器，基于我的 [VRI](https://github.com/zzxzzk115/VRI) 渲染接口，桌面和浏览器都能运行。主机里的游戏本身就是用这些编辑器做出来的示例。
 
 ![Lazy-100：编辑器与游戏演示](/img/games/lazy-100/showcase.gif)
 

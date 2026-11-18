@@ -23,7 +23,7 @@ A top-down bullet-hell roguelike: fight alongside clones of your past runs (up t
 
 ## Lazy-100
 
-A Lua fantasy console with built-in code, sprite, map, sound and music editors, built on my VRI rendering interface; it runs on desktop and in the browser. Its games are examples made with the console's own tools.
+A Lua fantasy console with built-in code, sprite, map, sound and music editors, built on my [VRI](https://github.com/zzxzzk115/VRI) rendering interface; it runs on desktop and in the browser. Its games are examples made with the console's own tools.
 
 ![Lazy-100: the editors and games in action](/img/games/lazy-100/showcase.gif)
 
