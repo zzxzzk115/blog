@@ -55,7 +55,7 @@ Team games I made with GeniusGameStudio in 2020: Worms-style multiplayer 2D arti
 
 A Cat Mario demo for the Game Boy (GBC supported), made with GB Studio. The demo covers the basic game flow and mechanics.
 
-<iframe loading="lazy" frameborder="0" src="https://itch.io/embed/1490065" width="552" height="167"><a href="https://lazy-v.itch.io/catmario-gb">CatMario-GB by Lazy_V</a></iframe>
+{{< linkcard url="https://lazy-v.itch.io/catmario-gb" title="CatMario-GB by Lazy_V" desc="GB version of CatMario." site="itch.io" image="/img/linkcards/lazy-v-itch-io-catmario-gb-c2f21b.png" >}}
 
 {{< gallery grid pixel >}}
 /img/games/catmario-gb/title.png | Title screen
@@ -69,7 +69,7 @@ A Cat Mario demo for the Game Boy (GBC supported), made with GB Studio. The demo
 
 A remake of the classic Gold Miner, made with [LÖVE](https://love2d.org/) (Love2D). It started as "Gold Miner for GameShell", written for the [GameShell](https://www.clockworkpi.com/gameshell) handheld; it was later renamed GoldMiner-Rebirth, gained support for the Trimui series (Smart Pro, Brick), and is now included in [PortMaster](https://portmaster.games/detail.html?name=goldminer), so any handheld that runs PortMaster can play it.
 
-<iframe loading="lazy" frameborder="0" src="https://itch.io/embed/1548293" width="552" height="167"><a href="https://lazy-v.itch.io/goldminer-rebirth">GoldMiner-Rebirth by Lazy_V</a></iframe>
+{{< linkcard url="https://lazy-v.itch.io/goldminer-rebirth" title="GoldMiner-Rebirth by Lazy_V" desc="The classic game remake. Build for LOVE2D compatible gaming handheld devices." site="itch.io" image="/img/linkcards/lazy-v-itch-io-goldminer-rebirth-f2f65d.png" >}}
 
 {{< gallery grid >}}
 /img/games/goldminer-rebirth/screenshots_01_main_menu.png | Main menu
