@@ -7,7 +7,7 @@ url: /zh/friends.html
 {{< friend name="MickeyMiao" url="https://blog.mickeymiao.cn/" desc="code is cheap, show me your promt" avatar="https://blog.mickeymiao.cn/assets/img/avatar/avatar.png" tags="Leeds 图形学硕士, 小米 Vela 渲染引擎" >}}
 {{< friend name="B3n1gn X @W-Mai" url="https://benign.host/" desc="Overflow Stack Developer" avatar="https://benign.host/_astro/24841247_iUHr3.webp" tags="小米 Vela 渲染引擎" >}}
 {{< friend name="Ringotc" url="https://ringotc.github.io/" desc="数据科学方向" avatar="https://github.com/ringotc.png" tags="腾讯 微信" >}}
-{{< friend name="zsw" url="https://zsw-test.github.io/" desc="想想就伤心" avatar="https://github.com/zsw-test.png" tags="金山（武汉）, Go 后端" >}}
+{{< friend name="Zhangsiwei" url="https://zsw-test.github.io/" desc="想想就伤心" avatar="https://github.com/zsw-test.png" tags="金山（武汉）, Go 后端" >}}
 
 ## 交换友链
 
