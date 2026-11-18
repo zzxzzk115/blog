@@ -18,13 +18,31 @@ toc: true
 
 这样，2020–2022 年的文章都搬了进来，和后来 VuePress 博客上的文章合并到了一起。
 
+除了 2020 年以后的这些，我还从别的平台找回了不少内容：
+
+- **CSDN**：2017–2018 年刚学编程时写的 18 篇，算法、数据结构、C/C++、机器学习笔记，还有一个开源小项目；
+- **博客园**：2020 年的 10 篇，其中 2 篇是新找回的，另外 8 篇本来就在 Hexo 博客里，这次按博客园上的发布时间校正了日期；
+- **知乎**：2023 年专栏里的 2 篇，讲 Kytten 引擎的 Shader 系统和 C# 脚本系统；
+- **FlowUs**：2023 年的 1 篇笔记，用 Roslyn 和 ReSharper 保证 C# 代码质量与规范一致。
+
+这些文章开头都注明了原始出处和写作时间。
+
 ## 用 Hugo 复活 freemind.bithack
 
-我曾经最喜欢的主题是 Hexo 的 [freemind.bithack](https://github.com/Ares-X/hexo-theme-freemind.bithack)：黑底、像素字体、终端风格。这次我把它移植到了 [Hugo](https://gohugo.io/)，做成了 [hugo-theme-freemind-bithack](https://github.com/zzxzzk115/hugo-theme-freemind-bithack)（MIT 开源，有 [在线示例](https://zzxzzk115.github.io/hugo-theme-freemind-bithack/)）。
+我曾经最喜欢的主题是 Hexo 的 [freemind.bithack](https://github.com/Ares-X/hexo-theme-freemind.bithack)（它改自 freemind.386，再往上是 freemind）。原版是黑底、绿色链接，标题等处用 DOS 风格的点阵字体（Fixedsys），正文和代码用 Fira Code，终端味十足。
+
+不过我当年用的并不是原版，而是自己魔改过的版本。和原版对比，主要改了这些：
+
+- **配色**：原版只有黑底和绿色链接。我加了红色：加粗文字改成红色，表格改成红色实线边框，于是才有了后来“黑、红、绿”的样子。
+- **中文字体**：原版的中文落回黑体，只有英文是点阵字。我接入了方正像素 12 的网络字体，让中文也成了像素风。
+- **图标**：原版自带 Font Awesome，但菜单图标默认是注释掉的。我把菜单图标都打开了，又引入了一套 icomoon 图标字体，补上 Font Awesome 里没有的 B 站等图标。
+- **其他细节**：导航栏的折叠按钮换成了像素风图标，菜单加了 Games、Friends、Wiki，slogan 改成 TALK IS CHEAP, SHOW ME THE CODE.，表格、图片和代码块的间距也调过。
+
+这次我把它移植到了 [Hugo](https://gohugo.io/)，做成了 [hugo-theme-freemind-bithack](https://github.com/zzxzzk115/hugo-theme-freemind-bithack)（MIT 开源，有 [在线示例](https://zzxzzk115.github.io/hugo-theme-freemind-bithack/)）。复刻的是我魔改后的样子，而不是原版；方正像素是商业字体，中文像素字体换成了开源的 [Fusion Pixel](https://github.com/TakWolf/fusion-pixel-font)。
 
 选 Hugo 的原因很简单：它就是一个可执行文件，不需要 Node，也就没有那些依赖版本的问题。
 
-在这一点上，使用 AI 倒是挺方便的，毕竟我不是前端程序员。外观尽量保持原样，同时补上了这些年博客该有的东西：中英双语、站内搜索、代码复制、数学公式、评论、纯享阅读模式等等。
+在这一点上，使用 AI 倒是挺方便的，毕竟我不是前端程序员。外观尽量保持当年魔改版的样子，同时补上了这些年博客该有的东西：中英双语、站内搜索、代码复制、数学公式、评论、纯享阅读模式等等。
 
 ## 现在的环境
 
