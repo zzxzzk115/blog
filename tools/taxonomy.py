@@ -55,6 +55,8 @@ TAGS = {
     "学术": "Academia",
     # engines
     "Kytten": "Kytten", "Shader": "Shader", "Slang": "Slang", "SPIR-V": "SPIR-V", "脚本系统": "Scripting",
+    # tooling
+    "Roslyn": "Roslyn", "ReSharper": "ReSharper", "代码质量": "Code Quality", "CI": "CI",
 }
 
 # Names that can't be used as-is in a URL get a safe key in front matter; the real name is set as the
@@ -83,6 +85,7 @@ PLAN = {
     # 编程语言
     "posts/about-layoutkind.md": ("编程语言", ["CLR", "C#", "内存布局"]),
     "posts/about-new.md": ("编程语言", ["C#", "C++"]),
+    "posts/csharp-roslyn-resharper-code-quality.md": ("编程语言", ["C#", "Roslyn", "ReSharper", "代码质量", "CI"]),
     "posts/c-letter-case-swap.md": ("编程语言", ["C"]),
     "posts/clr-compute-bound-asynchronous-operations.md": ("编程语言", ["CLR", "C#", "多线程", "线程池"]),
     "posts/clr-critical-chapters.md": ("编程语言", ["CLR"]),

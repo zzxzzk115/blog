@@ -16,6 +16,8 @@ zh = "汇编"
 zh = "异步 I/O"
 [tags."Blogging"]
 zh = "博客"
+[tags."Code Quality"]
+zh = "代码质量"
 [tags."Cross-Platform"]
 zh = "跨平台"
 [tags."Database"]

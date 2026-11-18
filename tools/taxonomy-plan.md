@@ -1,6 +1,6 @@
 # 分类与标签整理方案
 
-共 79 篇文章。分类 9 → 9，标签 83 → 83。
+共 80 篇文章。分类 9 → 9，标签 87 → 87。
 英文站使用右列的英文名。中英对应关系由三处共同保证，`--apply` 会一起生成：
 
 1. 文章 front matter：名字里有 `#`、`+`、`/`、`*`、`&`、开头是 `.` 的，写成 URL 安全的键（`C#` → `CSharp`，`C++` → `CPP`，`.NET` → `DotNET`，`TCP/IP` → `TCP-IP`，`A*` → `AStar`，`异步 I/O` → `异步IO`）。
@@ -13,7 +13,7 @@
 
 | 中文 | English | 篇数 |
 |---|---|---|
-| 编程语言 | Programming Languages | 17 |
+| 编程语言 | Programming Languages | 18 |
 | 系统编程 | Systems Programming | 9 |
 | 后端与网络 | Backend & Networking | 8 |
 | 算法与数据结构 | Algorithms & Data Structures | 9 |
@@ -27,7 +27,7 @@
 
 | 中文 | English | 篇数 |
 |---|---|---|
-| C# | C# | 12 |
+| C# | C# | 13 |
 | CLR | CLR | 12 |
 | 多线程 | Multithreading | 8 |
 | 深度学习 | Deep Learning | 7 |
@@ -64,6 +64,7 @@
 | BadUSB | BadUSB | 1 |
 | BFS | BFS | 1 |
 | bilibili | bilibili | 1 |
+| CI | CI | 1 |
 | CIL | CIL | 1 |
 | DevTerm | DevTerm | 1 |
 | DFS | DFS | 1 |
@@ -79,7 +80,9 @@
 | OpenGL | OpenGL | 1 |
 | OpenXR | OpenXR | 1 |
 | Raspberry Pi | Raspberry Pi | 1 |
+| ReSharper | ReSharper | 1 |
 | RetroArch | RetroArch | 1 |
+| Roslyn | Roslyn | 1 |
 | Shader | Shader | 1 |
 | Shields.io | Shields.io | 1 |
 | Slang | Slang | 1 |
@@ -89,6 +92,7 @@
 | TVCG | TVCG | 1 |
 | Unix | Unix | 1 |
 | XR | XR | 1 |
+| 代码质量 | Code Quality | 1 |
 | 像素艺术 | Pixel Art | 1 |
 | 内存布局 | Memory Layout | 1 |
 | 内核对象 | Kernel Objects | 1 |
@@ -125,6 +129,7 @@
 | 动态链接库 DLL 和.NET Framework 程序集的区别与联系 | 编程语言 | 编程语言 | .NET, CLR, DLL | .NET, CLR, DLL |
 | C# 匿名类型的同一性与相等性 | 编程语言 | 编程语言 | CLR, C#, 匿名类型 | CLR, C#, 匿名类型 |
 | 对于《CLR via C#》中异常部分的整理 | 编程语言 | 编程语言 | CLR, C#, 异常处理 | CLR, C#, 异常处理 |
+| 游戏工业化探索 - 基于 Roslyn 和 Resharper 实现 C# 代码质量与规范一致性保证 | 编程语言 | 编程语言 | C#, Roslyn, ReSharper, 代码质量, CI | C#, Roslyn, ReSharper, 代码质量, CI |
 | 程序如何监视 AppDomain 的卸载 | 编程语言 | 编程语言 | CLR, C#, AppDomain | CLR, C#, AppDomain |
 | 深入探究 C# 11 的静态抽象接口方法 | 编程语言 | 编程语言 | C#, .NET, 接口 | C#, .NET, 接口 |
 | 分享一个.NET 相关博主的博客地址 | 编程语言 | 编程语言 | .NET | .NET |
