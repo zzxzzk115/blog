@@ -40,6 +40,8 @@ What I actually used, though, was my own modified version. Compared with the ori
 
 This time I ported it to [Hugo](https://gohugo.io/) as [hugo-theme-freemind-bithack](https://github.com/zzxzzk115/hugo-theme-freemind-bithack) (MIT licensed, with a [live demo](https://zzxzzk115.github.io/hugo-theme-freemind-bithack/)). It recreates my modified version, not the original. Founder Pixel is a commercial font, so the Chinese pixel font is now the open-source [Fusion Pixel](https://github.com/TakWolf/fusion-pixel-font).
 
+Later I noticed another problem: Fixedsys is not actually drawn on a pixel grid, and Founder Pixel and Fusion Pixel are only sharp at whole multiples of 12px, so on high-DPI screens or with Windows scaling the text edges went soft. So this blog now uses [Zpix (最像素)](https://github.com/SolidZORO/zpix-pixel-font) everywhere: English and Chinese, body text, headings and code all share one set of 12px pixel glyphs, at a few fixed sizes (16 / 24 / 32 / 40px). They are pixel-exact at 150% scaling and on phones, and only slightly soft elsewhere. Zpix is free for personal projects but may not be modified, split or redistributed freely, so it lives in this blog only; the theme just offers a general "site pixel font" option and keeps open-source fonts by default.
+
 Why Hugo: it is a single executable. No Node, so none of the dependency-version trouble.
 
 AI turned out to be really handy for this, since I'm not a front-end developer. The look stays as close to my old modified version as possible, while picking up what a blog should have these days: English and Chinese versions, site search, copy buttons on code, math, comments, a reader mode, and so on.

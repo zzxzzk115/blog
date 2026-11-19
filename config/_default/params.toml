@@ -75,3 +75,11 @@ editURL = "https://github.com/zzxzzk115/blog/edit/master/"
 [[social]]
   name = "RSS"
   rss = true
+
+# Zpix (最像素, https://github.com/SolidZORO/zpix-pixel-font): free for personal sites; may not be modified or split,
+# so the release's zpix.woff2 is used as is, and it lives in this blog only (not in the theme).
+[bodyFont]
+  family = "Zpix"
+  src = "fonts/zpix/zpix.woff2"
+  # CSS px; at 150% scaling these are whole multiples of Zpix's 12px pixels
+  sizes = { small = 16, text = 16, h4 = 24, h3 = 24, h2 = 32, h1 = 32, xl = 40 }

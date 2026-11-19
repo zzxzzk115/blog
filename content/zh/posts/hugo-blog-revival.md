@@ -40,6 +40,8 @@ toc: true
 
 这次我把它移植到了 [Hugo](https://gohugo.io/)，做成了 [hugo-theme-freemind-bithack](https://github.com/zzxzzk115/hugo-theme-freemind-bithack)（MIT 开源，有 [在线示例](https://zzxzzk115.github.io/hugo-theme-freemind-bithack/)）。复刻的是我魔改后的样子，而不是原版；方正像素是商业字体，中文像素字体换成了开源的 [Fusion Pixel](https://github.com/TakWolf/fusion-pixel-font)。
 
+后来又发现一个问题：Fixedsys 并不是真正对齐像素网格的字体，方正像素和 Fusion Pixel 也只有在 12px 的整数倍下才清晰，在高分屏或 Windows 缩放下文字边缘都会发虚。所以这个博客现在全站换成了 [Zpix（最像素）](https://github.com/SolidZORO/zpix-pixel-font)：中英文、正文、标题、代码块都是同一套 12px 像素字形，按 16 / 24 / 32 / 40px 几档字号显示，在 150% 缩放和手机上完全像素对齐，其他缩放下也只是轻微柔化。Zpix 对个人项目免费，但不允许修改、拆分或随意分发，所以它只放在这个博客里；主题本身只提供一个通用的「站点像素字体」选项，默认仍然是开源字体。
+
 选 Hugo 的原因很简单：它就是一个可执行文件，不需要 Node，也就没有那些依赖版本的问题。
 
 在这一点上，使用 AI 倒是挺方便的，毕竟我不是前端程序员。外观尽量保持当年魔改版的样子，同时补上了这些年博客该有的东西：中英双语、站内搜索、代码复制、数学公式、评论、纯享阅读模式等等。

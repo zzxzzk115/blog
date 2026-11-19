@@ -1,0 +1,2 @@
+zpix.woff2: Zpix (最像素) v3.3.0, unmodified, from https://github.com/SolidZORO/zpix-pixel-font/releases
+Free for personal projects; not to be modified, split or redistributed outside this site. See the README there.
