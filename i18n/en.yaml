@@ -1,6 +1,4 @@
-# Site-specific strings (merged with the theme's i18n).
-project_cat_work: "Graphics & XR"
-project_cat_fun: "Tools & apps"
-project_cat_retro: "Retro & emulation"
-project_cat_library: "Libraries"
-project_cat_indie: "Games"
+# Site-specific strings (merged with the theme's i18n). Project categories come from the catalog.
+project_cat_games: "Games & handhelds"
+project_cat_graphics: "Graphics & XR"
+project_cat_tools: "Tools & apps"

@@ -30,7 +30,7 @@
 {{- end }}
 {{- /* one page per category (/projects/<category>/) with its cards, in the order the /projects/ filter shows them;
      each is a folded group in the top menu's Projects dropdown, holding its project pages */}}
-{{- $icons := dict "work" "fa fa-cube" "fun" "fa fa-wrench" "retro" "fa fa-microchip" "library" "fa fa-code" "indie" "fa fa-gamepad" }}
+{{- $icons := dict "games" "fa fa-gamepad" "graphics" "fa fa-cube" "tools" "fa fa-wrench" }}
 {{- $cats := slice }}
 {{- range sort $cat.projects "order" }}{{ if not (in $cats .category) }}{{ $cats = $cats | append .category }}{{ end }}{{ end }}
 {{- range $i, $c := $cats }}
