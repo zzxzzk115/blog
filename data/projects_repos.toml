@@ -1,0 +1,3 @@
+# GitHub repo for project cards whose links have none (projects.json comes from the homepage and is overwritten
+# by tools/sync_projects.py). The card gets a Source link and the repo's star count (data/github_stars.json).
+snow_leopard_engine = "SnowLeopardEngine/SnowLeopardEngine"

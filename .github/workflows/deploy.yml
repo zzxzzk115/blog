@@ -6,6 +6,8 @@ on:
   push:
     branches: [master, main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * 1"   # weekly rebuild, so GitHub star counts on project cards stay fresh
 
 permissions:
   contents: read
@@ -34,6 +36,11 @@ jobs:
           hugo version
       - id: pages
         uses: actions/configure-pages@v5
+      - name: Refresh GitHub star counts
+        continue-on-error: true   # on failure the committed data/github_stars.json is used
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/github_stars.py
       - name: Build
         env:
           HUGO_ENVIRONMENT: production
