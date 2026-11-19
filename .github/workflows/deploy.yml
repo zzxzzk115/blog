@@ -6,10 +6,8 @@ on:
   push:
     branches: [master, main]
   workflow_dispatch:
-  repository_dispatch:
-    types: [featured-projects-updated]   # sent by github.com/zzxzzk115/featured-projects after a change
   schedule:
-    - cron: "0 3 * * 1"   # weekly rebuild: fresh GitHub star counts
+    - cron: "0 3 * * *"   # daily rebuild: featured-projects catalog changes and fresh GitHub star counts
 
 permissions:
   contents: read
