@@ -44,20 +44,25 @@
  {
   "id": "pegasusg-h700",
   "title": "PegasusG by ROC (H700 handhelds)",
-  "desc": "Contributions to a GBA frontend for H700 Linux handhelds: native-resolution rendering with an adapted layout, game volume wired to the system volume, grid keyboard navigation in search.",
+  "desc": "Features for the H700 build of this GBA frontend, merged upstream: system and quick-settings menus, offline Chinese/pinyin search with a controller keyboard, native-resolution layouts, separate frontend/system volume, standby modes and Docker builds.",
   "category": "retro",
   "tags": [
    "H700",
    "SDL2",
    "C++"
   ],
-  "page": "https://github.com/zzxzzk115/PegasusG-by-ROC",
+  "page": "https://github.com/LPF970915/PegasusG-by-ROC/pull/1",
   "links": [
+   {
+    "label": "Pull request",
+    "href": "https://github.com/LPF970915/PegasusG-by-ROC/pull/1"
+   },
    {
     "label": "Source",
     "href": "https://github.com/zzxzzk115/PegasusG-by-ROC"
    }
-  ]
+  ],
+  "image": "/img/projects/pegasusg-h700.webp"
  },
  {
   "id": "godot-gameshell",

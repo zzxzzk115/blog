@@ -20,6 +20,7 @@
 "Article" = "文章"
 "GameShell build" = "GameShell 版"
 "PocketCHIP build" = "PocketCHIP 版"
+"Pull request" = "合并请求"
 
 [lazy_100]
 desc = "Lua 幻想主机，自带代码、精灵、地图、音效与音乐编辑器，基于 VRI 构建，可在桌面和浏览器里玩。"
@@ -130,7 +131,7 @@ desc = "幻想主机 LowRes NX 的定制构建：GameShell 版修好了显示分
 
 [pegasusg-h700]
 title = "PegasusG by ROC（H700 掌机）"
-desc = "给 H700 Linux 掌机上的 GBA 前端贡献的改进：按原生分辨率渲染并适配布局、游戏音量接入系统音量、搜索键盘改为网格导航。"
+desc = "为这款 GBA 前端的 H700 版加的功能，已合并进上游：系统与快捷设置菜单、离线中文/拼音搜索和手柄键盘、按原生分辨率的布局、前端与系统音量分开、待机模式，以及 Docker 构建。"
 
 [godot-gameshell]
 title = "在 GameShell 上运行 Godot 游戏"
