@@ -119,24 +119,8 @@
     "label": "Source",
     "href": "https://github.com/zzxzzk115/RetroArch/tree/pocketchip"
    }
-  ]
- },
- {
-  "id": "gameshell-scripts",
-  "title": "GameShell Scripts",
-  "desc": "One-line scripts that upgrade GameShell's graphics stack and set up the system.",
-  "category": "retro",
-  "tags": [
-   "GameShell",
-   "Shell"
   ],
-  "page": "https://github.com/zzxzzk115/GameShell-Scripts",
-  "links": [
-   {
-    "label": "Source",
-    "href": "https://github.com/zzxzzk115/GameShell-Scripts"
-   }
-  ]
+  "image": "/img/projects/retroarch-pocketchip.webp"
  },
  {
   "id": "freemind-bithack",

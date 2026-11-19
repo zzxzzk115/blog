@@ -145,8 +145,6 @@ desc = "在 PocketCHIP 上编译安装 LÖVE 11.3，让 LÖVE 游戏能在上面
 title = "PocketCHIP 上的 RetroArch"
 desc = "为 PocketCHIP 编译的 RetroArch 万能模拟器，附安装步骤。"
 
-[gameshell-scripts]
-desc = "一行命令升级 GameShell 图形栈、完成系统配置的脚本合集。"
 
 [freemind-bithack]
 title = "freemind.bithack Hugo 主题"
