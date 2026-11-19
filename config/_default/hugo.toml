@@ -52,3 +52,9 @@ capitalizeListTitles = false
   [[related.indices]]
     name = "date"
     weight = 10
+
+# The projects data partial reads GITHUB_TOKEN (star counts) and caches GitHub API answers for half a day.
+[security.funcs]
+  getenv = ["^HUGO_", "^CI$", "^GITHUB_TOKEN$"]
+[caches.getresource]
+  maxAge = "12h"

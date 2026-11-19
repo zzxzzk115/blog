@@ -1,0 +1,79 @@
+{{- /*
+  Project cards from the catalog (github.com/zzxzzk115/featured-projects), for the current language.
+  The catalog is cloned into .catalog/ (the deploy workflow does it; locally:
+  git clone https://github.com/zzxzzk115/featured-projects .catalog) and mounted by config/_default/module.toml:
+  .catalog/catalog.json -> hugo.Data.catalog.catalog, .catalog/projects/<id>/images -> /img/catalog/<id>/images/.
+  Cards are in the theme's shape (see the projects shortcode). Groups: "about" (the About page's full list) and
+  the blog columns ("porting", ...), with the position in each column in groupOrder.
+  Star counts come from the GitHub API at build time (GITHUB_TOKEN raises the rate limit; a failed request just
+  leaves that card without a count).
+*/ -}}
+{{- define "_partials/inline/catalog-pick.html" }}
+  {{- /* a {en, zh} text or href in one language; Chinese falls back to English */}}
+  {{- $v := .v }}
+  {{- if reflect.IsMap $v }}{{ $v = index $v .lang | default (index $v "en") }}{{ end }}
+  {{- return $v }}
+{{- end }}
+{{- define "_partials/inline/catalog-href.html" }}
+  {{- /* links into this blog become site paths (they open here); homepage paths become full addresses */}}
+  {{- $h := . }}
+  {{- $blog := "https://zzxzzk115.github.io/blog" }}
+  {{- if hasPrefix $h (printf "%s/" $blog) }}{{ $h = strings.TrimPrefix $blog $h }}
+  {{- else if and (hasPrefix $h "/") (not (hasPrefix $h "//")) }}{{ $h = printf "https://zzxzzk115.github.io%s" $h }}{{ end }}
+  {{- return $h }}
+{{- end }}
+{{- $lang := index (split site.Language.Lang "-") 0 }}
+{{- $cat := (index hugo.Data "catalog" | default dict).catalog | default dict }}
+{{- if not $cat.projects }}{{ warnf "no project catalog: clone github.com/zzxzzk115/featured-projects into .catalog/" }}{{ end }}
+{{- $cards := slice }}
+{{- $repos := slice }}
+{{- range $cat.projects }}
+  {{- $p := . }}
+  {{- $blog := .blog | default dict }}
+  {{- $cols := $blog.columns | default dict }}
+  {{- $groups := slice }}
+  {{- if $blog.about }}{{ $groups = $groups | append "about" }}{{ end }}
+  {{- range $k, $_ := $cols }}{{ $groups = $groups | append $k }}{{ end }}
+  {{- if $groups }}
+    {{- $hp := .homepage }}
+    {{- $featured := "" }}
+    {{- if and $hp (reflect.IsMap $hp.home) }}
+      {{- range $_, $v := $hp.home }}{{ if reflect.IsMap $v }}{{ $o := $v.order | default 100 }}{{ if or (eq $featured "") (lt $o $featured) }}{{ $featured = $o }}{{ end }}{{ end }}{{ end }}
+    {{- end }}
+    {{- $links := slice }}
+    {{- range .links }}
+      {{- $links = $links | append (dict
+        "label" (partial "inline/catalog-pick.html" (dict "v" .label "lang" $lang))
+        "href" (partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" .href "lang" $lang)))) }}
+    {{- end }}
+    {{- $page := "" }}
+    {{- with .url }}{{ $page = partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" . "lang" $lang)) }}
+    {{- else }}{{ with $hp }}{{ $page = printf "https://zzxzzk115.github.io%s" .path }}{{ else }}{{ with $links }}{{ $page = (index . 0).href }}{{ end }}{{ end }}{{ end }}
+    {{- $image := "" }}{{ $fit := "cover" }}
+    {{- with .image }}{{ $image = printf "/img/catalog/%s" (strings.TrimPrefix "projects/" .src) }}{{ $fit = .fit | default "cover" }}{{ end }}
+    {{- $card := dict
+      "id" .id
+      "title" (partial "inline/catalog-pick.html" (dict "v" .title "lang" $lang))
+      "desc" (partial "inline/catalog-pick.html" (dict "v" .description "lang" $lang))
+      "status" (partial "inline/catalog-pick.html" (dict "v" (.status | default "") "lang" $lang))
+      "category" .category "tags" (.tags | default slice) "order" .order
+      "image" $image "imageFit" $fit
+      "page" $page "repo" (.repo | default "") "links" $links
+      "groups" $groups "groupOrder" $cols }}
+    {{- if ne $featured "" }}{{ $card = merge $card (dict "featured" $featured) }}{{ end }}
+    {{- $cards = $cards | append $card }}
+    {{- with .repo }}{{ $repos = $repos | append . }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- /* GitHub star counts */}}
+{{- $stars := dict }}
+{{- $opts := dict }}
+{{- with os.Getenv "GITHUB_TOKEN" }}{{ $opts = dict "headers" (dict "Authorization" (printf "Bearer %s" .)) }}{{ end }}
+{{- range uniq $repos }}
+  {{- $repo := . }}
+  {{- with try (resources.GetRemote (printf "https://api.github.com/repos/%s" $repo) $opts) }}
+    {{- with .Err }}{{ warnf "GitHub stars for %s: %s" $repo . }}
+    {{- else with .Value }}{{ $stars = merge $stars (dict $repo (index (. | transform.Unmarshal) "stargazers_count")) }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- return dict "cards" $cards "tr" dict "stars" $stars }}

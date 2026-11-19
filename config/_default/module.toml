@@ -18,3 +18,22 @@
   target = "content"
   [mounts.sites.matrix]
     languages = ["en", "zh"]
+
+# Project catalog (github.com/zzxzzk115/featured-projects), cloned into .catalog/ before building:
+#   git clone --depth 1 https://github.com/zzxzzk115/featured-projects .catalog
+# catalog.json becomes hugo.Data.catalog.catalog; project images are served under /img/catalog/<id>/images/.
+# (Adding mounts replaces Hugo's defaults for data/ and static/, so those are listed too.)
+[[mounts]]
+  source = "data"
+  target = "data"
+[[mounts]]
+  source = ".catalog"
+  target = "data/catalog"
+  files = ["catalog.json"]
+[[mounts]]
+  source = "static"
+  target = "static"
+[[mounts]]
+  source = ".catalog/projects"
+  target = "static/img/catalog"
+  files = ["**/images/**"]

@@ -9,7 +9,7 @@ on:
   repository_dispatch:
     types: [featured-projects-updated]   # sent by github.com/zzxzzk115/featured-projects after a change
   schedule:
-    - cron: "0 3 * * 1"   # weekly rebuild: fresh GitHub star counts and catalog
+    - cron: "0 3 * * 1"   # weekly rebuild: fresh GitHub star counts
 
 permissions:
   contents: read
@@ -39,15 +39,11 @@ jobs:
       - id: pages
         uses: actions/configure-pages@v5
       - name: Fetch the project catalog
-        run: python3 tools/catalog.py      # github.com/zzxzzk115/featured-projects -> data/projects*.json, images
-      - name: Refresh GitHub star counts
-        continue-on-error: true   # on failure the committed data/github_stars.json is used
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 tools/github_stars.py
+        run: git clone --depth 1 https://github.com/zzxzzk115/featured-projects .catalog   # mounted by config/_default/module.toml
       - name: Build
         env:
           HUGO_ENVIRONMENT: production
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub star counts on project cards
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - uses: actions/upload-pages-artifact@v3
         with:
