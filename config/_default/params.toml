@@ -26,8 +26,9 @@ editURL = "https://github.com/zzxzzk115/blog/edit/master/"
 
 [authorCard]
   name = "Lazy_V"
-  # 1-bit GitHub avatar
+  # 1-bit avatar: 32x32 cells, stored at 15x (480 px); drawn at whole screen pixels per cell
   avatar = "avatar.png"
+  pixels = 32
 
 # Same giscus discussion repo as the VuePress blog; with the same page paths
 # (baseURL .../blog/), existing comment threads carry over.
