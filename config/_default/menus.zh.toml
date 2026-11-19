@@ -28,29 +28,63 @@
   params.icon = "fa fa-book"
   params.priority = 2
 [[main]]
+  identifier = "col-game-dev"
   parent = "columns"
   name = "游戏开发"
   pageRef = "/game-dev"
   weight = 1
   params.icon = "fa fa-gamepad"
 [[main]]
+  parent = "col-game-dev"
+  name = "游戏画廊"
+  pageRef = "/game-dev/001-games-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
+  parent = "col-game-dev"
+  name = "GB/GBC 游戏开发"
+  pageRef = "/game-dev/retro/gameboy/intro"
+  weight = 2
+  params.icon = "fa fa-microchip"
+[[main]]
+  identifier = "col-porting"
   parent = "columns"
   name = "移植"
   pageRef = "/porting"
   weight = 2
   params.icon = "fa fa-microchip"
 [[main]]
+  parent = "col-porting"
+  name = "移植画廊"
+  pageRef = "/porting/001-porting-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
+  identifier = "col-software"
   parent = "columns"
   name = "软件开发"
   pageRef = "/software"
   weight = 3
   params.icon = "fa fa-terminal"
 [[main]]
+  parent = "col-software"
+  name = "软件画廊"
+  pageRef = "/software/001-software-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
+  identifier = "col-graphics"
   parent = "columns"
   name = "图形学与引擎开发"
   pageRef = "/graphics"
   weight = 4
   params.icon = "fa fa-cube"
+[[main]]
+  parent = "col-graphics"
+  name = "图形学与引擎画廊"
+  pageRef = "/graphics/001-graphics-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
 
 [[main]]
   identifier = "about"

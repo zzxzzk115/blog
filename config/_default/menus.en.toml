@@ -28,29 +28,63 @@
   params.icon = "fa fa-book"
   params.priority = 2
 [[main]]
+  identifier = "col-game-dev"
   parent = "columns"
   name = "Game Dev"
   pageRef = "/game-dev"
   weight = 1
   params.icon = "fa fa-gamepad"
 [[main]]
+  parent = "col-game-dev"
+  name = "Games Gallery"
+  pageRef = "/game-dev/001-games-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
+  parent = "col-game-dev"
+  name = "GB/GBC Game Development"
+  pageRef = "/game-dev/retro/gameboy/intro"
+  weight = 2
+  params.icon = "fa fa-microchip"
+[[main]]
+  identifier = "col-porting"
   parent = "columns"
   name = "Porting"
   pageRef = "/porting"
   weight = 2
   params.icon = "fa fa-microchip"
 [[main]]
+  parent = "col-porting"
+  name = "Porting Gallery"
+  pageRef = "/porting/001-porting-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
+  identifier = "col-software"
   parent = "columns"
   name = "Software"
   pageRef = "/software"
   weight = 3
   params.icon = "fa fa-terminal"
 [[main]]
+  parent = "col-software"
+  name = "Software Gallery"
+  pageRef = "/software/001-software-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
+  identifier = "col-graphics"
   parent = "columns"
   name = "Graphics & Engines"
   pageRef = "/graphics"
   weight = 4
   params.icon = "fa fa-cube"
+[[main]]
+  parent = "col-graphics"
+  name = "Graphics & Engines Gallery"
+  pageRef = "/graphics/001-graphics-gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
 
 [[main]]
   identifier = "about"
