@@ -24,6 +24,24 @@
       "title" $title
       "summary" $desc
       "content" (dict "mediaType" "text/markdown" "value" $md)
-      "params" (dict "description" $desc "project" $p "bodyLang" (cond (isset $p.body $lang) $lang "en"))) }}
+      "params" (dict "description" $desc "project" $p "bodyLang" (cond (isset $p.body $lang) $lang "en"))
+      "menus" (dict "main" (dict "parent" (printf "proj-%s" $p.category) "weight" $p.order))) }}
   {{- end }}
+{{- end }}
+{{- /* one page per category (/projects/<category>/) with its cards, in the order the /projects/ filter shows them;
+     each is a folded group in the top menu's Projects dropdown, holding its project pages */}}
+{{- $icons := dict "work" "fa fa-cube" "fun" "fa fa-wrench" "retro" "fa fa-microchip" "library" "fa fa-code" "indie" "fa fa-gamepad" }}
+{{- $cats := slice }}
+{{- range sort $cat.projects "order" }}{{ if not (in $cats .category) }}{{ $cats = $cats | append .category }}{{ end }}{{ end }}
+{{- range $i, $c := $cats }}
+  {{- $ids := slice }}
+  {{- range sort (where $cat.projects "category" $c) "order" }}{{ $ids = $ids | append .id }}{{ end }}
+  {{- $name := T (printf "project_cat_%s" $c) | default $c }}
+  {{- $.AddPage (dict
+    "path" $c
+    "kind" "page"
+    "title" $name
+    "content" (dict "mediaType" "text/markdown" "value" (printf "{{< projects ids=\"%s\" >}}" (delimit $ids ", ")))
+    "params" (dict "projectCategory" $c "faIcon" (index $icons $c) "comments" false)
+    "menus" (dict "main" (dict "identifier" (printf "proj-%s" $c) "parent" "projects" "weight" (add 10 $i) "params" (dict "icon" (index $icons $c | default "fa fa-folder") "folded" true)))) }}
 {{- end }}

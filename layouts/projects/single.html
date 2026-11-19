@@ -1,5 +1,10 @@
-{{- /* A catalog project (content/shared/projects/_content.gotmpl): picture, summary, links, overview, then the body */ -}}
+{{- /* A catalog project or category (layouts/_partials/func/project-pages.html): picture, summary, links, overview, then the body */ -}}
 {{ define "main" }}
+{{- if .Params.projectCategory }}{{/* a category page: its cards */}}
+{{ partial "breadcrumbs.html" . }}
+{{ partial "post/title.html" (dict "item" . "index" false) }}
+<div class="row page"><div class="col-md-12"><article class="mypage md-content">{{ .Content }}</article></div></div>
+{{- else }}
 {{- $p := .Params.project }}
 {{- $lang := index (split site.Language.Lang "-") 0 }}
 {{- $zh := eq $lang "zh" }}
@@ -38,4 +43,5 @@
     {{- if ne .Params.comments false }}{{ partial "comments.html" . }}{{ end }}
   </div>
 </div>
+{{- end }}
 {{ end }}

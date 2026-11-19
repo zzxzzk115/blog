@@ -87,6 +87,21 @@
   params.icon = "fa fa-th-large"
 
 [[main]]
+  identifier = "projects"
+  name = "项目"
+  pageRef = "/projects"
+  weight = 50
+  params.icon = "fa fa-cubes"
+  params.priority = 3
+[[main]]
+  parent = "projects"
+  name = "全部项目"
+  pageRef = "/projects"
+  weight = 1
+  params.icon = "fa fa-th-large"
+  # the categories and their projects come from the catalog (layouts/_partials/func/project-pages.html)
+
+[[main]]
   identifier = "about"
   name = "关于"
   pageRef = "/intro"
