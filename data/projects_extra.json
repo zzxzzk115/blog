@@ -4,22 +4,41 @@
   "title": "Space Impact II on GameShell",
   "desc": "A GameShell port of a pixel-perfect clone of Nokia's Space Impact II, with handheld controls and a launcher installer.",
   "category": "retro",
-  "tags": ["GameShell", "C", "Port"],
+  "tags": [
+   "GameShell",
+   "C",
+   "Port"
+  ],
   "image": "/img/projects/space-impact-gameshell.webp",
   "page": "https://github.com/zzxzzk115/Space-Impact-II-GameShell",
-  "links": [{"label": "Source", "href": "https://github.com/zzxzzk115/Space-Impact-II-GameShell"}]
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/Space-Impact-II-GameShell"
+   }
+  ]
  },
  {
   "id": "lowres-nx-handhelds",
   "title": "LowRes NX on GameShell & PocketCHIP",
   "desc": "Custom builds of the LowRes NX fantasy console: the GameShell build fixes the display resolution and adds a launcher entry; a PocketCHIP build too.",
   "category": "retro",
-  "tags": ["GameShell", "PocketCHIP", "C"],
+  "tags": [
+   "GameShell",
+   "PocketCHIP",
+   "C"
+  ],
   "image": "/img/projects/lowres-nx-gameshell.webp",
   "page": "https://github.com/zzxzzk115/lowres-nx-GameShell",
   "links": [
-   {"label": "GameShell build", "href": "https://github.com/zzxzzk115/lowres-nx-GameShell"},
-   {"label": "PocketCHIP build", "href": "https://github.com/zzxzzk115/lowres-nx-CHIP"}
+   {
+    "label": "GameShell build",
+    "href": "https://github.com/zzxzzk115/lowres-nx-GameShell"
+   },
+   {
+    "label": "PocketCHIP build",
+    "href": "https://github.com/zzxzzk115/lowres-nx-CHIP"
+   }
   ]
  },
  {
@@ -27,40 +46,74 @@
   "title": "PegasusG by ROC (H700 handhelds)",
   "desc": "Contributions to a GBA frontend for H700 Linux handhelds: native-resolution rendering with an adapted layout, game volume wired to the system volume, grid keyboard navigation in search.",
   "category": "retro",
-  "tags": ["H700", "SDL2", "C++"],
+  "tags": [
+   "H700",
+   "SDL2",
+   "C++"
+  ],
   "page": "https://github.com/zzxzzk115/PegasusG-by-ROC",
-  "links": [{"label": "Source", "href": "https://github.com/zzxzzk115/PegasusG-by-ROC"}]
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/PegasusG-by-ROC"
+   }
+  ]
  },
  {
   "id": "godot-gameshell",
   "title": "Godot games on GameShell",
   "desc": "Getting Godot games running on the GameShell handheld, written up step by step.",
   "category": "retro",
-  "tags": ["GameShell", "Godot"],
+  "tags": [
+   "GameShell",
+   "Godot"
+  ],
   "image": "/img/markdown_20210920125310.webp",
   "page": "/posts/run-godot-game-on-gameshell",
-  "links": [{"label": "Article", "href": "/posts/run-godot-game-on-gameshell"}]
+  "links": [
+   {
+    "label": "Article",
+    "href": "/posts/run-godot-game-on-gameshell"
+   }
+  ]
  },
  {
   "id": "love2d-pocketchip",
   "title": "LÖVE 11.3 on PocketCHIP",
   "desc": "Building and installing LÖVE 11.3 on PocketCHIP, so LÖVE games run on it.",
   "category": "retro",
-  "tags": ["PocketCHIP", "LÖVE"],
+  "tags": [
+   "PocketCHIP",
+   "LÖVE"
+  ],
   "image": "/img/markdown_20220512181445.webp",
   "page": "/posts/pocketchip-love2d",
-  "links": [{"label": "Article", "href": "/posts/pocketchip-love2d"}]
+  "links": [
+   {
+    "label": "Article",
+    "href": "/posts/pocketchip-love2d"
+   }
+  ]
  },
  {
   "id": "retroarch-pocketchip",
   "title": "RetroArch on PocketCHIP",
   "desc": "RetroArch built for PocketCHIP, with the install steps written up.",
   "category": "retro",
-  "tags": ["PocketCHIP", "RetroArch"],
+  "tags": [
+   "PocketCHIP",
+   "RetroArch"
+  ],
   "page": "/posts/pocketchip-retroarch",
   "links": [
-   {"label": "Article", "href": "/posts/pocketchip-retroarch"},
-   {"label": "Source", "href": "https://github.com/zzxzzk115/RetroArch/tree/pocketchip"}
+   {
+    "label": "Article",
+    "href": "/posts/pocketchip-retroarch"
+   },
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/RetroArch/tree/pocketchip"
+   }
   ]
  },
  {
@@ -68,37 +121,35 @@
   "title": "GameShell Scripts",
   "desc": "One-line scripts that upgrade GameShell's graphics stack and set up the system.",
   "category": "retro",
-  "tags": ["GameShell", "Shell"],
+  "tags": [
+   "GameShell",
+   "Shell"
+  ],
   "page": "https://github.com/zzxzzk115/GameShell-Scripts",
-  "links": [{"label": "Source", "href": "https://github.com/zzxzzk115/GameShell-Scripts"}]
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/GameShell-Scripts"
+   }
+  ]
  },
  {
   "id": "freemind-bithack",
   "title": "freemind.bithack Hugo theme",
   "desc": "The dark, terminal-style Hugo theme this blog runs on: a port of hexo-theme-freemind.bithack with pixel fonts, search, reader mode and bilingual support. No Node needed.",
   "category": "fun",
-  "tags": ["Hugo", "CSS", "JavaScript"],
+  "tags": [
+   "Hugo",
+   "CSS",
+   "JavaScript"
+  ],
   "image": "/img/projects/freemind-bithack.webp",
   "page": "https://github.com/zzxzzk115/hugo-theme-freemind-bithack",
-  "links": [{"label": "Source", "href": "https://github.com/zzxzzk115/hugo-theme-freemind-bithack"}]
- },
- {
-  "id": "galaxy-engine",
-  "title": "Galaxy Engine",
-  "desc": "An earlier cross-platform 3D game engine in C++, started from scratch before Vultra.",
-  "category": "work",
-  "tags": ["C++", "Engine"],
-  "status": "Early project",
-  "page": "https://github.com/zzxzzk115/GalaxyEngine",
-  "links": [{"label": "Source", "href": "https://github.com/zzxzzk115/GalaxyEngine"}]
- },
- {
-  "id": "native-scripting-demo",
-  "title": "NativeScriptingDemo",
-  "desc": "A small engine demo of native scripting: game scripts compiled into DLLs and hot-reloaded while the engine runs.",
-  "category": "work",
-  "tags": ["C++", "Scripting", "Hot reload"],
-  "page": "https://github.com/zzxzzk115/NativeScriptingDemo",
-  "links": [{"label": "Source", "href": "https://github.com/zzxzzk115/NativeScriptingDemo"}]
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/hugo-theme-freemind-bithack"
+   }
+  ]
  }
 ]

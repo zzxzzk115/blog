@@ -150,11 +150,3 @@ desc = "一行命令升级 GameShell 图形栈、完成系统配置的脚本合�
 [freemind-bithack]
 title = "freemind.bithack Hugo 主题"
 desc = "本博客使用的暗色终端风 Hugo 主题：移植自 hexo-theme-freemind.bithack，带像素字体、搜索、纯享阅读和中英双语，无需 Node。"
-
-[galaxy-engine]
-title = "Galaxy 引擎"
-desc = "在 Vultra 之前从零写的跨平台 C++ 3D 游戏引擎。"
-status = "早期项目"
-
-[native-scripting-demo]
-desc = "引擎原生脚本的小型演示：游戏脚本编译成 DLL，在引擎运行时热重载。"
