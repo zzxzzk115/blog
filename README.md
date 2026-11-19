@@ -31,6 +31,7 @@ python tools/new_post.py my-new-post --zh "中文标题" --en "English title" --
 - 预览含草稿：`hugo server -D`；写完删掉 `draft: true` 再推送。
 - 链接卡片：`python tools/linkcard.py <网址>` 抓取标题、描述和预览图（图片存到 `static/img/linkcards/`）并输出 `{{< linkcard … >}}`；`--replace 文章.md` 会把只含一个链接的行整体换成卡片，打不开的死链会保留原样并提示。
 - 音乐播放器：`python tools/netease_music.py <网易云歌曲ID…>` 把标题、歌手、封面、歌词写进 `data/music.toml`，文中写 `{{< music ids="ID1, ID2" >}}`；`--all` 刷新已有的歌。
+- 项目展示（About 页的「做过的项目」）：`python tools/sync_projects.py`（需要 `pip install pyyaml`）从个人主页仓库同步项目到 `data/projects.json`，图片存到 `static/img/projects/`；中文简介手写在 `data/projects_zh.toml`，类别名在 `i18n/`。
 - 只建一个文件也可以用 Hugo 自带的：`hugo new content content/zh/posts/xxx.md`（模板在 `archetypes/default.md`）。
 
 VS Code（`.vscode/` 已配好，无需插件）：

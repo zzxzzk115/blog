@@ -1,0 +1,698 @@
+[
+ {
+  "id": "lazy_100",
+  "title": "Lazy-100",
+  "desc": "A Lua fantasy console with code, sprite, map, sound and music editors, built on VRI for desktop and browser play.",
+  "category": "retro",
+  "tags": [
+   "C++",
+   "Lua",
+   "Retro"
+  ],
+  "status": "",
+  "order": 1,
+  "featured": 1,
+  "image": "/img/projects/lazy_100.webp",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/lazy_100/",
+  "links": [
+   {
+    "label": "Play Breakout",
+    "href": "https://zzxzzk115.github.io/Lazy-100/?cart=breakout"
+   },
+   {
+    "label": "Browse cartridges",
+    "href": "https://zzxzzk115.github.io/Lazy-100/carts/"
+   },
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/Lazy-100"
+   }
+  ]
+ },
+ {
+  "id": "vultra_ecosystem",
+  "title": "Vultra Ecosystem",
+  "desc": "Graphics and engine projects for research and games, with current libvultra development on the VRI-based dev-VRI branch.",
+  "category": "work",
+  "tags": [
+   "C++",
+   "Vulkan",
+   "OpenXR"
+  ],
+  "status": "Current development: dev-VRI · early stage",
+  "order": 1,
+  "featured": 1,
+  "image": "/img/projects/vultra_ecosystem.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vultra_ecosystem/",
+  "links": [
+   {
+    "label": "Current branch",
+    "href": "https://github.com/zzxzzk115/libvultra/tree/dev-VRI"
+   }
+  ]
+ },
+ {
+  "id": "light-propagation-volumes",
+  "title": "Light Propagation Volumes",
+  "desc": "My MSc dissertation renderer, implementing Light Propagation Volumes alongside cascaded shadows, ambient occlusion and screen-space reflections.",
+  "category": "work",
+  "tags": [
+   "C++",
+   "Global illumination",
+   "OpenGL",
+   "MSc"
+  ],
+  "status": "MSc dissertation project",
+  "order": 2,
+  "featured": 2,
+  "image": "/img/projects/light-propagation-volumes.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/light-propagation-volumes/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/Light-Propagation-Volumes"
+   },
+   {
+    "label": "Dissertation (PDF)",
+    "href": "/assets/pdf/LPV-MSc-Dissertation.pdf"
+   }
+  ]
+ },
+ {
+  "id": "cells_of_division",
+  "title": "Cells of Division",
+  "desc": "A top-down bullet hell roguelike on Steam — fight alongside clones of your past runs inside the immune system. Free demo out now! Co-founder of High Path Games; programming lead.",
+  "category": "indie",
+  "tags": [
+   "Indie",
+   "Steam"
+  ],
+  "status": "",
+  "order": 3,
+  "featured": 2,
+  "image": "/img/projects/cells_of_division.jpg",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/cells_of_division/",
+  "links": [
+   {
+    "label": "Free demo on Steam",
+    "href": "https://store.steampowered.com/app/3879680/Cells_of_Division/"
+   }
+  ]
+ },
+ {
+  "id": "gold_minder_rebirth",
+  "title": "Gold Miner Rebirth",
+  "desc": "A faithful remake of the classic Flash game, built with LÖVE2D for GameShell, Trimui, and other retro gaming handhelds.",
+  "category": "retro",
+  "tags": [
+   "LÖVE",
+   "Handhelds"
+  ],
+  "status": "",
+  "order": 3,
+  "featured": 4,
+  "image": "/img/projects/gold_minder_rebirth.png",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/gold_minder_rebirth/",
+  "links": [
+   {
+    "label": "Play on itch.io",
+    "href": "https://lazy-v.itch.io/goldminer-rebirth"
+   },
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/GoldMiner-Rebirth"
+   }
+  ]
+ },
+ {
+  "id": "vri",
+  "title": "VRI",
+  "desc": "A cross-platform render hardware interface with a C ABI and a C++23 wrapper for Vulkan, D3D12, Metal, WebGPU and OpenGL-family backends.",
+  "category": "work",
+  "tags": [
+   "C++23",
+   "RHI",
+   "Vulkan",
+   "OpenXR"
+  ],
+  "status": "In development",
+  "order": 3,
+  "featured": 3,
+  "image": "/img/projects/vri.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vri/",
+  "links": [
+   {
+    "label": "Path tracer · WebGPU",
+    "href": "https://zzxzzk115.github.io/VRI/examples/example-pathtracer.html?backend=webgpu"
+   },
+   {
+    "label": "Browser examples",
+    "href": "https://zzxzzk115.github.io/VRI/examples/"
+   },
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/VRI"
+   }
+  ]
+ },
+ {
+  "id": "catmario_gb",
+  "title": "Catmario GB",
+  "desc": "The troll platformer CatMario, rebuilt for the Game Boy with GB Studio — playable on itch.io or a compatible Game Boy emulator.",
+  "category": "retro",
+  "tags": [
+   "Game Boy",
+   "GB Studio"
+  ],
+  "status": "",
+  "order": 4,
+  "featured": null,
+  "image": "/img/projects/catmario_gb.png",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/catmario_gb/",
+  "links": [
+   {
+    "label": "Play on itch.io",
+    "href": "https://lazy-v.itch.io/catmario-gb"
+   },
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/CatmarioGB"
+   }
+  ]
+ },
+ {
+  "id": "omnilyrics",
+  "title": "OmniLyrics",
+  "desc": "Cross-platform desktop, terminal and status-bar lyrics with GUI, CLI/TUI, bilingual karaoke, .NET 10 and Avalonia.",
+  "category": "fun",
+  "tags": [
+   ".NET",
+   "Avalonia"
+  ],
+  "status": "Desktop releases available",
+  "order": 4,
+  "featured": 3,
+  "image": "/img/projects/omnilyrics.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/omnilyrics/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/OmniLyrics"
+   },
+   {
+    "label": "Downloads",
+    "href": "https://github.com/zzxzzk115/OmniLyrics/releases"
+   }
+  ]
+ },
+ {
+  "id": "snow_leopard_engine",
+  "title": "Snow Leopard Engine",
+  "desc": "A C++ / OpenGL 4.6 game engine built by a 7-person MSc team at Leeds — where the Vultra story began.",
+  "category": "work",
+  "tags": [
+   "C++",
+   "OpenGL"
+  ],
+  "status": "",
+  "order": 4,
+  "featured": null,
+  "image": "/img/projects/snow_leopard_engine.jpg",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/snow_leopard_engine/",
+  "links": []
+ },
+ {
+  "id": "vri-framework",
+  "title": "VRI-Framework",
+  "desc": "Reusable C++23 rendering building blocks over VRI: RAII resources, framegraphs, profiling, multi-queue submission and OpenXR utilities.",
+  "category": "work",
+  "tags": [
+   "C++23",
+   "VRI",
+   "Framegraph",
+   "OpenXR"
+  ],
+  "status": "Public · in development",
+  "order": 5,
+  "featured": null,
+  "image": "/img/projects/vri-framework.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vri-framework/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/VRI-Framework"
+   }
+  ]
+ },
+ {
+  "id": "vplot",
+  "title": "vplot",
+  "desc": "C++23 plotting through a C ABI, with PNG, SVG and PDF export, ImGui integration and a WebAssembly demo.",
+  "category": "library",
+  "tags": [
+   "C++23",
+   "Plotting",
+   "C ABI",
+   "WebAssembly"
+  ],
+  "status": "Early development · API evolving",
+  "order": 6,
+  "featured": 4,
+  "image": "/img/projects/vplot.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vplot/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/vplot"
+   },
+   {
+    "label": "Browser demo",
+    "href": "https://zzxzzk115.github.io/vplot/"
+   }
+  ]
+ },
+ {
+  "id": "mchose-control-linux",
+  "title": "MCHOSE Control Linux",
+  "desc": "A Linux GUI and CLI for MCHOSE mice, with DPI and sensor settings, per-application presets and KDE desktop integration.",
+  "category": "fun",
+  "tags": [
+   "Rust",
+   "Linux",
+   "KDE",
+   "Desktop"
+  ],
+  "status": "",
+  "order": 7,
+  "featured": 6,
+  "image": "/img/projects/mchose-control-linux.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/mchose-control-linux/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/mchose-control-linux"
+   }
+  ]
+ },
+ {
+  "id": "vgfw",
+  "title": "VGFW",
+  "desc": "A header-only OpenGL framework for graphics prototypes, with model loading, a framegraph and Tracy profiling.",
+  "category": "work",
+  "tags": [
+   "C++",
+   "OpenGL",
+   "Framegraph"
+  ],
+  "status": "",
+  "order": 8,
+  "featured": null,
+  "image": "/img/projects/vgfw.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vgfw/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/vgfw"
+   }
+  ]
+ },
+ {
+  "id": "vshadersystem",
+  "title": "vshadersystem",
+  "desc": "A Slang-based shader compilation pipeline with material reflection, keyword variants and portable runtime shader libraries.",
+  "category": "library",
+  "tags": [
+   "C++",
+   "Slang",
+   "Shaders",
+   "Tools"
+  ],
+  "status": "",
+  "order": 9,
+  "featured": null,
+  "image": "/img/projects/vshadersystem.svg",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/vshadersystem/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/vshadersystem"
+   }
+  ]
+ },
+ {
+  "id": "vasset",
+  "title": "vasset",
+  "desc": "An asset import and packaging pipeline with UUID-based registries, custom mesh and texture formats, VPK archives and a command-line tool.",
+  "category": "library",
+  "tags": [
+   "C++",
+   "Assets",
+   "xmake",
+   "WebAssembly"
+  ],
+  "status": "",
+  "order": 10,
+  "featured": null,
+  "image": "/img/projects/vasset.svg",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/vasset/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/vasset"
+   }
+  ]
+ },
+ {
+  "id": "pocketchip-macos",
+  "title": "Classic Mac OS on PocketCHIP",
+  "desc": "A custom Mini vMac build and handheld setup for running classic Mac OS System 7.5 on PocketCHIP.",
+  "category": "retro",
+  "tags": [
+   "PocketCHIP",
+   "Mini vMac",
+   "Emulation"
+  ],
+  "status": "Handheld port",
+  "order": 11,
+  "featured": 5,
+  "image": "/img/projects/pocketchip-macos.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/pocketchip-macos/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/Pocketchip-MacOS-Emulator"
+   }
+  ]
+ },
+ {
+  "id": "online-tools",
+  "title": "Image Comparison Tools",
+  "desc": "Browser tools for SSIM, PSNR and MSE measurements, absolute error maps and heatmaps, with English and Chinese interfaces.",
+  "category": "fun",
+  "tags": [
+   "JavaScript",
+   "Image metrics",
+   "Web"
+  ],
+  "status": "",
+  "order": 12,
+  "featured": null,
+  "image": "/img/projects/online-tools.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/online-tools/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/online-tools"
+   },
+   {
+    "label": "Open tools",
+    "href": "https://zzxzzk115.github.io/online-tools/"
+   }
+  ]
+ },
+ {
+  "id": "bbk-gameshell",
+  "title": "BBK Games on GameShell",
+  "desc": "GameShell adaptations of classic BBK games, based on bbk.emu, with handheld launchers and controls.",
+  "category": "retro",
+  "tags": [
+   "GameShell",
+   "JavaScript",
+   "Porting"
+  ],
+  "status": "Handheld adaptation",
+  "order": 14,
+  "featured": null,
+  "image": "/img/projects/bbk-gameshell.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/bbk-gameshell/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/BBKGames_GameShell"
+   }
+  ]
+ },
+ {
+  "id": "wqx-gameshell",
+  "title": "WQX NC1020 on GameShell",
+  "desc": "A GameShell adaptation of the WQX NC1020 emulator, using jswqx and NW.js with handheld launcher integration.",
+  "category": "retro",
+  "tags": [
+   "GameShell",
+   "JavaScript",
+   "NW.js"
+  ],
+  "status": "Handheld adaptation",
+  "order": 15,
+  "featured": null,
+  "image": "/img/projects/wqx-gameshell.webp",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/wqx-gameshell/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/WqxEmulator-GameShell"
+   }
+  ]
+ },
+ {
+  "id": "vraytracer",
+  "title": "VRaytracer",
+  "desc": "An earlier C++ ray tracer with an ImGui interface, multithreaded rendering and configurable scenes.",
+  "category": "work",
+  "tags": [
+   "C++",
+   "Ray tracing",
+   "ImGui"
+  ],
+  "status": "Earlier graphics project",
+  "order": 16,
+  "featured": null,
+  "image": "/img/projects/vraytracer.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vraytracer/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/VRaytracer"
+   }
+  ]
+ },
+ {
+  "id": "vsoft-renderer",
+  "title": "VSoftRenderer",
+  "desc": "A small CPU software renderer with programmable C++ shaders, Gouraud shading and textured Phong shading.",
+  "category": "work",
+  "tags": [
+   "C++",
+   "Software rendering",
+   "Shading"
+  ],
+  "status": "Earlier graphics project",
+  "order": 17,
+  "featured": null,
+  "image": "/img/projects/vsoft-renderer.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/vsoft-renderer/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/VSoftRenderer"
+   }
+  ]
+ },
+ {
+  "id": "j2me-asset-hunter",
+  "title": "J2ME Asset Hunter",
+  "desc": "A command-line utility for extracting game assets from J2ME JAR files.",
+  "category": "fun",
+  "tags": [
+   "C++",
+   "J2ME",
+   "Game tools"
+  ],
+  "status": "",
+  "order": 18,
+  "featured": null,
+  "image": "/img/projects/j2me-asset-hunter.svg",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/j2me-asset-hunter/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/j2me-asset-hunter"
+   }
+  ]
+ },
+ {
+  "id": "bixuetang",
+  "title": "Bixuetang · 必学堂",
+  "desc": "A Chinese-language self-study app for open courses, with prerequisite-based learning paths, progress tracking, video notes and spaced repetition.",
+  "category": "fun",
+  "tags": [
+   "TypeScript",
+   "Education",
+   "Web"
+  ],
+  "status": "",
+  "order": 19,
+  "featured": null,
+  "image": "/img/projects/bixuetang.webp",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/bixuetang/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/bixuetang"
+   }
+  ]
+ },
+ {
+  "id": "chip8-cpp",
+  "title": "chip8-cpp",
+  "desc": "A C++23 CHIP-8 interpreter with SDL2 graphics, input and sound — the beginning of my emulator development journey.",
+  "category": "retro",
+  "tags": [
+   "C++23",
+   "SDL2",
+   "Emulation"
+  ],
+  "status": "Earlier emulator project",
+  "order": 20,
+  "featured": null,
+  "image": "/img/projects/chip8-cpp.png",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/chip8-cpp/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/chip8-cpp"
+   }
+  ]
+ },
+ {
+  "id": "vrendergraph",
+  "title": "vrendergraph",
+  "desc": "A JSON render-pipeline description and runtime FrameGraph builder, with resource slots, schema versioning and editor helpers.",
+  "category": "library",
+  "tags": [
+   "C++",
+   "FrameGraph",
+   "JSON",
+   "Tools"
+  ],
+  "status": "",
+  "order": 21,
+  "featured": null,
+  "image": "/img/projects/vrendergraph.png",
+  "imageFit": "contain",
+  "page": "https://zzxzzk115.github.io/projects/vrendergraph/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/vrendergraph"
+   },
+   {
+    "label": "Runtime integration",
+    "href": "https://github.com/zzxzzk115/vrendergraph/blob/master/docs/RUNTIME.md"
+   }
+  ]
+ },
+ {
+  "id": "nw-unity",
+  "title": "NW-Unity",
+  "desc": "A Python command-line tool that packages Unity WebGL output into NW.js applications, including a GameShell packaging mode.",
+  "category": "fun",
+  "tags": [
+   "Python",
+   "Unity WebGL",
+   "NW.js",
+   "GameShell"
+  ],
+  "status": "Earlier tool project",
+  "order": 22,
+  "featured": null,
+  "image": "/img/projects/nw-unity.jpg",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/nw-unity/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/NW-Unity"
+   }
+  ]
+ },
+ {
+  "id": "academic-casual-template",
+  "title": "Academic & Casual Homepage Template",
+  "desc": "The reusable Astro and Vue template behind this site, with Academic and Casual presentations and separate content repositories.",
+  "category": "fun",
+  "tags": [
+   "Astro",
+   "Vue",
+   "TypeScript",
+   "Templates"
+  ],
+  "status": "",
+  "order": 23,
+  "featured": null,
+  "image": "/img/projects/academic-casual-template.png",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/academic-casual-template/",
+  "links": [
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/academic-casual-template"
+   },
+   {
+    "label": "Content guide",
+    "href": "https://github.com/zzxzzk115/academic-casual-template/blob/eff77bad83aaca2dd8f50c2b9e4775ff51def8b1/docs/content.md"
+   }
+  ]
+ },
+ {
+  "id": "portfolio-98",
+  "title": "Portfolio-98",
+  "desc": "A Windows 98-inspired interactive portfolio, with desktop windows, a mobile Pocket PC-style shell and embedded games.",
+  "category": "fun",
+  "tags": [
+   "Next.js",
+   "TypeScript",
+   "Retro UI"
+  ],
+  "status": "",
+  "order": 24,
+  "featured": null,
+  "image": "/img/projects/portfolio-98.png",
+  "imageFit": "cover",
+  "page": "https://zzxzzk115.github.io/projects/portfolio-98/",
+  "links": [
+   {
+    "label": "Explore desktop",
+    "href": "https://zzxzzk115.github.io/portfolio-98/"
+   },
+   {
+    "label": "Source",
+    "href": "https://github.com/zzxzzk115/portfolio-98"
+   }
+  ]
+ }
+]

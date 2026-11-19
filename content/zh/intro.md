@@ -15,6 +15,16 @@ url: /zh/intro.html
 
 读硕士之前，我曾在紫龙游戏（Zilong Game Limited）上海研发中心 Blackjack Studio 担任游戏服务器工程师，主要接触 C#、多线程、网络通信和性能优化。
 
+## 做过的项目
+
+我做过图形库、渲染器、游戏引擎和游戏，也给复古掌机移植过不少东西。下面是几个代表作，展开可以看全部项目，每个项目的详细介绍在我的[个人主页](https://zzxzzk115.github.io/projects/)。
+
+{{< projects featured="6" >}}
+
+{{< details "全部项目（可按类别筛选）" >}}
+{{< projects filter="true" >}}
+{{< /details >}}
+
 ## 最近在做什么
 
 我喜欢开发图形库、引擎、游戏和小工具。目前的图形项目包括跨平台渲染 API [VRI](https://github.com/zzxzzk115/VRI)，以及在它之上开发的图形框架 [libvultra](https://github.com/zzxzzk115/libvultra)。我也在独立跟学 CIS5650，学习 CUDA，尤其关注 GPU 驱动渲染、大场景和全局光照。

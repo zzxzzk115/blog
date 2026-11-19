@@ -1,0 +1,6 @@
+# Site-specific strings (merged with the theme's i18n).
+project_cat_work: "图形与 XR"
+project_cat_fun: "工具与应用"
+project_cat_retro: "复古与模拟器"
+project_cat_library: "库"
+project_cat_indie: "游戏"

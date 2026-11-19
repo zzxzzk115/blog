@@ -15,6 +15,16 @@ Before starting my PhD, I completed an MSc in **High-Performance Graphics and Ga
 
 Before my master's, I worked as a game server engineer at Blackjack Studio, the Shanghai R&D centre of Zilong Game Limited, mainly with C#, multithreading, networking, and performance optimisation.
 
+## Projects
+
+I've built graphics libraries, renderers, game engines and games, and ported quite a few things to retro handhelds. Here are some highlights; expand the list below for everything, and see my [personal homepage](https://zzxzzk115.github.io/projects/) for the details of each project.
+
+{{< projects featured="6" >}}
+
+{{< details "All projects (filter by category)" >}}
+{{< projects filter="true" >}}
+{{< /details >}}
+
 ## What I'm working on
 
 I build graphics libraries, engines, games, and small tools. My current graphics projects include [VRI](https://github.com/zzxzzk115/VRI), a cross-platform rendering API, and [libvultra](https://github.com/zzxzzk115/libvultra), the graphics framework I am developing on top of it. I am also studying CUDA through CIS5650 independently, with an interest in GPU-driven rendering, large scenes, and global illumination.
