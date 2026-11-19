@@ -12,4 +12,6 @@ url: /friends.html
 
 ## Exchange links
 
-Happy to swap links — email [zzxzzk115@gmail.com](mailto:zzxzzk115@gmail.com) or leave a comment below with your site's **name**, **URL** and a short description.
+Happy to swap links! The best way is a [comment below](#comments) (just sign in with GitHub) with your site's **name**, **URL**, **avatar URL** and a short description.
+
+You can also email [zzxzzk115@gmail.com](mailto:zzxzzk115@gmail.com), but email sometimes lands in spam; if you haven't heard back in a few days, please leave a comment as well.
