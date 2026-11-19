@@ -4,7 +4,10 @@ article: false
 url: /intro.html
 ---
 
-Hi, I'm Kexuan Zhang, also known as **Lazy_V**. I'm a PhD student in **Perceptual Graphics at the University of Leeds**. My research interests are virtual reality and high-performance graphics, particularly foveated rendering, stereo reprojection, and image inpainting for disocclusion holes.
+![Kexuan Zhang](/img/about/kexuan-zhang.webp)
+{.about-photo .no-caption}
+
+Hi, I'm Kexuan Zhang, also known as **Lazy_V**, from Wuhan, Hubei, China. I'm a PhD student in **Perceptual Graphics at the University of Leeds**. My research interests are virtual reality and high-performance graphics, particularly foveated rendering, stereo reprojection, and image inpainting for disocclusion holes.
 
 I am supervised by Dr. [Rafael Kuffner dos Anjos](https://rafaelkuffner.github.io/), Dr. Markus Billeter, and Prof. Gordon D. Love.
 

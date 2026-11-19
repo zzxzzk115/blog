@@ -4,7 +4,10 @@ article: false
 url: /zh/intro.html
 ---
 
-大家好，我叫张可宣，也使用 **Lazy_V** 这个名字。目前我在**利兹大学攻读感知图形学方向的博士学位**，研究兴趣是虚拟现实与高性能图形学，尤其是注视点渲染、立体重投影，以及用于填补去遮挡空洞的图像修复。
+![张可宣](/img/about/kexuan-zhang.webp)
+{.about-photo .no-caption}
+
+大家好，我叫张可宣，也使用 **Lazy_V** 这个名字，来自中国湖北武汉。目前我在**利兹大学攻读感知图形学方向的博士学位**，研究兴趣是虚拟现实与高性能图形学，尤其是注视点渲染、立体重投影，以及用于填补去遮挡空洞的图像修复。
 
 我的导师是 [Rafael Kuffner dos Anjos 博士](https://rafaelkuffner.github.io/)、Markus Billeter 博士和 Gordon D. Love 教授。
 

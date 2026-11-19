@@ -1,0 +1,8 @@
+/* Blog-specific styles, bundled after the theme's (themes/freemind-bithack/layouts/_partials/head.html). */
+
+/* About: portrait beside the intro on wide screens, centred above it on phones; framed like the site's dialogs */
+.mypage img.about-photo { float: right; width: 160px; height: auto; margin: 4px 0 12px 22px; padding: 4px;
+  background: #111; border: 1px solid #555; box-shadow: 4px 4px 0 rgba(43, 188, 138, .3); }
+@media (max-width: 600px) {
+  .mypage img.about-photo { float: none; display: block; width: 150px; margin: 0 auto 18px; }
+}
