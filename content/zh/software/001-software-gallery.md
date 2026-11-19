@@ -6,7 +6,7 @@ url: /zh/software/001-software-gallery.html
 
 > 桌面应用、命令行工具、库和网页小工具。更多在我的 [GitHub](https://github.com/zzxzzk115)。
 
-{{< projects ids="omnilyrics, mchose-control-linux, bixuetang, vplot, online-tools, nw-unity, j2me-asset-hunter, chip8-cpp, freemind-bithack, academic-casual-template, portfolio-98" >}}
+{{< projects ids="omnilyrics, mchose-control-linux, bixuetang, vplot, online-tools, nw-unity, j2me-asset-hunter, chip8-cpp, freemind-bithack, academic-casual-template" >}}
 
 ## 相关文章
 
