@@ -47,8 +47,9 @@
         "href" (partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" .href "lang" $lang)))) }}
     {{- end }}
     {{- $page := "" }}
-    {{- with .url }}{{ $page = partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" . "lang" $lang)) }}
-    {{- else }}{{ with $hp }}{{ $page = printf "https://zzxzzk115.github.io%s" .path }}{{ else }}{{ with $links }}{{ $page = (index . 0).href }}{{ end }}{{ end }}{{ end }}
+    {{- if .body }}{{ $page = printf "/projects/%s" .id }}{{/* the blog's own page (content/shared/projects) */}}
+    {{- else }}{{ with .url }}{{ $page = partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" . "lang" $lang)) }}
+    {{- else }}{{ with $hp }}{{ $page = printf "https://zzxzzk115.github.io%s" .path }}{{ else }}{{ with $links }}{{ $page = (index . 0).href }}{{ end }}{{ end }}{{ end }}{{ end }}
     {{- $image := "" }}{{ $fit := "cover" }}
     {{- with .image }}{{ $image = printf "/img/catalog/%s" (strings.TrimPrefix "projects/" .src) }}{{ $fit = .fit | default "cover" }}{{ end }}
     {{- $card := dict

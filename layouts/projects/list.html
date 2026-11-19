@@ -1,0 +1,10 @@
+{{- /* /projects/: the page text with the project cards (the pages themselves have no dates to list) */ -}}
+{{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
+{{ partial "post/title.html" (dict "item" . "index" false) }}
+<div class="row page">
+  <div class="col-md-12">
+    <article class="mypage md-content">{{ .Content }}</article>
+  </div>
+</div>
+{{ end }}

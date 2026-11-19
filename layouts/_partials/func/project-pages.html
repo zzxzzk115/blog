@@ -1,0 +1,29 @@
+{{- /*
+  Project pages, one per catalog project with a body (github.com/zzxzzk115/featured-projects, mounted as
+  hugo.Data.catalog.catalog, see config/_default/module.toml): /projects/<id>/ and /zh/projects/<id>/.
+  The body is the catalog's Markdown (Chinese falls back to English); its links are made to work here:
+  projects/<id>/images/... (catalog.json's image paths) -> the mounted images, /assets/... -> the homepage. /projects/<id>/ links resolve to these
+  pages through the theme's link hook. Rendered by layouts/projects/single.html.
+  Called from content/{en,zh}/projects/_content.gotmpl (an adapter in a shared folder runs for one language only).
+*/ -}}
+{{- $lang := index (split site.Language.Lang "-") 0 }}
+{{- $cat := (index hugo.Data "catalog" | default dict).catalog | default dict }}
+{{- range $cat.projects }}
+  {{- $p := . }}
+  {{- with $p.body }}
+    {{- $md := index . $lang | default (index . "en") }}
+    {{- $img := partial "func/url.html" "/img/catalog/" }}
+    {{- $md = replace $md "](projects/" (printf "](%s" $img) }}
+    {{- $md = replace $md "src=\"projects/" (printf "src=\"%s" $img) }}
+    {{- $md = replace $md "](/assets/" "](https://zzxzzk115.github.io/assets/" }}
+    {{- $title := (partial "inline/catalog-pick.html" (dict "v" $p.title "lang" $lang)) }}
+    {{- $desc := (partial "inline/catalog-pick.html" (dict "v" $p.description "lang" $lang)) }}
+    {{- $.AddPage (dict
+      "path" $p.id
+      "kind" "page"
+      "title" $title
+      "summary" $desc
+      "content" (dict "mediaType" "text/markdown" "value" $md)
+      "params" (dict "description" $desc "project" $p "bodyLang" (cond (isset $p.body $lang) $lang "en"))) }}
+  {{- end }}
+{{- end }}

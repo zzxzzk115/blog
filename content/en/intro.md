@@ -17,7 +17,7 @@ Before my master's, I worked as a game server engineer at Blackjack Studio, the 
 
 ## Projects
 
-I've built graphics libraries, renderers, game engines and games, and ported quite a few things to retro handhelds. Here are some highlights; expand the list below for everything, and see my [personal homepage](https://zzxzzk115.github.io/projects/) for the details of each project.
+I've built graphics libraries, renderers, game engines and games, and ported quite a few things to retro handhelds. Here are some highlights; expand the list below for everything, and open a card for the details of each project, or browse them all on the [Projects](/projects/) page.
 
 {{< projects group="about" featured="6" >}}
 

@@ -1,0 +1,41 @@
+{{- /* A catalog project (content/shared/projects/_content.gotmpl): picture, summary, links, overview, then the body */ -}}
+{{ define "main" }}
+{{- $p := .Params.project }}
+{{- $lang := index (split site.Language.Lang "-") 0 }}
+{{- $zh := eq $lang "zh" }}
+{{ partial "breadcrumbs.html" . }}
+{{ partial "post/title.html" (dict "item" . "index" false) }}
+<div class="row page">
+  <div class="col-md-12">
+    <article class="mypage md-content project-page">
+      {{- /* the picture, unless the body has its own (often the same one, animated) */}}
+      {{- if not (findRE `!\[|<img` .RawContent 1) }}{{ with $p.image }}
+      <div class="project-image{{ if in (slice "contain" "pixel") .fit }} contain{{ end }}{{ if eq .fit "pixel" }} pixel{{ end }}">
+        <img src="{{ partial "func/url.html" (printf "/img/catalog/%s" (strings.TrimPrefix "projects/" .src)) }}" alt="{{ with .alt }}{{ (partial "inline/catalog-pick.html" (dict "v" . "lang" $lang)) }}{{ end }}">
+      </div>
+      {{- end }}{{ end }}
+      <p class="project-lead">{{ .Params.description }}</p>
+      {{- with $p.status }}<p class="project-status"><i class="fa fa-flag-o"></i> {{ (partial "inline/catalog-pick.html" (dict "v" . "lang" $lang)) }}</p>{{ end }}
+      {{- with $p.tags }}<p class="project-tags">{{ range . }}<span class="project-tag">{{ . }}</span>{{ end }}</p>{{ end }}
+      {{- with $p.links }}
+      <div class="project-links">
+        {{- range . }}{{ $href := (partial "inline/catalog-pick.html" (dict "v" .href "lang" $lang)) }}<a href="{{ $href }}"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>{{ if strings.Contains $href "://github.com/" }}<i class="fa fa-github" aria-hidden="true"></i>{{ end }}{{ (partial "inline/catalog-pick.html" (dict "v" .label "lang" $lang)) }}</a>{{ end -}}
+      </div>
+      {{- end }}
+      {{- $ov := "" }}{{ with $p.overview }}{{ $ov = index . $lang | default .en }}{{ end }}
+      {{- if and $zh (or (ne .Params.bodyLang $lang) (and $ov (not (isset $p.overview "zh")))) }}
+      <p class="translation-note"><i class="fa fa-language"></i> 下面的介绍目前只有英文。</p>
+      {{- end }}
+      {{- with $ov }}
+      <dl class="project-overview">
+        <dt>{{ if $zh }}目标{{ else }}Goal{{ end }}</dt><dd>{{ .purpose | markdownify }}</dd>
+        <dt>{{ if $zh }}我做了什么{{ else }}What I did{{ end }}</dt><dd>{{ .contribution | markdownify }}</dd>
+        <dt>{{ if $zh }}结果{{ else }}Result{{ end }}</dt><dd>{{ .outcome | markdownify }}</dd>
+      </dl>
+      {{- end }}
+      {{ .Content }}
+    </article>
+    {{- if ne .Params.comments false }}{{ partial "comments.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
