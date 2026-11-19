@@ -9,7 +9,7 @@ aiTranslated: true
 
 > GameShell is an open-source retro handheld that runs Arm Linux. Both its software and hardware are open source, making it a fantastic toy for geeks, game developers and figure collectors (it really does count as a figure, lol).
 >
-> ![](/img/markdown_20210920125310.png)
+> ![](/img/markdown_20210920125310.webp)
 >
 > Godot is an open-source, cross-platform game engine that's growing fast. It originally only supported GDScript, later added VisualScript (a visual node-based logic editor), now supports writing libraries in C++ via GDNative, and is gradually adding C# support (in beta).
 >
@@ -237,15 +237,15 @@ Dammit — right as I got to this point in the tutorial, I discovered my GameShe
 
 Here are some photos I took with the last bit of juice it had while booting, to prove it works:
 
-![](/img/markdown_20210921161258.png)
+![](/img/markdown_20210921161258.webp)
 
-![](/img/markdown_20210921161408.png)
+![](/img/markdown_20210921161408.webp)
 
-![](/img/markdown_20210921161509.png)
+![](/img/markdown_20210921161509.webp)
 
-![](/img/markdown_20210921161539.png)
+![](/img/markdown_20210921161539.webp)
 
-![](/img/markdown_20210921161603.png)
+![](/img/markdown_20210921161603.webp)
 
 ### Creating a Menu Launcher Entry
 

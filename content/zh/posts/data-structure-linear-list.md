@@ -31,7 +31,7 @@ endADT
 
 ## 线性表的顺序存储结构
 
-![线性表的顺序存储结构](/img/csdn/78572087-1.jpg)
+![线性表的顺序存储结构](/img/csdn/78572087-1.webp)
 
 ![线性表的顺序存储结构 2](/img/csdn/78572087-2.jpg)
 
@@ -194,7 +194,7 @@ Status ListDelete(SqList *L,int i,ElemType *e)
 
 ### 单链表
 
-![单链表](/img/csdn/78572087-3.jpg)
+![单链表](/img/csdn/78572087-3.webp)
 
 ![单链表 2](/img/csdn/78572087-4.jpg)
 
@@ -314,7 +314,7 @@ void CreateListHead (LinkList *L,int n)
 
 - 尾插法：
 
-![尾插法](/img/csdn/78572087-8.jpg)
+![尾插法](/img/csdn/78572087-8.webp)
 
 ```c
 void CreateListTail (LinkList *L,int n)

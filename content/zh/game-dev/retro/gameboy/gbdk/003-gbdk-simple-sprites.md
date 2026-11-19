@@ -225,5 +225,5 @@ clean:
 最后还可以使用 `make clean` 来删除中间文件和目标文件，回到只有源码和 Makefile 等文件的状态。
 
 {{< alert type="success" >}}
-`gb-dev` 源码 [看这里](https://github.com/zzxzzk115/blog/tree/master/src/.vuepress/public/src/gb-dev/)
+`gb-dev` 源码 [看这里](https://github.com/zzxzzk115/blog/tree/master/static/src/gb-dev/)
 {{< /alert >}}

@@ -6,7 +6,7 @@ tags: [DevTerm, ClockworkPi]
 toc: true
 ---
 
-![devterm_main_picture](/img/markdown_20201124140839.png)
+![devterm_main_picture](/img/markdown_20201124140839.webp)
 
 DevTerm 是一种后现代的、数字的、简约的生活方式。A5 印刷纸的尺寸，将完整的 PC 功能与复古主义结合，配备了 6.8 英寸的超宽屏，经典 QWERTY 键盘，必要的接口，达到高速无限连接，具有较长的电池寿命，甚至包括实用的热敏打印机。
 
@@ -22,15 +22,15 @@ DevTerm 是一种后现代的、数字的、简约的生活方式。A5 印刷纸
 
 **TRS-80 Model 100**
 
-![trs-80 model 100](/img/markdown_20201125150156.png)
+![trs-80 model 100](/img/markdown_20201125150156.webp)
 
 **NEC PC-8300**
 
-![nec_pc_8300](/img/markdown_20201125145618.png)
+![nec_pc_8300](/img/markdown_20201125145618.webp)
 
 **上世纪的一些 MiniPC**
 
-![](/img/markdown_20201125133248.png)
+![](/img/markdown_20201125133248.webp)
 
 对于 TRS-80 Model100，比尔盖茨说：“这应该是由我亲自参与写了大量代码的最后一台机器”，可见比尔盖茨对它的喜爱。
 
@@ -40,7 +40,7 @@ DevTerm 是一种后现代的、数字的、简约的生活方式。A5 印刷纸
 
 帖主用 TRS-80 Model100 + 树莓派 3 + 宽屏 DIY 了一台真正可以敲的 MiniPC:
 
-![trs-80 model 100 + rpi3](/img/markdown_20201125150611.png)
+![trs-80 model 100 + rpi3](/img/markdown_20201125150611.webp)
 
 好了，回归正题。
 
@@ -82,7 +82,7 @@ Micro-HDMI 接口，也让它可以将屏幕内容输出到显示器上。
 
 然后，原本 GameShell 支持的开源游戏平台，它也都支持，不仅如此，它还支持更多桌面 PC 应用，你可以用它上网、敲代码、写文档、看视频等等。
 
-![assembly](/img/markdown_20201124145501.png)
+![assembly](/img/markdown_20201124145501.webp)
 
 它同样采用模块化设计，这使得你可以方便地更改和替换模块、进行 DIY。
 
@@ -90,7 +90,7 @@ Micro-HDMI 接口，也让它可以将屏幕内容输出到显示器上。
 
 ## 主板（MainBoard）
 
-![mainboard](/img/markdown_20201124145825.png)
+![mainboard](/img/markdown_20201124145825.webp)
 
 新的主板，支持你插入不同的核心模块进行工作。比如插入树莓派 CM3 模块，或者 clockwork 推出的 A04、A06 模块。
 
@@ -124,7 +124,7 @@ A-0602 和 A-0604 型号也仅 RAM 的存储空间不同，一个是 2GB，另�
 
 ## 键盘（Keyboard）
 
-![keyboard](/img/markdown_20201124152007.png)
+![keyboard](/img/markdown_20201124152007.webp)
 
 65% 的 QWERTY 键盘，配备了十字键和 ABXY，外加 TrackBall 和三个鼠标按键，这使得 DevTerm 可以进行正常的 PC 软件的使用。
 
@@ -132,7 +132,7 @@ A-0602 和 A-0604 型号也仅 RAM 的存储空间不同，一个是 2GB，另�
 
 ## 模块化
 
-![module_design](/img/markdown_20201124152341.png)
+![module_design](/img/markdown_20201124152341.webp)
 
 DevTerm 的模块化设计和资料几乎完全开源，让它变成了一个易于扩展、易于 DIY 的设备。它面向的并非普通用户，它主要面向的是极客、设计师、玩家、复古爱好者等。
 

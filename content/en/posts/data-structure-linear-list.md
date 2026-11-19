@@ -32,7 +32,7 @@ endADT
 
 ## Sequential Storage Structure of a Linear List
 
-![Sequential storage structure of a linear list](/img/csdn/78572087-1.jpg)
+![Sequential storage structure of a linear list](/img/csdn/78572087-1.webp)
 
 ![Sequential storage structure of a linear list 2](/img/csdn/78572087-2.jpg)
 
@@ -195,7 +195,7 @@ Status ListDelete(SqList *L,int i,ElemType *e)
 
 ### Singly Linked List
 
-![Singly linked list](/img/csdn/78572087-3.jpg)
+![Singly linked list](/img/csdn/78572087-3.webp)
 
 ![Singly linked list 2](/img/csdn/78572087-4.jpg)
 
@@ -315,7 +315,7 @@ void CreateListHead (LinkList *L,int n)
 
 - Tail insertion:
 
-![Tail insertion](/img/csdn/78572087-8.jpg)
+![Tail insertion](/img/csdn/78572087-8.webp)
 
 ```c
 void CreateListTail (LinkList *L,int n)

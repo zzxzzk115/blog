@@ -62,15 +62,15 @@ Jack's Blog 则是我的个人博客（当时的域名 `zhangkexuan.cn` 已失�
 
 门外结构:
 
-![FarWge.jpg](/img/csdn/85023305-6.jpg)
+![FarWge.jpg](/img/csdn/85023305-6.webp)
 
 门内结构:
 
-![Farc4K.jpg](/img/csdn/85023305-7.jpg)
+![Farc4K.jpg](/img/csdn/85023305-7.webp)
 
 门外细节:
 
-![Far29O.jpg](/img/csdn/85023305-8.jpg)
+![Far29O.jpg](/img/csdn/85023305-8.webp)
 
 iOS APP 实现内网开门:
 
@@ -1254,7 +1254,7 @@ media_dir=/
 
 首先看看线路图：
 
-![FBtanI.png](/img/csdn/85023305-36.png)
+![FBtanI.png](/img/csdn/85023305-36.webp)
 
 电路是这么连，具体怎么占地面积小、怎么走线，请自己规划。
 

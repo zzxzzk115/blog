@@ -133,15 +133,15 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 把 GameShell 里的 No.909 和对应的 Logo 拷贝到 Pocketchip，我这里安装了增强版桌面，可以添加图标，指定运行的 shell，和 GameShell 添加自定义应用类似：
 
-![](/img/markdown_20220512181445.png)
+![](/img/markdown_20220512181445.webp)
 
 运行：
 
-![](/img/markdown_20220512181507.png)
+![](/img/markdown_20220512181507.webp)
 
 
 
-![](/img/markdown_20220512181544.png)
+![](/img/markdown_20220512181544.webp)
 
 
 
@@ -153,7 +153,7 @@ FreeType2 需要 Python2 Python3 以及对应的 pip 和 pip3。
 
 用 Terminal 运行会报这个错，暂时不知道如何解决...
 
-![](/img/markdown_20220512181603.png)
+![](/img/markdown_20220512181603.webp)
 
 ----
 

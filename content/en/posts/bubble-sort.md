@@ -71,4 +71,4 @@ If you know bubble sort by heart, then in lots of cases where complexity doesn't
 
 Borrowing a chart here so you can compare:
 
-![](/img/csdn/79336722-2.png)
+![](/img/csdn/79336722-2.webp)

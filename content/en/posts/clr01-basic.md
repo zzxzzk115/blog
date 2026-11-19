@@ -142,7 +142,7 @@ Then I ran some random client-server game demo, looked up their PIDs (process ID
 clrver.exe <PID>
 ```
 
-![clrver<PID>](/img/markdown_20201116200221.png)
+![clrver<PID>](/img/markdown_20201116200221.webp)
 
 You can also see which CLR version each of them uses.
 

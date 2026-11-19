@@ -8,7 +8,7 @@ toc: true
 
 > GameShell 是一款开源复古掌机，运行 Arm Linux 操作系统，软硬件均开源，是极客、游戏开发者以及手办爱好者(确实算手办，草) 的绝佳玩物。
 >
-> ![](/img/markdown_20210920125310.png)
+> ![](/img/markdown_20210920125310.webp)
 >
 > Godot 是一款开源跨平台游戏引擎，目前发展迅速，原来仅支持 GDScript，后来支持 VisualScript(可视化逻辑节点编辑器)，现已经支持使用 GDNative 来使用 C++ 编写库，也开始慢慢支持 C#(BETA 测试)。
 >
@@ -236,15 +236,15 @@ WDNMD，教程做到这里，我发现我 GameShell 的电池坏了，充不进�
 
 这里趁着开机的一丝电流来拍一些照片证明一下效果：
 
-![](/img/markdown_20210921161258.png)
+![](/img/markdown_20210921161258.webp)
 
-![](/img/markdown_20210921161408.png)
+![](/img/markdown_20210921161408.webp)
 
-![](/img/markdown_20210921161509.png)
+![](/img/markdown_20210921161509.webp)
 
-![](/img/markdown_20210921161539.png)
+![](/img/markdown_20210921161539.webp)
 
-![](/img/markdown_20210921161603.png)
+![](/img/markdown_20210921161603.webp)
 
 ### 制作 Menu 启动项
 

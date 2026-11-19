@@ -15,7 +15,7 @@ GameShell 怎么玩？我来教你！
 
 **GameShell** 是一款开源掌机，由 **clockwork** 打造。拿到手后，你需要自己动手将它拼好，插上 SD 卡，开机。
 
-![](/img/markdown_20220512181118.png)
+![](/img/markdown_20220512181118.webp)
 
 其核心板叫做 **clockworkpi**，酷似树莓派，运行 Arm Linux(**Debian**)，按钮模块采用 **Arduino** 控制器，屏幕为 320 * 240 的 **LCD**。支持蓝牙和 WiFi，开放 **Arduino** 输出引脚，开放核心板的 **GPIO**。整个 **GameShell** 的软件硬件全部公开透明，无论是操作系统，还是 3D 打印的外壳资料，电路、原理图，[GitHub](<https://github.com/search?q=gameshell>) 都能看到。真正的完全开源。
 
@@ -39,11 +39,11 @@ GameShell 怎么玩？我来教你！
 
 `Settings->Language` 中选择 `简体中文` 即可。我这里刷了 deot 的镜像。后面再说如何刷系统。
 
-![](/img/markdown_20220512181158.png)
+![](/img/markdown_20220512181158.webp)
 
 
 
-![](/img/markdown_20220512181216.png)
+![](/img/markdown_20220512181216.webp)
 
 
 
@@ -105,7 +105,7 @@ GameShell 支持时区设置，在 `设置->时区` 中，选择 `Asia`，也就
 
 我们打开主菜单的 `Tiny Cloud` 或者 `Connect`(老版本 DEOT)，可以看到如下内容：
 
-![](/img/markdown_20220512181246.png)
+![](/img/markdown_20220512181246.webp)
 
 可以看到，我的 GameShell 的局域网 ip 为 `192.168.0.110`，当然每个人的都可能不一样。
 

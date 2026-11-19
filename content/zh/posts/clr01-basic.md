@@ -141,7 +141,7 @@ clrver.exe -all
 clrver.exe <PID>
 ```
 
-![clrver<PID>](/img/markdown_20201116200221.png)
+![clrver<PID>](/img/markdown_20201116200221.webp)
 
 也可以查看它们对应使用 CLR 的版本号。
 

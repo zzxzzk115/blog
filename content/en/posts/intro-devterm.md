@@ -7,7 +7,7 @@ toc: true
 aiTranslated: true
 ---
 
-![devterm_main_picture](/img/markdown_20201124140839.png)
+![devterm_main_picture](/img/markdown_20201124140839.webp)
 
 DevTerm is a post-modern, digital, minimalist way of life. At the size of a sheet of A5 paper, it combines full PC functionality with retro style: a 6.8-inch ultra-wide screen, a classic QWERTY keyboard, the essential ports, high-speed wireless connectivity, long battery life, and even a handy thermal printer.
 
@@ -23,15 +23,15 @@ I'd guess its design was mostly inspired by the TRS-80 Model 100 and the NEC PC-
 
 **TRS-80 Model 100**
 
-![trs-80 model 100](/img/markdown_20201125150156.png)
+![trs-80 model 100](/img/markdown_20201125150156.webp)
 
 **NEC PC-8300**
 
-![nec_pc_8300](/img/markdown_20201125145618.png)
+![nec_pc_8300](/img/markdown_20201125145618.webp)
 
 **Some MiniPCs from the last century**
 
-![](/img/markdown_20201125133248.png)
+![](/img/markdown_20201125133248.webp)
 
 About the TRS-80 Model 100, Bill Gates said something to the effect that it was the last machine he personally wrote a large share of the code for, which shows how fond of it he was.
 
@@ -41,7 +41,7 @@ I think DevTerm may have been sparked by a post on the Raspberry Pi forums: [htt
 
 The poster DIY'd a MiniPC you can actually type on, using a TRS-80 Model 100 + a Raspberry Pi 3 + a widescreen display:
 
-![trs-80 model 100 + rpi3](/img/markdown_20201125150611.png)
+![trs-80 model 100 + rpi3](/img/markdown_20201125150611.webp)
 
 OK, back to the topic.
 
@@ -83,7 +83,7 @@ Supported operating systems currently include clockworkOS, Debian, Ubuntu, Raspb
 
 On top of that, it supports all the open-source gaming platforms the GameShell supported, and beyond that it supports more desktop PC applications: you can use it to browse the web, write code, write documents, watch videos and so on.
 
-![assembly](/img/markdown_20201124145501.png)
+![assembly](/img/markdown_20201124145501.webp)
 
 It also uses a modular design, so you can easily change and swap modules and do your own DIY.
 
@@ -91,7 +91,7 @@ It also uses a modular design, so you can easily change and swap modules and do 
 
 ## Mainboard
 
-![mainboard](/img/markdown_20201124145825.png)
+![mainboard](/img/markdown_20201124145825.webp)
 
 The new mainboard lets you plug in different core modules, for example a Raspberry Pi CM3 module, or the A04 and A06 modules from Clockwork.
 
@@ -125,7 +125,7 @@ All the hardware is officially open source, so the extension board's potential i
 
 ## Keyboard
 
-![keyboard](/img/markdown_20201124152007.png)
+![keyboard](/img/markdown_20201124152007.webp)
 
 A 65% QWERTY keyboard with a D-pad and ABXY, plus a TrackBall and three mouse buttons, so DevTerm can run regular PC software normally.
 
@@ -133,7 +133,7 @@ It's also Arduino-based, so you can use the Arduino IDE to change its key mappin
 
 ## Modularity
 
-![module_design](/img/markdown_20201124152341.png)
+![module_design](/img/markdown_20201124152341.webp)
 
 DevTerm's modular design and almost fully open-source materials make it a device that's easy to extend and easy to DIY. It's not aimed at ordinary users; it's mainly aimed at geeks, designers, gamers, retro enthusiasts and the like.
 

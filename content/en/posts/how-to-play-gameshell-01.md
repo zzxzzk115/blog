@@ -16,7 +16,7 @@ How do you play with a GameShell? Let me show you!
 
 **GameShell** is an open-source handheld console made by **clockwork**. When you get it, you have to assemble it yourself, insert an SD card, and power it on.
 
-![](/img/markdown_20220512181118.png)
+![](/img/markdown_20220512181118.webp)
 
 Its core board is called **clockworkpi**, which looks a lot like a Raspberry Pi and runs Arm Linux (**Debian**). The button module uses an **Arduino** controller, and the screen is a 320 * 240 **LCD**. It supports Bluetooth and WiFi, and exposes the **Arduino** output pins as well as the core board's **GPIO**. All of GameShell's software and hardware is public and transparent: the operating system, the 3D-printing files for the case, the circuits, the schematics — you can find all of it on [GitHub](<https://github.com/search?q=gameshell>). Truly, fully open source.
 
@@ -40,11 +40,11 @@ On the far left there's `Settings`, i.e. `设置`.
 
 In `Settings->Language`, just pick `简体中文` (Simplified Chinese). I've flashed deot's image here; I'll talk about flashing the system later.
 
-![](/img/markdown_20220512181158.png)
+![](/img/markdown_20220512181158.webp)
 
 
 
-![](/img/markdown_20220512181216.png)
+![](/img/markdown_20220512181216.webp)
 
 
 
@@ -106,7 +106,7 @@ First, we need to know the GameShell's LAN IP.
 
 Open `Tiny Cloud` (or `Connect` on older DEOT versions) from the main menu, and you'll see something like this:
 
-![](/img/markdown_20220512181246.png)
+![](/img/markdown_20220512181246.webp)
 
 As you can see, my GameShell's LAN IP is `192.168.0.110`; of course yours may be different.
 

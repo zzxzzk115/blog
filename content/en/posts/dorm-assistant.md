@@ -63,15 +63,15 @@ Here are some photos and videos as a demo:
 
 Outside of the door:
 
-![FarWge.jpg](/img/csdn/85023305-6.jpg)
+![FarWge.jpg](/img/csdn/85023305-6.webp)
 
 Inside of the door:
 
-![Farc4K.jpg](/img/csdn/85023305-7.jpg)
+![Farc4K.jpg](/img/csdn/85023305-7.webp)
 
 Close-up of the outside:
 
-![Far29O.jpg](/img/csdn/85023305-8.jpg)
+![Far29O.jpg](/img/csdn/85023305-8.webp)
 
 Opening the door from the LAN with the iOS app:
 
@@ -1255,7 +1255,7 @@ miniDLNA is now set up. Any phone or computer that supports DLNA can directly pl
 
 First, the wiring diagram:
 
-![FBtanI.png](/img/csdn/85023305-36.png)
+![FBtanI.png](/img/csdn/85023305-36.webp)
 
 That's how the circuit is wired; how to make it compact and route the wires is up to you to plan.
 

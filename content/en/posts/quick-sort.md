@@ -109,4 +109,4 @@ int Partition(int *arr, int start, int end)
 }
 ```
 
-![](/img/csdn/79336832-1.png)
+![](/img/csdn/79336832-1.webp)

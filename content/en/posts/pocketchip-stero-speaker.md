@@ -34,7 +34,7 @@ No parts, no mod.
 - Someone who can solder * 1
 - One PocketChip (I assume everyone reading this has one)
 
-![](/img/markdown_20220512181827.png)
+![](/img/markdown_20220512181827.webp)
 
 (I forgot to include the hot glue and the glue gun in the photo above.)
 
@@ -42,37 +42,37 @@ No parts, no mod.
 
 Before soldering, you must unplug the power connector, otherwise it isn't safe.
 
-![](/img/markdown_20220512181852.png)
+![](/img/markdown_20220512181852.webp)
 
 # Mount the Class D Amplifier Board
 
 Before mounting it, cover the chip with heat-resistant tape to protect it.
 
-![](/img/markdown_20220512181918.png)
+![](/img/markdown_20220512181918.webp)
 
-![](/img/markdown_20220512181934.png)
+![](/img/markdown_20220512181934.webp)
 
 
 
 Then fix the amp board in place with the hot glue gun:
 
-![](/img/markdown_20220512181952.png)
+![](/img/markdown_20220512181952.webp)
 
 
 
-![](/img/markdown_20220512182007.png)
+![](/img/markdown_20220512182007.webp)
 
 # Start Soldering
 
 First solder the amp board's `-` to the `GND` pin, i.e. the negative goes to ground.
 
-![](/img/markdown_20220512182023.png)
+![](/img/markdown_20220512182023.webp)
 
 
 
 Then connect +5V (positive) to `VCC-5V`:
 
-![](/img/markdown_20220512182038.png)
+![](/img/markdown_20220512182038.webp)
 
 
 
@@ -84,13 +84,13 @@ Then solder according to the following rules:
 
 `R`->`HPR`
 
-![](/img/markdown_20220512182056.png)
+![](/img/markdown_20220512182056.webp)
 
 
 
 Next, fix the left and right speakers in place with the hot glue gun:
 
-![](/img/markdown_20220512182111.png)
+![](/img/markdown_20220512182111.webp)
 
 
 
@@ -98,7 +98,7 @@ Then connect the right speaker's (the one on the left as you look at it) `-` to 
 
 Do the same for the left speaker, matching its positive and negative to L's positive and negative.
 
-![](/img/markdown_20220512182133.png)
+![](/img/markdown_20220512182133.webp)
 
 
 

@@ -187,5 +187,5 @@ Run `make run` to build, link, and launch the program. The result should look li
 Use `make clean` to return to the source files and Makefile.
 
 {{< alert type="success" >}}
-The example sources are in the [`gb-dev` directory](https://github.com/zzxzzk115/blog/tree/master/src/.vuepress/public/src/gb-dev/).
+The example sources are in the [`gb-dev` directory](https://github.com/zzxzzk115/blog/tree/master/static/src/gb-dev/).
 {{< /alert >}}

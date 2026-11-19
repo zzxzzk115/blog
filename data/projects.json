@@ -77,7 +77,7 @@
    },
    {
     "label": "Dissertation (PDF)",
-    "href": "/assets/pdf/LPV-MSc-Dissertation.pdf"
+    "href": "https://zzxzzk115.github.io/assets/pdf/LPV-MSc-Dissertation.pdf"
    }
   ]
  },
@@ -602,7 +602,7 @@
   "status": "",
   "order": 21,
   "featured": null,
-  "image": "/img/projects/vrendergraph.png",
+  "image": "/img/projects/vrendergraph.webp",
   "imageFit": "contain",
   "page": "https://zzxzzk115.github.io/projects/vrendergraph/",
   "links": [

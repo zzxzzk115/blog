@@ -29,6 +29,11 @@ def get(url, binary=False):
         return data if binary else data.decode("utf-8")
 
 
+def absolute(href):
+    """Homepage-relative links ("/assets/...") would resolve under the blog's domain root by luck; make them full."""
+    return SITE + href if href.startswith("/") and not href.startswith("//") else href
+
+
 def main():
     tree = json.loads(get(f"https://api.github.com/repos/{REPO}/git/trees/main?recursive=1"))
     files = sorted(t["path"] for t in tree["tree"] if re.fullmatch(r"content/projects/[^/]+\.md", t["path"]))
@@ -51,7 +56,9 @@ def main():
             src = fm["image"] if fm["image"].startswith("http") else SITE + fm["image"]
             ext = Path(src.split("?")[0]).suffix.lower() or ".jpg"
             dest = IMG / f"{pid}{ext}"
-            if not dest.exists():
+            if (IMG / f"{pid}.webp").exists():  # a local WebP copy (converted to save space) wins
+                dest = IMG / f"{pid}.webp"
+            elif not dest.exists():
                 time.sleep(0.3)
                 dest.write_bytes(get(src, binary=True))
             image = f"/img/projects/{dest.name}"
@@ -67,7 +74,7 @@ def main():
             "image": image,
             "imageFit": fm.get("imageFit", "cover"),
             "page": SITE + (fm.get("legacyPath") or f"/projects/{pid}/"),
-            "links": [{"label": l.get("label", ""), "href": l.get("href", "")} for l in fm.get("links") or [] if l.get("href")],
+            "links": [{"label": l.get("label", ""), "href": absolute(l.get("href", ""))} for l in fm.get("links") or [] if l.get("href")],
         })
         print(f"  {pid}: {projects[-1]['title']}{'  (featured ' + str(featured) + ')' if featured is not None else ''}")
     projects.sort(key=lambda p: (p["order"], p["title"].lower()))

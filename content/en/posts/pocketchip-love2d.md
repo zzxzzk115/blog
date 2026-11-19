@@ -134,15 +134,15 @@ Installed successfully! It's now 01:59 on 2020.04.10, and I finally got there!
 
 Copy No.909 and its logo from the GameShell over to the PocketChip. I've installed an enhanced desktop here that lets you add icons and specify the shell to run, similar to adding custom apps on the GameShell:
 
-![](/img/markdown_20220512181445.png)
+![](/img/markdown_20220512181445.webp)
 
 Run it:
 
-![](/img/markdown_20220512181507.png)
+![](/img/markdown_20220512181507.webp)
 
 
 
-![](/img/markdown_20220512181544.png)
+![](/img/markdown_20220512181544.webp)
 
 
 
@@ -154,7 +154,7 @@ But in actual testing it needs optimization; the frame rate is painful..., proba
 
 Running it from the Terminal gives this error, and I don't know how to fix it yet...
 
-![](/img/markdown_20220512181603.png)
+![](/img/markdown_20220512181603.webp)
 
 ----
 

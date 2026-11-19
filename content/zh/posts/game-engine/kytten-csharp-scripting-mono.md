@@ -401,7 +401,7 @@ MacOS 和 Linux 平台上 Mono 的内嵌步骤与 Windows 平台实际上大同�
 
 ## 相关引用
 
-- Mono Embedding for Game Engines, Peter Nilsson, <http://nilssondev.com/mono-guide/book/>
+- Mono Embedding for Game Engines, Peter Nilsson, [web.archive.org](https://web.archive.org/web/20251011220108/http://nilssondev.com/mono-guide/book)
 - Compiling Mono on Windows, mono-project.com, <https://www.mono-project.com/docs/compiling-mono/windows/>
 - Embedding Mono, mono-project.com, <https://www.mono-project.com/docs/advanced/embedding/>
 
