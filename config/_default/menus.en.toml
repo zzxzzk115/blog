@@ -21,24 +21,36 @@
   params.priority = 6
 
 [[main]]
-  identifier = "game-dev"
-  name = "Game Dev"
-  pageRef = "/game-dev"
+  identifier = "columns"
+  name = "Columns"
+  pageRef = "/columns"
   weight = 40
-  params.icon = "fa fa-gamepad"
+  params.icon = "fa fa-book"
   params.priority = 2
 [[main]]
-  parent = "game-dev"
-  name = "Games Gallery"
-  pageRef = "/game-dev/001-games-gallery"
+  parent = "columns"
+  name = "Game Dev"
+  pageRef = "/game-dev"
   weight = 1
-  params.icon = "fa fa-th-large"
+  params.icon = "fa fa-gamepad"
 [[main]]
-  parent = "game-dev"
-  name = "GB/GBC Game Development"
-  pageRef = "/game-dev/retro/gameboy/intro"
+  parent = "columns"
+  name = "Porting"
+  pageRef = "/porting"
   weight = 2
   params.icon = "fa fa-microchip"
+[[main]]
+  parent = "columns"
+  name = "Software"
+  pageRef = "/software"
+  weight = 3
+  params.icon = "fa fa-terminal"
+[[main]]
+  parent = "columns"
+  name = "Graphics & Engines"
+  pageRef = "/graphics"
+  weight = 4
+  params.icon = "fa fa-cube"
 
 [[main]]
   identifier = "about"

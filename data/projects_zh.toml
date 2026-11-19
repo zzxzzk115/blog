@@ -17,6 +17,9 @@
 "Explore desktop" = "进入桌面"
 "Content guide" = "内容指南"
 "Runtime integration" = "运行时集成"
+"Article" = "文章"
+"GameShell build" = "GameShell 版"
+"PocketCHIP build" = "PocketCHIP 版"
 
 [lazy_100]
 desc = "Lua 幻想主机，自带代码、精灵、地图、音效与音乐编辑器，基于 VRI 构建，可在桌面和浏览器里玩。"
@@ -114,3 +117,44 @@ desc = "我个人主页背后的可复用 Astro + Vue 模板，提供学术和�
 
 [portfolio-98]
 desc = "Windows 98 风格的交互式作品集：桌面窗口、移动端 Pocket PC 风格外壳，还内嵌了游戏。"
+
+# ---- data/projects_extra.json (hand-written projects that are not on the homepage) ----
+
+[space-impact-gameshell]
+title = "GameShell 上的太空冲击 II"
+desc = "把诺基亚经典《太空冲击 II》的像素级复刻移植到 GameShell，适配掌机按键并带启动器安装脚本。"
+
+[lowres-nx-handhelds]
+title = "GameShell 与 PocketCHIP 上的 LowRes NX"
+desc = "幻想主机 LowRes NX 的定制构建：GameShell 版修好了显示分辨率并接入掌机启动器，另有 PocketCHIP 版。"
+
+[pegasusg-h700]
+title = "PegasusG by ROC（H700 掌机）"
+desc = "给 H700 Linux 掌机上的 GBA 前端贡献的改进：按原生分辨率渲染并适配布局、游戏音量接入系统音量、搜索键盘改为网格导航。"
+
+[godot-gameshell]
+title = "在 GameShell 上运行 Godot 游戏"
+desc = "让 Godot 导出的游戏跑在 GameShell 掌机上，附完整步骤。"
+
+[love2d-pocketchip]
+title = "PocketCHIP 上的 LÖVE 11.3"
+desc = "在 PocketCHIP 上编译安装 LÖVE 11.3，让 LÖVE 游戏能在上面运行。"
+
+[retroarch-pocketchip]
+title = "PocketCHIP 上的 RetroArch"
+desc = "为 PocketCHIP 编译的 RetroArch 万能模拟器，附安装步骤。"
+
+[gameshell-scripts]
+desc = "一行命令升级 GameShell 图形栈、完成系统配置的脚本合集。"
+
+[freemind-bithack]
+title = "freemind.bithack Hugo 主题"
+desc = "本博客使用的暗色终端风 Hugo 主题：移植自 hexo-theme-freemind.bithack，带像素字体、搜索、纯享阅读和中英双语，无需 Node。"
+
+[galaxy-engine]
+title = "Galaxy 引擎"
+desc = "在 Vultra 之前从零写的跨平台 C++ 3D 游戏引擎。"
+status = "早期项目"
+
+[native-scripting-demo]
+desc = "引擎原生脚本的小型演示：游戏脚本编译成 DLL，在引擎运行时热重载。"
