@@ -12,7 +12,7 @@ aiTranslated: true
 > Reposted from my Zhihu column: [Kytten 的 C# 脚本系统：Mono 篇](https://zhuanlan.zhihu.com/p/630199985) (published 2023-05-17); formatting tidied during migration.
 
 > [!NOTE]
-> The Kytten engine is no longer being developed, but it did exist. It laid the groundwork for the later [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine) (a Leeds MSc team project) and [libvultra](https://github.com/zzxzzk115/libvultra). The roadmap and the "coming later" plans in this post won't be continued.
+> The Kytten engine is no longer being developed, but it did exist. It laid the groundwork for the later [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine) (our COMP5530M student group project at the University of Leeds) and [libvultra](https://github.com/zzxzzk115/libvultra). The roadmap and the "coming later" plans in this post won't be continued.
 
 Kytten's C# scripting system is under development, and some of the technology is still being researched and tested.
 

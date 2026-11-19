@@ -12,7 +12,7 @@ aiTranslated: true
 > Reposted from my Zhihu column: [KyttenShader: 现代的跨平台 Shader 系统](https://zhuanlan.zhihu.com/p/627321970) (published 2023-05-07); formatting tidied during migration.
 
 > [!NOTE]
-> The Kytten engine is no longer being developed, but it did exist. It laid the groundwork for the later [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine) (a Leeds MSc team project) and [libvultra](https://github.com/zzxzzk115/libvultra). The roadmap and the "coming later" plans in this post won't be continued.
+> The Kytten engine is no longer being developed, but it did exist. It laid the groundwork for the later [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine) (our COMP5530M student group project at the University of Leeds) and [libvultra](https://github.com/zzxzzk115/libvultra). The roadmap and the "coming later" plans in this post won't be continued.
 
 KyttenShader is the modern cross-platform shader system in Kytten Engine, currently under development.
 

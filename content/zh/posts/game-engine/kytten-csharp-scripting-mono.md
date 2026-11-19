@@ -11,7 +11,7 @@ zhihu: 630199985
 > 本文转载自我在知乎的专栏文章：[Kytten 的 C# 脚本系统：Mono 篇](https://zhuanlan.zhihu.com/p/630199985)（发布于 2023-05-17），迁移时整理了格式。
 
 > [!NOTE]
-> Kytten 引擎已经停止开发，但它确实存在过。它为后来的 [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine)（利兹大学硕士团队项目）以及 [libvultra](https://github.com/zzxzzk115/libvultra) 奠定了基础。文中的 Roadmap 和「后续会加入」的计划不再继续。
+> Kytten 引擎已经停止开发，但它确实存在过。它为后来的 [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine)（利兹大学 COMP5530M 课程的学生小组项目）以及 [libvultra](https://github.com/zzxzzk115/libvultra) 奠定了基础。文中的 Roadmap 和「后续会加入」的计划不再继续。
 
 Kytten 的 C# 脚本系统正在开发中，部分技术还在调研和测试。
 

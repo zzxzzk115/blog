@@ -11,7 +11,7 @@ zhihu: 627321970
 > 本文转载自我在知乎的专栏文章：[KyttenShader: 现代的跨平台 Shader 系统](https://zhuanlan.zhihu.com/p/627321970)（发布于 2023-05-07），迁移时整理了格式。
 
 > [!NOTE]
-> Kytten 引擎已经停止开发，但它确实存在过。它为后来的 [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine)（利兹大学硕士团队项目）以及 [libvultra](https://github.com/zzxzzk115/libvultra) 奠定了基础。文中的 Roadmap 和「后续会加入」的计划不再继续。
+> Kytten 引擎已经停止开发，但它确实存在过。它为后来的 [Snow Leopard Engine](https://github.com/SnowLeopardEngine/SnowLeopardEngine)（利兹大学 COMP5530M 课程的学生小组项目）以及 [libvultra](https://github.com/zzxzzk115/libvultra) 奠定了基础。文中的 Roadmap 和「后续会加入」的计划不再继续。
 
 KyttenShader 是 Kytten Engine 中的现代的跨平台 Shader 系统，正在开发中。
 
