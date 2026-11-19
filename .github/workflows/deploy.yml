@@ -6,8 +6,10 @@ on:
   push:
     branches: [master, main]
   workflow_dispatch:
+  repository_dispatch:
+    types: [featured-projects-updated]   # sent by github.com/zzxzzk115/featured-projects after a change
   schedule:
-    - cron: "0 3 * * 1"   # weekly rebuild, so GitHub star counts on project cards stay fresh
+    - cron: "0 3 * * 1"   # weekly rebuild: fresh GitHub star counts and catalog
 
 permissions:
   contents: read
@@ -36,6 +38,8 @@ jobs:
           hugo version
       - id: pages
         uses: actions/configure-pages@v5
+      - name: Fetch the project catalog
+        run: python3 tools/catalog.py      # github.com/zzxzzk115/featured-projects -> data/projects*.json, images
       - name: Refresh GitHub star counts
         continue-on-error: true   # on failure the committed data/github_stars.json is used
         env:

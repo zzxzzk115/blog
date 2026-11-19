@@ -6,7 +6,7 @@ url: /zh/porting/001-porting-gallery.html
 
 > 把游戏、模拟器和软件搬到复古掌机上：GameShell、PocketCHIP、H700 掌机……更多在我的 [GitHub](https://github.com/zzxzzk115)。
 
-{{< projects ids="pocketchip-macos, bbk-gameshell, wqx-gameshell, space-impact-gameshell, lowres-nx-handhelds, pegasusg-h700, godot-gameshell, love2d-pocketchip, retroarch-pocketchip" >}}
+{{< projects group="porting" >}}
 
 ## 相关文章
 

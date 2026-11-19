@@ -19,10 +19,10 @@ url: /zh/intro.html
 
 我做过图形库、渲染器、游戏引擎和游戏，也给复古掌机移植过不少东西。下面是几个代表作，展开可以看全部项目，每个项目的详细介绍在我的[个人主页](https://zzxzzk115.github.io/projects/)。
 
-{{< projects featured="6" >}}
+{{< projects group="about" featured="6" >}}
 
 {{< details "全部项目（可按类别筛选）" >}}
-{{< projects filter="true" >}}
+{{< projects group="about" filter="true" >}}
 {{< /details >}}
 
 ## 最近在做什么

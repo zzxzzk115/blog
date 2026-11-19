@@ -6,7 +6,7 @@ url: /software/001-software-gallery.html
 
 > Desktop apps, command-line tools, libraries and small web tools. More on my [GitHub](https://github.com/zzxzzk115).
 
-{{< projects ids="omnilyrics, mchose-control-linux, bixuetang, vplot, online-tools, nw-unity, j2me-asset-hunter, chip8-cpp, freemind-bithack, academic-casual-template" >}}
+{{< projects group="software" >}}
 
 ## Related posts
 
