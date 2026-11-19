@@ -8,6 +8,7 @@ url: /friends.html
 {{< friend name="B3n1gn X @W-Mai" url="https://benign.host/" desc="Overflow Stack Developer" avatar="https://benign.host/_astro/24841247_iUHr3.webp" tags="Xiaomi Vela rendering engine, LVGL core contributor" >}}
 {{< friend name="Ringotc" url="https://ringotc.github.io/" desc="Data science" avatar="https://github.com/ringotc.png" tags="Tencent WeChat" >}}
 {{< friend name="Zhangsiwei" url="https://zsw-test.github.io/" desc="想想就伤心 (sad just thinking about it)" avatar="https://github.com/zsw-test.png" tags="Kingsoft (Wuhan), Go backend" >}}
+{{< friend name="Yutong's Site" url="https://www.lyt0112.com/" desc="My compass is curiosity." avatar="https://www.lyt0112.com/favicon/favicon.svg?v=5" tags="Robotics, Character Animation" >}}
 
 ## Exchange links
 
