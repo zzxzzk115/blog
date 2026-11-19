@@ -81,5 +81,5 @@ editURL = "https://github.com/zzxzzk115/blog/edit/master/"
 [bodyFont]
   family = "Zpix"
   src = "fonts/zpix/zpix.woff2"
-  # CSS px; at 150% scaling these are whole multiples of Zpix's 12px pixels
-  sizes = { small = 16, text = 16, h4 = 24, h3 = 24, h2 = 32, h1 = 32, xl = 40 }
+  # body text in CSS px (the theme's 18px proportions scale to it); 16px is pixel-exact at 150% and on phones
+  sizes = { text = 16 }
