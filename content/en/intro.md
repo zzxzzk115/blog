@@ -17,13 +17,11 @@ Before my master's, I worked as a game server engineer at Blackjack Studio, the 
 
 ## Projects
 
-I've built graphics libraries, renderers, game engines and games, and ported quite a few things to retro handhelds. Here are some highlights; expand the list below for everything, and open a card for the details of each project, or browse them all on the [Projects](/projects/) page.
+I've built graphics libraries, renderers, game engines and games, and ported quite a few things to retro handhelds. Here are some highlights; open a card for the details of each project, or browse all of them by category on the [Projects](/projects/) page.
 
 {{< projects group="about" featured="6" >}}
 
-{{< details "All projects (filter by category)" >}}
-{{< projects group="about" filter="true" >}}
-{{< /details >}}
+**[All projects (filter by category) →](/projects/)**
 
 ## What I'm working on
 
