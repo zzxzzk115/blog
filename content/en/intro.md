@@ -31,7 +31,7 @@ This blog is where I keep technical notes, tutorials, and things I learn while e
 
 ## Away from research
 
-I collect retro handhelds and enjoy getting games and software running on GameShell, Game Boy, PocketCHIP, Trimui, and whatever else I can get my hands on. I'm also an indie game developer, with games on Steam, itch.io and GitHub, some playable right here (see the [Games Gallery](/game-dev/001-games-gallery)), and an indie musician: I like singing and have written a few tracks, released on [NetEase Cloud Music](https://music.163.com/#/artist?id=33612866). [OmniLyrics](https://github.com/zzxzzk115/OmniLyrics) grew out of wanting a lyric tool that worked the way I wanted. Curiosity and the satisfaction of making something keep me coming back.
+I collect retro handhelds and enjoy getting games and software running on GameShell, Game Boy, PocketCHIP, Trimui, and whatever else I can get my hands on. I'm also an indie game developer, with games on Steam, itch.io and GitHub, some playable right here (see the [Gallery](/gallery#games)), and an indie musician: I like singing and have written a few tracks, released on [NetEase Cloud Music](https://music.163.com/#/artist?id=33612866). [OmniLyrics](https://github.com/zzxzzk115/OmniLyrics) grew out of wanting a lyric tool that worked the way I wanted. Curiosity and the satisfaction of making something keep me coming back.
 
 {{< details "My music (click to listen)" >}}
 {{< music ids="1402719608, 1431168150, 1402843948, 1847289377" >}}

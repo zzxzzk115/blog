@@ -19,7 +19,7 @@ url: /zh/game-dev/retro/gameboy/intro.html
 
 2020 年，我了解到 [GB-Studio](https://github.com/chrismaltby/gb-studio) 这个让人人都能进行 GB/GBC 游戏开发的神奇工具。你并不需要编程相关的知识就可以使用它开始进行游戏创作。
 
-2021 年，疫情期间我的创作欲比较强烈，成功使用 GB-Studio 制作了一款属于 GBC 的猫里奥：[传送门](../../001-games-gallery.md#catmario-gb)
+2021 年，疫情期间我的创作欲比较强烈，成功使用 GB-Studio 制作了一款属于 GBC 的猫里奥：[传送门](/gallery#catmario-gb)
 
 ## 开启 GB/GBC 的开发之旅吧
 

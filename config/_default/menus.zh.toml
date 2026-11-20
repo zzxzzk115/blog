@@ -28,11 +28,17 @@
   params.icon = "fa fa-book"
   params.priority = 2
 [[main]]
+  parent = "columns"
+  name = "画廊"
+  pageRef = "/gallery"
+  weight = 1
+  params.icon = "fa fa-th-large"
+[[main]]
   identifier = "col-game-dev"
   parent = "columns"
   name = "游戏开发"
   pageRef = "/game-dev"
-  weight = 1
+  weight = 2
   params.icon = "fa fa-gamepad"
 [[main]]
   parent = "col-game-dev"

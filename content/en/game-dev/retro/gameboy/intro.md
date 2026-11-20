@@ -19,7 +19,7 @@ In 2018, I discovered [GBDK](https://github.com/gbdk-2020/gbdk-2020). Using it a
 
 In 2020, I learned about [GB Studio](https://github.com/chrismaltby/gb-studio), a tool that makes GB/GBC game development accessible without requiring programming experience.
 
-In 2021, during the pandemic, I felt particularly motivated to create something. I used GB Studio to make my own GBC version of Cat Mario: [CatMario-GB](../../001-games-gallery.md#catmario-gb).
+In 2021, during the pandemic, I felt particularly motivated to create something. I used GB Studio to make my own GBC version of Cat Mario: [CatMario-GB](/gallery#catmario-gb).
 
 ## Let's start developing for GB/GBC
 
