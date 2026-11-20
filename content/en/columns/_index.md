@@ -3,9 +3,6 @@ title: Columns
 article: false
 ---
 
-Work and writing, grouped by topic.
+Tutorial series. The things I've built, ported and released are on the [Projects](/projects/) page.
 
-- [Game Dev](/game-dev): games I've made or worked on, and tutorials for retro platforms such as the Game Boy.
-- [Porting](/porting): games, emulators and software brought to retro handhelds like GameShell and PocketCHIP.
-- [Software](/software): desktop apps, command-line tools and small utilities.
-- [Graphics & Engines](/graphics): Snow Leopard Engine, libvultra, renderers and graphics libraries.
+- [Game Dev](/game-dev) › [GB/GBC Game Development](/game-dev/retro/gameboy/intro): a tutorial series on making Game Boy / Game Boy Color games.
