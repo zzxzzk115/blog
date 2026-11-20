@@ -28,17 +28,17 @@
   params.icon = "fa fa-book"
   params.priority = 2
 [[main]]
-  parent = "columns"
+  parent = "projects"
   name = "画廊"
   pageRef = "/gallery"
   weight = 1
-  params.icon = "fa fa-th-large"
+  params.icon = "fa fa-picture-o"
 [[main]]
   identifier = "col-game-dev"
   parent = "columns"
   name = "游戏开发"
   pageRef = "/game-dev"
-  weight = 2
+  weight = 1
   params.icon = "fa fa-gamepad"
 [[main]]
   parent = "col-game-dev"
@@ -57,7 +57,7 @@
   parent = "projects"
   name = "全部项目"
   pageRef = "/projects"
-  weight = 1
+  weight = 2
   params.icon = "fa fa-th-large"
   # the categories and their projects come from the catalog (layouts/_partials/func/project-pages.html)
 
