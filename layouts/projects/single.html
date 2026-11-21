@@ -24,7 +24,7 @@
       {{- with $p.tags }}<p class="project-tags">{{ range . }}<span class="project-tag">{{ . }}</span>{{ end }}</p>{{ end }}
       {{- with $p.links }}
       <div class="project-links">
-        {{- range . }}{{ $href := (partial "inline/catalog-pick.html" (dict "v" .href "lang" $lang)) }}<a href="{{ $href }}"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>{{ if strings.Contains $href "://github.com/" }}<i class="fa fa-github" aria-hidden="true"></i>{{ end }}{{ (partial "inline/catalog-pick.html" (dict "v" .label "lang" $lang)) }}</a>{{ end -}}
+        {{- range . }}{{ $href := partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" .href "lang" $lang)) }}<a href="{{ $href }}"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>{{ if strings.Contains $href "://github.com/" }}<i class="fa fa-github" aria-hidden="true"></i>{{ end }}{{ (partial "inline/catalog-pick.html" (dict "v" .label "lang" $lang)) }}</a>{{ end -}}
       </div>
       {{- end }}
       {{- $ov := "" }}{{ with $p.overview }}{{ $ov = index . $lang | default .en }}{{ end }}
@@ -39,6 +39,17 @@
       </dl>
       {{- end }}
       {{ .Content }}
+      {{- /* PDFs among the links (papers, dissertations): read them here, page by page */}}
+      {{- $n := 0 }}
+      {{- range $p.links }}
+        {{- $href := partial "inline/catalog-href.html" (partial "inline/catalog-pick.html" (dict "v" .href "lang" $lang)) }}
+        {{- if strings.HasSuffix (lower $href) ".pdf" }}
+          {{- $n = add $n 1 }}
+          {{- $label := partial "inline/catalog-pick.html" (dict "v" .label "lang" $lang) }}
+      <h2 id="{{ cond (eq $n 1) "pdf" (printf "pdf-%d" $n) }}-title">{{ $label }}</h2>
+      {{ partial "pdf-reader.html" (dict "page" $ "src" $href "title" $label "id" (cond (eq $n 1) "pdf" (printf "pdf-%d" $n))) }}
+        {{- end }}
+      {{- end }}
     </article>
     {{- if ne .Params.comments false }}{{ partial "comments.html" . }}{{ end }}
   </div>
